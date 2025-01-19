@@ -6,7 +6,7 @@ Schwingungen sind **zeitlich periodische** Bewegungen eines Körpers um seiner R
 Ursache für die Schwingung sind Rückstellkraft und Trägheit des Körpers. 
 Ein Schwingungsfähiger Körper wird auch **Oszillator** genannt.
 
-![Federpendel](assets/1_Einfuehrung.png)
+![Federpendel](assets/3_Einfuehrung.png)
 
 # Wichtige Größen
 
@@ -67,7 +67,7 @@ $$
 
 @ Übungen
 
-# Harmonische Schwingungen: Übung 1
+# Harmonische Schwingungen: Zettel 1, Ü2
 
 ## Angabe
 
@@ -77,7 +77,7 @@ Eine Sinusförmige Schwingung besitzt eine Schwingungsdauer von $0.6s$ und eine 
 
 **Gegeben ist**:
 $$
-T = 0.6s, \quad A = 40mm, \quad t = 0.02s
+T = 0.6s \quad A = 40mm \quad t = 0.02s
 $$
 **Gesucht ist**: 
 $$
@@ -92,7 +92,7 @@ y(0.02s) = 40mm \cdot \sin(\frac{2 \pi}{0.6} \cdot 0.02) \\
 y(0.02s) \approx 8.32mm
 $$
 
-# Harmonische Schwingungen: Übung 2
+# Harmonische Schwingungen: Zettel 1, Ü3
 
 ## Angabe
 Eine Sinusförmige Schwingung besitzt eine Amplitude von $10cm$ und eine Frequenz von $2Hz$. Nach welcher Zeit (vom Nulldurchgang weg) beträgt die Auslenkung erstmals $8cm$? 
@@ -100,7 +100,7 @@ Eine Sinusförmige Schwingung besitzt eine Amplitude von $10cm$ und eine Frequen
 ## Lösung
 **Gegeben ist**:
 $$
-A = 10cm, \quad f=2Hz, \quad \varphi_0=0, \quad y(t)=8cm
+A = 10cm \quad f=2Hz \quad \varphi_0=0 \quad y(t)=8cm
 $$
 **Gesucht ist**:
 $$
@@ -133,3 +133,64 @@ Ausrechnen von `asin(8/10)/(2*pi*2)` ergibt:
 $$
 t \approx 0.074s
 $$
+
+# Federpendel - Experiment
+**Gegeben ist**:
+$$
+T = 0.437s \quad \Delta y = 5.8cm \quad F_g = 0.51N
+$$
+
+**Lösen**: 
+$$
+F_g = D \cdot \Delta y \\
+D \approx 0.088 \frac{N}{cm}
+$$
+$$
+T = 2 \pi \cdot \sqrt{\frac{m}{D}} \\
+m \approx 43g
+$$
+$$
+F_g = m \cdot g \\
+F_g = 0.043kg \cdot 9.81 \frac{m}{s^2} \approx 0.421N
+$$
+
+# Federpendel: Ü2.1.04
+## Angabe
+Mit welcher Masse wurde eine **Feder** mit einer Federkonstanten von $1 \frac{N}{dm}$
+belastet, wenn die Periodendauer eine Sekunde beträgt?
+Skizzieren Sie drei volle Schwingungen des Pendels, 
+wenn Sie eine Amplitude von $10cm$ verwenden und annehmen, 
+dass zu Beginn das Federpendel nach unten aus der Gleichgewichtslage ausgelenkt wurde.
+Geben Sie die Schwingungsgleichung der ungedämpften Schwingung an. 
+
+## Lösung
+**Gegeben ist**:
+$$
+D = 1 \frac{N}{dm} \quad T=1s \quad \Delta y=10cm
+$$
+**Gesucht ist**:
+$$
+y(t) = \text{?}
+$$
+
+1. Lösen für $m$:
+$$
+T = 2 \pi \cdot \sqrt{\frac{m}{D}}  \quad / \div 2 \pi\\
+\frac{T}{2 \pi} = \sqrt{\frac{m}{D}} \quad / \ldots^2\\
+\frac{T^2}{4 \pi^2} = \frac{m}{D} \quad / \cdot D \\
+m = \frac{D \cdot T^2}{4 \pi ^2} \\
+m = \frac{10kg \cdot 1s^2}{4 \pi ^2} \\
+m \approx 0.253kg
+$$
+2. Lösen für $\omega$:
+$$
+\omega = 2 \pi \cdot f = \frac{2 \pi}{T}
+\omega = 2 \pi \cdot s^{-1}
+$$
+3. Aufstellung der gleichung $y(t)$:
+$$
+y(t) = A \cdot \sin( \omega \cdot t + \varphi_0) \\
+y(t) = 10cm \cdot \sin(2\pi s^{-1} \cdot t - \frac{\pi}{2})
+$$
+4. Zeichnen der Gleichung mit Desmos mit Eingabe $10\cdot\sin(2\pi\cdot x-\frac{\pi}{2})$:
+![Gezeichneter Graph](assets/3_Uebung2-1-04.png)
