@@ -6,7 +6,7 @@ Schwingungen sind **zeitlich periodische** Bewegungen eines Körpers um seiner R
 Ursache für die Schwingung sind Rückstellkraft und Trägheit des Körpers. 
 Ein Schwingungsfähiger Körper wird auch **Oszillator** genannt.
 
-![Federpendel](assets/3_Einfuehrung.png)
+![Fadenpendel](assets/3_Einfuehrung.png)
 
 # Wichtige Größen
 
@@ -63,6 +63,29 @@ $$
 $$
 $$
 D = \omega^2 \cdot m
+$$
+
+# Fadenpendel
+*s. Buch S. 22*
+
+Beim Fadenpendel hängt eine Masse $m$ an einem Faden mit vernachlässigbarer Masse.
+Idealisiert man die Masse zu einem Massenpunkt und denkt den Faden masselos, erhält man ein mathematisches Pendel.
+
+Periodendauer eines Fadenpendels (gilt nur für kleine Auswirkungen ($\varphi < 30 \degree$)):
+$$
+T = 2 \pi \sqrt{\frac{l}{g}}
+$$
+
+Das **linear Kraftgesetz** gilt auch nur unter der Bedingung kleiner Auswirkungen.
+
+![Fadenpendel](assets/3_Fadenpendel.png)
+
+**Kleinwinkelnäherung**: $\sin(\varphi) \approx \varphi$
+
+$$
+\vec{F_g} \ldots \text{Gewichtskraft} \\
+\vec{F_S} \ldots \text{Spannkraft} \\
+\vec{F_R} \ldots \text{Rückstellkraft}
 $$
 
 @ Übungen
@@ -194,3 +217,64 @@ y(t) = 10cm \cdot \sin(2\pi s^{-1} \cdot t - \frac{\pi}{2})
 $$
 4. Zeichnen der Gleichung mit Desmos mit Eingabe $10\cdot\sin(2\pi\cdot x-\frac{\pi}{2})$:
 ![Gezeichneter Graph](assets/3_Uebung2-1-04.png)
+
+# Weitere Übungen zu Schwingungen (Zettel)
+
+**Besonders wichtig**: 2, 5, 7, 8, 9, 10, 12, 13, 14
+
+![Weitere Übungen](assets/3_Weitere-Uebungen.jpg)
+
+@ Formeln
+
+# Schwingungen
+
+$$
+T = 1s \quad \ldots \text{Periodendauer} \\
+f = 1Hz \quad \ldots \text{Frequenz} \\
+$$
+$$
+T = \frac{1}{f}
+$$
+$$
+\omega = 1s^{-1} \quad \ldots \text{Kreisfrequenz/Winkelgeschwindigkeit}
+$$
+$$
+\omega = 2 \pi \cdot f = \frac{2 \pi}{T}
+$$
+
+# Harmonische Schwingungen
+
+$$
+y(t) = 1m \quad \ldots \text{Momentane Auslenkung} \\
+A = 1m \quad \ldots \text{Amplitude} \\
+\varphi_0 = 1s^{-1} \quad \ldots \text{Phasenverschiebung/Nullphasenwinkel}
+$$
+$$
+y(t) = A \cdot \sin(\omega \cdot t + \varphi_0)
+$$
+
+# Federpendel
+$$
+T = 2 \pi \cdot \sqrt{\frac{m}{D}}
+$$
+$$
+D = 1 \frac{N}{m} = 1 \frac{kg}{s^2} \quad \ldots \text{Federkonstante}
+$$
+$$
+T \propto \sqrt{m} \quad T \propto \frac{1}{\sqrt{D}}
+$$
+$$
+D = \omega^2 m
+$$
+
+# Fadenpendel 
+$$
+T = 2 \pi \sqrt{\frac{l}{g}}
+$$
+$$
+l = 1m \quad \ldots \text{Länge des Fadenpendels} \\
+g \approx 9.81 \frac{m}{s^2} \quad \ldots \text{Erdanziehungskraft}
+$$
+$$
+\sin(\varphi) \approx \varphi
+$$
