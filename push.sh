@@ -5,6 +5,8 @@
     --index-boilerplate improved-markdown/index-boilerplate.html \
     --server
 
-git add .
+git add src/
+git add dist/
+
 git commit -m "$(date +"%Y-%m-%d %H:%M:%S")"
 git push origin main 
