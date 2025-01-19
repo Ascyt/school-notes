@@ -13,4 +13,4 @@ h_0 ------------ ()
                   ↓
 ```
 
-![Bild](assets/Unkategorisiert_Herleitung-freier-Fall.png)
+![Bild](assets/0_Herleitung-freier-Fall.png)
