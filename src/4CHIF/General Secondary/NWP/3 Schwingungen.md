@@ -216,6 +216,7 @@ y(t) = A \cdot \sin( \omega \cdot t + \varphi_0) \\
 y(t) = 10cm \cdot \sin(2\pi s^{-1} \cdot t - \frac{\pi}{2})
 $$
 4. Zeichnen der Gleichung mit Desmos mit Eingabe $10\cdot\sin(2\pi\cdot x-\frac{\pi}{2})$:
+
 ![Gezeichneter Graph](assets/3_Uebung2-1-04.png)
 
 # Weitere Übungen zu Schwingungen (Zettel)
