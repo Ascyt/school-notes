@@ -1,3 +1,4 @@
+echo "Compiling source..."
 ./improved-markdown/publish/ImprovedMarkdown \
     -i "./src" \
     -o "./dist" \
