@@ -80,7 +80,7 @@ Das **linear Kraftgesetz** gilt auch nur unter der Bedingung kleiner Auswirkunge
 
 ![Fadenpendel](assets/3_Fadenpendel.png)
 
-**Kleinwinkelnäherung**: $\sin(\varphi) \approx \varphi$
+**Kleinwinkelnäherung:** $\sin(\varphi) \approx \varphi$
 
 $$
 \vec{F_g} \ldots \text{Gewichtskraft} \\
@@ -98,16 +98,16 @@ Eine Sinusförmige Schwingung besitzt eine Schwingungsdauer von $0.6s$ und eine 
 
 ## Lösung
 
-**Gegeben ist**:
+**Gegeben ist:**
 $$
 T = 0.6s \quad A = 40mm \quad t = 0.02s
 $$
-**Gesucht ist**: 
+**Gesucht ist:** 
 $$
 y = \text{?}
 $$
 
-**Annahme**: $\varphi_0=0$
+**Annahme:** $\varphi_0=0$
 
 $$
 y(t) = A*\sin(\frac{2 \pi}{T} \cdot t) \\
@@ -121,11 +121,11 @@ $$
 Eine Sinusförmige Schwingung besitzt eine Amplitude von $10cm$ und eine Frequenz von $2Hz$. Nach welcher Zeit (vom Nulldurchgang weg) beträgt die Auslenkung erstmals $8cm$? 
 
 ## Lösung
-**Gegeben ist**:
+**Gegeben ist:**
 $$
 A = 10cm \quad f=2Hz \quad \varphi_0=0 \quad y(t)=8cm
 $$
-**Gesucht ist**:
+**Gesucht ist:**
 $$
 t = \text{?}
 $$
@@ -158,12 +158,12 @@ t \approx 0.074s
 $$
 
 # Federpendel - Experiment
-**Gegeben ist**:
+**Gegeben ist:**
 $$
 T = 0.437s \quad \Delta y = 5.8cm \quad F_g = 0.51N
 $$
 
-**Lösen**: 
+**Lösen:** 
 $$
 F_g = D \cdot \Delta y \\
 D \approx 0.088 \frac{N}{cm}
@@ -187,16 +187,16 @@ dass zu Beginn das Federpendel nach unten aus der Gleichgewichtslage ausgelenkt 
 Geben Sie die Schwingungsgleichung der ungedämpften Schwingung an. 
 
 ## Lösung
-**Gegeben ist**:
+**Gegeben ist:**
 $$
 D = 1 \frac{N}{dm} \quad T=1s \quad \Delta y=10cm
 $$
-**Gesucht ist**:
+**Gesucht ist:**
 $$
 y(t) = \text{?}
 $$
 
-1. Lösen für $m$:
+**Lösen für $m$:**
 $$
 T = 2 \pi \cdot \sqrt{\frac{m}{D}}  \quad / \div 2 \pi\\
 \frac{T}{2 \pi} = \sqrt{\frac{m}{D}} \quad / \ldots^2\\
@@ -205,23 +205,23 @@ m = \frac{D \cdot T^2}{4 \pi ^2} \\
 m = \frac{10kg \cdot 1s^2}{4 \pi ^2} \\
 m \approx 0.253kg
 $$
-2. Lösen für $\omega$:
+**Lösen für $\omega$:**
 $$
 \omega = 2 \pi \cdot f = \frac{2 \pi}{T}
 \omega = 2 \pi \cdot s^{-1}
 $$
-3. Aufstellung der gleichung $y(t)$:
+**Aufstellung der gleichung $y(t)$:**
 $$
 y(t) = A \cdot \sin( \omega \cdot t + \varphi_0) \\
 y(t) = 10cm \cdot \sin(2\pi s^{-1} \cdot t - \frac{\pi}{2})
 $$
-4. Zeichnen der Gleichung mit Desmos mit Eingabe $10\cdot\sin(2\pi\cdot x-\frac{\pi}{2})$:
+1. Zeichnen der Gleichung mit Desmos mit Eingabe $10\cdot\sin(2\pi\cdot x-\frac{\pi}{2})$:
 
 ![Gezeichneter Graph](assets/3_Uebung2-1-04.png)
 
 # Weitere Übungen zu Schwingungen (Zettel)
 
-**Besonders wichtig**: 2, 5, 7, 8, 9, 10, 12, 13, 14
+**Besonders wichtig:** 2, 5, 7, 8, 9, 10, 12, 13, 14
 
 ![Weitere Übungen](assets/3_Weitere-Uebungen.jpg)
 
