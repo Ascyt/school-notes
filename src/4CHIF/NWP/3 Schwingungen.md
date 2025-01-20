@@ -234,7 +234,7 @@ Ein harmonisch schwingender Massepunkt ist $0.2s$ nach Passieren der Ruhelage $0
 
 **Gegeben ist:**
 $$
-t = 0.2s \quad y(t) = 0.45m
+t = 0.2s \quad y(t) = 0.45m \quad A = 0.6m
 $$
 
 **Gesucht ist:**
@@ -268,7 +268,21 @@ $$
 $$
 f = \frac{(\cfrac{\arcsin(\cfrac{y(t)}{A})}{t})}{2 \pi}
 $$
-
+**Einsetzen der Werte in die Gleichung**:
+$$
+f = \frac{(\cfrac{\arcsin(\cfrac{0.45 \sout{m}}{0.6 \sout{m}})}{0.2s})}{2 \pi}
+$$
+**Ausrechnen von `(asin(0.45/0.6)/0.2)/(2*pi)` gibt:**
+$$
+f \approx 0.675Hz
+$$
+**Ausrechnen von $T$:**
+$$
+T = \frac{1}{f}
+$$
+$$
+T \approx 1.482s 
+$$
 
 @ Formeln
 
