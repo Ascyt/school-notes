@@ -9,6 +9,9 @@ Zwei Arten Images zu erlangen:
 - Docker file `--(docker build)` $\rightarrow$ Image
 - Image aus Registry `--(docker pull)` $\rightarrow$ Image
 
+# Docker Compose
+Orchestriert mehrere Container (startet mehrere gleichzeitig, wartet aber bis alle gestartet sind)
+
 # Virtualisierung 
 "Nachbildung", andere Guest-OS rennen auf Host-OS.
 Um Cross-Platform zu ermöglichen (z.B. Linux auf Windows, oder Alpine auf Ubuntu)
