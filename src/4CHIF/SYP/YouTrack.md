@@ -1,6 +1,8 @@
 # Einführung
 **Projekt** $\rightarrow$ **Epics** $\rightarrow$ **User-Stories** $\rightarrow$ **Tasks**
 
+![YouTrack overview](assets/youtrack-overview.png)
+
 # User Stories
 **Wichtig ist**: Wer/Was/Wozu, Akzeptanzkriterien
 

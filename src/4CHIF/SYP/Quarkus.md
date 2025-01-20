@@ -28,6 +28,10 @@
     2. Vor der `junit` Dependency `Alt-Insert` drücken
     3. "Add Extensions" drücken und Extensions (z.B. OpenAPI Dev UI) adden
     4. Oben rechts auf den Button drücken um zu updaten
+13. In `application.properties`:
+    ```
+    quarkus.package.type=uber.jar
+    ```
 
 # Wrapper
 
@@ -43,3 +47,9 @@ Requeststypen:
 - `DELETE`: Informationen löschen
 
 **HTTP-Files** sind ein guter weg REST-Requests zu dokumentieren und zu testen: https://timdeschryver.dev/bits/http-files
+
+# Java
+![Java compilation steps](https://notes.dmitriydubson.com/img/java-compilation-1.png)
+^*Image source: https://notes.dmitriydubson.com/img/java-compilation-1.png*^
+
+**uber-jar**: Vom deutschen Wort "über", enthält Application-Code und Dependencies
