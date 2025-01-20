@@ -17,7 +17,25 @@
     ./mvnw clean quarkus:dev
     ```
 9. Für IntelliJ: Rechtsklick auf `pom.xml` und Maven-Projekt adden
+10. Neuer Terminal-Tab und `curl http://localhost:8080/hello` oder `http hello:8080` ausführen, um GET-Request zu testen
+11. Neuen Folder erstellen: `http-requests` mit `request.http` Datei mit Inhalt:
+    ```
+    ### Description about GET hello
+    GET http://localhost:8080/hello
+    Content-Type: text/plain
+    ```
 
 # Wrapper
 
 Der **Maven-Wrapper** ist über das eigentliche Projekt drüber gepackt. 
+
+# REST
+
+Requeststypen:
+
+- `GET`: Informationen auslesen
+- `POST`: Informationen erstellen
+- `PUT`: Informationen ändern
+- `DELETE`: Informationen löschen
+
+**HTTP-Files** sind ein guter weg REST-Requests zu dokumentieren und zu testen: https://timdeschryver.dev/bits/http-files
