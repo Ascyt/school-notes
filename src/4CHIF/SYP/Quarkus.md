@@ -3,6 +3,7 @@
 1. **https://quarkus.io/** öffnen
 2. Auf "Start Coding" klicken
 3. Infos einfüllen:
+
     | Group | Artifact | Build Tool | Version | Java Version | Starter Code |
     |-------|----------|------------|---------|--------------|--------------|
     | `at.htl` | `rest-demo` | `Maven` | `1.0.0` | `21` | Yes |
@@ -25,7 +26,7 @@
 12. Zum adden von Extensions:
     1. `pom.xml` öffnen
     2. Vor der `junit` Dependency `Alt-Insert` drücken
-    3. "Add Extensions" drücken und Extensions (z.B. Dev UI) adden
+    3. "Add Extensions" drücken und Extensions (z.B. OpenAPI Dev UI) adden
     4. Oben rechts auf den Button drücken um zu updaten
 
 # Wrapper
