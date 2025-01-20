@@ -207,7 +207,7 @@ m \approx 0.253kg
 $$
 **Lösen für $\omega$:**
 $$
-\omega = 2 \pi \cdot f = \frac{2 \pi}{T}
+\omega = 2 \pi \cdot f = \frac{2 \pi}{T} \\
 \omega = 2 \pi \cdot s^{-1}
 $$
 **Aufstellung der gleichung $y(t)$:**
@@ -310,7 +310,7 @@ y(t) = A \cdot \sin(\omega \cdot t)
 $$
 **Die Ableitung von $y(t)$ gibt die Änderung der Distanz, also die Geschwindigkeit.**
 
-**Um $A \cdot \sin(\omega \cdot t)$ ableiten zu können, muss die Kettenregel angewendet werden ($(f(g(x)))' = f'(g(x)) \cdot g'(x)$):**
+**Um $A \cdot \sin(\omega \cdot t)$ nach $t$ ableiten zu können, muss die Kettenregel angewendet werden ($(f(g(x)))' = f'(g(x)) \cdot g'(x)$):**
 $$
 y'(t)=A \cdot \cos(\omega \cdot t) \cdot \omega
 $$
