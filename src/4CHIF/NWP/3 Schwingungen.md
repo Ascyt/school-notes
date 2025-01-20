@@ -336,19 +336,19 @@ m = \frac{D}{(\cfrac{v}{A})^2}
 $$
 **Einsetzen der Variablen und umformen der Gleichung:**
 $$
-m = \frac{30 \frac{kg}{s^2}}{(\cfrac{0.8 \frac{m}{s}}{0.05m})^2}
+m = \frac{30 \frac{kg}{s^2}}{(\frac{0.8 \frac{m}{s}}{0.05m})^2}
 $$
 $$
-m = \frac{30 \frac{kg}{s^2}}{\cfrac{0.8^2 \frac{m^2}{s^2}}{0.05^2m^2}} 
+m = \frac{30 \frac{kg}{s^2}}{\frac{0.8^2 \frac{m^2}{s^2}}{0.05^2m^2}} 
 $$
 $$
-m = \frac{30 \cdot kg \cdot s^{-2}}{(\cfrac{0.8^2 \cdot \sout{m^2} \cdot s^{-2}}{0.05^2 \sout{m^2}})} 
+m = \frac{30 \cdot kg \cdot \sout{s^{-2}}}{\frac{0.8^2 \cdot \sout{m^2} \cdot \sout{s^{-2}}}{0.05^2 \sout{m^2}}} 
 $$
 $$
-m = \frac{30 \cdot kg \cdot \sout{s^{-2}}}{(\cfrac{0.8^2 \cdot \sout{s^{-2}}}{0.05^2})} 
+m = \frac{30 \cdot kg}{\frac{0.8^2}{0.05^2}} 
 $$
 $$
-m = (30 \div (\frac{0.8^2}{0.05^2})) kg
+m = \frac{30}{\frac{0.8^2}{0.05^2}} kg
 $$
 **Ausrechnen von `30/((0.8**2)/(0.05**2))` gibt:**
 $$
