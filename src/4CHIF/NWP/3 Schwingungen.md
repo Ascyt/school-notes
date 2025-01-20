@@ -284,6 +284,76 @@ $$
 T \approx 1.482s 
 $$
 
+# Zettel Ü7
+
+# Angabe
+
+Eine Feder hat eine Federkonstante $k = 30 \frac{N}{m}$. Wie groß ist die Masse $m$ eines daran hängendes Gewichtstückes, das Schwingungen der Amplitude $y_{max}=0.05m$ ausführt und mit der Geschwindigkeit $v = 0.8 \frac{m}{s}$ durch die Ruhelage geht?
+
+# Lösung
+
+**Gegeben ist:**
+$$
+D = 30 \frac{N}{m} \quad A = 0.05m \quad v = 0.8 \frac{m}{s} 
+$$
+
+**Gesucht ist:**
+$$
+m = \text{?}
+$$
+
+**Relevante Formeln:**
+$$
+D = \omega^2 m \\
+\omega = \frac{2 \pi}{T} \\
+y(t) = A \cdot \sin(\omega \cdot t)
+$$
+**Die Ableitung von $y(t)$ gibt die Änderung der Distanz, also die Geschwindigkeit.**
+
+**Um $A \cdot \sin(\omega \cdot t)$ ableiten zu können, muss die Kettenregel angewendet werden ($(f(g(x)))' = f'(g(x)) \cdot g'(x)$):**
+$$
+y'(t)=A \cdot \cos(\omega \cdot t) \cdot \omega
+$$
+**Wenn wir hier für $t$ den Wert $0$ einsetzen (wie in der Angabe steht ""durch die Ruhelage"") und statt $y'(0)$ wir $v$ schreiben bekommen wir:**
+$$
+v = A \cdot 1 \cdot \omega
+$$
+**Um $\omega$ zu erhalten:**
+$$
+v = A \cdot \omega \quad / \div A \\
+\omega = \frac{v}{A}
+$$
+
+**Umformen auf $m$:**
+$$
+D = \omega^2 m \quad / \div \omega^2 \\
+m = \frac{D}{\omega^2}
+$$
+
+**Einsetzen von $\omega$ von der oberen Gleichung:**
+$$
+m = \frac{D}{(\cfrac{v}{A})^2}
+$$
+**Einsetzen der Variablen und umformen der Gleichung:**
+$$
+m = \frac{30 \frac{kg}{s^2}}{(\cfrac{0.8 \frac{m}{s}}{0.05m})^2}
+$$
+$$
+m = \frac{30 \frac{kg}{s^2}}{\cfrac{0.8^2 \frac{m^2}{s^2}}{0.05^2m^2}} 
+$$
+$$
+m = \frac{30 \cdot kg \cdot s^{-2}}{(\cfrac{0.8^2 \cdot \sout{m^2} \cdot s^{-2}}{0.05^2 \sout{m^2}})} 
+$$
+$$
+m = \frac{30 \cdot kg \cdot \sout{s^{-2}}}{(\cfrac{0.8^2 \cdot \sout{s^{-2}}}{0.05^2})} 
+$$
+$$
+m = (30 \div (\frac{0.8^2}{0.05^2})) kg
+$$
+**Ausrechnen von `30/((0.8**2)/(0.05**2))` gibt:**
+$$
+m \approx 0.117kg
+$$
 @ Formeln
 
 # Schwingungen
