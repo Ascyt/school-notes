@@ -225,6 +225,51 @@ $$
 
 ![Weitere Übungen](assets/3_Weitere-Uebungen.jpg)
 
+# Zettel Ü2
+
+## Angabe
+Ein harmonisch schwingender Massepunkt ist $0.2s$ nach Passieren der Ruhelage $0.45m$ von dieser entfernt. Wie groß sind die Frequenz $f$ und welche Periodendauer $T$, wenn die Amplitude $y_{max}=0.6m$ beträgt?
+
+## Lösung
+
+**Gegeben ist:**
+$$
+t = 0.2s \quad y(t) = 0.45m
+$$
+
+**Gesucht ist:**
+$$
+f = \text{?} \quad T = \text{?}
+$$
+
+**Aufstellen der Gleichung $y(t)$:**
+$$
+y(t) = A \cdot \sin( \omega \cdot t + \varphi_0)
+$$
+
+**Da $\varphi_0=0$, kann es weggelassen werden:**
+$$
+y(t) = A \cdot \sin( \omega \cdot t)
+$$
+**Umformen der Gleichung auf $\omega$:**
+$$
+y(t) = A \cdot \sin( \omega \cdot t) \quad / \div A \\
+\frac{y(t)}{A} = \sin( \omega \cdot t) \quad / \arcsin(\ldots) \\
+\arcsin(\frac{y(t)}{A}) = \omega \cdot t \quad / \div t \\
+\omega = \frac{\arcsin(\cfrac{y(t)}{A})}{t}
+$$
+
+**Aufstellen der Gleichung $\omega$ auf $f$:**
+$$
+\omega = 2 \pi \cdot f \quad / \div 2 \pi \\
+f = \frac{\omega}{2 \pi}
+$$
+**Einsetzen von $\omega$ in die obere Gleichung:**
+$$
+f = \frac{(\cfrac{\arcsin(\cfrac{y(t)}{A})}{t})}{2 \pi}
+$$
+
+
 @ Formeln
 
 # Schwingungen
