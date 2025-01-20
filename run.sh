@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Compiling source..."
 ./improved-markdown/publish/ImprovedMarkdown \
     -i "./src" \
