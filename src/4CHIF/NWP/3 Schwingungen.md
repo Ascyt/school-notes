@@ -354,6 +354,105 @@ $$
 $$
 m \approx 0.117kg
 $$
+
+# Testlösungen: Ü1
+## Angabe
+Berechnen Sie die Fadenlänge eines Pendels, wenn dieses mit einer Geschwindigkeit von $1.808 \frac{m}{s}$ durch die Ruhelage schwingt und eine Amplitude von $1m$ hat.
+
+## Lösung
+**Da die Ableitung der Auslenkung $y(t)$ die Änderung der Auslenkung beschreibt, also die Geschwindigkeit, kann ""mit einer Geschwindigkeit von $1.808 \frac{m}{s}$ durch die Ruhelage"" umgeschrieben werden als $y'(0) = 1.808 \frac{m}{s}$.**
+
+**Gegeben ist:**
+$$
+y'(0) = 1.808 \frac{m}{s} \quad A = 1m
+$$
+**Gesucht ist:**
+$$
+l = \text{?}
+$$
+
+**Relevante Formeln:**
+$$
+T = 2 \pi \sqrt{\frac{l}{g}} \\
+\omega = \frac{2 \pi}{T} \\ 
+y(t) = A \cdot \sin(\omega \cdot t + \varphi_0)
+$$
+**Da $\varphi_0 = 0$, kann es weggelassen werden:**
+$$
+y(t) = A \cdot \sin(\omega \cdot t)
+$$
+
+**Um $y(t)$ in $t$ auf $y'(t)$ umformen zu können, muss die Kettenregel angewendet werden:**
+$$
+y'(t) = A \cdot \cos(\omega \cdot t) \cdot \omega
+$$
+**Wenn wir für $t$ $0$ einsetzen fällt der Cosinus weg, da $\cos(0)=1$:**
+$$
+y'(0) = A \cdot \omega
+$$
+**Umformen auf $\omega$**:
+$$
+y'(0) = A \cdot \omega \quad / \div A \\
+\omega = \frac{y'(0)}{A}
+$$
+**Umformen auf $T$:**
+$$
+\omega = \frac{2 \pi}{T} \quad / \times T \\
+\omega \cdot T = 2 \pi \quad / \div \omega \\
+T = \frac{2 \pi}{\omega}
+$$
+**Einsetzen von $\omega$ von der oberen Formel:**
+$$
+T = \frac{2 \pi}{\frac{y'(0)}{A}} 
+$$
+**Umformen auf $l$:**
+$$
+T = 2 \pi \sqrt{\frac{l}{g}} \quad / \div 2 \pi \\
+\frac{T}{2 \pi} = \sqrt{\frac{l}{g}} \quad / \ldots^2 \\
+\frac{T^2}{4 \pi ^2} = \frac{l}{g} \quad / \times g \\
+l = \frac{T^2}{4 \pi ^2} \cdot g
+$$
+**Einsetzen von $T$ von der oberen Formel:**
+$$
+l = \frac{(\cfrac{2 \pi}{\frac{y'(0)}{A}} )^2}{4 \pi ^2} \cdot g
+$$
+$$
+l = \frac{(\cfrac{\sout{4 \pi^2}}{\frac{(y'(0))^2}{A^2}})}{\sout{4 \pi ^2}} \cdot g
+$$
+$$
+l = \cfrac{1}{\frac{(y'(0))^2}{A^2}} \cdot g
+$$
+$$
+l = \frac{(y'(0))^{-2}}{A^{-2}} \cdot g
+$$
+$$
+l = (y'(0))^{-2} \cdot A^2 \cdot g
+$$
+$$
+l = \frac{A^2}{(y'(0))^2} \cdot g
+$$
+$$
+l = (\frac{A}{y'(0)})^2 \cdot g
+$$
+
+**Einsetzen der Werte, wobei $g$ die Erdanziehungskraft $9.81 \frac{m}{s^2}$ ist:**
+$$
+l = (\frac{1m}{1.808 \frac{m}{s}})^2 \cdot 9.81 \frac{m}{s}
+$$
+$$
+l = \frac{1 \sout{m^2}}{1.808^2 \cdot \sout{m^2} \cdot s^{-2}} \cdot 9.81 \frac{m}{s^2}
+$$
+$$
+l = \frac{9.81m}{1.808^2 \cdot \sout{s^{-2}} \cdot \sout{s^2}}
+$$
+$$
+l = \frac{9.81}{1.808^2}m
+$$
+**Ausrechnen von `9.81/(1.808**2)` ergibt:**
+$$
+l \approx 3m
+$$
+
 @ Formeln
 
 # Schwingungen
