@@ -453,6 +453,56 @@ $$
 l \approx 3m
 $$
 
+# Testlösungen: Ü2
+## Angabe
+Berechnen Sie nach welcher Zeit die Auslenkung einer harmonischen Schwingung $1.618cm$ beträgt bei folgenden Werten: $A = 2cm$, $f = 20Hz$, $\varphi_0 = -\frac{\pi}{2}$ \
+Erstellen Sie ein Diagramm für eine Periode und zeichnen Sie den Wert zum gesuchten Zeitpunkt ein.
+
+## Lösung
+**Gegeben ist:**
+$$
+y(t) = 1.618cm \quad A = 2cm \quad f = 20Hz \quad \varphi_0 = -\frac{\pi}{2}
+$$
+**Gesucht ist:**
+$$
+t = \text{?}
+$$
+**Relevante Formeln:**
+$$
+y(t) = A \cdot \sin(\omega \cdot t + \varphi_0) \\
+\omega = f \cdot 2 \pi
+$$
+**Kombinieren der Formeln:**
+$$
+y(t) = A \cdot \sin(f \cdot 2 \pi \cdot t + \varphi_0)
+$$
+**Da $\varphi_0 = - \frac{\pi}{2}$ und der Sinus um $-\frac{\pi}{2}$ verschoben den negativen Cosinus gleicht, kann es umgeschreiben werden zu:**
+$$
+y(t) = A \cdot (-\cos(f \cdot 2 \pi \cdot t))
+$$
+**Umformen der Gleichung auf $t$:**
+$$
+y(t) = A \cdot (-\cos(f \cdot 2 \pi \cdot t)) \quad / \div A \\
+\frac{y(t)}{A} = -\cos(f \cdot 2 \pi \cdot t) \quad / \times -1 \\
+-\frac{y(t)}{A} = \cos(f \cdot 2 \pi \cdot t) \quad / \arccos(\ldots) \\
+\arccos(-\frac{y(t)}{A}) = f \cdot 2 \pi \cdot t \quad / \div f \quad \div2 \pi \\
+$$
+$$
+t = \frac{\arccos(-\cfrac{y(t)}{A})}{2 \pi \cdot f}
+$$
+**Einsetzen der Werte:**
+$$
+t = \frac{\arccos(-\cfrac{1.618\sout{cm}}{2\sout{cm}})}{2 \pi \cdot 20Hz}
+$$
+**Ausrechnen von `acos(-1.618/2)/(40*pi)`**
+$$
+t \approx 0.02s
+$$
+
+**Zeichnen mit Desmos von Funktion $f\left(x\right)=2\sin\left(40\pi x-\frac{\pi}{2}\right)$ und Punkt $\left(0.02,1.618\right)$:**
+
+![Sinusfunktion gezeichnet](assets/3_Uebung-Test2.png)
+
 @ Formeln
 
 # Schwingungen
