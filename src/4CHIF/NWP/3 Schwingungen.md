@@ -503,6 +503,74 @@ $$
 
 ![Sinusfunktion gezeichnet](assets/3_Uebung-Test2.png)
 
+# Testlösungen: Ü3
+## Angabe
+Gib in normierter Gleitkommadarstellung an:
+
+| |A|B|
+|-|-|-|
+|1|$7.85 \frac{g}{cm^3}$|? $\frac{kg}{m^3}$|
+|2|$96.7 \frac{\mu V}{K}$|? $\frac{pV}{mK}$|
+|3|$356 \frac{kcal}{h}$|? $\frac{cal}{s}$|
+|4|$70000 \frac{N}{mm^2}$|? $\frac{kN}{cm^2}$|
+
+## Lösung
+### 1.
+$$
+\frac{1g}{1cm^3} = \frac{10^{-3}kg}{10^{-2\cdot3}m^3} = \frac{10^{-3}kg}{10^{-6}cm^3}
+$$
+$$
+10^{-3} \div 10^{-6} = 10^{-3+6}=10^3
+$$
+$$
+7.85\frac{g}{cm^3} = 7.85\cdot 10^3\frac{kg}{cm^3}
+$$
+
+### 2.
+$$
+\frac{1 \mu V}{1 K} = \frac{10^6 pV}{10^3mK}
+$$
+$$
+10^6 \div 10^3 = 10^{6-3} = 10^3
+$$
+$$
+96.7 \frac{\mu V}{K}=9.67 \cdot 10^{4}\frac{pV}{mK}
+$$
+
+### 3.
+$$
+\frac{1 kcal}{1 h} = \frac{10^3 cal}{3600s}
+$$
+$$
+10^3 \div 3600 = 1\,000 \div 3600 = 0.2\overline{7}
+$$
+$$
+356 \cdot 0.2\overline{7} = 98.\overline{8}
+$$
+$$
+356 \frac{kcal}{h} = 9.\overline{8} \cdot 10^1 \frac{cal}{s}
+$$
+
+### 4.
+$$
+\frac{1N}{1mm^2} = \frac{10^{-3}kN}{10^{-1\cdot2}cm^2} = \frac{10^{-3}kN}{10^{-2}cm^2}
+$$
+$$
+10^{-3} \div 10^{-2} = 10^{-3 +2} = 10^{-1}
+$$
+$$
+70\,000\frac{N}{mm^2} = 7 \cdot 10^3 \frac{kN}{cm^2}
+$$
+
+### Gelöste Tabelle
+
+| |A|B|
+|-|-|-|
+|1|$7.85 \frac{g}{cm^3}$|$7.85\cdot 10^3 \frac{kg}{m^3}$|
+|2|$96.7 \frac{\mu V}{K}$|9.67 \cdot $10^{4} \frac{pV}{mK}$|
+|3|$356 \frac{kcal}{h}$|$9.\overline{8} \cdot 10^1\frac{cal}{s}$|
+|4|$70000 \frac{N}{mm^2}$|$7 \cdot 10^3\frac{kN}{cm^2}$|
+
 @ Formeln
 
 # Schwingungen
