@@ -286,11 +286,11 @@ $$
 
 # Zettel Ü7
 
-# Angabe
+## Angabe
 
 Eine Feder hat eine Federkonstante $k = 30 \frac{N}{m}$. Wie groß ist die Masse $m$ eines daran hängendes Gewichtstückes, das Schwingungen der Amplitude $y_{max}=0.05m$ ausführt und mit der Geschwindigkeit $v = 0.8 \frac{m}{s}$ durch die Ruhelage geht?
 
-# Lösung
+## Lösung
 
 **Gegeben ist:**
 $$
