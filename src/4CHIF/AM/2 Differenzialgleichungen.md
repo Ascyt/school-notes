@@ -19,7 +19,7 @@ $$
 $$
 \frac{dy}{y}= x^2 \cdot dx
 $$
-**Beide Seiten nach $dx$ integrieren:**
+**Beide Seiten nach $\dx$ integrieren:**
 $$
 \frac{1}{y}dy = x^2 \cdot dx \quad / \int \ldots dx
 $$
@@ -103,11 +103,11 @@ y(0)= 0.5
 $$
 
 ### Homogene Lösung
-**Homogene Differenzialgleichung:**
+Homogene Differenzialgleichung:
 $$
 y' +2\cdot y = 0
 $$
-**Homogene Lösung:**
+Homogene Lösung:
 $$
 y_h = C \cdot e^{-2x}
 $$
@@ -120,52 +120,52 @@ $$
 $$
 Da sowohl die Funktion selber als auch ihre Ableitung die Gleichung erfüllen müssen, benötigt man die Ableitung.
 
-**Allgemein:**
+Allgemein:
 $$
 \textcolor{orange}{{y_p}'=A}
 $$
 
-**Einsetzen in die Gleichung:**
+Einsetzen in die Gleichung:
 $$
 \textcolor{orange}{y'} + 2\cdot \textcolor{blue}{y} = 4x -5 
 $$
 $$
 \textcolor{orange}{A} + 2 \cdot \textcolor{blue}{(A \cdot x + B)} = 4x -5
 $$
-**Ausmultiplizieren:**
+Ausmultiplizieren:
 $$
 A + 2 A x + 2B = 4x -5
 $$
-**Sortieren nach den Koeffizienten von $x$:**
+Sortieren nach den Koeffizienten von $x$:
 $$
 \textcolor{red}{2A}\cdot x + (\textcolor{magenta}{A + 2B}) = \textcolor{red}{4} \cdot x + (\textcolor{magenta}{-5})
 $$
 
-**Mit $x$**: $\textcolor{red}{2A} = \textcolor{red}{4}$ \
-**Ohne $x$**: $\textcolor{magenta}{A + 2B} = \textcolor{magenta}{-5}$
+Mit $x$: $\textcolor{red}{2A} = \textcolor{red}{4}$ \
+Ohne $x$: $\textcolor{magenta}{A + 2B} = \textcolor{magenta}{-5}$
 
-**Lösungen von $A$ und $B$:**
+Lösungen von $A$ und $B$:
 $$
 A = 2; \quad B = -3.5
 $$
 
-**Partikuläre Lösung:**
+Partikuläre Lösung:
 $$
 y_p = 2x - 3.5
 $$
 
 #### Lösen der Gleichung
-**Allgemeine Lösung:**
+Allgemeine Lösung:
 $$
 y = y_h + y_p
 $$
 
-**Eingesetzt:**
+Eingesetzt:
 $$
 y(x) = C \cdot e^{-2x} + 2x - 3.5
 $$
 
-**Durch Einsetzen der Anfangsbedingungen ($y(0)= 0.5$) erhält man die Konstante $C$:**
+Durch Einsetzen der Anfangsbedingungen ($y(0)= 0.5$) erhält man die Konstante $C$:
 $$
 0.5 = C \cdot  e^{-2x} + 2x - 3.5
 $$
@@ -175,7 +175,7 @@ $$
 $$
 C = 4
 $$
-**Mit dem Einsetzen von $C$ bekommen wir die Spezielle Lösung:**
+Mit dem Einsetzen von $C$ bekommen wir die Spezielle Lösung:
 $$
 y(x) = 4 \cdot e^{-2x} + 2x - 3.5
 $$
@@ -183,6 +183,20 @@ $$
 Hier wurde der Lösungsansatz für lineare Störfunktionen verwendet, wobei der Lösungsansatz $y_p = A \cdot x + B$ gleicht. Hier sind die Lösungsansätze anderer Störfunktionen:
 
 ![Lösungsansätze S. 96](assets/2_loesungsanzaetze.png)
+
+# Variation der Konstanten
+
+Form:
+$$
+y' + f(x) \cdot y = s(x)
+$$
+
+## Beispiel
+$$
+y'-2x \cdot y = e^{x^2}
+$$
+
+
 
 @ Übungen
 
