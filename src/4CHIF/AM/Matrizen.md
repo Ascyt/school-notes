@@ -215,3 +215,7 @@ S = \begin{pmatrix}
     0 & s_y
 \end{pmatrix}
 $$
+
+# Beispiel vom Buch
+
+![Beispiel 5.51 S. 148](assets/matrizen-transformationen-bsp.png)
