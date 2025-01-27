@@ -81,6 +81,44 @@ $$
 y = C\cdot e^{-p \cdot x}
 $$
 
+## Inhomogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
+Bei der Form:
+$$ 
+y' + p \cdot y = s(x)
+$$
+
+### Beispiel
+$$
+y' + 2\cdot y = 4x -5 
+$$
+mit $y(0)= 0.5$ 
+
+**Homogene Lösung:**
+
+Die Störfunktion $s(x) = 4x-5$ ist eine lineare Funktion. Da der Lösungsansatz vom Typ der Störfunktion abhängt, wählt man hier eine allgemeine lineare Funktion:
+$$
+y_p = A \cdot x + B
+$$
+Da sowohl die Funktion selber als auch ihre Ableitung die Gleichung erfüllen müssen, benötigt man die Ableitung.
+
+**Allgemein:**
+$$
+{y_p}'=A
+$$
+
+**Einsetzen in die Gleichung:**
+$$
+\textcolor{orange}{y'} + 2\cdot \textcolor{blue}{y} = 4x -5 
+$$
+$$
+A + 2 \cdot (A \cdot x + B) = 4x -5
+$$
+**Ausmultiplizieren:**
+$$
+A + 2 A x + 2B = 4x -5
+$$
+
+
 @ Übungen
 
 # 4.48
