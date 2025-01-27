@@ -63,7 +63,7 @@ $$
 Zum Multiplizieren von Matrizen wird für jedes Element der finalen Matrix, die **Zeilen von der ersten mit der Spalten von der zweiten** Matrix multipliziert, in dem man jedes Element miteinander multipliziert, und diese Werte addiert:
 
 ![https://notesbylex.com/_media/matrix-multiplication.gif](https://notesbylex.com/_media/matrix-multiplication.gif) \
-^https://notesbylex.com/_media/matrix-multiplication.gif^
+^[ Quelle: https://notesbylex.com/_media/matrix-multiplication.gif ]^
 
 Wenn z.B. $A=3 \times 2$ und $B = 2 \times 2$:
 - Mittleren 2 müssen zusammenpassen: $3 \times [2 \quad 2]\times 2$
