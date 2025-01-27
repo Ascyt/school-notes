@@ -20,4 +20,5 @@ Warum überhaupt `git add`? Wenn man mehrere Files geändert hat, kann es gut se
 ## Use-Cases
 
 1. Mitarbeit in einem open-source Projekt (man forkt ein Repository, dann kann einen Pull-Request auf's Original machen)
-2. 
+2. Ein Teamleiter möchte sämtliche Commits ins Repo prüfen 
+3. Eigene Variante erstellen, z.B. MySQL $\rightarrow$ MariaDB
