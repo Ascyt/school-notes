@@ -300,6 +300,67 @@ $$
 y(x) = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x}
 $$
 
+# Inhomogene lineare Differentialgleichungen 2. Ordnung mit konstanten Koeffizienten
+
+Wieder wie bei den Differentialgleichungen der 1. Ordnung, ist die Lösung wieder die Summe aus der **homogenen** und der **partikulären** Lösung, jedoch sind hierfür die Lösungsansätze teilweise anders:
+
+![Seite 108](assets/2_zweiter-ordnung-loesungsansaetze.png)
+
+## Beispiel
+$$
+y'' + 5y' + 6y = 2e^{-2x}
+$$
+
+### Homogene Lösung
+$$
+y'' + 5y' + 6y = 0
+$$
+$$
+\lambda^2 + 5 \lambda + 6 = 0
+$$
+$$
+\lambda_1 = -2; \quad \lambda_2 = -3
+$$
+$$
+y_h = C_1 \cdot e^{-3x} + C_2 \cdot e^{-2x}
+$$
+
+### Partikuläre Lösung
+$\lambda_1 = b = -2$ ist die Lösung der charakteristischen Gleichung, also ist $e^{-2x}$ Bestandteil der homogenen Lösung. Daher wird der Lösungsanzatz $y_p = A \cdot x \cdot e^{b \cdot x}$ gewählt: 
+
+$$
+y_p = A \cdot x \cdot e^{-2x}
+$$
+$$
+{y_p}' = A \cdot e^{-2x} - 2A \cdot x \cdot e^{-2x}
+$$
+$$
+{y_p}'' = -4A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x}
+$$
+
+Einsetzen in die originelle Differntialgleichung:
+
+$$
+-4 A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x} + 5 A \cdot e^{-2x} - 10A \cdot x \cdot e^{-2x} +6A \cdot x \cdot e^{-2x}
+$$
+$$
+\textcolor{red}{A} \cdot e^{-2x} = \textcolor{red}{2} \cdot e^{-2x}
+$$
+$$
+\textcolor{red}{A} = \textcolor{red}{2}
+$$
+
+Partikuläre Lösung:
+$$
+y_p = 2 x \cdot e^{-2x}
+$$
+
+### Allgemeine Lösung
+Summieren auf $y = y_h + y_p$:
+$$
+y(x) = C_1 \cdot e^{-3x} + C_2 \cdot e^{-2x} + 2 x \cdot e^{-2x}
+$$
+
 @ Übungen
 
 # 4.48
