@@ -166,7 +166,8 @@ $$
 
 Also: 
 
-$$\begin{pmatrix}
+$$
+\begin{pmatrix}
     x \\
     y \\
     z
@@ -180,7 +181,8 @@ $$
 Ausgerechnet ergibt das:
 
 
-$$\begin{pmatrix}
+$$
+\begin{pmatrix}
     x \\
     y \\
     z
