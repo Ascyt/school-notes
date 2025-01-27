@@ -16,7 +16,7 @@ Allgemein wird mit $a_{i,j}$ das Element in **Zeile $i$** und **Spalte $j$** bez
 
 Merkhilfe: "Zeile zuerst, Spalte später"
 
-![Grafik aus dem buch](assets/matrizen-einfuehrung.png)
+![Grafik aus dem buch](assets/1_einfuehrung.png)
 
 # Addition und Multiplikation mit einem Skalar
 
@@ -207,7 +207,7 @@ Transformationen wie Drehungen oder Schiebungen von **Vektoren** können mithilf
 ## Drehungen
 Drehungen müssen **gegen den Uhrzeigersinn** angewendet werden. 
 
-![Buch Seite 145](assets/matrizen-transformationen-drehungen.png)
+![Buch Seite 145](assets/1_transformationen-drehungen.png)
 
 ## Streckungen
 Eine Streckung kann ebenfalls durch eine Matrix beschrieben werden:
@@ -221,4 +221,4 @@ $$
 
 # Beispiel vom Buch
 
-![Beispiel 5.51 S. 148](assets/matrizen-transformationen-bsp.png)
+![Beispiel 5.51 S. 148](assets/1_transformationen-bsp.png)

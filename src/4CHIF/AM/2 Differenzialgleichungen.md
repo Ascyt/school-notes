@@ -1,3 +1,4 @@
+@ Stoff
 # Trennung der Variablen
 Nur möglich für Funktionen 1. Ordnung (d.H. max. 1 Ableitung)
 
@@ -61,3 +62,12 @@ $$
 $$
 y' = y \cdot x^2
 $$
+
+@ Übungen
+
+# 4.48
+## Angabe
+![Angabe](assets/2_uebung-4-48_angabe.png)
+
+## Lösung
+![Lösung](assets/2_uebung-4-48_loesung.png)
