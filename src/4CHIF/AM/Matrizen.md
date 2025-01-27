@@ -194,3 +194,5 @@ Also die Lösung des linearen Gleichungssystem lautet:
 $$
 x = 3; \quad y = -1; \quad z = 2
 $$
+
+Falls $det(A) = 0$, gibt es **keine eindeutige Lösung**.
