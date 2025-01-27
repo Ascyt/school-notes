@@ -288,7 +288,7 @@ $$
 \lambda_1, \lambda_2  = \frac{-b \plusmn \sqrt{b^2-4ac}}{2a}
 $$
 
-Die Lösungen der Differntialgleichungen sind:
+Die Lösungen der Differentialgleichungen sind:
 $$
 y_1 = C_1 \cdot e^{\lambda_1 \cdot x}
 $$
@@ -338,7 +338,7 @@ $$
 {y_p}'' = -4A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x}
 $$
 
-Einsetzen in die originelle Differntialgleichung:
+Einsetzen in die originelle Differentialgleichung:
 
 $$
 -4 A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x} + 5 A \cdot e^{-2x} - 10A \cdot x \cdot e^{-2x} +6A \cdot x \cdot e^{-2x} = 2 \cdot e^{-2x}
@@ -360,6 +360,27 @@ Summieren auf $y = y_h + y_p$:
 $$
 y(x) = C_1 \cdot e^{-3x} + C_2 \cdot e^{-2x} + 2 x \cdot e^{-2x}
 $$
+
+# TL;DR: Prozedur
+Kann sein dass die nicht vollständig ist; Dinge wie **Variation der Konstanten** sind hier nicht beschrieben, es sollte aber trotzdem für eine gute Note ausreichen!
+1. Mit der Störfunktion ersetzt durch $0$ die homogene Lösung finden
+   1. Bei erster Ordnung: Lösen mittels Trennung der Variablen
+      1. $y'$ als $\frac{dy}{dx}$ schreiben
+      2. Alles mit $x$ bzw. $dx$ auf eine Seite, und alles mit $y$ bzw. $dy$ auf die andere bringen
+      3. Beide Seiten integrieren, $dx$ und $dy$ fällt weg
+      4. Umformen auf $y = \ldots$, Konstanten zusammenfassen
+   2. Bei zweiter Ordnung: Lösen mittels Mitternachtsformel 
+      1. Wie bei einem normalen Gleichungsystem, nur statt $x^2,\, x,\, 1$ gibt es $y'',\, y',\, y$, mit der ABC-Formel lösen
+      2. Lösungen sind $y_n = C_n \cdot e^{\lambda_n \cdot x}$, wobei $n$ die Lösungsnummer ist ($1$ oder $2$) und $\lambda_n$ die Lösung ist
+      3. Falls zwei Lösungen vorhanden sind, ist die Lösung die Summe von den beiden: $y_h = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x}$
+2. Partikuläre Lösung finden
+   1. Korrekten Lösungsansatz für die Störfunktion finden in der Formelsammlung, aufpassen dass die für die jeweils 1. und 2. Ordnung verschieden sind; z.B. $y_p = A \cdot x + B$
+   2. In der originellen Funktion das $y$, bzw. $y'$ oder $y''$ mit dem Lösungsansatz, bzw. der ersten oder zweiten Ableitung des Lösungsansatzes, ersetzen
+   3. Umformen, sodass alle Teile mit $x$ links stehen und alle ohne $x$ rechts stehen, z.B. $\textcolor{red}{2A}x + (\textcolor{magenta}{A + 2B}) = \textcolor{red}{4}x + (\textcolor{magenta}{-5})$
+   4. Diese jeweils gleichsetzen, z.B. $\textcolor{red}{2A} = \textcolor{red}{4}$ und $\textcolor{magenta}{A+2B} = \textcolor{magenta}{-5}$
+   5. Gleichungssystem lösen, damit $A$ und (falls existent) $B$ bekannt sind
+   6. $A$ und $B$ in den Lösungsansatz einsetzen, z.B. $y_p=2x-3.5$
+3. Beide Lösungen addieren: $y = y_h + y_p$
 
 @ Übungen
 
