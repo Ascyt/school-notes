@@ -372,3 +372,6 @@ $$
 
 # 4.51
 ![Angabe & Lösung](assets/2_uebung-4-48_angabe.png)
+
+# 4.86
+![Angabe & Lösung](assets/2_uebung-4-86.png)
