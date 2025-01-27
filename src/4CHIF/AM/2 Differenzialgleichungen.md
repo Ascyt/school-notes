@@ -87,13 +87,29 @@ $$
 y' + p \cdot y = s(x)
 $$
 
+Ist die allgemeine Lösung:
+$$
+y = y_h + y_p
+$$
+Wobei $y_h$ die **homogene** und $y_p$ die **partikuläre** Lösung ist. 
+
 ### Beispiel
 $$
 y' + 2\cdot y = 4x -5 
 $$
 mit $y(0)= 0.5$ 
 
+#### Homogene Lösung
+**Homogene Differenzialgleichung:**
+$$
+y' +2\cdot y = 0
+$$
 **Homogene Lösung:**
+$$
+y_h = C \cdot e^{-2x}
+$$
+
+#### Partikuläre Lösung
 
 Die Störfunktion $s(x) = 4x-5$ ist eine lineare Funktion. Da der Lösungsansatz vom Typ der Störfunktion abhängt, wählt man hier eine allgemeine lineare Funktion:
 $$
@@ -120,6 +136,45 @@ $$
 **Sortieren nach den Koeffizienten von $x$:**
 $$
 \textcolor{red}{2A}\cdot x + (\textcolor{magenta}{A + 2B}) = \textcolor{red}{4} \cdot x + (\textcolor{magenta}{-5})
+$$
+
+**Mit $x$**: $\textcolor{red}{2A} = \textcolor{red}{4}$ \
+**Ohne $x$**: $\textcolor{magenta}{A + 2B} = \textcolor{magenta}{-5}$
+
+**Lösungen von $A$ und $B$:**
+$$
+A = 2; \quad B = -3.5
+$$
+
+**Partikuläre Lösung:**
+$$
+y_p = 2x - 3.5
+$$
+
+#### Lösen der Gleichung
+**Allgemeine Lösung:**
+$$
+y = y_h + y_p
+$$
+
+**Eingesetzt:**
+$$
+y(x) = C \cdot e^{-2x} + 2x - 3.5
+$$
+
+**Durch Einsetzen der Anfangsbedingungen ($y(0)= 0.5$) erhält man die Konstante $C$:**
+$$
+0.5 = C \cdot  e^{-2x} + 2x - 3.5
+$$
+$$
+0.5 = C - 3.5
+$$
+$$
+C = 4
+$$
+**Mit dem Einsetzen von $C$ bekommen wir die Spezielle Lösung:**
+$$
+y(x) = 4 \cdot e^{-2x} + 2x - 3.5
 $$
 
 @ Übungen
