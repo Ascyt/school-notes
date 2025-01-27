@@ -97,13 +97,13 @@ mit $y(0)= 0.5$
 
 Die Störfunktion $s(x) = 4x-5$ ist eine lineare Funktion. Da der Lösungsansatz vom Typ der Störfunktion abhängt, wählt man hier eine allgemeine lineare Funktion:
 $$
-y_p = A \cdot x + B
+\textcolor{blue}{y_p = A \cdot x + B}
 $$
 Da sowohl die Funktion selber als auch ihre Ableitung die Gleichung erfüllen müssen, benötigt man die Ableitung.
 
 **Allgemein:**
 $$
-{y_p}'=A
+\textcolor{orange}{{y_p}'=A}
 $$
 
 **Einsetzen in die Gleichung:**
@@ -111,13 +111,16 @@ $$
 \textcolor{orange}{y'} + 2\cdot \textcolor{blue}{y} = 4x -5 
 $$
 $$
-A + 2 \cdot (A \cdot x + B) = 4x -5
+\textcolor{orange}{A} + 2 \cdot \textcolor{blue}{(A \cdot x + B)} = 4x -5
 $$
 **Ausmultiplizieren:**
 $$
 A + 2 A x + 2B = 4x -5
 $$
-
+**Sortieren nach den Koeffizienten von $x$:**
+$$
+\textcolor{red}{2A}\cdot x + (\textcolor{magenta}{A + 2B}) = \textcolor{red}{4} \cdot x + (\textcolor{magenta}{-5})
+$$
 
 @ Übungen
 
