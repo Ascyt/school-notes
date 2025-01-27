@@ -375,12 +375,14 @@ Kann sein dass die nicht vollständig ist; Dinge wie **Variation der Konstanten*
       3. Falls zwei Lösungen vorhanden sind, ist die Lösung die Summe von den beiden: $y_h = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x}$
 2. Partikuläre Lösung finden
    1. Korrekten Lösungsansatz für die Störfunktion finden in der Formelsammlung, aufpassen dass die für die jeweils 1. und 2. Ordnung verschieden sind; z.B. $y_p = A \cdot x + B$
-   2. In der originellen Funktion das $y$, bzw. $y'$ oder $y''$ mit dem Lösungsansatz, bzw. der ersten oder zweiten Ableitung des Lösungsansatzes, ersetzen
+   2. In der originellen Funktion (inkl. Störfunktion) das $y$, bzw. $y'$ oder $y''$ mit dem Lösungsansatz, bzw. der ersten oder zweiten Ableitung des Lösungsansatzes, ersetzen
    3. Umformen, sodass alle Teile mit $x$ links stehen und alle ohne $x$ rechts stehen, z.B. $\textcolor{red}{2A}x + (\textcolor{magenta}{A + 2B}) = \textcolor{red}{4}x + (\textcolor{magenta}{-5})$
    4. Diese jeweils gleichsetzen, z.B. $\textcolor{red}{2A} = \textcolor{red}{4}$ und $\textcolor{magenta}{A+2B} = \textcolor{magenta}{-5}$
    5. Gleichungssystem lösen, damit $A$ und (falls existent) $B$ bekannt sind
    6. $A$ und $B$ in den Lösungsansatz einsetzen, z.B. $y_p=2x-3.5$
 3. Beide Lösungen addieren: $y = y_h + y_p$
+
+Falls keine Störfunktion vorhanden ist (also in der gesamten Gleichung nur Terme mit $y$ bzw. Ableitungen davon) existieren, ist die Lösung einfach die homogene Lösung, also Schritte 2 und 3 sind nicht notwendig. Falls nicht, müssen alle Terme ohne $y$ bzw. eine Ableitung davon auf eine Seite gebracht werden, und diese bilden dann die Störfunktion.
 
 @ Übungen
 
