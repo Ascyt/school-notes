@@ -19,7 +19,7 @@ $$
 $$
 \frac{dy}{y}= x^2 \cdot dx
 $$
-Beide Seiten nach $\dx$ integrieren:
+Beide Seiten nach $dx$ integrieren:
 $$
 \frac{1}{y}dy = x^2 \cdot dx \quad / \int \ldots dx
 $$
@@ -66,7 +66,7 @@ $$
 ## Beispiel aus dem Buch
 ![S. 86](assets/2_trennung-variablen.png)
 
-# Lineare Differentialgleichungen 1. Ordnung: Einführung
+# Lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten: Einführung
 Form:
 $$
 y' + f(x) \cdot y = s(x)
@@ -257,6 +257,43 @@ y = y_h + y_p
 $$
 $$
 y(x) = C \cdot e^{x^2} + x \cdot e^{x^2}
+$$
+
+# Lineare Differentialgleichungen 2. Ordnung mit konstanten Koeffizienten: Einführung
+
+Hier kann auch wieder auf **homogen** und **inhomogen** unterschieden werden. Diese Differentialgleichungen folgen der Form:
+
+$$
+y'' + p \cdot y' + q \cdot y = s(x)
+$$
+
+
+# Homogene lineare Differentialgleichungen 2. Ordnung mit konstanten Koeffizienten
+
+Wenn die Form:
+
+$$
+y'' + p \cdot y' + q \cdot y = 0
+$$
+
+gegeben ist, kann sie umgeschrieben werden zu:
+
+$$
+\lambda^2 + p \cdot \lambda + q = 0
+$$
+
+Mit einsetzen in die Mitternachtsformel bekommt man $\lambda_1$ und $\lambda_2$:
+
+$$
+\lambda_1, \lambda_2  = \frac{-b \plusmn \sqrt{b^2-4ac}}{2a}
+$$
+
+Die Lösungen der Differntialgleichungen sind:
+$$
+y_1 = C_1 \cdot e^{\lambda_1 \cdot x}
+$$
+$$
+y_2 = C_1 \cdot e^{\lambda_2 \cdot x}
 $$
 
 @ Übungen
