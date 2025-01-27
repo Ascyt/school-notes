@@ -97,7 +97,10 @@ Wobei $y_h$ die **homogene** und $y_p$ die **partikuläre** Lösung ist.
 $$
 y' + 2\cdot y = 4x -5 
 $$
-mit $y(0)= 0.5$ 
+mit:
+$$
+y(0)= 0.5
+$$
 
 ### Homogene Lösung
 **Homogene Differenzialgleichung:**
@@ -179,7 +182,7 @@ $$
 
 Hier wurde der Lösungsansatz für lineare Störfunktionen verwendet, wobei der Lösungsansatz $y_p = A \cdot x + B$ gleicht. Hier sind die Lösungsansätze anderer Störfunktionen:
 
-![Lösungsanzätze S. 96](assets/2_loesungsanzaetze.png)
+![Lösungsansätze S. 96](assets/2_loesungsanzaetze.png)
 
 @ Übungen
 
