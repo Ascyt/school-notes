@@ -571,6 +571,40 @@ $$
 |3|$356 \frac{kcal}{h}$|$9.\overline{8} \cdot 10^1\frac{cal}{s}$|
 |4|$70000 \frac{N}{mm^2}$|$7 \cdot 10^3\frac{kN}{cm^2}$|
 
+# Testlösungen: Ü4
+## Angabe
+Beim Ablesen einer Federwaage ergibt sich ein Wert von $8.283N$. Das Massestück wird nun an eine Sprungfeder gehängt mit einer Federkonstante von $3 \frac{N}{cm}$. Ermitteln Sie die Frequenz des entstandenen Federpendels. 
+
+## Lösung
+**Ausrechnen von $m$**:
+$$
+m = \frac{8.283N}{g} = \frac{8.283N}{9.81\frac{m}{s^2}}
+$$
+$$
+m \approx 0.844kg
+$$
+
+**Gegeben ist:**
+$$
+m = 0.844kg \quad D = 3 \frac{N}{cm}
+$$
+
+**Gesucht ist:**
+$$
+f = \text{?}
+$$
+
+**Relevante Formeln:**
+$$
+T = 2 \pi \sqrt{\frac{m}{D}} \\
+f = \frac{1}{T} 
+$$
+
+**Kombinieren der Formeln:**
+$$
+f = \frac{1}{2 \pi \sqrt{\cfrac{m}{D}}}
+$$
+
 @ Formeln
 
 # Schwingungen
