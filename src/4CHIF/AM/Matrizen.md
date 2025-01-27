@@ -148,7 +148,8 @@ $$
 
 Jetzt muss diese Matrix, wichtig, ***von links*** auf beiden Seiten multipliziert werden. Da $A^{-1} \cdot A = \text{Einheitsmatrix}$, fällt der linke Teil wie bei einer normalen Umformung weg:
 
-$$\begin{pmatrix}
+$$
+\begin{pmatrix}
     x \\
     y \\
     z
