@@ -218,6 +218,47 @@ $$
 y_h = C \cdot e^{x^2}
 $$
 
+### Partikuläre Lösung
+**In der homogenen Lösung $y_h$ wird die Konstante $C$ durch die Funktion $C(x)$ ersetzt.**
+
+Variation der Konstanten:
+$$
+y_p(x) = C(x) \cdot e^{x^2}
+$$
+Bilden der ersten Ableitung:
+$$
+{y_p}'(x) = C'(x) \cdot e^{x^2} + C(x) \cdot 2x \cdot e^{x^2}
+$$
+Einsetzen von $y_p$ und ${y_p}'$ in die inhomogene (originale) Gleichung, die Terme mit $C(x)$ müssen immer wegfallen:
+$$
+C' \cdot e^{x^2} + \sout{2x \cdot C(x) \cdot e^{x^2}} - \sout{2x \cdot C(x) \cdot e^{x^2}} = e^{x^2}
+$$
+Vereinfachen der Gleichung:
+$$
+C' \cdot e^{x^2} = e^{x^2} \quad / \div e^{x^2}
+$$
+$$
+C'(x) = 1
+$$
+$$
+C(x) = \int 1 \, dx = x
+$$
+(Für die bei der Integration anfallende Konstante kann $0$ gewählt werden, da nur **eine** spezielle Lösung gesucht wird.)
+
+$C(x)$ in den Ansatz für $y_p$ einsetzen:
+$$
+y_p = x \cdot e^{x^2}
+$$
+
+### Allgemeine Lösung
+Die allgemeine Lösung ergibt sich aus der Summe der Einzellösungen:
+$$
+y = y_h + y_p
+$$
+$$
+y(x) = C \cdot e^{x^2} + x \cdot e^{x^2}
+$$
+
 @ Übungen
 
 # 4.48
