@@ -190,3 +190,5 @@ Hier wurde der Lösungsansatz für lineare Störfunktionen verwendet, wobei der 
 ## Lösung
 ![Lösung](assets/2_uebung-4-48_loesung.png)
 
+# 4.51
+![Angabe & Lösung](assets/2_uebung-4-48_angabe.png)
