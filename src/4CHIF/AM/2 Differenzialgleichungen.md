@@ -341,7 +341,7 @@ $$
 Einsetzen in die originelle Differntialgleichung:
 
 $$
--4 A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x} + 5 A \cdot e^{-2x} - 10A \cdot x \cdot e^{-2x} +6A \cdot x \cdot e^{-2x}
+-4 A \cdot e^{-2x} + 4A \cdot x \cdot e^{-2x} + 5 A \cdot e^{-2x} - 10A \cdot x \cdot e^{-2x} +6A \cdot x \cdot e^{-2x} = 2 \cdot e^{-2x}
 $$
 $$
 \textcolor{red}{A} \cdot e^{-2x} = \textcolor{red}{2} \cdot e^{-2x}
