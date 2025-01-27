@@ -231,11 +231,11 @@ $$
 $$
 Einsetzen von $y_p$ und ${y_p}'$ in die inhomogene (originale) Gleichung, die Terme mit $C(x)$ müssen immer wegfallen:
 $$
-C' \cdot e^{x^2} + \sout{2x \cdot C(x) \cdot e^{x^2}} - \sout{2x \cdot C(x) \cdot e^{x^2}} = e^{x^2}
+C'(x) \cdot e^{x^2} + \sout{2x \cdot C(x) \cdot e^{x^2}} - \sout{2x \cdot C(x) \cdot e^{x^2}} = e^{x^2}
 $$
 Vereinfachen der Gleichung:
 $$
-C' \cdot e^{x^2} = e^{x^2} \quad / \div e^{x^2}
+C'(x) \cdot e^{x^2} = e^{x^2} \quad / \div e^{x^2}
 $$
 $$
 C'(x) = 1
