@@ -66,6 +66,21 @@ $$
 ## Beispiel aus dem Buch
 ![S. 86](assets/2_trennung-variablen.png)
 
+# Lineare Differentialgleichungen 1. Ordnung
+Form:
+$$
+y' + f(x) \cdot y = s(x)
+$$
+Wobei die Funktion $s(x)$ als **Störfunktion** bezeichnet wird. Wenn $s(x) \neq 0$, ist die funktion **inhomogen**, ansosten **homogen**. **Lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten** treten vor, wenn $f(x) = p$, also konstant ist. 
+
+Falls eine Gleichung **homogen, linear und mit konstanten Koeffizienten** ist, kann sie mittels Trennen der Variablen gelöst werden. 
+
+## Homogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
+Falls $f(x)=p$ und ist keine Störfunktion vorhanden (also $y' + p \cdot y = 0$), hat die Lösung die Form:
+$$
+y = C\cdot e^{-p \cdot x}
+$$
+
 @ Übungen
 
 # 4.48
