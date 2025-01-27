@@ -293,7 +293,11 @@ $$
 y_1 = C_1 \cdot e^{\lambda_1 \cdot x}
 $$
 $$
-y_2 = C_1 \cdot e^{\lambda_2 \cdot x}
+y_2 = C_2 \cdot e^{\lambda_2 \cdot x}
+$$
+und die **Linearkombination von Lösungen** der Differentialgleichung ist wieder eine Lösung der Differentialgleichung:
+$$
+y(x) = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x}
 $$
 
 @ Übungen
