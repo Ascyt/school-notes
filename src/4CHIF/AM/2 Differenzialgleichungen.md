@@ -66,7 +66,7 @@ $$
 ## Beispiel aus dem Buch
 ![S. 86](assets/2_trennung-variablen.png)
 
-# Lineare Differentialgleichungen 1. Ordnung
+# Lineare Differentialgleichungen 1. Ordnung: Einführung
 Form:
 $$
 y' + f(x) \cdot y = s(x)
@@ -75,13 +75,13 @@ Wobei die Funktion $s(x)$ als **Störfunktion** bezeichnet wird. Wenn $s(x) \neq
 
 Falls eine Gleichung **homogen, linear und mit konstanten Koeffizienten** ist, kann sie mittels Trennen der Variablen gelöst werden. 
 
-## Homogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
+# Homogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
 Falls $f(x)=p$ und ist keine Störfunktion vorhanden (also $y' + p \cdot y = 0$), hat die Lösung die Form:
 $$
 y = C\cdot e^{-p \cdot x}
 $$
 
-## Inhomogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
+# Inhomogene lineare Differentialgleichungen 1. Ordnung mit konstanten Koeffizienten
 Bei der Form:
 $$ 
 y' + p \cdot y = s(x)
@@ -93,13 +93,13 @@ y = y_h + y_p
 $$
 Wobei $y_h$ die **homogene** und $y_p$ die **partikuläre** Lösung ist. 
 
-### Beispiel
+## Beispiel
 $$
 y' + 2\cdot y = 4x -5 
 $$
 mit $y(0)= 0.5$ 
 
-#### Homogene Lösung
+### Homogene Lösung
 **Homogene Differenzialgleichung:**
 $$
 y' +2\cdot y = 0
@@ -109,7 +109,7 @@ $$
 y_h = C \cdot e^{-2x}
 $$
 
-#### Partikuläre Lösung
+### Partikuläre Lösung
 
 Die Störfunktion $s(x) = 4x-5$ ist eine lineare Funktion. Da der Lösungsansatz vom Typ der Störfunktion abhängt, wählt man hier eine allgemeine lineare Funktion:
 $$
@@ -176,6 +176,10 @@ $$
 $$
 y(x) = 4 \cdot e^{-2x} + 2x - 3.5
 $$
+
+Hier wurde der Lösungsansatz für lineare Störfunktionen verwendet, wobei der Lösungsansatz $y_p = A \cdot x + B$ gleicht. Hier sind die Lösungsansätze anderer Störfunktionen:
+
+![Lösungsanzätze S. 96](assets/2_loesungsanzaetze.png)
 
 @ Übungen
 
