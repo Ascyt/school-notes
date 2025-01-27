@@ -86,7 +86,7 @@ $$
 Irgendeine Matrix (soweit multiplizierbar) mal der Einheitsmatrix ergibt die Matrix selber.
 
 ## Inverse Matrizen
-Eine Matrix $A^{-1}$ ist die inverse Matrix zu einer quadratischen Matrix $A$ mit $det(A) \neq 0$, wenn das Produkt $A \cdot A^{-1}$ bzw. $A^{-1} \cdot A$ die **Einheitsmatrix** ergibt.
+Eine Matrix $A^{-1}$ ist die inverse Matrix zu einer quadratischen Matrix $A$ mit $\det(A) \neq 0$, wenn das Produkt $A \cdot A^{-1}$ bzw. $A^{-1} \cdot A$ die **Einheitsmatrix** ergibt.
 
 # Lösen von linearen Gleichungssystemen
 
@@ -195,4 +195,23 @@ $$
 x = 3; \quad y = -1; \quad z = 2
 $$
 
-Falls $det(A) = 0$, gibt es **keine eindeutige Lösung**.
+Falls $\det(A) = 0$, gibt es **keine eindeutige Lösung**.
+
+# Transformationsmatrizen
+
+Transformationen wie Drehungen oder Schiebungen von **Vektoren** können mithilfe von Matrizen durchgeführt werden.
+
+## Drehungen
+Drehungen müssen **gegen den Uhrzeigersinn** angewendet werden. 
+
+![Buch Seite 145](assets/matrizen-transformationen-drehungen.png)
+
+## Streckungen
+Eine Streckung kann ebenfalls durch eine Matrix beschrieben werden:
+
+$$
+S = \begin{pmatrix}
+    s_x & 0 \\
+    0 & s_y
+\end{pmatrix}
+$$
