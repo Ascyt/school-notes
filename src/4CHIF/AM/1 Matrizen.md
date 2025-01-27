@@ -219,6 +219,16 @@ S = \begin{pmatrix}
 \end{pmatrix}
 $$
 
+## Homogene Koordinaten
+Zum Schieben der Vektoren:
+$$
+\begin{pmatrix}
+    1 & 0 & x \\
+    0 & 1 & y \\
+    0 & 0 & 1
+\end{pmatrix}
+$$
+
 # Beispiel vom Buch
 
 ![Beispiel 5.51 S. 148](assets/1_transformationen-bsp.png)

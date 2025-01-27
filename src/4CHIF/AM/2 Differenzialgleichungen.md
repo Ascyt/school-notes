@@ -52,7 +52,7 @@ $$
 y(0) = 4 
 $$
 
-**Einsetzen von $4$ als $C$:**
+**Einsetzen von $4$:**
 $$
 y = 4 \cdot e^{\frac{x^3}{3}}
 $$
@@ -63,6 +63,9 @@ $$
 y' = y \cdot x^2
 $$
 
+## Beispiel aus dem Buch
+![S. 86](assets/2_trennung-variablen.png)
+
 @ Übungen
 
 # 4.48
@@ -71,3 +74,4 @@ $$
 
 ## Lösung
 ![Lösung](assets/2_uebung-4-48_loesung.png)
+
