@@ -39,3 +39,5 @@ Erdbeben z.B. ist transversal *und* longitudinal.
 ![Vergleich zwischen longitudinal und transversal](https://www.onlinemathlearning.com/image-files/longitudinal-transverse-waves.png) 
 
 **Wellenfront**: Alle Punkte, die den selben Wert erfüllen 
+
+**Prinzip von Huygens**: Eine Welle breitet sich aus, indem von jedem ihrere Punkte eine neue im Allgemeinen (halb)kugelförmige **Elementarwelle** ausgeht. Durch **Interferenz** aller Elementarwellen ergibt sich die tatsächlich beobachtete Welle. Die einhüllende aller Elementarwellenfronten ergibt die **Wellenfront**.
