@@ -35,3 +35,7 @@ $$
 - **Longitudinalwelle**: Hier bewegen sich die einzelnen Oszillatoren in der Ausbreitungsrichtung der Welle. (z.B. Schall)
 
 Erdbeben z.B. ist transversal *und* longitudinal. 
+
+![Vergleich zwischen longitudinal und transversal](https://www.onlinemathlearning.com/image-files/longitudinal-transverse-waves.png) 
+
+**Wellenfront**: Alle Punkte, die den selben Wert erfüllen 
