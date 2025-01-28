@@ -31,6 +31,8 @@ $$
 c = \lambda \cdot f
 $$
 
+## Arten von Wellen
+
 - **Transversalwelle**: Hier bewegen sich die einzelnen Oszillationen quer (transversal) zur Ausbreitungsrichtung der Welle. (z.B. Licht) 
 - **Longitudinalwelle**: Hier bewegen sich die einzelnen Oszillatoren in der Ausbreitungsrichtung der Welle. (z.B. Schall)
 
@@ -40,4 +42,25 @@ Erdbeben z.B. ist transversal *und* longitudinal.
 
 **Wellenfront**: Alle Punkte, die den selben Wert erfüllen 
 
-**Prinzip von Huygens**: Eine Welle breitet sich aus, indem von jedem ihrere Punkte eine neue im Allgemeinen (halb)kugelförmige **Elementarwelle** ausgeht. Durch **Interferenz** aller Elementarwellen ergibt sich die tatsächlich beobachtete Welle. Die einhüllende aller Elementarwellenfronten ergibt die **Wellenfront**.
+## Prinzip von Huygens
+
+Eine Welle breitet sich aus, indem von jedem ihrere Punkte eine neue im Allgemeinen (halb)kugelförmige **Elementarwelle** ausgeht. Durch **Interferenz** aller Elementarwellen ergibt sich die tatsächlich beobachtete Welle. Die einhüllende aller Elementarwellenfronten ergibt die **Wellenfront**.
+
+## Das Reflexionsgesetz für Wellen — Phasenbetrachtung 
+
+Bei einer Reflexion an einem festen Ende tritt ein Phasensprung um $x$ auf.
+
+Bei einer Reflexion an einem losen Ende tritt kein Phasensprung auf.
+
+## Brechungsgesetz von Snellius
+Trifft eine Welle unter dem Winkel $\alpha$ zum Lot auf eine Grenzfläche zwischen Medium 1 mit Ausbreitungsgeschwindigkeit $c_1$ und Medium 2 mit $c_2$, so ergibt sich der Brechungswinkel $\beta$, gemessen zum Lot, gemäß:
+
+$$
+\frac{\sin(\alpha)}{\sin(\beta)} = \frac{c_1}{c_2}
+$$
+
+Also:
+
+$$
+\beta = \arcsin(\frac{c_2}{c_1} \cdot \sin(\alpha))
+$$
