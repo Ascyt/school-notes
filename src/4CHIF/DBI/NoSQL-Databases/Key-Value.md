@@ -24,3 +24,10 @@
 - Asynchrone Verarbeitung
 - Automatische Lastverteilung
 - Cassandra-Kompatibilität
+
+# Mehrbenutzerbetrieb
+
+- Für hohe Parallelität optimiert durch eine Shared-Nothing-Architektur
+- Deadlocks: Gibt es niht wegen Lightweight Transactions
+- Transactions: Keine komplexen Transaktionen, wegen LWT
+- LWT $\rightarrow$ funktioniert nur bei bestimmten Datenblock $\rightarrow$ nicht so flexibel
