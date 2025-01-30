@@ -43,8 +43,6 @@ Aaron Schreiegg, Filip Schauer, Emil Silber, Axel Csomany, Simon Pesut
 - Klassische Tabellenstruktur (Columns, Rows)
 - Ideal für Transactional Systems
 
-[Bild von relationale Tabellenstruktur auf Google finden oder evntl. eigenes Projekt screenshotten]
-
 # Abfrage-Engines
 - Kombinierte Abfragesprachen
   - AQL
