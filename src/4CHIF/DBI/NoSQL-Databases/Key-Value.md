@@ -1,4 +1,5 @@
 # Übersicht
+- Scylla DB
 - Alternative zu Cassandra
 - Schemalose Tabelle
 - Key-Value 
@@ -24,6 +25,13 @@
 - Asynchrone Verarbeitung
 - Automatische Lastverteilung
 - Cassandra-Kompatibilität
+- Hohe skalierbarkeit
+- Flexible Datenmodelle
+
+# Nachteile
+- Steilere Lernkurve
+- Begrenzte Unterstützung für komplexe Abfragen
+- Weniger Standarttools, sorgfältige Planung ist nötig 
 
 # Mehrbenutzerbetrieb
 
@@ -31,3 +39,8 @@
 - Deadlocks: Gibt es niht wegen Lightweight Transactions
 - Transactions: Keine komplexen Transaktionen, wegen LWT
 - LWT $\rightarrow$ funktioniert nur bei bestimmten Datenblock $\rightarrow$ nicht so flexibel
+
+# CAP-Dreieck
+
+- Consistency, Availability, Partition Tolerance
+- Scyllar ist primär AP
