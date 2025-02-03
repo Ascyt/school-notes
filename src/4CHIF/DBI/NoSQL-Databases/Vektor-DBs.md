@@ -45,7 +45,7 @@
 
 ## Einfügen
 
-```python
+```
 def add_audio_file(self, audio_file: str):
     try:
         embedding = self.extract_openl3_features(audio_file)
@@ -54,23 +54,23 @@ def add_audio_file(self, audio_file: str):
             [embedding.tolist()]
         ]
         self.collection.insert(data)
-        print(f"Successfully added {audio_file} to database")
+        print(f"✅ Successfully added {audio_file} to database")
     except Exception as e:
-        print(f"Failed to add {audio_file} to database: {e}")
+        print(f"❌ Failed to add {audio_file} to database: {e}")
 ```
 
 ## Löschen
 
-```python
+```
 def delete_by_id(self, id: int):
     try:
         delete_result = self.collection.delete(f'id == {id}')
         if delete_result.delete_count > 0:
-            print(f"Successfully deleted entry with ID {id} from database")
+            print(f"✅ Successfully deleted entry with ID {id} from database")
         else:
-            print(f"No matching entry found for ID {id}")
+            print(f"❌ No matching entry found for ID {id}")
     except Exception as e:
-        print(f"Failed to delete entry with ID {id} from database: {e}")
+        print(f"❌ Failed to delete entry with ID {id} from database: {e}")
 ```
 
 # Suche nach Ähnlichkeit
