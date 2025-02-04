@@ -65,7 +65,6 @@ Die Kontroverse liegt in der unterschiedlichen Bewertung des Regimes:
 - Bestätigung mit einer manipulierten Volksabstimmung
 
 # Begriffserklärung: Faschismus
-
 - Ursprung: **Benito Mussolini** ​ "Fascio" (aus dem lateinischen, bedeutet "Rutenbündel")
 - **Autoritäres**, Demokratie ablehnendes und auf **Führer zentriertes** Regierungssystem
 - Aggressive auf Eroberungen abzielende Außenpolitik
@@ -78,7 +77,6 @@ Die Kontroverse liegt in der unterschiedlichen Bewertung des Regimes:
 - Verfolgung politischer Gegner
 
 # Machtergreifung Hitlers
-
 1. **NSDAP-Beitritt** (1919-1920): Beitritt Hitler in die Deutsche Arbeiterpartei (DAP), welche sich 1920 in die **Nationalsozialistische Deutsche Arbeiterpartei** (NSDAP) umbenannte.
 2. **Hitler-Putsch** (1923): Auch bekannt als "Bierhallen-Putsch". Fehlgeschlagener Versuch, die Weimarer Regierung durch Staatsstreich zu stürzen $\Rightarrow$ verhaftet, wegen Hochverrats verurteilt, 9 Monate in Haft, Buch "Mein Kampf" erfasst
 3. **Neuaufbau der NSDAP** (1925-1929): Nach Hitlers Freilassung, mit straffer organisation und verstärkter Propaganda
