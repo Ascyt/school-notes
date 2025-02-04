@@ -62,3 +62,75 @@ $\textcolor{lime}{+}$ **Kosteneffizienz**: Statt teurer High-End-Hardware könne
 $\textcolor{red}{-}$ **Komplexität**: Verteilte Systeme sind schwerer zu verwalten, erfordern Mechanismen wie Sharding, Replikation und Konsistenzmanagement. \
 $\textcolor{red}{-}$ **Eventual Consistency**: Um horizontale Skalierung zu ermöglichen, wird manchmal die Konsistenz geopfert. \
 $\textcolor{red}{-}$ **Nicht geeignet für relationale DBs**: Erfordert Einsatz aufwändiger Anpassungen.
+
+# ACID
+ACID beschriebt gewünschte Eigenschaften von Transaktionen. Dieses ist für verteilte NoSQL-Datenbanken zu strikt, weshalb diese auf einem anderen Prinzip basieren:
+
+![ACID](assets/acid.png)
+
+# BASE
+- **B**asically **A**vailable: \
+    NoSQL-Datenbanken prioritisieren Verfügbarkeit auch bei Ausfällen. Das System bleibt funktionsfähig, liefert immer eine Antwort auf Anfragen--entweder erfolgreich oder als Fehler--und toleriert dabei vorüber Inkonsistenzen.
+- **S**oft-State: \
+    Der Zustand des Systems kann sich ohne direkte Anfragen verändern, da Konsistenz in NoSQL-Datenbanken nicht sofort, sondern mit der Zeit erreicht wird. Es dauert, bis alle Knoten eines verteilten Systems synchronisiert sind. 
+- **E**ventually Consistent: \
+    Datenkopien auf verschiedenen Knoten werden nach und nach synchronisiert. Am Ende sind sie konsistent, auch wenn es vorübergehend Inkonsistenzen gibt. Dies ermöglicht schnelle Reaktionen bei großen Datenmengen. 
+
+# CAP-Theorem
+Konzept, dass die Kompromisse zwischen Konsistenz, Verfügbarkeit und Partitionstoleranz **in verteilten Systemen** erklärt. 
+
+- **Konsistenz** bezieht sich auf die Eigenschaft eines Systems, bei dem alle Knoten eine konsistente Ansicht der Daten haben. Das bedeutet, dass alle Clients zur gleichen Zeit die gleichen Daten sehen, unabhängig davon, mit welchem Knoten sie verbunden sind. 
+- **Verfügbarkeit** bezieht sich auf die Fähigkeit eines Systems, jederzeit auf Anfragen von Nutzern zu reagieren.
+- **Partitionstoleranz** bezieht sich auf die Fähigkeit eines Systems, auch bei einer Netzwerkpartition weiter zu arbeiten.
+
+# Netzwerkpartitionierung
+Eine Netzwerkpartition tritt auf, wenn Knoten in einem verteilten System aufgrund von Netzwerkfehlern nicht mehr miteinander kommunizieren können. Wenn eine Netzwerkpartiion auftritt, muss sich das System zwischen Konsistenz und Verfügbarkeit entscheiden. 
+
+![Netzwerkpartitionierung](assets/netzwerkpartitionierung.png)
+
+Wenn das System **Konsistenz** prioritisiert, kann es bis zur Behebung der Partition nicht verfügbar sein. 
+
+Wenn das System **Verfügbarkeit** prioritisiert, kann es Aktualisierungen an den Daten zulassen, was zu inkonsistenzen führen kann, bis die Partition behoben ist. 
+
+![Netzwerkpartitionierung 2](assets/netzwerpartitionierung2.png)
+
+## Beispiel: Bank
+Kleine Bank mit 2 Bankomaten, die über ein Netzwerk verbunden sind. Kontostand darf niemals unter 0 fallen!
+
+![Bank 1](assets/bank1.png)
+
+Es gibt keine zentrale DB, die den Kontostand speichert; er wird auf beiden Bakomaten gespeichert. Wenn ein Kunde einen Bankomaten benutzt, wird der Kontostand auf beiden Bankomaten über das Netzwerk aktualisiert $\rightarrow$ Bankomaten haben eine konsistente Ansicht des Kontostands.
+
+![Bank 2](assets/bank2.png)
+
+Netzwerkpartition $\rightarrow$ Bankomaten können nicht mehr miteinander kommunizieren $\rightarrow$ System muss zwischen Konsistenz und Verfügbarkeit wählen.
+
+**Konsistenz**: Geldautomat könnte die Verarbeitung von Einzahlungen oder Abhebungen verweigern, bis die Partition behoben ist. Dadurch bleibt der Kontostand konsistent, aber das System ist für Kunden nicht verfügbar.
+
+**Verfügbarkeit**: Könnte für Bank teuer werden. Kunde könnte den gesamten Kontostand an beiden Geldautomaten abheben. Wenn das Netzwerk wieder online ist, wird die Inkonsistenz behoben, und der Kontostand ist jetzt negativ:
+
+Aus diesen Gründen ist es besser, wenn man für eine Bank die **Konsistenz** prioritisiert, da falsche Daten schwere Auswirkungen haben könnten. 
+
+![Bank 3](assets/bank3.png)
+
+## Beispiel: Social Media
+
+![Social Media](assets/socialmedia.png)
+
+Während einer Netzwerkpartition muss wieder zwischen Verfügbarkeit und Konsistenz wählen.
+
+**Verfügbarkeit**: Es könnte es sein, dass 2 Nutzer gleichzeitig einen Kommentar zu demselben Beitrag abgeben, aber der Kommentar eines Nutzers für den anderen erst sichtbar wird, wenn die Partition behoben ist. 
+
+**Konsistenz**: Die Kommentarfunktion könnte für Nutzer bis zur Behebung der Partition nicht verfügbar sein. 
+
+Für ein soziales Netzwerk ist es oft akzeptabel, **Verfügbarkeit** zu prioritiseren, auch wenn die Nutzer hin und wieder leicht unterschiedliche Ansichten sehen.
+
+# CAP-Dreieck
+
+Das CAP-Dreieck besagt, dass jede Datenbank nur maximal **zwei** von **Availability**, **Consistency** bzw. **Partition Tolerance** unterstützen kann. 
+
+
+![CAP-Dreieck 1](assets/cap-dreieck-1.png)
+
+![CAP-Dreieck 2](assets/cap-dreieck-2.png)
+
