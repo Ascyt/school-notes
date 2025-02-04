@@ -51,6 +51,7 @@
 - Autoritäre Diktatur; starke Ablehnung des Nationalsozialismus und Kommunismus
 - Versuch auf "ständische" Ordnung, in der gesellschaftliche Gruppen in korporativen Kammern organisiert wurden (kommt vom Mittelalter)
 - Keine politischen Parteien, kein Parlament
+- Sozialdemokraten / damals sozialistische Partei waren dagegen
 
 ## Kontroverse um die Begriffe
 Die Kontroverse liegt in der unterschiedlichen Bewertung des Regimes:
@@ -75,3 +76,14 @@ Die Kontroverse liegt in der unterschiedlichen Bewertung des Regimes:
 - **Kein Pluralismus**, keine Meinungs- und Pressefreiheit
   - Pluralismus: Jeder in der Gesellschaft hat unterschiedliche Interessen/Meinungen
 - Verfolgung politischer Gegner
+
+# Machtergreifung Hitlers
+
+1. **NSDAP-Beitritt** (1919-1920): Beitritt Hitler in die Deutsche Arbeiterpartei (DAP), welche sich 1920 in die **Nationalsozialistische Deutsche Arbeiterpartei** (NSDAP) umbenannte.
+2. **Hitler-Putsch** (1923): Auch bekannt als "Bierhallen-Putsch". Fehlgeschlagener Versuch, die Weimarer Regierung durch Staatsstreich zu stürzen $\Rightarrow$ verhaftet, wegen Hochverrats verurteilt, 9 Monate in Haft, Buch "Mein Kampf" erfasst
+3. **Neuaufbau der NSDAP** (1925-1929): Nach Hitlers Freilassung, mit straffer organisation und verstärkter Propaganda
+4. **Wirtschaftskrise und politische Instabilität** (1929-1932): NSDAP präsentierte sich als Retter der Nation und nutzte die Unzufriedenheit der Bevölkerung aus
+5. **Wahlerfolge** (1930-1932): Bedeutende Wahlerfolge und 1932 die stärkste Partei im Reichstag, jedoch ohne Regierungsmehrheit
+6. **Ernennung von Hitler zum Reichskanzler** (30. Jänner 1933)
+7. **Reichstagsbrand und Ermächtigungsgesetz** (Februar-März 1933): Nutzung des Reichtagsbrandes, um politische Gegner zu verfolgen und Grundrechte einzuschränken; Verabschiedung des Ermächtigungsgesetzes $\Rightarrow$ Befugnis der NSDAP, Gesetze ohne Zustimmung des Reichstags oder des Reichspräsidenten zu erlassen. 
+8. **Gleichschaltung und Machtsicherung** (1933-1934): Beginn daran, Bereiche des öffentlichen Lebens zu kontrollieren, politische Gegner auszuschalten und die Gesellschaft zu "gleichschalten". Nach dem Tod Hindenburgs 1934 übernahm Hitler auch das Amt des Reichspräsidenten und wurde dadurch alleiniger Diktator. 
