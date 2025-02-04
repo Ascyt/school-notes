@@ -81,3 +81,25 @@ definiert werden.
 ## XSchema
 ![XSchema](assets/xschema.png)
 
+# XPath
+
+- Abfragesprache zur Adressierung und Auswertung von XML-Dokumenten
+- Arbeitet mit Knoten (Element, Attribute, ...) und Achsen (Beziehung zwischen Knoten)
+- XML-Dokumente haben eine Baumstruktur $\rightarrow$ XPath sucht über Pfade innerhalb dieser Baumstruktur nach Knoten bzw. Information
+
+# XPath - Möglichkeiten
+- Filter (Prädikate)
+- Mengenoperatoren (Vereinigung)
+- Indizes
+- Boolsche Operatoren (and, or)
+- Arithmetische Operatoren (+, -, *, ...)
+- Funktionsbibliothek (`last()`, `count()`, `contains()`, ...)
+- Schleifen (ab XPath 2.0)
+- Bedingungen (ab XPath 2.0)
+
+$\Rightarrow$ Seit XPath 2.0 Teilmenge von XQuery
+
+# XPath - Grafiken/Diagramme
+
+![Grafik 1](assets/xpath-1.png)
+![Grafik 2](assets/xpath-2.png)
