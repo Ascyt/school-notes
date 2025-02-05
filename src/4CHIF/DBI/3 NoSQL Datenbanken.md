@@ -130,10 +130,11 @@ $\textcolor{red}{-}$ Nicht für alle Anwendungsfälle geeignet, insbesondere wen
 # Zeitreihen
 
 ## Erklärung 
-- Effiziente Speicherung und Verarbeitung von hochfrequenten Zeitseriendaten
-- Schemafrei, basiert auf einem linearen Speicher mit Zeitstempeln
+- Effiziente Speicherung und Verarbeitung von **hochfrequenten Zeitseriendaten**
+- **Schemafrei**, basiert auf einem linearen Speicher mit Zeitstempeln
 - Optimiert für Append-Only-Operationen, mit automatischer Kompression
 - Keine ACID Transaktionen
+- Deadlocks sind nicht möglich
 - CAP-Dreieck: **CP**
 
 ### Vorteile
@@ -143,7 +144,6 @@ $\textcolor{lime}{+}$ Einfache Integration, Retention Policies
 
 ### Nachteile
 $\textcolor{red}{-}$ Keine Unterstützung für Joins \
-$\textcolor{red}{-}$ Komplexes Schema-Design \
 $\textcolor{red}{-}$ Leistung bei Transaktionen, kein vollständiges ACID-Transaktionsmodell
 
 ## Anwendungsfälle
