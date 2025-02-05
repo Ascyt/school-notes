@@ -206,3 +206,52 @@ $$
 
 Wenn ein einzelner Knoten eine Wahrscheinlichkeit von $99.9\%$ hat, in einem bestimmten Zeitraum nicht auszufallen, liegt die Wahrscheinlichkeit bei einem Cluster von 40 Knoten bei $96.1\%$. Mit anderen Worten, die Wahrscheinlichkeit, dass etwas schief geht, liegt bei etwa $4\%$. (Und dabei wird davon ausgegangen, dass die Ausfälle nichts miteinander zu tun haben; in Wirklichkeit neigen sie dazu, sich kaskadierend zu häufen.)
 
+# Yield & Harvest
+
+Statt sich darauf zu konzentrieren, welche 2 dieser 3 Eigenschaften am wichtigsten sind, sollten wir uns darauf fokussieren, welche Kompromisse ein System eingeht, wenn es zu Problemen kommt. Ein nützlicher Ansatz dabei ist das Konzept von ***yield* (Ertrag)** und ***harvest* (Ernte)**. 
+
+**Yield** beschreibt die Wahrscheinlichkeit, dass eine Anfrage erfolgreich abgeschlossen wird. In der Praxis ist dies oft ein besserer Indikator für die Benutzererrfahrung als die bloße Betriebszeit, da nicht alle Ausfälle die gleiche Auswirkung haben.
+
+**Harvest** bezieht sich auf die Vollständigkeit der Antwort. Wenn Teile eines Systems ausfallen, könnte das System dennoch Daten aus den funktionierenden Teilen liefern, was jedoch die Ernte verringert. 
+
+Systeme, die Fehler handhaben, können sich auf den Ertrag oder die Ernte auswirken. Replizierte Systeme führen in der Regel zu einer verringerten Kapazität, während partitionierte Systeme oft eine reduzierte Ernte zur Folge haben, da Daten temporär verloren gehen können.
+
+Entwickler sollen sich bewusst sein, dass Fehler unvermeidlich sind und das System entweder den Ertrag oder die Ernte reduzieren muss. Diese Entscheidung sollte von den Geschäftsanforderungen abhähngen.
+
+# Yield & Harvest - Beispiel
+
+System, das Lagerbestände in verschiedenen regionen verwaltet. Das System wird genutzt, um zu prüfen, ob ein Artikel in einer Filiale verfügbar ist.
+
+Der Bestand wir in drei Regionen gespeichert:
+- Region A: Lagerbestand in OÖ
+- Region B: Lagerbestand in Salzburg
+- Region C: Lagerbestand in NÖ
+
+Ein Kunde sucht nach einem Latpopt und möchte wissen, ob er in einer beliebigen Region verfügbar ist.
+
+**Situation**: Region B ist momentan nicht verfügbar (z.B. Netzwerkprobleme).
+
+1. **Hoher Yield, Niedriger Harvest**: \
+   Das System liefert eine Antwort basierend auf den Beständen von Region A und Region C. Es informiet die Nutzer, dass der Laptop in den OÖ und NÖ verfügbar ist, aber keine Informationen über Salzburg hat. \
+   Yield bleibt hoch, da der Kunde eine Antwort erhält. \
+   Harvest, ist niedrig, da nicht alle Daten (Region B) berücksichtigt wurden.
+2. **Niedriger Yield, Hoher Harvest**: \
+   Das System entscheided, keine Antwort zu geben, bis die Daten aus allen Regionen verfügbar sind. \
+   Yield ist niedrig, da der Kunde keine sofortige Antwort erhält. \
+   Harvest ist hoch, da der Kunde später eine vollständige und korrekte  Übersicht über alle Lagerbestände bekommt.
+
+Hoher Harvest ist sinnvoll bei z.B. medizinischen Daten (Diagnose mit unvollständigen Daten ist gefährlich), Versicherungsansprüche, Routenplanung, Cybersecurity, ...
+
+# PACELC
+
+Steht für: **Partition** $\rightarrow$ **Availability, Consistency, Else** $\rightarrow$ **Latency and Consistency**
+
+![PACELC](assets/pacelc.png)
+
+Besagt, dass man sich bei einer Netzwerkpartitionierung (**P**) und in einem verteilten Computersystem zwischen Verfügbarkeit (**A**) und Konsistenz (**C**) entscheiden muss. 
+
+Andernfalls (**E**) muss man sich jedoch, selbst wenn das System ohne Partitionen normal läuft, zwischen Latenz (**L**) und Konsistenzverlust (**C**) entscheiden. 
+
+PACELC verdeutlicht, dass der Kompromiss zwischen Konsistenz und Verfügbarkeit (**CAP**) nur die halbe Wahrheit ist: **Im Normalbetrieb müssen Entwickler immer noch Entscheidungen treffen, die die Systemleistung und Nutzererfahrung beeinflussen.** Diese feinere Betrachtung hilft, die Wahl der Datenbank oder Systemarchitektur besser auf die Anforderungen der Anwendung abzustimmen.
+
+![PACELC 2](assets/pacelc-2.png)
