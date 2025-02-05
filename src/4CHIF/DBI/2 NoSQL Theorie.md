@@ -171,6 +171,8 @@ CAP? CAP! Wir opfern Verfügbarkeit $\rightarrow$ **CP**
 
 Clientanforderungen, die unseren isolierten Knoten erreichen, erhalten einen Fehler, was unsere Verfügbarkeitszahlen reduziert. 
 
+![Beispiel 4](assets/cap-bsp-4.png)
+
 ## Beispiel 5
 Wieder isolierter Knoten durch Netzwerkpartitionierung $\rightarrow$ empfängt eine Leseanforderung für ein Datenelement $\rightarrow$ anstatt sofort zu antworten, wartet der Knoten.
 
@@ -181,3 +183,25 @@ CAP? Eventuell nicht anwendbar oder: yeah, wir haben das CAP-Theorem besiegt :) 
 Verfügbarkeitsaspekt von CAP hat keine Zeitkomponente als Teil der Anfrage. Obwohl die meisten Kunden eine schnellere Antwort bevorzugen würden, *könnten* wir wohl warten, bis die Partition aufgelöst ist.
 
 Theoretisch haben wir hier **CA** $\rightarrow$ wir opfern die Partionstoleranz, indem wir einfach warten, bis sie verschwindet $\rightarrow$ nicht lustig :(
+
+![Beispiel 5](assets/cap-bsp-5.png)
+
+# CA-Systeme?
+
+CA-Systeme (Konsistenz+Verfügbarkeit) funktionieren **nur ohne Partitionen**. Da Partitionen in verteilten Systemen unvermeidbar sind, ist diese Kombination unrealistisch oder nicht praktikabel. Das CAP-Theorem ist nur anwendbar, wenn es Netzwerkpartitionen gibt. 
+
+Streng genommen geht es beim CAP-Theorem also immer um eine Entscheidung zwischen Konsistenz (CP) und Verfügbarkeit (AP) und beides (CA) ist gar keine Option!
+
+Damit ein verteiltes System keine Partitionstoleranz benötigt, müsste es in einem Netzwerk laufen, das garantiert niemals Nachrichten verliern (oder verspätet zustellt) und dessen Knoten garantiert niemals ausfallen. Wir arbeiten aber nicht mit solchen Systemen, weil es sie nicht gibt.
+
+![CAP-Comic](assets/cap-comic.png)
+
+# Wahrscheinlichkeiten
+
+Die Wahrscheinlichkeit, dasss ein Knoten ausfällt, steigt exponentiell mit der Anzahl der Knoten:
+
+$$
+P(\text{jeder Fehler}) = 1-P(\text{einzelner Knoten fällt nicht aus})^{\text{Anzahl der Knoten}}
+$$
+
+Wenn ein einzelner Knoten eine Wahrscheinlichkeit von $99.9\%$ hat, in einem bestimmten Zeitraum nicht auszufallen, liegt die Wahrscheinlichkeit bei einem Cluster von 40 Knoten bei $96.1\%$. Mit anderen Worten, die Wahrscheinlichkeit, dass etwas schief geht, liegt bei etwa $\text{4\%}$. (Und dabei wird davon ausgegangen, dass die Ausfälle nichts miteinander zu tun haben; in Wirklichkeit neigen sie dazu, sich kaskadierend zu häufen.)
