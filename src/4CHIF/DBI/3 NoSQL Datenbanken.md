@@ -22,6 +22,13 @@ $\textcolor{red}{-}$ Hohe Kosten \
 $\textcolor{red}{-}$ Datenvolatilität: Da RAM flüchtig ist, besteht das Risiko des Datenverlusts bei einem Stromausfall oder Systemabsturz. \ 
 $\textcolor{red}{-}$ Speicherkapazität
 
+## Anwendungsfälle
+- Caching
+- Session-Management
+- Echtzeit-Analysen
+- Leaderboards & Ranglisten
+- Message Queues
+
 ## Beispiele
 
 - **Redis**
@@ -52,27 +59,15 @@ $\textcolor{red}{-}$ Keine Unterstützung für Joins \
 $\textcolor{red}{-}$ Komplexes Schema-Design \
 $\textcolor{red}{-}$ Leistung bei Transaktionen, kein vollständiges ACID-Transaktionsmodell
 
+# Anwendungsfälle
+- Big Data & Analysen
+- IoT- und Zeitreihendaten
+- Globale Anwendungen
+
 ## Beispiele
 - **Apache Cassandra**
 - HBase
 - ScyllaDB
-
-# Vektor
-
-## Erklärung
-- Ein Vektor ist eine **mathematische Darstellung eines Punktes in einen $n$-dimensionalen Raum**.
-- Wichtig für Artificial Intelligence: **Machine-Learning- und Deep-Learning-Systeme**
-- Suche nach **Ähnlichkeit** anstatt genaue Treffer durch mathematische Abstandsberechnungen
-- Ähnliche Daten haben Vektoren, die nahe beinander liegen
-- Keine Transaktionen 
-- Deadlocks sind unwahrscheinlich
-- CAP-Dreieck: **AP**
-
-## Beispiele
-- **Milvus**
-- Weaviate
-- Pinecone
-- Qdrant
 
 # Key-Value
 
@@ -99,9 +94,38 @@ $\textcolor{red}{-}$ Komplexität bei der Verwaltung und Konfiguration in große
 $\textcolor{red}{-}$ Erfordert ein gewisses Maß an Fachwissen für die optimale Nutzung und Fehlerbehebung \
 $\textcolor{red}{-}$ Nicht für alle Anwendungsfälle geeignet, insbesondere wenn ACID-Transaktionen erforderlich sind
 
+## Anwendungsfälle
+- Echtzeit-Analysen
+- IoT und Zeitreihendaten
+- Daten-Streming und Messaging
+- Konfigurationsdaten
+
 ## Beispiele
 
 - **ScyllaDB**: Alternative zu Apache Cassandra
+
+# Vektor
+
+## Erklärung
+- Ein Vektor ist eine **mathematische Darstellung eines Punktes in einen $n$-dimensionalen Raum**.
+- Wichtig für Artificial Intelligence: **Machine-Learning- und Deep-Learning-Systeme**
+- Suche nach **Ähnlichkeit** anstatt genaue Treffer durch mathematische Abstandsberechnungen
+- Ähnliche Daten haben Vektoren, die nahe beinander liegen
+- Keine Transaktionen 
+- Deadlocks sind unwahrscheinlich
+- CAP-Dreieck: **AP**
+
+## Anwendungsfälle
+- Suchmaschinen und Artificial Intelligence
+- Bilderkennung & Videoanalyse
+- Sprachverarbeitung & Audio
+- Empfehlungssysteme wie bei YouTube oder Spotify
+
+## Beispiele
+- **Milvus**
+- Weaviate
+- Pinecone
+- Qdrant
 
 # Zeitreihen
 
@@ -122,6 +146,13 @@ $\textcolor{red}{-}$ Keine Unterstützung für Joins \
 $\textcolor{red}{-}$ Komplexes Schema-Design \
 $\textcolor{red}{-}$ Leistung bei Transaktionen, kein vollständiges ACID-Transaktionsmodell
 
+## Anwendungsfälle
+- IoT (Sensordaten)
+- System- und Netzwerkmonitoring
+- Finanz- und Marktanalysen
+- Log- und Eventdaten
+- Performance-Tracking 
+
 ## Beispiele
 
 - **InfluxDB**
@@ -137,6 +168,7 @@ $\textcolor{red}{-}$ Leistung bei Transaktionen, kein vollständiges ACID-Transa
 - Unterstützt auch verschiedene Datentypen
 - Nicht spezialisiert, für mehrere Anwendungsfälle
 - Unterstützt ACID-Transaktionen
+- CAP-Dreieck: **AP** oder **CP**, kommt darauf an
 
 ## Vorteile & Nachteile
 
@@ -149,6 +181,13 @@ $\textcolor{lime}{+}$ Agil und skalierbar
 $\textcolor{red}{-}$ Leistungskompromisse \
 $\textcolor{red}{-}$ Hohe Lernkurve \
 $\textcolor{red}{-}$ Limitierte Features
+
+## Anwendungsfälle
+- Content-Management-Systeme
+- IoT
+- Logistik unt Lieferkettenmanagement
+- Soziale Netzwerke
+- Gesundheitswesen
 
 ## Beispiele
 - **ArangoDB**
