@@ -134,3 +134,50 @@ Das CAP-Dreieck besagt, dass jede Datenbank nur maximal **zwei** von **Availabil
 
 ![CAP-Dreieck 2](assets/cap-dreieck-2.png)
 
+# CAP in der Praxis 
+
+*Quelle: https://www.alexdebrie.com/posts/when-does-cap-theorem-apply/*
+
+## Beispiel 1
+Einzelknoteninstanz einer relationalen DB. 
+
+Cron-Job, der Logs löscht, aber falsch konfiguriert ist $\Rightarrow$ Festplatte füllt sich mit Logs und DB stürzt ab.
+
+CAP? CAP ist nicht anwendbar auf Einzelknoten. Deine einzelne DB-Instanz ist ausgefallen $\rightarrow$ nicht lustig! :(
+
+[Beispiel 1](assets/cap-bsp-1.png)
+
+## Beispiel 2
+Wir fügen Replikation hinzu und haben jetzt einen Cluster mit drei Knoten.
+
+Wieder falscher Cron-Job $\rightarrow$ Festplatte von einem Knoten voll, ein Knoten fällt aus $\rightarrow$ andere 2 Knoten übernehmen Last.
+
+CAP? CAP nicht anwendbar, da nur Knoten ausgefallen und keine Netzwerkpartition $\rightarrow$ geringere Verfügbarkeit $\rightarrow$ weniger schlimm, aber auch nicht lustig :(
+
+## Beispiel 3
+
+Wie Beispiel 2, aber jetzt kann ein Knoten aufgrund einer Netzwerkpartition mit anderen 2 nicht mehr kommunizieren. 
+
+CAP? CAP! System entscheidet, eine erfolgreiche Antwort vom isolierten Knoten auszugeben, auch wenn dieser eventuell nicht über den neuesten Stand der Daten von anderen Knoten verfügt (Verlust von Konsistenz) $\rightarrow$ **AP**
+
+Höhere Verfügbarkeit: Alle 3 Knoten könenn antworten. Es werden fehlerhafte Anfragen reduziert, die in Beispiel 2 durch überlastete Knoten enstanden wären.
+
+![Beispiel 3](assets/cap-bsp-3.png)
+
+## Beispiel 4
+Wie Beispiel 3, aber diesmal erlauben wir dem isolierten Knoten nicht, auf Client-Anfragen zu antworten.
+
+CAP? CAP! Wir opfern Verfügbarkeit $\rightarrow$ **CP**
+
+Clientanforderungen, die unseren isolierten Knoten erreichen, erhalten einen Fehler, was unsere Verfügbarkeitszahlen reduziert. 
+
+## Beispiel 5
+Wieder isolierter Knoten durch Netzwerkpartitionierung $\rightarrow$ empfängt eine Leseanforderung für ein Datenelement $\rightarrow$ anstatt sofort zu antworten, wartet der Knoten.
+
+42 Tage später ist die Netzwerkpartitionierung repariert $\rightarrow$ Knoten empfängt alle Aktualisierungen und antwortet dem Client mit einer konsistenten Ansicht der angeforderten Daten.
+
+CAP? Eventuell nicht anwendbar oder: yeah, wir haben das CAP-Theorem besiegt :) ...
+
+Verfügbarkeitsaspekt von CAP hat keine Zeitkomponente als Teil der Anfrage. Obwohl die meisten Kunden eine schnellere Antwort bevorzugen würden, *könnten* wir wohl warten, bis die Partition aufgelöst ist.
+
+Theoretisch haben wir hier **CA** $\rightarrow$ wir opfern die Partionstoleranz, indem wir einfach warten, bis sie verschwindet $\rightarrow$ nicht lustig :(
