@@ -19,7 +19,7 @@ $\textcolor{lime}{+}$ Einfache Architektur
 
 ### Nachteile
 $\textcolor{red}{-}$ Hohe Kosten \
-$\textcolor{red}{-}$ Datenvolatilität: Da RAM flüchtig ist, besteht das Risiko des Datenverlusts bei einem Stromausfall oder Systemabsturz. \
+$\textcolor{red}{-}$ Datenvolatilität (Flüchtigkeit von RAM)\
 $\textcolor{red}{-}$ Speicherkapazität
 
 ## Anwendungsfälle
@@ -203,5 +203,5 @@ $\textcolor{red}{-}$ Limitierte Features
 | Spaltenorientiert | Daten in Spalten, flexible Strukturen, kein festes Schema | AP, keine ACID | Hohe Skalierbarkeit, kein Single Point of Failure | Keine Joins, komplexes Schema-Design | Big Data & Analysen | Apache Cassandra |
 | Key-Value | Schlüssel-Wert-Paare, hohe Leistung, horizontale Skalierbarkeit | AP, keine ACID | Hohe Leistung, automatische Skalierung | Komplexe Verwaltung, nicht für ACID-Transaktionen geeignet | Echtzeit-Analysen | ScyllaDB |
 | Vektor | Mathematische Darstellung, Suche nach Ähnlichkeit | AP, keine ACID | Wichtig für AI, Ähnlichkeitssuche | Keine Transaktionen | Suchmaschinen & AI | Milvus |
-| Zeitreihen | Effiziente Speicherung von Zeitseriendaten, schemafrei | CP, keine ACID | Hohe Performance, gut für IoT | Keine Joins, komplexes Schema-Design | IoT (Sensordaten) | InfluxDB |
+| Zeitreihen | Effiziente Speicherung von Zeitseriendaten, schemafrei | CP, keine ACID | Hohe Performance, gut für IoT | Keine Joins, keine Transaktionen | IoT (Sensordaten) | InfluxDB |
 | Multi-Model | Unterstützt mehrere Datenmodelle, flexibel | AP oder CP, unterstützt ACID | Flexibel, kostensparend | Leistungskompromisse, hohe Lernkurve | Content-Management-Systeme | ArangoDB |
