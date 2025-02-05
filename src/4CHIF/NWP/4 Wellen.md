@@ -77,3 +77,8 @@ Damit können wir mit $c_1 = \frac{c_0}{n_2}$ das Brechungsgesetz von Snellius w
 $$
 \frac{\sin \alpha}{\sin \beta} = \frac{c_1}{c_2} = \frac{n_2}{n_1} = \frac{\lambda_1}{\lambda_2}
 $$
+
+# Konvex & Konkav
+
+Merkhilfe: "War das Mädchen brav, bleibt der Bauch konkav, hat das Mädchen Sex, wird der Bauch konvex."
+
