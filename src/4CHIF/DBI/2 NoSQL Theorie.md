@@ -204,4 +204,5 @@ $$
 P(\text{jeder Fehler}) = 1-P(\text{einzelner Knoten fällt nicht aus})^{\text{Anzahl der Knoten}}
 $$
 
-Wenn ein einzelner Knoten eine Wahrscheinlichkeit von $99.9\%$ hat, in einem bestimmten Zeitraum nicht auszufallen, liegt die Wahrscheinlichkeit bei einem Cluster von 40 Knoten bei $96.1\%$. Mit anderen Worten, die Wahrscheinlichkeit, dass etwas schief geht, liegt bei etwa $\text{4\%}$. (Und dabei wird davon ausgegangen, dass die Ausfälle nichts miteinander zu tun haben; in Wirklichkeit neigen sie dazu, sich kaskadierend zu häufen.)
+Wenn ein einzelner Knoten eine Wahrscheinlichkeit von $99.9\%$ hat, in einem bestimmten Zeitraum nicht auszufallen, liegt die Wahrscheinlichkeit bei einem Cluster von 40 Knoten bei $96.1\%$. Mit anderen Worten, die Wahrscheinlichkeit, dass etwas schief geht, liegt bei etwa $4\%$. (Und dabei wird davon ausgegangen, dass die Ausfälle nichts miteinander zu tun haben; in Wirklichkeit neigen sie dazu, sich kaskadierend zu häufen.)
+
