@@ -197,11 +197,11 @@ $\textcolor{red}{-}$ Limitierte Features
 
 # Fazit (Tabelle)
 
-| Datenbanktyp   | CAP-Dreieck & ACID | Wichtigster Anwendungsfall | Wichtigstes Beispiel |
-|----------------|--------------------|----------------------------|----------------------|
-| In-Memory      | CP, unterstützt ACID | Caching                    | Redis                |
-| Spaltenorientiert | AP, keine ACID   | Big Data & Analysen        | Apache Cassandra     |
-| Key-Value      | AP, keine ACID     | Echtzeit-Analysen          | ScyllaDB             |
-| Vektor         | AP, keine ACID     | Suchmaschinen & AI         | Milvus               |
-| Zeitreihen     | CP, keine ACID     | IoT (Sensordaten)          | InfluxDB             |
-| Multi-Model    | AP oder CP, unterstützt ACID | Content-Management-Systeme | ArangoDB            |
+| Datenbanktyp | Merkmal | CAP-Dreieck & ACID | Vorteil | Nachteil | Wichtigster Anwendungsfall | Wichtigstes Beispiel |
+|-|-|-|-|-|-|-|
+| In-Memory | Daten im RAM, Schlüssel-Wert-Paare, schemalos | CP, unterstützt ACID | Extrem schnell, einfache Architektur | Hohe Kosten, Datenvolatilität | Caching | Redis |
+| Spaltenorientiert | Daten in Spalten, flexible Strukturen, kein festes Schema | AP, keine ACID | Hohe Skalierbarkeit, kein Single Point of Failure | Keine Joins, komplexes Schema-Design | Big Data & Analysen | Apache Cassandra |
+| Key-Value | Schlüssel-Wert-Paare, hohe Leistung, horizontale Skalierbarkeit | AP, keine ACID | Hohe Leistung, automatische Skalierung | Komplexe Verwaltung, nicht für ACID-Transaktionen geeignet | Echtzeit-Analysen | ScyllaDB |
+| Vektor | Mathematische Darstellung, Suche nach Ähnlichkeit | AP, keine ACID | Wichtig für AI, Ähnlichkeitssuche | Keine Transaktionen | Suchmaschinen & AI | Milvus |
+| Zeitreihen | Effiziente Speicherung von Zeitseriendaten, schemafrei | CP, keine ACID | Hohe Performance, gut für IoT | Keine Joins, komplexes Schema-Design | IoT (Sensordaten) | InfluxDB |
+| Multi-Model | Unterstützt mehrere Datenmodelle, flexibel | AP oder CP, unterstützt ACID | Flexibel, kostensparend | Leistungskompromisse, hohe Lernkurve | Content-Management-Systeme | ArangoDB |
