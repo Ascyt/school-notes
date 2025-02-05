@@ -73,7 +73,9 @@ Ein formales Dokumentenmodell kann mithilfe:
 definiert werden. 
 
 # DTD und XSchema
-*Verstehe ich beides ehrlich gesagt nicht, also sind hier nur Screenshots von den Folien:*
+Werden gebraucht um ein Schema zu definieren, z.B. was nötig ist um die Validität zu überprüfen oder welche Tags wie bzw. wo vorkommen
+
+*Das hier im genauen zu verstehen ist nicht testrelevant!*
 
 ## DTD
 ![DTD](assets/dtd.png)
