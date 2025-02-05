@@ -19,7 +19,7 @@ $\textcolor{lime}{+}$ Einfache Architektur
 
 ### Nachteile
 $\textcolor{red}{-}$ Hohe Kosten \
-$\textcolor{red}{-}$ Datenvolatilität: Da RAM flüchtig ist, besteht das Risiko des Datenverlusts bei einem Stromausfall oder Systemabsturz. \ 
+$\textcolor{red}{-}$ Datenvolatilität: Da RAM flüchtig ist, besteht das Risiko des Datenverlusts bei einem Stromausfall oder Systemabsturz. \
 $\textcolor{red}{-}$ Speicherkapazität
 
 ## Anwendungsfälle
