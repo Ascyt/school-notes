@@ -166,3 +166,8 @@ sudo docker --version
 
 sudo docker run alpine echo Hello 4chif
 ```
+
+# Docker Hub
+
+- Erreichbar auf https://hub.docker.com/
+- Registry von Images wie postgres
