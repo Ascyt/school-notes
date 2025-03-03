@@ -9,5 +9,5 @@
 
 # Over- und Underfitting
 
-![Image 1](1_JZbxrdzabrT33Yl-LrmShw-4185843158.png)
-![Image 2](th-4231928222.jpg)
+![Image 1](assets/1_JZbxrdzabrT33Yl-LrmShw-4185843158.png)
+![Image 2](assets/th-4231928222.jpg)
