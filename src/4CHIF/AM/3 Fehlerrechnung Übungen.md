@@ -22,3 +22,9 @@ $$
 $$
 a = \frac{8}{6} \plusmn 0.2\dot{3}
 $$
+
+# Ü2.6 (S. 28)
+
+![Angabe](assets/3_uebung-2-6.png)
+
+![Lösung](assets/3_uebung-2-6-loesung.png)
