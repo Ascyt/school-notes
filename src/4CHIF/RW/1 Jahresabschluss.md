@@ -21,6 +21,8 @@
 - Erscheint in der Bilanz unter "**Umlaufvermögen**" $\rarr$ Liquide Mittel
 
 # Bilanz
+Name "Bilanz" kommt von "balance" - weil im Aktiv und Passiv der selbe gesamte Betrag stehen soll. 
+
 ## Aktiv
 - **Anlagevermögen**: Vermögensgegenstände, die Langfristig im Unternehmen bleiben (z.B. Gebäude, Maschinen)
 - **Umlaufvermögen**: Kurzfristige Vermögenswerte, die dem laufenden Geschäftsbetrieb dienen (z.B. Vorräte, Vorderungen, Bankguthaben)
@@ -37,22 +39,29 @@ $$
 
 ## Aktive Bestandskonten
 - Erfassen das Vermögen des Unternehmens
-- Soll/Haben
+- **Soll** ($\textcolor{lime}{\uarr}$) / **Haben** ($\textcolor{red}{\darr}$)
+- **Soll** ist der Anfangsbestand
 
 ## Passive Bestandskonten
 - Erfassen Eigenkapital und Fremdkapital
-- Soll/Haben umgekehrt zu aktiv
+- **Soll** ($\textcolor{red}{\darr}$) / **Haben** ($\textcolor{lime}{\uarr}$)
+- **Haben** ist der Anfangsbestand
 
 ## Aufwandskosten
+- Ausgaben, welche Eigenkapital verringern
 - z.B. Personalaufwand, Miete, Lohn
-- Soll: Aufwand steigt; Haben: Aufwand verringert sich
+- Werden im **Soll** ($\textcolor{red}{\darr}$) gebucht 
+- Können aber auch im **Haben** ($\textcolor{lime}{\uarr}$) stehen, falls rückgändig gemacht oder gemindert wird (z.B. Warenrücksendungen, Gutschriften)
 
 ## Ertragskonten
+- Einnahmen, welche Eigenkapital erhöhen
 - z.B. Umsatzerlöse, Zinserträge
-- Haben: Erträge steigen 
+- Werden im **Haben** ($\textcolor{lime}{\uarr}$) gebucht 
 
 # Kontenplan: Grundsätze der Bewertung
 - Klar in aktiva, passiva, Erträge, Aufwände gegliedert
+- Einheitlichkeit durch Branchenspezifische Kontenrahmen (z.B. ÖNORM)
+- Kann individuell an Unternehmensbedürfnisse angepasst werden
 
 ## Vorteile des Kontenplans
 - Übersichtlichkeit
@@ -60,14 +69,18 @@ $$
 - Nachvollziehbarkeit
 - Einteilung in Klassen:
   - Klasse 0: Anlagenkonten
-  - ..
+  - Klasse 1: Vorräte
+  - Klasse 2: Forderungen und sonstiges Umlaufvermögen
+  - Klasse 3: Verbindlichkeiten und Rückstellungen
+  - Klasse 4: Erträge
+  - Klasse 5: Material- und Wareneinsatz
   - Klasse 6: Personalaufwandn
   - Klasse 7: ABschreibungen und sonstige betriebliche Aufwendungen
   - Klasse 8: Finanzerträge und -aufwendungen
   - Klasse 9: Eigenkapitalkonten und Abschlusskonten
 
 # Buchungskreislauf
-Beschreibt den Weg von **Eröffnungsbilanz** $\rightarrow$ **laufende Buchungen** $\rightarrow$ **Schlussbilanz**.
+Beschreibt den Weg von **Eröffnungsbilanz** $\rarr$ **laufende Buchungen** $\rarr$ **Schlussbilanz**.
 
 ## Schritte
 1. **Eröffnungsbilanz**
@@ -78,15 +91,22 @@ Beschreibt den Weg von **Eröffnungsbilanz** $\rightarrow$ **laufende Buchungen*
 
 ## Eröffnungsbilanz
 - Übernimmt die Endbestände des letzten Jahres
+- Startpunkt für das Geschäftsjahr
+- Basis für alle weiteren Buchungen
 
 ## Laufende Buchungen
 - Erfassung aller Geschäftsvorfälle während des Geschäftsjahres
+- Auf Bestands- und Erfolgskonten
+- Soll- und Haben-Buchung
+- Nachverfolgbarkeit
 
 ## Abschluss der Erfolgskonten
-- Irgendwas GuV ka
+- Bestimmt die Endbestände
+- Grundlage für Schlussbilanz
 
 ## Schlussbilanz
 - Enthält alle Endbestände des Geschäftsjahres
+- Grundlage für die Eröffnungsbilanz des nächsten Jahres
 
 ## Prinzip der Bilanzkontinuität
 - Schlussbilanz = Eröffnungsbilanz des Folgejahres
