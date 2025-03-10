@@ -1,36 +1,39 @@
 # Bewertungsgrundsätze
-- **Vorsichtsprinzip**: Unternehmer darf sich nicht reicher machen als er ist, in der Tendenz nur ärmer.
-- **Imparitätisches Realisationsprinzip**: Gewinne werden nur dann erfasst, wenn sie tatsächlich realisiert sind. Nicht realisierte Gewinne dürfen nicht ausgewiesen werden. 
+- **Vorsichtsprinzip**: Unternehmer darf sich nicht reicher machen als er ist, in der Tendenz sogar ärmer.
+- **Realisationsprinzip**: Gewinne werden nur dann erfasst, wenn sie tatsächlich realisiert sind. 
+- **Imparitätsprinzip**: Verluste müssen bereits bei absebarer Gefahr erfasst werden, auch wenn sie noch nicht eingetragen sind. 
 - **Stetigkeitsprinzip**: Bewertungsmethoden müssen konstant angewendet werden.
 - **Going-Concern-Prinzip**: Die Bewertung erfolgt unter der Annahme, dass das Unternehmen weitergeführt wird. 
 
 # Bewertungsprinzipien für Vermögensgegenstände
-- **Anschaffungskostenprinzip**: Vermögengsgegenstände werden zu den tatsächlichen Kosten bewertet, die bei der
+- **Anschaffungskostenprinzip**: Vermögensgegenstände werden zu den tatsächlichen Kosten bewertet, die bei der Anschaffung angefallen sind. 
 - **Niederstwertprinzip**: Bei Wertverlusten muss der niedrigere Wert angesetzt werden.
-- **Wertaufholungsgebot**:
+- **Wertaufholungsgebot**: Wenn Gründe für eine Wertminderung wegfallen, kann der Wert wieder angehoben werden, höchstens jedoch auf Anschaffungskosten.
 
 # Bewertungsprinzipien für Vermögensgegenstände
-- **Höchstwertprinzip**
-- **Abzinsung**
+- **Höchstwertprinzip**: Verbindlichkeiten werden zum höchsten Betrag bewertet, der zur Erfüllung benötigt wird, um Gläubiger zu schützen. 
+- **Abzinsung**: Langfristliche Verbindlichkeiten werden abgesetzt, wenn der Zinsaufwand eine wesentliche Rolle spielt. 
 
 # Kassa
 - Umfasst Bargeld 
-- Zählt zu den **liquiden Mitteln**
-- Wichtig für kurzfristige Zahlungen
-- Erscheint in der Bilanz unter "Umlaufvermögen"
+- Zählt zu den **liquiden Mitteln** (neben Bank)
+- Wichtig für kurzfristige Zahlungen und Liquiditätsreserven
+- Erscheint in der Bilanz unter "**Umlaufvermögen**" $\rarr$ Liquide Mittel
 
 # Bilanz
 ## Aktiv
-- **Anlagevermögen**
-- **Umlaufvermögen**
+- **Anlagevermögen**: Vermögensgegenstände, die Langfristig im Unternehmen bleiben (z.B. Gebäude, Maschinen)
+- **Umlaufvermögen**: Kurzfristige Vermögenswerte, die dem laufenden Geschäftsbetrieb dienen (z.B. Vorräte, Vorderungen, Bankguthaben)
 ## Passiv
-- **Eigenkapital**
-- **Fremdkapital**
+- **Eigenkapital**: Eigenes Kapital vom Eigentümer oder von Gewinnen.
+- **Fremdkapital**: Verbindlichkeiten wie Darlehen oder Lieferantenkredite (Schulden des Unternehmens)
 
 # GuV
-- **Erträge**
-- **Aufwendungen**
-- **Ergebnis**: Differenz zwischen Erträge und Aufwendungen
+- **Erträge**: Einnahmen aus dem Geschäftsbetrieb (z.B. Verkäufe (Umsatzerlöse))
+- **Aufwendungen**: Kosten, die aus der Geschäftstätigkeit entstehen (z.B. Material, Personal, Miete)
+$$
+\text{[Erträge]}-\text{[Aufwendungen]}=\text{[Gewinn bzw. Verlust]}
+$$
 
 ## Aktive Bestandskonten
 - Erfassen das Vermögen des Unternehmens
