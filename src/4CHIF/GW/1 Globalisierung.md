@@ -25,3 +25,18 @@
 - **Internationale Klimavereinbarungen**: Pariser Abkommen, Kyoto-Protokoll, EU Green Deal
 - **Ökologische Auswirkungen der Globalisierung**: Erhöhter $CO_2$-Ausstoß, Abholzung, Umweltverschmutzung
 - **Nachhaltie Entwicklung und alternative Wirtschaftsmodelle**: Kreislauftwirtschaft, Degrowth (Postwachstumsökonomie)
+
+# Vorteile und Nachteile
+## Vorteile
+- Wirtschaftswachstum
+- Förderung von Innovation
+- Mehr Auswahl und niedrigere Preise
+- Interkulturelle Begegnungen und Koorporation
+- Schnellerer Zugang zu Wissen und Technologie
+
+## Nachteile
+- Wachsende Ungleichheit zwischen Industrie- und Entwicklungsländern
+- Abhängigkeit von globalen Lieferketten
+- Umweltbelastung durch erhöhte Produktion und Transportwege
+- Ausbeutung von Arbeitskräften in Niedriglohnländern
+- Homogenisierung von Kultur
