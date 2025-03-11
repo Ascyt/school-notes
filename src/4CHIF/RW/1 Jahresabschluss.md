@@ -118,7 +118,7 @@ Beschreibt den Weg von **Eröffnungsbilanz** $\rarr$ **laufende Buchungen** $\ra
 - Alles was im Soll steht, muss irgendwo im Haben ausgeglichen werden.
 - Kann mit der **Kontrollfunktion** kontrolliert werden (Soll=Haben)
 - Hauptbücher: **Grundbuch** und **Hauptbuch** (kann aber in Nebenbüchern aufgeteilt werden)
-- **Doppelte Gewinnerfassung**: Erfolgt durch GuV, wird mit Eigenkapital verglichen
+- **Doppelte Gewinnerfassung**: Erfolgt durch GuV (bei **Gewinn** im Eigenkapital auf **Haben**, bei **Verlust** auf **Soll**)
 
 ## Journal - Grundbuch der Buchhaltung
 - Geschäftsvorfälle müssen chronologisch aufgeschrieben werden
