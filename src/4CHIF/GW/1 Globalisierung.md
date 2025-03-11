@@ -15,3 +15,8 @@
 - **Migration & interkultureller Austausch**: Arbeitsmigration, Brain Drain vs. Brain Gain, Integration von Migranten
 - **Weltweite Verbreitung von Popkultur (Musik, Filme, Mode)**: Einfluss von Hollywood, K-Pop, Bollywood auf globale Unterhaltung, Streaming-Dienste 
 - **Verlust kultureller Identität vs. kulturelle Vielfalt**: Homogenisierung von Kulturen, stärkung lokaler Kulturen
+
+# Politische Auswirkungen
+- **Internationale Organisationen und ihre Rolle**: Vereinte Nationen (UN), Welthandelsorganisation (WTO), Internationaler Währungsfonds (IMF)
+- **Globale Konflikte und Zusamenarbeit**
+- **Einfluss multinationaler Konzerne auf Politik**: Lobbyismus, Steuervermeidung und Offshore-Finanzsystem, Regulierungen vs. Deregulierung
