@@ -82,3 +82,27 @@ $$
 
 Merkhilfe: "War das Mädchen brav, bleibt der Bauch konkav, hat das Mädchen Sex, wird der Bauch konvex."
 
+# Totalreflektion
+
+![Totalreflektion](assets/4_Totalreflektion.png)
+
+## Grenzfall
+$$
+\frac{\sin \beta}{\sin \alpha} = \frac{n_1}{n_2}
+$$
+
+Bei $\alpha_g$:
+$$
+\beta = 90\degree
+$$
+$$
+\frac{\sin(90\degree)}{\sin(\alpha_g)} = \frac{n_2}{n_1}=\frac{1}{\sin(\alpha_g)} \quad / \ldots^{-1}
+$$
+$$
+\sin(\alpha_g)=\frac{n_1}{n_2}
+$$
+$$
+\alpha_g=\arcsin(\frac{n_1}{n_2})
+$$
+
+**Anwendung**: Glasfaserkabeln
