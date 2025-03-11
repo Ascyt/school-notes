@@ -28,3 +28,32 @@ $$
 ![Angabe](assets/3_uebung-2-6.png)
 
 ![Lösung](assets/3_uebung-2-6-loesung.png)
+
+# MAK
+
+# Angabe
+$$
+a = \frac{x\cdot y}{x+y} 
+$$
+$$
+x = 2 \plusmn 0.1 \quad x=3\plusmn0.3
+$$
+
+# Lösung
+$$
+a = \frac{6}{5}
+$$
+
+$$
+\frac{0.4}{5} = 0.08
+$$
+
+Relativer Fehler:
+$$
+\frac{0.1}{2} + \frac{0.3}{3} + 0.08 = 0.23
+$$
+
+Absoluter Fehler:
+$$
+0.23 \cdot \frac{6}{5} = 0.276
+$$
