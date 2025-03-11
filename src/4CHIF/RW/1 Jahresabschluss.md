@@ -10,7 +10,7 @@
 - **Niederstwertprinzip**: Bei Wertverlusten muss der niedrigere Wert angesetzt werden.
 - **Wertaufholungsgebot**: Wenn Gründe für eine Wertminderung wegfallen, kann der Wert wieder angehoben werden, höchstens jedoch auf Anschaffungskosten.
 
-# Bewertungsprinzipien für Vermögensgegenstände
+# Bewertungsprinzipien für Verbindlichkeiten
 - **Höchstwertprinzip**: Verbindlichkeiten werden zum höchsten Betrag bewertet, der zur Erfüllung benötigt wird, um Gläubiger zu schützen. 
 - **Abzinsung**: Langfristliche Verbindlichkeiten werden abgesetzt, wenn der Zinsaufwand eine wesentliche Rolle spielt. 
 
