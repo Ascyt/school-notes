@@ -20,3 +20,8 @@
 - **Internationale Organisationen und ihre Rolle**: Vereinte Nationen (UN), Welthandelsorganisation (WTO), Internationaler Währungsfonds (IMF)
 - **Globale Konflikte und Zusamenarbeit**
 - **Einfluss multinationaler Konzerne auf Politik**: Lobbyismus, Steuervermeidung und Offshore-Finanzsystem, Regulierungen vs. Deregulierung
+
+# Umwelt und Nachhaltigkeit
+- **Internationale Klimavereinbarungen**: Pariser Abkommen, Kyoto-Protokoll, EU Green Deal
+- **Ökologische Auswirkungen der Globalisierung**: Erhöhter $CO_2$-Ausstoß, Abholzung, Umweltverschmutzung
+- **Nachhaltie Entwicklung und alternative Wirtschaftsmodelle**: Kreislauftwirtschaft, Degrowth (Postwachstumsökonomie)
