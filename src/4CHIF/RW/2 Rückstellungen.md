@@ -1,8 +1,8 @@
 # Rückstellungen erklärt
-*Beträge, bei den das Unternehmen noch nicht was, in welcher Höhe sie liegen.*
+*Beträge, bei den das Unternehmen noch nicht weiß, in welcher Höhe sie liegen.*
 
 - Bildung ist gewinnmindernd ($\textcolor{red}{\darr}$)
-- Wenn ich es auflöse, gewinnerhöhend ($\textcolor{lime}{\uarr}$)
+- Wenn aufgelöst, gewinnerhöhend ($\textcolor{lime}{\uarr}$)
 
 # Voraussetzungen
 - Im aktuellen Geschäftsjahr
