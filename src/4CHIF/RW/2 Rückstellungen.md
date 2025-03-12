@@ -52,6 +52,7 @@ Wir haben uns vom Steuerberater befragen lassen, 2000,- Kosten für das aktuelle
 - `7750` - Rechts- und Beratungsaufwand
 
 **Buchungen:**
+
 |Datum|Zweck|Buchung|
 |-|-|-|
 | 31.12.24 | | `7750 \| 3000    2000,-` $\textcolor{red}{\darr}$ |
