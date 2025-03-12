@@ -55,7 +55,7 @@ Wir haben uns vom Steuerberater befragen lassen, 2000,- Kosten für das aktuelle
 
 |Datum|Zweck|Buchung|
 |-|-|-|
-| 31.12.24 | | `7750 \| 3000    2000,-` $\textcolor{red}{\darr}$ |
-| 02.05.25 | Rechnung 1500,- + 300,- USt | `3000 1500,- \| 2800     1800,-` $\textcolor{gray}{​\empty}$ |
-| | |  `2500 ​ 300,- \|` |
-| | | `300 \| 4600 ​​ 500,-` $\textcolor{lime}{\uarr}$ |
+| 31.12.24 | | `7750 │ 3000    2000,-` $\textcolor{red}{\darr}$ |
+| 02.05.25 | Rechnung 1500,- + 300,- USt | `3000 1500,- │ 2800     1800,-` $\textcolor{gray}{​\empty}$ |
+| | |  `2500 ​ 300,- │` |
+| | | `300 │ 4600 ​​ 500,-` $\textcolor{lime}{\uarr}$ |
