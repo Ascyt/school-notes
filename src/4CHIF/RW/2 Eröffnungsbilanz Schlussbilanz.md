@@ -3,9 +3,9 @@
 - Verbuchung laufender Geschäftsfälle: Eröffnung der **Erfolgskonten** bei Bedarf
 
 # Jahresabschlussarbeiten (31.12)
-Erstellung der Summen- und Saidenbilanz.
+Erstellung der Summen- und Saldenbilanz.
 
-1. **Abschreibung** der Sachanladen
+1. **Abschreibung** der Sachanlagen
 2. **Vorratsbewertung** und Ermittlung+Verbuchung **Differenzbetrag** 
 3. **Forderrungsbewertung**
 4. Bildung von **Rückstellungen**
