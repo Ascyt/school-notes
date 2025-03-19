@@ -2,9 +2,9 @@ Juden wurden zusammengesucht, und man hat erstmal nicht gewusst, was man mit ihn
 
 # Begriffsbestimmungen
 
-- **Genozid**: Völkermorder, gab es oft und sind nichts neues; im NZ sehr auf Effizienz ausgelegt. Man hat sich dann auch gedacht, dass man sie bevor man sie umbringt zuerst in Arbeitslagern arbeiten lässt. Genozid gilt als ein Verbrechen.
-- **Holocaust**
-- **Antisemitismus**
-- **Shoah**
-- **Euthanisie**
-- **Deportation**
+- **Genozid**: Das Ziel, eine bestimmte Gruppe auszulöschen. Gab es oft und sind nichts neues; im NZ sehr auf Effizienz ausgelegt. Man hat sich dann auch gedacht, dass man sie bevor man sie umbringt zuerst in Arbeitslagern arbeiten lässt. Genozid gilt als ein Verbrechen.
+- **Holocaust**: Systematischer Genozid auf Juden in der NS-Zeit.
+- **Antisemitismus**: Ein Hass auf den Jüdischen glauben, gibt es schon lange.
+- **Shoah**: Völkermord an etwa sechs Millionen Juden durch das nationalsozialistische Deutschland während des Zweiten Weltkriegs.
+- **Euthanisie**: Bedeutet "schöner gut", ist die Idee, wenn man jemanden etwas Gutes tut, wenn man ihm umbringt. Wurde als Beschönigung für Genozid verwendet
+- **Deportation**: Zwangsumsiedlung von Menschen, beispielsweise von Juden in KZ 
