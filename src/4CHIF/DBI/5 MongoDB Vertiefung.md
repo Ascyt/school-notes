@@ -24,3 +24,16 @@
 - Verwende standartmäßig **embedded**, außer es gibt einen überzeugenden Grund, das nicht zu tun, (z.B. wenn es notwendig ist, auf ein Objekt alleine zugreifen zu können)
 - Joins und Lookups sollen vermieden werden, außer wenn sie zu einem besseren Schema-Design führen
 - Arrays sollten nicht unbegrenzt wachsen können
+
+# Aggregationen
+- Daten aus n-beliebigen Collections **extrahieren**, **transformieren**, und **analysieren**
+- Effiktiv für komplexe Abfragen und Datenmanipulationen
+
+## Aggregationsstufen
+### $match
+Filtert Dokumente, die bestimmte Bedingungen erfüllen.
+
+#### Beispiel
+Nur Bestellungen mit dem Status `"completed"` und einem Datum nach dem 1. Jänner 2022
+
+![mongo-aggr-match](assets/mongo-aggr-match.png)
