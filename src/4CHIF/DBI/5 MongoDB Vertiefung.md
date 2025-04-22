@@ -113,11 +113,11 @@ MongoDB ist grundsätzlich **Schemalos**, aber Schemadefinition ist möglich, ab
 
 ```json
 {
-"$schema": "https://json-schema.org/draft/2020-12/schema",
-"$id": "https://example.com/product.schema.json",
-"title": "Record of Employee",
-"description": "This document records the details of an employee",
-"type": "object"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Record of Employee",
+    "description": "This document records the details of an employee",
+    "type": "object"
 }
 ```
 
@@ -219,10 +219,12 @@ Jedes Element, das wir in unserem Schema als `enum` angeben, muss einzigartig se
 **Beispiel**
 
 ```json
+[
     {
         "maritalstatus": ["single", "married", "divorced", "widowed"]
     },
     "required": ["id", "name", "age"]
+]
 ```
 
 ## Verschachtelungen
