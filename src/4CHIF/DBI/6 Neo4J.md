@@ -195,6 +195,11 @@ curl -XPOST http://localhost:7474/db/data/cypher -d "Cypher-Query"
     REQUIRE (prequel.order, prequel.author) IS UNIQUE
     ```
 
+Other constraints exist as well but are **enterprise-only**:
+- Exists constraints
+- Type constraints
+- Key constraints
+
 # ACID
 - ✅ Is ACID conform
 - Transactions:
