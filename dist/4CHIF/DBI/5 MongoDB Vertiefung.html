@@ -1,161 +1,152 @@
-<!DOCTYPE html><meta charset=UTF-8><title>5 MongoDB Vertiefung</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>5 MongoDB Vertiefung</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_embedded-documents href=#SECTION_embedded-documents onclick='onSectionClick("embedded-documents")'>Embedded Documents</a><a id=SECTION-BTN_aggregationen href=#SECTION_aggregationen onclick='onSectionClick("aggregationen")'>Aggregationen</a><a id=SECTION-BTN_schema href=#SECTION_schema onclick='onSectionClick("schema")'>Schema</a><a id=SECTION-BTN_json-schema href=#SECTION_json-schema onclick='onSectionClick("json-schema")'>JSON-Schema</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/4CHIF/index.html">4CHIF</a> / <a href="/4CHIF/DBI/index.html">DBI</a> / <b>5 MongoDB Vertiefung</b></div><div class=section id=SECTION_embedded-documents><h1>Embedded Documents</h1><ul><li>Dokumente innerhalb Dokumente<li>Ermöglicht speichern komplexer Datenstrukturen, ohne seperater Collections</li></ul><p><img src=assets/mongo-embedded-document.png alt=mongo-embedded-document><h2>Vorteile</h2><ul><li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Datenintegrität</strong>: Stellen sicher, dass Daten, die zusammengehören, immer zusammen gespeichert werden<li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Leistung</strong>: Eine Abfrage kann sich auf eine einzelne Collection beschränken, anstatt über mehrere Collections suchen zu müssen<li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Lesbarkeit</strong>: Ermöglichen, Datenmodelle intuitiver und natürlicher auszudrücken</li></ul><h2>Nachteile</h2><ul><li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Erhöhte Größe</strong>: Erhöhte Größe des Hauptdokuments, kann <strong>Leistung</strong> beim Schreiben beeinträchtigen<li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Komplexität</strong>: Erhöhte Komplexität der Datenstrukture, vor allem wenn es viele verschachtelte Dokumente gibt<li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Erschwertes Aktualisieren</strong>: Aktualisieren von Daten kann vor allem dann erschwert sein, wenn sich das eingebettete Dokument auf mehrere andere bezieht.</li></ul><h2>Embedded oder Linked?</h2><h3>Fragestellungen</h3><ul><li>Wie oft wird auf die eingebetteten Daten zugegriffen?<li>Werden die eingebetteten Daten für Abfragen verwendet?<li>Ändern sich die eingebetteten Daten oft?</li></ul><h3>Grundlegendes</h3><ul><li>Verwende standartmäßig <strong>embedded</strong>, außer es gibt einen überzeugenden Grund, das nicht zu tun, (z.B. wenn es notwendig ist, auf ein Objekt alleine zugreifen zu können)<li>Joins und Lookups sollen vermieden werden, außer wenn sie zu einem besseren Schema-Design führen<li>Arrays sollten nicht unbegrenzt wachsen können</li></ul></div><div class=section id=SECTION_aggregationen><h1>Aggregationen</h1><ul><li>Daten aus n-beliebigen Collections <strong>extrahieren</strong>, <strong>transformieren</strong>, und <strong>analysieren</strong><li>Effiktiv für komplexe Abfragen und Datenmanipulationen</li></ul><h2>$match</h2><p>Filtert Dokumente, die bestimmte Bedingungen erfüllen.<p><strong>Beispiel</strong>: Nur Bestellungen mit dem Status <code>completed</code> und einem Datum nach dem 1. Jänner 2022 zurückgeben.<p><img src=assets/mongo-aggr-match.png alt=mongo-aggr-match><p><strong>Operatoren</strong>:<ul><li><code>$eq</code>: Equal to (<code>==</code>)<li><code>$ne</code>: Not equal to (<code>!=</code>)<li><code>$gt</code>: Greater than (<code>></code>)<li><code>$lt</code>: Less than (<code>&lt;</code>)<li><code>$gte</code>: Greater than or equal to (<code>>=</code>)<li><code>$lte</code>: Less than or equal to (<code>&lt;=</code>)<li><code>$in</code>: In array<li><code>$nin</code>: Not in array</li></ul><h2>$group</h2><p>Gruppiert Dokumente basierend auf einem oder mehreren Feldern und führt Aggregationen wie Summe, Durchschnitt, Min/Max usw. durch.<p><strong>Beispiel</strong>: Bestellungen nach Kunden gruppieren und die Summe der Beträge sowie die Anzahl der Bestellungen für jeden Kunden zurückgeben.<p><img src=assets/mongo-aggr-group.png alt=mongo-aggr-group><p><strong>Akkumuluatoren</strong>:<ul><li><strong><code>$sum</code></strong>: Summe<li><strong><code>$avg</code></strong>: Durchschnitt<li><strong><code>$min</code></strong>: Niedrigster Wert<li><strong><code>$max</code></strong>: Höhster Wert<li><strong><code>$push</code></strong>: Element zu einem Array hinzufügen<li><strong><code>$addToSet</code></strong>: Wie <code>$push</code> aber vermeidet Duplikate<li><strong><code>$first</code></strong>: Erstes Element<li><strong><code>$last</code></strong>: Letztes Element</li></ul><h2>$sort</h2><p>Sortiert Dokumente basierend auf einem oder mehreren Feldern.<p><strong>Beispiel</strong>: Bestellungen nach Datum sortieren, beginnend mit dem neuesten Datum.<p><img src=assets/mongo-attr-sort.png alt=mongo-attr-sort><h2>$project</h2><p>Projektion von Feldern, um nur bestimmte Felder in den Ergebnissen anzuzeigen.<p><strong>Beispiel</strong>: Nur die Kunden-ID, den Betrag und das Jahr der Bestellung zurückgeben.<p><img src=assets/mongo-attr-project.png alt=mongo-attr-project><h2>$lookup</h2><p>Verknüpft Dokumente aus einer anderen Collection mit den Dokumenten in der aktuellen Collection (ähnlich zu JOIN).<p><strong>Beispiel</strong>: Die Bestellungen und Kunden werden basierend auf der Kunden-ID verknüpft und die Kundeninformationen in einem eingebetteten Feld <code>customer_info</code> zurückgibt.<p><img src=assets/mongo-attr-lookup.png alt=mongo-attr-lookup></p></div><div class=section id=SECTION_schema><h1>Schema</h1><table><thead><tr><th>SQL (RDBMS)</th><th>MongoDB</th></tr></thead><tbody><tr><td>Datenmodell <span class=math>\(\Rarr\)</span> Applikation</td><td>Applikation <span class=math>\(\Rarr\)</span> Datenmodell</td></tr><tr><td>Während Entwicklung Schemaänderung notwendig <span class=math>\(\rarr\)</span> Datenmodel "denormalisieren" <span class=math>\(\rarr\)</span> Performanceverlust</td><td>Applikation bestimmt Datenmodell</td></tr><tr><td>Fokus auf <strong>Datenspeicher</strong></td><td>Fokus auf <strong>Datennutzung</strong></td></tr></tbody></table><p>MongoDB ist grundsätzlich <strong>Schemalos</strong>, aber Schemadefinition ist möglich, aber anders wie bei SQL (RDBMS):<ul><li>Mehrere erlaubte Datentypen<li>Regex-Pattern<li>Schemas kombinieren<li>keine Default-Werte<li>keine Fremdschlüssel</li></ul></div><div class=section id=SECTION_json-schema><h1>JSON-Schema</h1><ul><li>Definiert wie JSON-Daten <strong>strukturiert</strong> sein sollten, welche <strong>Felder</strong> vorhanden sein müssen, welche <strong>Datentypen</strong> sie haben sollten und welche <strong>anderen Einschränkungen</strong> gelten.<li>Gibt <strong>Fehlermeldungen</strong> aus<li>BSON-Datentypen: <code>double</code>, <code>string</code>, <code>object</code>, <code>array</code>, <code>binData</code>, <code>objectId</code>, <code>bool</code>, <code>date</code>, <code>null</code>, <code>regex</code>, <code>javascript</code>, <code>int</code>, <code>timestamp</code>, <code>long</code>, <code>decimal</code>, <code>minKey</code>, <code>maxKey</code></li></ul><h2>Basisschema</h2><ul><li><code>$schema</code>: Gibt an, dass dieses Schema mit Version 4 des IETF-Standards übereinstimmt<li><code>$id</code>: Definiert die Basis-URI zum Auflösen anderer URI-Referenzen innerhalb des Schemas (relevant für komplexere Schemata)<li><code>title</code> &amp; <code>description</code>: rein deskriptiv<li><code>type</code>: Definiert den Datentyp.</li></ul><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-<span style=color:#a31515>"$schema"</span>: <span style=color:#a31515>"https://json-schema.org/draft/2020-12/schema"</span>,
-<span style=color:#a31515>"$id"</span>: <span style=color:#a31515>"https://example.com/product.schema.json"</span>,
-<span style=color:#a31515>"title"</span>: <span style=color:#a31515>"Record of Employee"</span>,
-<span style=color:#a31515>"description"</span>: <span style=color:#a31515>"This document records the details of an employee"</span>,
-<span style=color:#a31515>"type"</span>: <span style=color:#a31515>"object"</span>
+<!DOCTYPE html><meta charset=UTF-8><title>5 MongoDB Vertiefung</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>5 MongoDB Vertiefung</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_embedded-documents href=#SECTION_embedded-documents onclick='onSectionClick("embedded-documents")'>Embedded Documents</a><a id=SECTION-BTN_aggregationen href=#SECTION_aggregationen onclick='onSectionClick("aggregationen")'>Aggregationen</a><a id=SECTION-BTN_schema href=#SECTION_schema onclick='onSectionClick("schema")'>Schema</a><a id=SECTION-BTN_json-schema href=#SECTION_json-schema onclick='onSectionClick("json-schema")'>JSON-Schema</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/4CHIF/index.html">4CHIF</a> / <a href="/4CHIF/DBI/index.html">DBI</a> / <b>5 MongoDB Vertiefung</b></div><div class=section id=SECTION_embedded-documents><h1>Embedded Documents</h1><ul><li>Dokumente innerhalb Dokumente<li>Ermöglicht speichern komplexer Datenstrukturen, ohne seperater Collections</li></ul><p><img src=assets/mongo-embedded-document.png alt=mongo-embedded-document><h2>Vorteile</h2><ul><li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Datenintegrität</strong>: Stellen sicher, dass Daten, die zusammengehören, immer zusammen gespeichert werden<li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Leistung</strong>: Eine Abfrage kann sich auf eine einzelne Collection beschränken, anstatt über mehrere Collections suchen zu müssen<li><span class=math>\(\textcolor{lime}{+}\)</span> <strong>Lesbarkeit</strong>: Ermöglichen, Datenmodelle intuitiver und natürlicher auszudrücken</li></ul><h2>Nachteile</h2><ul><li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Erhöhte Größe</strong>: Erhöhte Größe des Hauptdokuments, kann <strong>Leistung</strong> beim Schreiben beeinträchtigen<li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Komplexität</strong>: Erhöhte Komplexität der Datenstrukture, vor allem wenn es viele verschachtelte Dokumente gibt<li><span class=math>\(\textcolor{red}{-}\)</span> <strong>Erschwertes Aktualisieren</strong>: Aktualisieren von Daten kann vor allem dann erschwert sein, wenn sich das eingebettete Dokument auf mehrere andere bezieht.</li></ul><h2>Embedded oder Linked?</h2><h3>Fragestellungen</h3><ul><li>Wie oft wird auf die eingebetteten Daten zugegriffen?<li>Werden die eingebetteten Daten für Abfragen verwendet?<li>Ändern sich die eingebetteten Daten oft?</li></ul><h3>Grundlegendes</h3><ul><li>Verwende standartmäßig <strong>embedded</strong>, außer es gibt einen überzeugenden Grund, das nicht zu tun, (z.B. wenn es notwendig ist, auf ein Objekt alleine zugreifen zu können)<li>Joins und Lookups sollen vermieden werden, außer wenn sie zu einem besseren Schema-Design führen<li>Arrays sollten nicht unbegrenzt wachsen können</li></ul></div><div class=section id=SECTION_aggregationen><h1>Aggregationen</h1><ul><li>Daten aus n-beliebigen Collections <strong>extrahieren</strong>, <strong>transformieren</strong>, und <strong>analysieren</strong><li>Effiktiv für komplexe Abfragen und Datenmanipulationen</li></ul><h2>$match</h2><p>Filtert Dokumente, die bestimmte Bedingungen erfüllen.<p><strong>Beispiel</strong>: Nur Bestellungen mit dem Status <code>completed</code> und einem Datum nach dem 1. Jänner 2022 zurückgeben.<p><img src=assets/mongo-aggr-match.png alt=mongo-aggr-match><p><strong>Operatoren</strong>:<ul><li><code>$eq</code>: Equal to (<code>==</code>)<li><code>$ne</code>: Not equal to (<code>!=</code>)<li><code>$gt</code>: Greater than (<code>></code>)<li><code>$lt</code>: Less than (<code>&lt;</code>)<li><code>$gte</code>: Greater than or equal to (<code>>=</code>)<li><code>$lte</code>: Less than or equal to (<code>&lt;=</code>)<li><code>$in</code>: In array<li><code>$nin</code>: Not in array</li></ul><h2>$group</h2><p>Gruppiert Dokumente basierend auf einem oder mehreren Feldern und führt Aggregationen wie Summe, Durchschnitt, Min/Max usw. durch.<p><strong>Beispiel</strong>: Bestellungen nach Kunden gruppieren und die Summe der Beträge sowie die Anzahl der Bestellungen für jeden Kunden zurückgeben.<p><img src=assets/mongo-aggr-group.png alt=mongo-aggr-group><p><strong>Akkumuluatoren</strong>:<ul><li><strong><code>$sum</code></strong>: Summe<li><strong><code>$avg</code></strong>: Durchschnitt<li><strong><code>$min</code></strong>: Niedrigster Wert<li><strong><code>$max</code></strong>: Höhster Wert<li><strong><code>$push</code></strong>: Element zu einem Array hinzufügen<li><strong><code>$addToSet</code></strong>: Wie <code>$push</code> aber vermeidet Duplikate<li><strong><code>$first</code></strong>: Erstes Element<li><strong><code>$last</code></strong>: Letztes Element</li></ul><h2>$sort</h2><p>Sortiert Dokumente basierend auf einem oder mehreren Feldern.<p><strong>Beispiel</strong>: Bestellungen nach Datum sortieren, beginnend mit dem neuesten Datum.<p><img src=assets/mongo-attr-sort.png alt=mongo-attr-sort><h2>$project</h2><p>Projektion von Feldern, um nur bestimmte Felder in den Ergebnissen anzuzeigen.<p><strong>Beispiel</strong>: Nur die Kunden-ID, den Betrag und das Jahr der Bestellung zurückgeben.<p><img src=assets/mongo-attr-project.png alt=mongo-attr-project><h2>$lookup</h2><p>Verknüpft Dokumente aus einer anderen Collection mit den Dokumenten in der aktuellen Collection (ähnlich zu JOIN).<p><strong>Beispiel</strong>: Die Bestellungen und Kunden werden basierend auf der Kunden-ID verknüpft und die Kundeninformationen in einem eingebetteten Feld <code>customer_info</code> zurückgibt.<p><img src=assets/mongo-attr-lookup.png alt=mongo-attr-lookup></p></div><div class=section id=SECTION_schema><h1>Schema</h1><table><thead><tr><th>SQL (RDBMS)</th><th>MongoDB</th></tr></thead><tbody><tr><td>Datenmodell <span class=math>\(\Rarr\)</span> Applikation</td><td>Applikation <span class=math>\(\Rarr\)</span> Datenmodell</td></tr><tr><td>Während Entwicklung Schemaänderung notwendig <span class=math>\(\rarr\)</span> Datenmodel "denormalisieren" <span class=math>\(\rarr\)</span> Performanceverlust</td><td>Applikation bestimmt Datenmodell</td></tr><tr><td>Fokus auf <strong>Datenspeicher</strong></td><td>Fokus auf <strong>Datennutzung</strong></td></tr></tbody></table><p>MongoDB ist grundsätzlich <strong>Schemalos</strong>, aber Schemadefinition ist möglich, aber anders wie bei SQL (RDBMS):<ul><li>Mehrere erlaubte Datentypen<li>Regex-Pattern<li>Schemas kombinieren<li>keine Default-Werte<li>keine Fremdschlüssel</li></ul></div><div class=section id=SECTION_json-schema><h1>JSON-Schema</h1><ul><li>Definiert wie JSON-Daten <strong>strukturiert</strong> sein sollten, welche <strong>Felder</strong> vorhanden sein müssen, welche <strong>Datentypen</strong> sie haben sollten und welche <strong>anderen Einschränkungen</strong> gelten.<li>Gibt <strong>Fehlermeldungen</strong> aus<li>BSON-Datentypen: <code>double</code>, <code>string</code>, <code>object</code>, <code>array</code>, <code>binData</code>, <code>objectId</code>, <code>bool</code>, <code>date</code>, <code>null</code>, <code>regex</code>, <code>javascript</code>, <code>int</code>, <code>timestamp</code>, <code>long</code>, <code>decimal</code>, <code>minKey</code>, <code>maxKey</code></li></ul><h2>Basisschema</h2><ul><li><code>$schema</code>: Gibt an, dass dieses Schema mit Version 4 des IETF-Standards übereinstimmt<li><code>$id</code>: Definiert die Basis-URI zum Auflösen anderer URI-Referenzen innerhalb des Schemas (relevant für komplexere Schemata)<li><code>title</code> &amp; <code>description</code>: rein deskriptiv<li><code>type</code>: Definiert den Datentyp.</li></ul><pre><code class=language-json>{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Record of Employee",
+    "description": "This document records the details of an employee",
+    "type": "object"
 }
-</pre></div></div><h2>Einschränkungen</h2><ul><li><code>type</code>: Datentyp des Feldes<li><code>pattern</code>: Regular Expression; gibt an wie der String aussehen muss<li><code>minLength</code>/<code>maxLength</code>: Mindest-/Maximallänge für Strings<li><code>minimum</code>/<code>maximum</code>: Mindest-/Maximalwert für Zahlenwerte<li><code>required</code>: obligatorische Felder<li><code>const</code>: erlaubt nur einen gültigen Wert, z.B. Shop, bei dem man nur Versand nach Ö erlaubt (nicht im Beispiel)</li></ul><p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"properties"</span>: {
-        <span style=color:#a31515>"id"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span>
+</code></pre><h2>Einschränkungen</h2><ul><li><code>type</code>: Datentyp des Feldes<li><code>pattern</code>: Regular Expression; gibt an wie der String aussehen muss<li><code>minLength</code>/<code>maxLength</code>: Mindest-/Maximallänge für Strings<li><code>minimum</code>/<code>maximum</code>: Mindest-/Maximalwert für Zahlenwerte<li><code>required</code>: obligatorische Felder<li><code>const</code>: erlaubt nur einen gültigen Wert, z.B. Shop, bei dem man nur Versand nach Ö erlaubt (nicht im Beispiel)</li></ul><p><strong>Beispiel</strong><pre><code class=language-json>{
+    "properties": {
+        "id": {
+            "type": "string"
         },
-        <span style=color:#a31515>"name"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span>,
-            <span style=color:#a31515>"minLength"</span>: 2,
-            <span style=color:#a31515>"pattern"</span> : <span style=color:#a31515>"/^[A-Za-z]+$/"</span>
+        "name": {
+            "type": "string",
+            "minLength": 2,
+            "pattern" : "/^[A-Za-z]+$/"
         },
-        <span style=color:#a31515>"age"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>,
-            <span style=color:#a31515>"minimum"</span>: 16
+        "age": {
+            "type": "number",
+            "minimum": 16
         }
     },
-    <span style=color:#a31515>"required"</span>: [
-        <span style=color:#a31515>"id"</span>,
-        <span style=color:#a31515>"name"</span>,
-        <span style=color:#a31515>"age"</span>
+    "required": [
+        "id",
+        "name",
+        "age"
     ]
 }
-</pre></div></div><h2>Arrays</h2><ul><li><code>items</code>: definiert Datentyp für alle Elemente in einem Array<li><code>prefixItems</code>: für Arrays, bei denen jedes Element ein anderes Schema hat und der Ordnungsindex jedes Elements aussagekräftig ist<li><code>contains</code>: Array muss angegeben Typ mind. 1x enthalten<li><code>minContains</code>/<code>maxContains</code>: gibt an, wie oft ein Schema mit einer <code>contains</code>-Einschränkung übereinstimmen soll<li><code>minItems</code>/<code>maxItems</code>: schränkt Arraylänge ein<li><code>uniqueItems</code>: gibt an, ob jedes Element in einem Array einzigartig sein muss</li></ul><p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"array"</span>,
-    <span style=color:#a31515>"items"</span>: {
-        <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>
+</code></pre><h2>Arrays</h2><ul><li><code>items</code>: definiert Datentyp für alle Elemente in einem Array<li><code>prefixItems</code>: für Arrays, bei denen jedes Element ein anderes Schema hat und der Ordnungsindex jedes Elements aussagekräftig ist<li><code>contains</code>: Array muss angegeben Typ mind. 1x enthalten<li><code>minContains</code>/<code>maxContains</code>: gibt an, wie oft ein Schema mit einer <code>contains</code>-Einschränkung übereinstimmen soll<li><code>minItems</code>/<code>maxItems</code>: schränkt Arraylänge ein<li><code>uniqueItems</code>: gibt an, ob jedes Element in einem Array einzigartig sein muss</li></ul><p><strong>Beispiel</strong><pre><code class=language-json>{
+    "type": "array",
+    "items": {
+        "type": "number"
     },
 },
 {
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"array"</span>,
-    <span style=color:#a31515>"prefixItems"</span>: [
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span> },
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span> },
-        { <span style=color:#a31515>"enum"</span>: [<span style=color:#a31515>"Street"</span>, <span style=color:#a31515>"Avenue"</span>, <span style=color:#a31515>"Boulevard"</span>] },
-        { <span style=color:#a31515>"enum"</span>: [<span style=color:#a31515>"NW"</span>, <span style=color:#a31515>"NE"</span>, <span style=color:#a31515>"SW"</span>] }
+    "type": "array",
+    "prefixItems": [
+        { "type": "number" },
+        { "type": "string" },
+        { "enum": ["Street", "Avenue", "Boulevard"] },
+        { "enum": ["NW", "NE", "SW"] }
     ]
 },
 {
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"array"</span>,
-    <span style=color:#a31515>"contains"</span>: {
-        <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>
+    "type": "array",
+    "contains": {
+        "type": "number"
     },
-    <span style=color:#a31515>"minContains"</span>: 2,
-    <span style=color:#a31515>"maxContains"</span>: 3
+    "minContains": 2,
+    "maxContains": 3
 }
-</pre></div></div><h2>Format</h2><p>In JSON gibt es keinen eigenen Datentyp für Datumswerte usw.<p>Das Schlüsselwort <code>format</code> ermöglicht die grundlegende semantische Identifizierung bestimmter Arten von Zeichenfolgewerten, die häufig verwendet werden.<p>Beispiele: <code>date</code>, <code>datetime</code>, <code>time</code>, <code>email</code>, <code>hostname</code>, <code>ipv6</code>, <code>hostname</code>, <code>uri</code>, <code>uuid</code>, …<p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span>,
-    <span style=color:#a31515>"format"</span>: <span style=color:#a31515>"date"</span>
+</code></pre><h2>Format</h2><p>In JSON gibt es keinen eigenen Datentyp für Datumswerte usw.<p>Das Schlüsselwort <code>format</code> ermöglicht die grundlegende semantische Identifizierung bestimmter Arten von Zeichenfolgewerten, die häufig verwendet werden.<p>Beispiele: <code>date</code>, <code>datetime</code>, <code>time</code>, <code>email</code>, <code>hostname</code>, <code>ipv6</code>, <code>hostname</code>, <code>uri</code>, <code>uuid</code>, …<p><strong>Beispiel</strong><pre><code class=language-json>{
+    "type": "string",
+    "format": "date"
 },
 {
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span>,
-    <span style=color:#a31515>"format"</span>: <span style=color:#a31515>"email"</span>
+    "type": "string",
+    "format": "email"
 }
-</pre></div></div><h2>Enum</h2><p>Wird verwendet um einen Wert auf eine feste Menge von Werten einzuschränken.<p>Jedes Element, das wir in unserem Schema als <code>enum</code> angeben, muss einzigartig sein.<p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
+</code></pre><h2>Enum</h2><p>Wird verwendet um einen Wert auf eine feste Menge von Werten einzuschränken.<p>Jedes Element, das wir in unserem Schema als <code>enum</code> angeben, muss einzigartig sein.<p><strong>Beispiel</strong><pre><code class=language-json>[
     {
-        <span style=color:#a31515>"maritalstatus"</span>: [<span style=color:#a31515>"single"</span>, <span style=color:#a31515>"married"</span>, <span style=color:#a31515>"divorced"</span>, <span style=color:#a31515>"widowed"</span>]
+        "maritalstatus": ["single", "married", "divorced", "widowed"]
     },
-    <span style=color:#a31515>"required"</span>: [<span style=color:#a31515>"id"</span>, <span style=color:#a31515>"name"</span>, <span style=color:#a31515>"age"</span>]
-</pre></div></div><h2>Verschachtelungen</h2><p>Innerhalb der Datenstruktur können verschachtelte Datenstrukturen vorkommen.<p>Diese sind genauso aufgebaut wie die Hauptstruktur, d.h. sie können zB ein eigenes lokal gültiges required-Feld besitzen!<p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"properties"</span> : {
-        <span style=color:#a31515>"dimensions"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"object"</span>,
-            <span style=color:#a31515>"properties"</span>: {
-                <span style=color:#a31515>"length"</span>: { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span> },
-                <span style=color:#a31515>"width"</span>: { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span> },
-                <span style=color:#a31515>"height"</span>: { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span> }
+    "required": ["id", "name", "age"]
+]
+</code></pre><h2>Verschachtelungen</h2><p>Innerhalb der Datenstruktur können verschachtelte Datenstrukturen vorkommen.<p>Diese sind genauso aufgebaut wie die Hauptstruktur, d.h. sie können zB ein eigenes lokal gültiges required-Feld besitzen!<p><strong>Beispiel</strong><pre><code class=language-json>{
+    "properties" : {
+        "dimensions": {
+            "type": "object",
+            "properties": {
+                "length": { "type": "number" },
+                "width": { "type": "number" },
+                "height": { "type": "number" }
         },
-        <span style=color:#a31515>"required"</span>: [ <span style=color:#a31515>"length"</span>, <span style=color:#a31515>"width"</span>, <span style=color:#a31515>"height"</span> ]
+        "required": [ "length", "width", "height" ]
     }
 }
-</pre></div></div><h2>Referenzen</h2><p><code>$ref</code>: Verweist auf ein externes Schema.<p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"warehouseLocation"</span>: {
-        <span style=color:#a31515>"$ref"</span>: <span style=color:#a31515>"https://example.com/geographical-location.schema.json"</span>
+</code></pre><h2>Referenzen</h2><p><code>$ref</code>: Verweist auf ein externes Schema.<p><strong>Beispiel</strong><pre><code class=language-json>{
+    "warehouseLocation": {
+        "$ref": "https://example.com/geographical-location.schema.json"
     },
 }
-</pre></div></div><p>Verweist auf:<div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"$id"</span>: "https:<span style=color:#008000>//example.com/geographical-</span>
+</code></pre><p>Verweist auf:<pre><code class=language-json>{
+    "$id": "https://example.com/geographical-
     location.schema.json",
-    <span style=color:#a31515>"$schema"</span>: "https:<span style=color:#008000>//json-</span>
+    "$schema": "https://json-
     schema.org/draft/2020-12/schema",
-    <span style=color:#a31515>"title"</span>: <span style=color:#a31515>"Longitude and Latitude"</span>,
-    <span style=color:#a31515>"description"</span>: "A geographical coordinate on a
+    "title": "Longitude and Latitude",
+    "description": "A geographical coordinate on a
     planet (most commonly Earth).",
-    <span style=color:#a31515>"required"</span>: [ <span style=color:#a31515>"latitude"</span>, <span style=color:#a31515>"longitude"</span> ],
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"object"</span>,
-    <span style=color:#a31515>"properties"</span>: {
-        <span style=color:#a31515>"latitude"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>,
-            <span style=color:#a31515>"minimum"</span>: -90,
-            <span style=color:#a31515>"maximum"</span>: 90
+    "required": [ "latitude", "longitude" ],
+    "type": "object",
+    "properties": {
+        "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
         },
-        <span style=color:#a31515>"longitude"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>,
-            <span style=color:#a31515>"minimum"</span>: -180,
-            <span style=color:#a31515>"maximum"</span>: 180
+        "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
         }
     }
 }
-</pre></div></div><h2>Rekursion</h2><p>Schema, das auf sich selbst verweist und so effektiv eine "Schleife" im Validator erzeugt, was sowohl zulässig als auch nützlich ist.<p>Beachte jedoch, dass ein <code>$ref</code>-Verweis auf einen anderen <code>$ref</code> eine Endlosschleife verursachen kann und ausdrücklich untersagt ist.<p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"object"</span>,
-    <span style=color:#a31515>"properties"</span>: {
-        <span style=color:#a31515>"name"</span>: { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span> },
-        <span style=color:#a31515>"children"</span>: {
-            <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"array"</span>,
-            <span style=color:#a31515>"items"</span>: { <span style=color:#a31515>"$ref"</span>: <span style=color:#a31515>"#"</span> }
+</code></pre><h2>Rekursion</h2><p>Schema, das auf sich selbst verweist und so effektiv eine "Schleife" im Validator erzeugt, was sowohl zulässig als auch nützlich ist.<p>Beachte jedoch, dass ein <code>$ref</code>-Verweis auf einen anderen <code>$ref</code> eine Endlosschleife verursachen kann und ausdrücklich untersagt ist.<p><strong>Beispiel</strong><pre><code class=language-json>{
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "children": {
+            "type": "array",
+            "items": { "$ref": "#" }
         }
     }
 }
-</pre></div></div><p>Verweist auf:<div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"Elizabeth"</span>,
-    <span style=color:#a31515>"children"</span>: [
+</code></pre><p>Verweist auf:<pre><code class=language-json>{
+    "name": "Elizabeth",
+    "children": [
         {
-            <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"Charles"</span>,
-            <span style=color:#a31515>"children"</span>: [
+            "name": "Charles",
+            "children": [
                 {
-                    <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"William"</span>,
-                    <span style=color:#a31515>"children"</span>: [
-                        { <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"George"</span> },
-                        { <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"Charlotte"</span> }
+                    "name": "William",
+                    "children": [
+                        { "name": "George" },
+                        { "name": "Charlotte" }
                     ]
                 },
                 {
-                    <span style=color:#a31515>"name"</span>: <span style=color:#a31515>"Harry"</span>
+                    "name": "Harry"
                 }
             ]
         }
     ]
 }
-</pre></div></div><h2>Komposition</h2><ul><li><code>allOf</code>: angegebene Daten müssen für alle angegebenen Unterschemata gültig sein<li><code>anyOf</code>: angegebene Daten müssen für eines oder mehrere der angegebenen Unterschemata gültig sein<li><code>oneOf</code>: angegebene Daten müssen für genau eines der angegebenen Unterschemata gültig sein<li><code>not</code>: angegebene Daten dürfen für keines der angegeben Unterschemata gültig sein</li></ul><p><strong>Beispiel</strong><div class="lang-json editor-colors"><div style=color:#000;background-color:#fff><pre>
-{
-    <span style=color:#a31515>"allOf"</span>: [
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span> },
-        { <span style=color:#a31515>"maxLength"</span>: 5 }
+</code></pre><h2>Komposition</h2><ul><li><code>allOf</code>: angegebene Daten müssen für alle angegebenen Unterschemata gültig sein<li><code>anyOf</code>: angegebene Daten müssen für eines oder mehrere der angegebenen Unterschemata gültig sein<li><code>oneOf</code>: angegebene Daten müssen für genau eines der angegebenen Unterschemata gültig sein<li><code>not</code>: angegebene Daten dürfen für keines der angegeben Unterschemata gültig sein</li></ul><p><strong>Beispiel</strong><pre><code class=language-json>{
+    "allOf": [
+        { "type": "string" },
+        { "maxLength": 5 }
     ],
-    <span style=color:#a31515>"anyOf"</span>: [
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span>, <span style=color:#a31515>"maxLength"</span>: 5 },
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>, <span style=color:#a31515>"minimum"</span>: 0 }
+    "anyOf": [
+        { "type": "string", "maxLength": 5 },
+        { "type": "number", "minimum": 0 }
     ],
-    <span style=color:#a31515>"oneOf"</span>: [
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>, <span style=color:#a31515>"multipleOf"</span>: 5 },
-        { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"number"</span>, <span style=color:#a31515>"multipleOf"</span>: 3 }
+    "oneOf": [
+        { "type": "number", "multipleOf": 5 },
+        { "type": "number", "multipleOf": 3 }
     ],
-    <span style=color:#a31515>"not"</span>:
-    { <span style=color:#a31515>"type"</span>: <span style=color:#a31515>"string"</span> }
+    "not":
+    { "type": "string" }
 }
-</pre></div></div></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
+</code></pre></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
