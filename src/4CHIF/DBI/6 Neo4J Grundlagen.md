@@ -80,7 +80,7 @@ Nodes still connected to relations cannot be deleted unless `DETACH DELETE` is u
 
 If we try deleting the user, which currently has relations:
 
-❌$\textcolor{red}{\text{Error}}$❌
+❌ $\textcolor{red}{\text{Error}}$ ❌
 ```cypher
 MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DELETE n
@@ -88,7 +88,7 @@ DELETE n
 
 But if we delete the relations first:
 
-✅$\textcolor{lime}{\text{Ok!}}$✅
+✅ $\textcolor{lime}{\text{Ok!}}$ ✅
 ```cypher
 MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DELETE r
@@ -98,7 +98,7 @@ DELETE
 
 Or we use `DETACH DELETE`:
 
-✅$\textcolor{lime}{\text{Ok!}}$✅
+✅ $\textcolor{lime}{\text{Ok!}}$ ✅
 ```cypher
 MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DETACH DELETE 

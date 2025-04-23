@@ -10,13 +10,13 @@ SET
 </code></pre><p>or change a value in the same way:<pre><code>MATCH (n:user {name: "Stefan"})
 SET
     n.lastname = "Müller"
-</code></pre><h2>DELETE</h2><p>Works in a similar way: Find a node/relation and delete it. , Nodes still connected to relations cannot be deleted unless <code>DETACH DELETE</code> is used, which removes nodes and all its connections.<p>If we try deleting the user, which currently has relations:<p red="" error="">❌$\textcolor{\text}$❌<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
+</code></pre><h2>DELETE</h2><p>Works in a similar way: Find a node/relation and delete it. , Nodes still connected to relations cannot be deleted unless <code>DETACH DELETE</code> is used, which removes nodes and all its connections.<p>If we try deleting the user, which currently has relations:<p>❌ <span class=math>\(\textcolor{red}{\text{Error}}\)</span> ❌<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DELETE n
-</code></pre><p>But if we delete the relations first:<p lime="">✅$\textcolor{\text{Ok!}}$✅<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
+</code></pre><p>But if we delete the relations first:<p>✅ <span class=math>\(\textcolor{lime}{\text{Ok!}}\)</span> ✅<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DELETE r
 MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DELETE 
-</code></pre><p>Or we use <code>DETACH DELETE</code>:<p lime="">✅$\textcolor{\text{Ok!}}$✅<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
+</code></pre><p>Or we use <code>DETACH DELETE</code>:<p>✅ <span class=math>\(\textcolor{lime}{\text{Ok!}}\)</span> ✅<pre><code class=language-cypher>MATCH (n:user {name: "Stefan"}, (n)-[r:FRIEND]->(f))
 DETACH DELETE 
 </code></pre><h2>CREATE vs MERGE</h2><p>Normal create:<pre><code>CREATE
     (alice:Person {name:'Alice', age: 38, eyes: 'brown'}),
