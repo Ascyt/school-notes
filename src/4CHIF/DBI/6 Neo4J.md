@@ -159,3 +159,50 @@ Run cypher:
 ```
 curl -XPOST http://localhost:7474/db/data/cypher -d "Cypher-Query"
 ```
+
+# Index
+- To find the graph's starting point (because performance depends on that)
+- Can be distinguished via:
+  - **Search-performance index** (exact matches, filter for indexes)
+  - **Semantic indexes** (approximate values, includes vector and full-text indexes)
+  
+## Commands
+- Create index
+    ```cypher
+    CREATE INDEX example_index_1 FOR (a:Actor) ON (a.name)
+    ```
+- Create composite index
+    ```cypher
+    CREATE INDEX example_index_1 FOR (a:Actor) ON (a.name, a.born)
+    ```
+- Show index
+    ```cypher
+    SHOW INDEXES YIELD name, labelsOrTypes, properties, type
+    ```
+
+# Unique Constraints
+- User needs `CREATE_CONSTRAINT` permission
+- For nodes and relations
+- Applied to a label
+    ```cypher
+    CREATE CONSTRAINT book_isbn
+    FOR (book:Book) REQUIRE book.isbn IS UNIQUE
+    ```
+- Composite constraint
+    ```cypher
+    CREATE CONSTRAINT prequels
+    FOR ()-[prequel:PREQUEL_OF]-()
+    REQUIRE (prequel.order, prequel.author) IS UNIQUE
+    ```
+
+# ACID
+- ✅ Is ACID conform
+- Transactions:
+  - `:BEGIN`
+  - `:COMMIT` / `:ROLLBACK`
+  - `CALL dbms.listTransactions()`
+  - Usually not called via CLI but through code
+- Locking:
+  - Node/relationship based
+  - Automatic
+  - Deadlock detection
