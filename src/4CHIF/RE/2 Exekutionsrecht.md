@@ -11,6 +11,8 @@ Es kommt zu einer Exekution, sobald:
   - Nicht möglich? $\Rarr$ **Pfändungsprotokoll** (alle Pfandbaren Fahrnisse des Schuldners werden aufgeführt)
 - Dem Gerichtsvollzieher ist unbedingt **Einlass in die Wohnung** zu gewähren, ansonsten kann er die Polizei und einen Schlosser heranziehen und sich gewaltsam Zugang zur Wohnung verschaffen (aber erst, wenn er es zuvor zu unterschiedlichen Zeiten versucht hat, jemanden anzutreffen)
 
+**Inkassobüros**: Treiben offene Forderungen ein. Kommt oft für Schuldner teuer. Mitarbeitern von Inkassobüros muss aber kein Zutritt zur Wohnung gewährt werden.
+
 # Arten des Exekutionsverfahren
 **Exekution wegen Geldforderung des Gläubigers:**
 - **Fahrnisexekutionsverfahren**: Pfändung und Verwertung beweglicher Sachen (z.B. Fernseher, Stereoanlage, Teppich)
