@@ -120,4 +120,29 @@ Ein Widerspruch gegen Zwecke der Direktwerbung muss nicht begründet werden.
 ## Recht auf Beschwerde
 Betroffene hat die Möglichkeit auf eine Beschwerde bei einer Aufsichtsbehörde.
 
-[in progress]
+# Rechtsbehelfe - Haftung - Sanktionen
+## Rechtsbehelfe
+Recht auf eine Beschwerde bei der Staatlichen Aufsichtsbehörde (In Österreich die Datenschutzbehörde in Wien). 
+
+Das **Bundesverwaltungsgericht** entscheidet über solche Beschwerben.
+
+## Recht auf gerichtliche Maßnahmen
+Gegen Verantwortliche oder Auftragsverarbeiter. Anspruch auf **Schadenersatz**.
+
+- Verantwortlicher der beteiligt war haftet zur Gänze
+- Auftragsverarbeiter haftet falls er seine Pflichten bzw. Anweisungen nicht erfüllt hat
+- Verantwortlicher und Auftragsverarbeiter sind von der Haftung befreit wenn sie nachweisen können dass sie nicht verantwortlich sind
+- Mehrere Verantwortliche/Auftragsverarbeiter? Es haftet jeder einzelne für den gesamten Schaden. 
+
+## Sanktionen
+Wenn man die Bestimmungen der DSGVO nicht befolgt drohen extrem hohe Strafen.
+
+- **Weniger schwere Verstöße**: Geldbuße bis zu 10 Millionen Euro oder bis zu 2% des welteiten Jahresumsatz des letzten Geschäftsjahres.
+- **Schwerwiegende Verstöße**: Geldbuße bis zu 20 Millionen Euro oder bis zu 4% des weltweiten Jahresumsatz des letzten Geschäftsjahres. Es gilt der höhere Betrag. 
+
+# Aufsichtsbehörden und Beratungsgremien
+
+- **Datenschutzbehörde**: Jedes EU-Land muss eine unabhängige Behörde für die Überwachung der Anwendung der DSGVO einrichten, in Österreich ist das die Datenschutzbehörde.
+- **Datenschutzrat**: Beim Bundesministerium für Justiz, fordert Fortenwicklung des Datenschutzes, berät Bundesregierung darüber.
+- **Europäischer Datenschutzausschuss (EDSA)** bzw. European Data Protaction Board (EDPB): Unabhängige europäische Einrichtung zur einheitlichen Anwendung der Datenschutzvorschriften in der gesamten EU.
+- **Europäischer Datenschutzbeauftragter (EDSB)** bzw. European Data Protection Supervisor (EDPS): Kontrollbehörde, die dafür sorgt, dass alle EU-Organe und -Einrichtungen gscheit mochn. 
