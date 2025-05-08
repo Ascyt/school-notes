@@ -24,3 +24,47 @@ Es kommt zu einer Exekution, sobald:
 
 Im folgenden wird nur die Exekution wegen **Geldforderung** behandelt. 
 
+# Fahrnisexekutionsverfahren
+Pfändung und Verwertung beweglicher Sachen (z.B. Fernseher, Stereoanlage, Teppich).
+
+**Ablauf:**
+1. **Exekutionsantrag** vom Gläubiger
+2. **Exekutionsbewilligungsbeschluss**
+3. **Pfändung**: Gerichtsvollzieher Pfändet die Gegenstände und verzeichnet sie im **Pfändungsprotokoll**
+4. **Schätzung**
+5. **Versteigerung**: Der Erlös der versteigerten Gegenstände wird nach Reihenfolge der Pfändung unter den Gläubigern verteilt
+6. **Neuerlicher Vollzug**: Falls der Versteigerungserlös nicht ausreicht, kann die betreibende Partei den **neuerlichen Vollzug** der Fahrnisexekution beantragen
+
+**Gepfändet werden kann**: Alle Gegenstände, die sich in der Gewahrsame des Schuldners befinden, unabhängig davon, ob dieser tatsächlicher Eigentümer ist oder nicht (falls nicht, muss der tatsächliche Eigentümer nachweisen, dass der Gegenstand ihm gehört).
+
+**Jedoch nicht gepfändet werden kann**: 
+- Notwendigsten Möbel und Hausrat (Kahlpfändung)
+- Gegenstände, die zur Fortsetzung der Erwerbstätigkeit notwendig sind
+- Höchstpersönliche Sachen (z.B. der Ehering, Orden, Fotos)
+
+Möglichkeit der **Austauschpfändung**: z.B. wenn es nur eine teure Sofa zum sitzen gibt kann der Gläubiger diese versteigern wenn er eine billigerne Sitzgelegenheit zur Verfügung stellt. 
+
+# Forderungsexekution, Lohnpfändung
+
+Wenn der Schuldner ein **Erwerdbseinkommen** (Lohn, Gehalt) hat, kann das auch gepfändet werden. 
+
+**Lohnpfändung:**
+- Häufigste Form der Forderungsexekution
+- Einkommen von Schuldnern wird bis auf **Existenzminimum** gepfändet und direkt an die Gläubiger überwiesen
+
+**Existenzminimum:**
+- Hängt von der Anzahl der Sorgepflichten (Kinder, nicht berufstätige Ehegatten) und von der Höhe des Einkommens
+- Untergrenze des Existenzminimums: €1.21
+
+# Sonstige Exekutionsarten
+Exekution kann auch durch folgendes geführt werden:
+- Zwangsversteigerung von **Liegenschaften** (Häuser, Eigentumswohnungen, Grundstücke)
+- Zwangsweise Pfandrechtsbegründung
+- Zwangsverwaltung einer Liegenschaft
+- **Gewerberechte** können auch gepfandet werden
+
+Bei der Überschuldung bietet die staatlich anerkannte **Schuldenberatung** kostenlose Unterstützung.
+
+Statistik zur Schuldenberatung:
+
+![2_statistik-schuldenberatung](assets/2_statistik-schuldenberatung.png)
