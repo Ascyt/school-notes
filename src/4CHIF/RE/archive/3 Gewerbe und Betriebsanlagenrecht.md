@@ -20,6 +20,8 @@ Eine unternehmenerische Tätigkeit ist eine **gewerbliche Tätigkeit**, wenn sie
 
 ### Alle Vorraussetzungen
 
-![2_gewerbe-voraussetzungen](assets/2_gewerbe-voraussetzungen.png)
+![3_gewerbe-voraussetzungen](assets/3_gewerbe-voraussetzungen.png)
 
 # Gewerbearten
+
+[nicht fertiggestellt weil ich bemerkt habe dass das nicht teil des Stoffs ist; s. Seite 118]
