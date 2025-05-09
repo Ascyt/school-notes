@@ -97,7 +97,7 @@ In der Praxis liegt zwischen den einzelnen Abschnitten Aufgrund von gesetzlicher
 - Widerspruch gegen Versäumnisurteil
 
 # Rechtsmittel
-- Kläger oder Beklagter ist mit dem Urteil nicht einverstanden (z.B. seiner Meinung nach Beweise falsch interpretiert oder Gesetze falsch angewendet)? $\rarr$ Antscheidung der ersten Instanz kann bekämpft werden
+- Kläger oder Beklagter ist mit dem Urteil nicht einverstanden (z.B. seiner Meinung nach Beweise falsch interpretiert oder Gesetze falsch angewendet)? $\rarr$ Entscheidung der ersten Instanz kann bekämpft werden
 - **Nächste Instanz**: Überprüfung des Urteil der Unterinstanz. 
 - Kann sein, dass das Ersturteil aufgehoben wird und in der ersten Instanz neu verhandelt werden muss (aufgrund Feststellung von grober Mängel im Beweisverfahren)
 
