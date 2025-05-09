@@ -56,7 +56,7 @@ Wenn der Schuldner ein **Erwerdbseinkommen** (Lohn, Gehalt) hat, kann das auch g
 
 **Existenzminimum:**
 - Hängt von der Anzahl der Sorgepflichten (Kinder, nicht berufstätige Ehegatten) und von der Höhe des Einkommens
-- Untergrenze des Existenzminimums: €1.21
+- Untergrenze des Existenzminimums: €1,2k
 
 # Sonstige Exekutionsarten
 Exekution kann auch durch folgendes geführt werden:
