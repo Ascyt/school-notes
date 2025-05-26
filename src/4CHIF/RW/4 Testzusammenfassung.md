@@ -82,3 +82,18 @@ Kleinst-KGs und kleine GmbHs brauchen keinen Lagebericht.
 Werden in **Urkundensammlung** aufgenommen und sind **online einsehbar** (beim Firmenbuchgericht oder Firmenbuch-DB).
 
 "Das Firmenbuchgericht muss den Tag der Einreichung in der Ediktsdatei der Firmenbuchgerichte und im Amtsblatt der Wiener Zeitung veröffentlichen." ja keine ahnung man ich will nicht mehr
+
+# ⚠️ Imparitätisches Realisationsprinzip
+**Definition:** Nicht realisierte Gewinne dürfen nicht in der Bilanz aufscheinen.
+
+
+z.B. Grundstück: 
+```
+AW 100,-/m^2  ← Bilanzansatz wegen Anschaffungsprinzip 
+                                Verkehrwert 500,-/m^2
+```
+Gewinn ist nicht realisiert!
+
+Nicht realisierte Verluste **müssen** in der Bilanz aufscheinen: z.B. Rückstellungen (Höhe und Fälligkeit der Verbindlichkeit ist noch nicht bekannt)
+
+
