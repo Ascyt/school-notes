@@ -58,3 +58,27 @@ Mind. 2 der 3 Merkmale müssen erfüllt sein:
 - **Langfristige Rückstellungen**: Voraussichtliche Laufzeit \> 1 Jahr (z.B. Abfertigungen, Urlaubsansprüche, Garantieleistungen)
 
 🫏🌉: "Peter hat sich in der Vergangenheit immer wieder **rück**wärts in die **Stellung** gebracht, um nicht erwischt zu werden. Er hat sich dabei immer **einzelne** Verbindlichkeiten ausgedacht, um nicht aufzufliegen. Doch irgendwann ist er aufgeflogen und muss nun für seine **pauschalen** Verbindlichkeiten aufkommen. Er hat sich dabei immer **kurzfristig** aus der Affäre gezogen, doch jetzt muss er auch für die **langfristigen** Folgen seiner Taten geradestehen."
+
+# ⚠️ Anhang
+**Definion:** Hier muss **Bilanz** und **GuV** so erläutert werden, dass sie ein möglichst getreues Bild der Finanzlage des Unternehmens vermitteln. 
+
+**Zweck:** Transparenz und Nachvollziehbarkeit der Jahresabschlussinformationen
+
+![4_erhaltene-erlaeuterungen](assets/4_erhaltene-erlaeuterungen.png)
+*^ nicht sicher ob das wichtig ist, nervig viel text also ich bete einfach nicht 🙏*
+
+# ⚠️ Lagebericht
+**Definition:** Hier soll der **Geschäftsverlauf** (inkl. Geschäftsergebnis) und Lage des Unternehmens so dargestellt werden, dass sie ein möglichst getreues Bild der Finanzlage des Unternehmens vermitteln. Auch die wesentlichen **Risiken** und **Ungewissheiten** des Unternehmens sollen hier erläutert werden.
+
+**Ergänzung** des **Jahresabschlusses** durch zusätzliche Informationen. 
+
+Kann durch freiwillige Informationen als **Marketinginstrument** verwendet werden. 
+
+Kleinst-KGs und kleine GmbHs brauchen keinen Lagebericht.
+
+# ⚠️ Offenlegung Jahresbericht
+**Jahresabschluss** inkl. Anhang und Lagebericht muss spätestens **9 Monate** nach Jahresende vom Vorjahr beim **Finanzamt** eingereicht werden. Muss **elektronisch** eingereicht werden, außer wenn Jahresumsatz <700k.
+
+Werden in **Urkundensammlung** aufgenommen und sind **online einsehbar** (beim Firmenbuchgericht oder Firmenbuch-DB).
+
+"Das Firmenbuchgericht muss den Tag der Einreichung in der Ediktsdatei der Firmenbuchgerichte und im Amtsblatt der Wiener Zeitung veröffentlichen." ja keine ahnung man ich will nicht mehr
