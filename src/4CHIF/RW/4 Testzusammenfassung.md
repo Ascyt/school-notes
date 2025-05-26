@@ -64,7 +64,7 @@ Mind. 2 der 3 Merkmale müssen erfüllt sein:
 
 **Zweck:** Transparenz und Nachvollziehbarkeit der Jahresabschlussinformationen
 
-![4_erhaltene-erlaeuterungen](assets/4_erhaltene-erlaeuterungen.png)
+![4_erhaltene-erlaeuterungen](assets/4_erhaltene-erlaeuterungen.png) \
 *^ nicht sicher ob das wichtig ist, nervig viel text also ich bete einfach nicht 🙏*
 
 # ⚠️ Lagebericht
