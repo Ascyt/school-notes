@@ -14,7 +14,7 @@
 |Anhang|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|
 |Lagebericht|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|
 
-## Größenklassen der Unternehmen
+# Größenklassen der Unternehmen
 Mind. 2 der 3 Merkmale müssen erfüllt sein:
 
 ![4_jahresabschluss-unternehmen-groessenklassen](assets/4_jahresabschluss-unternehmen-groessenklassen.png)
@@ -91,8 +91,8 @@ z.B. Grundstück:
 ```
 AW 100,-/m^2  ← Bilanzansatz wegen Anschaffungsprinzip 
                                 Verkehrwert 500,-/m^2
-```
 Gewinn ist nicht realisiert!
+```
 
 Nicht realisierte Verluste **müssen** in der Bilanz aufscheinen: z.B. Rückstellungen (Höhe und Fälligkeit der Verbindlichkeit ist noch nicht bekannt)
 
