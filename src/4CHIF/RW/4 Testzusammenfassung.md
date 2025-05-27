@@ -40,7 +40,7 @@ Mind. 2 der 3 Merkmale müssen erfüllt sein:
 <div></div>
 
 - **Offene Rücklagen**: Sind in der Bilanz ersichtlich
-- **Stille Rücklagen**: Entstehen durch Unterbewertung der Passive und Überbewertung der Aktiva. (s. Anhang im Jahresabschluss)
+- **Stille Rücklagen**: Entstehen durch Unterbewertung der Aktiva und Überbewertung der Passiva. (s. Anhang im Jahresabschluss)
 
 <div></div>
 
