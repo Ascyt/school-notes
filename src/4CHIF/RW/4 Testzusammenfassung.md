@@ -39,6 +39,11 @@ Mind. 2 der 3 Merkmale müssen erfüllt sein:
 
 <div></div>
 
+- **Offene Rücklagen**: Sind in der Bilanz ersichtlich
+- **Stille Rücklagen**: Entstehen durch Unterbewertung der Passive und Überbewertung der Aktiva. (s. Anhang im Jahresabschluss)
+
+<div></div>
+
 - **Gesetzliche Rücklagen**: 5% des Jahresüberschusses müssen gebildet werden, bis 10% des Nennkapitals erreicht sind
 
 🫏🌉: "Peter will endlich mal Urlaub machen können und sich auf den **Rücken legen**. Er ist dem Finanzamt jedoch noch das **Kapital** schuldig, was er von **außen** geklaut ("**finanziert**") hat. Gegen dem Finanzamt **Gewinnt** Peter aber nicht! Sie schnappen ihn, und er bekommt Handschellen an**gebunden** (**Agio**! Schreit Peter, weil die Handschellen ihm weh tun). Also wird er in Haft genommen und ist somit nicht mehr **frei**. In seiner Zelle gelingt es ihm, die Tür **offen** zu machen. Er versucht dabei **still** zu bleiben, wird aber trotzdem erwischt! Oje, dass bedeutet weitere **gesetzliche** Probleme!
