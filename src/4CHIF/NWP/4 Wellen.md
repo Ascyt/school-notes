@@ -106,3 +106,7 @@ $$
 $$
 
 **Anwendung**: Glasfaserkabeln
+
+@ Übungen
+
+&4 Wellen Übungen.md
