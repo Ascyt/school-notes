@@ -70,7 +70,7 @@ Mind. 2 der 3 Merkmale müssen erfüllt sein:
 **Zweck:** Transparenz und Nachvollziehbarkeit der Jahresabschlussinformationen
 
 ![4_erhaltene-erlaeuterungen](assets/4_erhaltene-erlaeuterungen.png) \
-*^ nicht sicher ob das wichtig ist, nervig viel text also ich bete einfach nicht 🙏*
+*^ 3 davon auswendig lernen*
 
 # ⚠️ Lagebericht
 **Definition:** Hier soll der **Geschäftsverlauf** (inkl. Geschäftsergebnis) und Lage des Unternehmens so dargestellt werden, dass sie ein möglichst getreues Bild der Finanzlage des Unternehmens vermitteln. Auch die wesentlichen **Risiken** und **Ungewissheiten** des Unternehmens sollen hier erläutert werden.
