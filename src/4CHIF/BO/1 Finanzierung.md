@@ -1,4 +1,3 @@
-
 # Finanzierung (Finanzplan)
 
 - **Investition** und **Finanzierung**
