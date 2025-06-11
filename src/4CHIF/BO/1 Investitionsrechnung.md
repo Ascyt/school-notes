@@ -52,7 +52,7 @@
 [insert image or explain]
 
 # Innenfinanzierung 
-$\Rarr$ Finanzierungsmöglichkeit vom Unternehmen, aus eigener Geschäftstätigkeit 
+$\Rarr$ Finanzierungsmöglichkeit vom Unternehmen; aus eigener Geschäftstätigkeit 
 
 1. Einhaltung von **Gewinnen** (Thesaurierung) ansatt Ausschüttung an Gesellschafter
 2. **Abschreibungsfinanzierung**: Abschreibungen vur Leinvestition (mitdern Gewinn aber erfordern keine Auszahlung)
@@ -64,7 +64,7 @@ $\textcolor{lime}{+}$ **Vorteil**: Stärkt Liquidität und Unabhängigkeit \
 $\textcolor{red}{-}$ **Nachteil**: Begrenzt, kann lange dauern
 
 # Außenfinanzierung 
-$\Rarr$ Finanzierungsmöglichkeit von Unternehmen, externe Geldgeber
+$\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit externe Geldgeber
 
 1. **Eigenkapital**finanzierung: keine Rückzahlungsverplichtung, aber Gewinnbeteiligung für Investoren
    - Kapitalerhöhung durch **Eigentümer** oder **neue Teilhaber** (Venture Capital für Startups, sonst Private Equity)
@@ -79,6 +79,22 @@ $\Rarr$ Finanzierungsmöglichkeit von Unternehmen, externe Geldgeber
 3. **Hybridfinanzierung** (**Mezzanine-Kapital** - Mischform EK/FK)
    - Wandelanleihen (Anleihen, die später in Aktien umgewandelt werden)
    - Stille Beteiligung
+
+# Anleihensfinanzierug
+$\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit Bonds oder Obligationen
+
+- **Festferzinsliche Wertpapiere** mit dem Unternehmen Kapital am Kapitalmarkt aufnehmen
+- Anleger kaufen Anleihe und erhalten da **regelmäßige Zinszahlungen** (Kupon) sowie am Ende **Rückzahlungen des Nennbetrags**:
+  - Meist feste Laufzeit (z.B. 5, 10, 30 Jahre) mit Regelmäßigen Zinsen (Kupon) an Investoren
+  - Zinshöhe hängt von Bonität ab
+
+$\textcolor{lime}{+}$ **Vorteile**: 
+- **Große Geldbeträge ohne Eigenkapitalsabgabe**
+- **Günstigere** Finanzierung als Bankkredite (vor allem für etablierte Unternehmen mit guter Bonität)
+
+$\textcolor{red}{-}$ **Nachteile**: 
+- **Kreditwürdigkeit beeinflusst Zinskosten** (Niedrige Bonität $\rarr$ höhere Zinsen)
+- **Hohe Emissionskosten** und komplexer Rechtlicher Prozess (Prospekthaftung)
 
 # Business Angels
 - **Reiche Leute**, die Start-Ups unterstützen (mit Kapital, Know-how, Netzwerken)
@@ -115,5 +131,85 @@ $\textcolor{red}{-}$ **Nachteile** für Startups:
 - Komplexe **Vertragsbindungen**
 
 # Investitionskredite
+$\Rarr$ **Langfristiger Kredit** für größere Anschaffungen bzw. Projekte (z.B. Maschinen, IT-Systeme)
+
+- Keine Verwendung für laufende Betriebskosten (dafür gibt es Betriebsmittelkredite).
+- Wird von **Banken** angeboten
+- Laufzeit typisch 5-20 Jahre
+- Rückzahlung in **Raten** mit **Zinsen** oder **endfälliges Modell**
+- Zinssätze hängen ab von Bonität, Laufzeit, SicherheitenS
+- Fixe oder variable Zinsen sind möglich
+
+$\textcolor{lime}{+}$ **Vorteile**: Langfristige Planungssicherheit; steuerliche Absetzbarkeit der Zinsen; Schonung der Liquidität
+
+$\textcolor{red}{-}$ **Nachteile**: Hohe Zinsen bei schlechter Bonität; meist lange Bindung; vorzeitige Rückzahlung mit Kosten
+
+# Betriebsmittelkredite
+$\Rarr$ **Kurzfristige Finanzierung laufender Geschäftsausgaben** (z.B. Löhne, Materialeinkäufe, Miete)
+
+- Laufzeit typisch 1-3 Jahre
+- Oft als kontokorrentähnliche Nutzung (Unternehmen kann auf den **Kreditrahmen** zugreifen) ((keine ahnung man))
+- Zinsen nur für den genutzten Kreditbetrag
+- **Höhere Zinssätze** als Investitionskredite 
+- **Sicherheiten erforderlich** (z.B. Forderungen, Warenbestände)
+
+$\textcolor{lime}{+}$ **Vorteile**: Schnelle Liquiditätsbeschaffung; hohe Flexibilität; nicht langfristig bindend
+
+$\textcolor{red}{-}$ **Nachteile**: Hohe Zinskosten; Gefahr von Fremdkapitalabhängigkeit
+
+# Lieferantenkredite
+$\Rarr$ Einkauf von Waren/Dienstleistungen auf **auf Rechnung** (Zahlungsziel von 30, 60 oder 90 Tagen)
+
+- Wenn mit **Skonto** (billiger wenn schneller gezahlt): Wenn existent aber nicht genutzt, Lieferantenkredit meist teurer als Bankkredit
+- Oft keine Sicherheiten erforderlicht, Bonität wird trotzdem geprüft
+
+$\textcolor{lime}{+}$ **Vorteile**: 
+- **Einfache Finanzierung** ohne Bank
+- **Liquidität geschont**
+
+$\textcolor{red}{-}$ **Nachteile**:
+- **Begrenzte Kreditlinie** (abhängig vom Vertrauen)
+- Zu viele unbezahlte Rechnungen **verschlechtern Bonität**
+
+# Leasing
+$\Rarr$ Nutzen von Wirtschaftsgut **ohne es zu kaufen**
+
+- **Operatives Leasing**: Kurzfristig kündbar, ähnelt einer Miete
+- **Finanzierungsleasing**: Langfristiger, oft mit Kaufoption zum Restwert am Ende der Laufzeit oder Verlängerung. Der Leasingnehmer:
+   - schreibt Anlagegut ab und weist Barwert des Leasing als Verbindlichkeit aus
+   - kann Zinsenanteil als Aufwand
+   - trägt Instandhaltung und Risiken (Reparaturen, Versicherung))
+- **Sale and Lease Back**: Anlagegut an Leasinggeber verkaufen und vom Leasingnehmer zurückleasen
+
+$\textcolor{lime}{+}$ **Vorteile**: 
+- **Liquidität geschont**
+- **Bilanzneutral** (bei Operativen Leasing) 
+- **Steuerliche Vorteile**
+
+$\textcolor{red}{-}$ **Nachteile**:
+- **Gesamtkosten oft höher als Kauf**
+
+# Crowdfunding
+$\Rarr$ Viele Menschen geben über eine Plattform kleine Geldbeträge um Projekt oder Unternehmen zu finanzieren
+
+- **Reward-Based Crowdfunding**: Unterstützer erhalten **Produkt** oder Prämien (z.B. Kickstarter, Indiegogo)
+- **Equity-Based Crowdfunding** (Crowdinvesting): Unterstützer erhalten **Unternehmensanteile**
+- **Lending-Based Crowdfunding** (P2P-Lending): Crowd **vergibt Kredite und erhält Zinsen** (z.B. Auxmoney, Bondora)
+- **Donation-Based Crowdfunding**: Reine Spenden **ohne Gegenleistung** (z.B. GoFundMe)
+
+**Bekannte Plattformen:**
+- **International**: Kickstarter, Indiegogo, GoFundMe, Seedmatch
+- **Österreich**: StarteDeinProjekt, Greenrocket, Crowdfunding-Dienstleister (FMA Österreich)
+
+$\textcolor{lime}{+}$ **Vorteile**: 
+- **Keine Rückzahlungspficht** bei Reward- oder Donationmodellen
+- **Direkter Markettest** für neue Produkte
+- Potenzielle **virale Verbreitung** durch Social-Media
+
+$\textcolor{red}{-}$ **Nachteile**:
+- Erfolg **nicht garantiert** (viele Kampagnen scheitern)
+- Hoher **Marketingaufwand** zur Überzeugung der Crowd
+- **Plattformgebühren** und steuerliche Aspekte
+
 
 [nicht fertig]
