@@ -27,7 +27,7 @@
 
 # Woraus besteht ein Finanzplan?
 1. Planung der **Einnahmen**: Umsatzprognosen + sonstige Erträge; Einnahmen sind besonders schwierig zu schätzen
-2. Planung laufender **Ausgaben**: 
+2. Planung laufender **Ausgaben**:
     - Fixkosten (Miete, Gehälter, Versicherungen)
     - variable Kosten (Materialkosten, Produktionsoksten)
     - Sonstige betriebliche Aufwendungen (z.B. Werbung, Wartung)
@@ -43,7 +43,7 @@
 6. **Rentabilitäts**planung: GuV (Ertrag - Aufwand)
     - Rentabilitätskennzahlen (Umsatzrentabilität, Eigenkapitalrentabilität)
 7. **Steuer**planung: Verausberechnung der **Steuerlast** und Optimierungsmöclichkeiten
-8. **Risikomanagement**: Identifikation finanzieller Risiken, Risikominimierung 
+8. **Risikomanagement**: Identifikation finanzieller Risiken, Risikominimierung
 
 # Zusammenhang Bilanz, GuV, Cash-Flow-Statement
 [todo: insert image]
@@ -51,8 +51,8 @@
 # Wirkung von Geschäftsfällen auf Gewinn/Cashflow
 [insert image or explain]
 
-# Innenfinanzierung 
-$\Rarr$ Finanzierungsmöglichkeit vom Unternehmen; aus eigener Geschäftstätigkeit 
+# Innenfinanzierung
+$\Rarr$ Finanzierungsmöglichkeit vom Unternehmen; aus eigener Geschäftstätigkeit
 
 1. Einhaltung von **Gewinnen** (Thesaurierung) ansatt Ausschüttung an Gesellschafter
 2. **Abschreibungsfinanzierung**: Abschreibungen vur Leinvestition (mitdern Gewinn aber erfordern keine Auszahlung)
@@ -63,7 +63,7 @@ $\Rarr$ Finanzierungsmöglichkeit vom Unternehmen; aus eigener Geschäftstätigk
 $\textcolor{lime}{+}$ **Vorteil**: Stärkt Liquidität und Unabhängigkeit \
 $\textcolor{red}{-}$ **Nachteil**: Begrenzt, kann lange dauern
 
-# Außenfinanzierung 
+# Außenfinanzierung
 $\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit externe Geldgeber
 
 1. **Eigenkapital**finanzierung: keine Rückzahlungsverplichtung, aber Gewinnbeteiligung für Investoren
@@ -88,11 +88,11 @@ $\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit Bonds oder Obligationen
   - Meist feste Laufzeit (z.B. 5, 10, 30 Jahre) mit Regelmäßigen Zinsen (Kupon) an Investoren
   - Zinshöhe hängt von Bonität ab
 
-$\textcolor{lime}{+}$ **Vorteile**: 
+$\textcolor{lime}{+}$ **Vorteile**:
 - **Große Geldbeträge ohne Eigenkapitalsabgabe**
 - **Günstigere** Finanzierung als Bankkredite (vor allem für etablierte Unternehmen mit guter Bonität)
 
-$\textcolor{red}{-}$ **Nachteile**: 
+$\textcolor{red}{-}$ **Nachteile**:
 - **Kreditwürdigkeit beeinflusst Zinskosten** (Niedrige Bonität $\rarr$ höhere Zinsen)
 - **Hohe Emissionskosten** und komplexer Rechtlicher Prozess (Prospekthaftung)
 
@@ -106,10 +106,10 @@ $\textcolor{lime}{+}$ **Vorteile** für Startups:
 - Zugang zu **Wissen**, Erfahrung, vertwolle Geschäftskontakte
 - **Flexible Verhandlungen** (Business Angels streben nicht nur nach kurzfristigen Profit)
 
-$\textcolor{red}{-}$ **Nachteile** für Startups: 
+$\textcolor{red}{-}$ **Nachteile** für Startups:
 - Abgabe von **Unternehmensanteilen** (Verlust von Kontrolle)
 - Hoher **Erwartungsdruck** auf Wachstum und Skalierbarkeit
-- **Schwierige Suche** nach passenden Business Angel 
+- **Schwierige Suche** nach passenden Business Angel
 
 # Venture Capital
 Abgekürzt VC
@@ -124,9 +124,9 @@ $\textcolor{lime}{+}$ **Vorteile** für Startups:
 - Kein Zwang zur Rückzahlung wie bei Krediten
 
 
-$\textcolor{red}{-}$ **Nachteile** für Startups: 
-- Verlust von **Unternehmensanteilen** 
-- **Einfluss der Investoren** auf Entscheidungen 
+$\textcolor{red}{-}$ **Nachteile** für Startups:
+- Verlust von **Unternehmensanteilen**
+- **Einfluss der Investoren** auf Entscheidungen
 - Hoher **Erfolgsdruck** (Investoren erwarten schnelle Skalierung),
 - Komplexe **Vertragsbindungen**
 
@@ -150,7 +150,7 @@ $\Rarr$ **Kurzfristige Finanzierung laufender Geschäftsausgaben** (z.B. Löhne,
 - Laufzeit typisch 1-3 Jahre
 - Oft als kontokorrentähnliche Nutzung (Unternehmen kann auf den **Kreditrahmen** zugreifen) ((keine ahnung man))
 - Zinsen nur für den genutzten Kreditbetrag
-- **Höhere Zinssätze** als Investitionskredite 
+- **Höhere Zinssätze** als Investitionskredite
 - **Sicherheiten erforderlich** (z.B. Forderungen, Warenbestände)
 
 $\textcolor{lime}{+}$ **Vorteile**: Schnelle Liquiditätsbeschaffung; hohe Flexibilität; nicht langfristig bindend
@@ -163,7 +163,7 @@ $\Rarr$ Einkauf von Waren/Dienstleistungen auf **auf Rechnung** (Zahlungsziel vo
 - Wenn mit **Skonto** (billiger wenn schneller gezahlt): Wenn existent aber nicht genutzt, Lieferantenkredit meist teurer als Bankkredit
 - Oft keine Sicherheiten erforderlicht, Bonität wird trotzdem geprüft
 
-$\textcolor{lime}{+}$ **Vorteile**: 
+$\textcolor{lime}{+}$ **Vorteile**:
 - **Einfache Finanzierung** ohne Bank
 - **Liquidität geschont**
 
@@ -181,9 +181,9 @@ $\Rarr$ Nutzen von Wirtschaftsgut **ohne es zu kaufen**
    - trägt Instandhaltung und Risiken (Reparaturen, Versicherung))
 - **Sale and Lease Back**: Anlagegut an Leasinggeber verkaufen und vom Leasingnehmer zurückleasen
 
-$\textcolor{lime}{+}$ **Vorteile**: 
+$\textcolor{lime}{+}$ **Vorteile**:
 - **Liquidität geschont**
-- **Bilanzneutral** (bei Operativen Leasing) 
+- **Bilanzneutral** (bei Operativen Leasing)
 - **Steuerliche Vorteile**
 
 $\textcolor{red}{-}$ **Nachteile**:
@@ -200,16 +200,86 @@ $\Rarr$ Viele Menschen geben über eine Plattform kleine Geldbeträge um Projekt
 **Bekannte Plattformen:**
 - **International**: Kickstarter, Indiegogo, GoFundMe, Seedmatch
 - **Österreich**: StarteDeinProjekt, Greenrocket, Crowdfunding-Dienstleister (FMA Österreich)
+:
+# Factoring
+$\Rarr$ **Verkauf** von offenen (Kunden-)**Forderungen an Factor**, um sofortige liquide Mittel zu erhalten
 
-$\textcolor{lime}{+}$ **Vorteile**: 
-- **Keine Rückzahlungspficht** bei Reward- oder Donationmodellen
-- **Direkter Markettest** für neue Produkte
-- Potenzielle **virale Verbreitung** durch Social-Media
+- Factor finanziert vor, übernimmt **Ausfallsrisiko** und **Verwaltung** der Forderung
+- Gebühren und Zinsen (teurer als Bankkredite, z.B. 0.5-5%)
+
+$\textcolor{lime}{+}$ **Vorteile**:
+- Schnelle **Liquiditätssteigerung**
+- **Reduziertes Risiko** von Zahlungsausfällen
+- **Entlastung der Buchhaltung** (Mahnwesen wird oft vom Factor übernommen)
 
 $\textcolor{red}{-}$ **Nachteile**:
-- Erfolg **nicht garantiert** (viele Kampagnen scheitern)
-- Hoher **Marketingaufwand** zur Überzeugung der Crowd
-- **Plattformgebühren** und steuerliche Aspekte
+- **Hohe Kosten**
+- **Abhängigkeit** vom Factoring-Dienstleister
+- Mögliche **Negative Reaktion** vom Kunden (Rechnungen werden von Dritten eingefordert)
 
+# Mezzanine Kapital
+$\Rarr$ Mischung zwischen EK und FK, bietet flexible Finanzierungsoptionen
+
+- **Keine Stimmrechte** für Kapitalgeber
+- **Nachrangige Rückzahlung** (bei Insolvenz erst nach FK aber vor EK zurückgezahlt)
+
+**Typische Formen:**
+- **Stille Beteiligung**: Kapitalgeber beteiligt sich an Gewinn, bleibt aber anonym
+- **Wandelanleihen**: FK, das später in EK umgewandelt werden kann
+- **Nachrangdarlehen**: Werden erst nach dem FK bedient
+- **Genussscheine**: Ähnlich einer Anleihe aber mit Gewinnbeteiligung
+
+
+$\textcolor{lime}{+}$ **Vorteile**: Kapital aufnehmen ohne Verschuldung offiziell zu erhöhen 
+
+$\textcolor{red}{-}$ **Nachteile**: Hohe Kosten
+
+# Finanzierungsregeln - Finanzkennzahl
+- **Eigenkapitalquote**
+- Verschuldungsgrad (Gearing Ratio)
+- Goldene Finanzierungsregel (Anlagendeckung)
+- Cashflow
+- "Praktiker-Cashflow"
+- Fiktive Schuldentilgungsdauer
+- Rentabilität des Eigenkapitals
+- Quicktest - Kennzahl für finanzielle Stabilität und Ertragskraft
+
+# Eigenkapitalquote
+$$
+\Rarr \quad \text{Eigenkapitalquote (\%): } \frac{\text{Eigenkapital}}{\text{Gesamtkapital}} \cdot 100\%
+$$
+
+![1_ekq-bild](assets/1_ekq-bild.png)
+
+Eigenkapital:
+- Gezeichnetes Kapital (Grund- Stammkapital)
+- Kapitalrücklagen (Ausgabe von Anteilen über Nennwert)
+- Gewinnrücklagen + nicht ausgeschüttete Gewinne (soweit noch nicht in Rücklagen)
+
+**Unterschiede nach Branchen**: Bei Einzelhandel und Banken geringer
+
+$\textcolor{lime}{+}$ **Vorteile** einer hohen EK-Quote:
+- **Höhere Kreditwürdigkeit**
+- Geringeres Ausfallsrisiko (**Insolvenzrisiko sinkt**)
+- **Größere Unabhängigkeit**: Geringere Zins- und Tilgungszahlungen, weniger abhängig von Gläubigern
+
+$\textcolor{red}{-}$ **Nachteile** einer hohen EK-Quote:
+- **Geringere Eigenkaptialrentabilität**
+
+## Was man daraus ableiten kann:
+||**Eigenkapital**|**Fremdkapital**|
+|-|-|-|
+|**Tilgung/Rückzahlung**|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|
+|**Fristigkeit**|langfristig|langfristig/kurzfristig|
+|**Kosten**|variabel (Dividende)|in der Regel fix (Zinsen)|
+|**wenn höher...**|...mehr Reserven|...rentabler|
+
+## Maßnahmen zur Steigerung dieser Quote
+- **Gewinnthesaurierung**: Gewinne im Unternehmen lassen, anstatt sie als Dividenden auszuschütten
+- **Kapitalerhöhung**: Zusätzliche EK-Anlagen durch Eigentümer oder externe Investoren
+- **Reduzierung von FK**:Tilgung bestehender Kredite, um die Gesamtverbindlichkeiten zu senken
+- **Effizientes Management des UV**: Optimierung Lagerbestände und Forderungen, um Liquidität freizusätzen.
+- **Fördermittel und Subventionen**: Nutzung von Förderprogrammen (z.B. AWS oder FFG)
+- **Umwandlung FK in EK**: Verhandlungen mit Gläubigern, um bestehende Schulden in EK umzuwandeln.
 
 [nicht fertig]
