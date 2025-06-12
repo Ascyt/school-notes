@@ -78,4 +78,20 @@ $$
 \text{Kritische Auslastung} = \text{(schreib ich jz nicht auf weil wir bekommen sowieso Formelsammlung)}
 $$
 
-[nicht fertig]
+# Rentabilitätsvergleich
+**Rentabilität**: Die **Verzinsung** des eingesetzten Kapitals in % auf Basis von **Gewinn** oder **Einsparung**
+
+$$
+\text{Rentabilität}=\frac{\text{Gewinn}}{(\text{Anfangskapital}+\text{Endkapital})\div 2}
+$$
+
+Der $\text{Gewinn}$ kann hier auch die $\text{Kostenersparnis}$ sein.
+
+# Statische Amortisationsdauer
+Innerhalb welches Zeitraumes wird die Investition zurückbezahlt?
+
+$$
+\text{Amortisation} = \frac{\text{Anschaffungswert}-\text{Restwert}}{\text{Gewinn}}
+$$
+
+Der $\text{Gewinn}$ kann hier auch die $\text{Kostenersparnis}$ sein.
