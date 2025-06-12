@@ -79,22 +79,6 @@ $\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit externe Geldgeber
    - Wandelanleihen (Anleihen, die später in Aktien umgewandelt werden)
    - Stille Beteiligung
 
-# Anleihensfinanzierug
-$\Rarr$ Finanzierungsmöglichkeit von Unternehmen; mit Bonds oder Obligationen
-
-- **Festferzinsliche Wertpapiere** mit dem Unternehmen Kapital am Kapitalmarkt aufnehmen
-- Anleger kaufen Anleihe und erhalten da **regelmäßige Zinszahlungen** (Kupon) sowie am Ende **Rückzahlungen des Nennbetrags**:
-  - Meist feste Laufzeit (z.B. 5, 10, 30 Jahre) mit Regelmäßigen Zinsen (Kupon) an Investoren
-  - Zinshöhe hängt von Bonität ab
-
-$\textcolor{lime}{+}$ **Vorteile**:
-- **Große Geldbeträge ohne Eigenkapitalsabgabe**
-- **Günstigere** Finanzierung als Bankkredite (vor allem für etablierte Unternehmen mit guter Bonität)
-
-$\textcolor{red}{-}$ **Nachteile**:
-- **Kreditwürdigkeit beeinflusst Zinskosten** (Niedrige Bonität $\rarr$ höhere Zinsen)
-- **Hohe Emissionskosten** und komplexer Rechtlicher Prozess (Prospekthaftung)
-
 # Business Angels
 - **Reiche Leute**, die Start-Ups unterstützen (mit Kapital, Know-how, Netzwerken)
 - Investment meist €25k bis €500k in Frühphase (für Unternehmensanteile)
@@ -155,6 +139,24 @@ $\Rarr$ **Kurzfristige Finanzierung laufender Geschäftsausgaben** (z.B. Löhne,
 $\textcolor{lime}{+}$ **Vorteile**: Schnelle Liquiditätsbeschaffung; hohe Flexibilität; nicht langfristig bindend
 
 $\textcolor{red}{-}$ **Nachteile**: Hohe Zinskosten; Gefahr von Fremdkapitalabhängigkeit
+
+
+# Unternehmensfinanzierung über Anleihen
+Mit Bonds oder Obligationen
+
+- **Festferzinsliche Wertpapiere** mit dem Unternehmen Kapital am Kapitalmarkt aufnehmen
+- Anleger kaufen Anleihe und erhalten da **regelmäßige Zinszahlungen** (Kupon) sowie am Ende **Rückzahlungen des Nennbetrags**:
+  - Meist feste Laufzeit (z.B. 5, 10, 30 Jahre) mit Regelmäßigen Zinsen (Kupon) an Investoren
+  - Zinshöhe hängt von Bonität ab
+
+$\textcolor{lime}{+}$ **Vorteile**:
+- **Große Geldbeträge ohne Eigenkapitalsabgabe**
+- **Günstigere** Finanzierung als Bankkredite (vor allem für etablierte Unternehmen mit guter Bonität)
+
+$\textcolor{red}{-}$ **Nachteile**:
+- **Kreditwürdigkeit beeinflusst Zinskosten** (Niedrige Bonität $\rarr$ höhere Zinsen)
+- **Hohe Emissionskosten** und komplexer Rechtlicher Prozess (Prospekthaftung)
+
 
 # Lieferantenkredite
 $\Rarr$ Einkauf von Waren/Dienstleistungen auf **auf Rechnung** (Zahlungsziel von 30, 60 oder 90 Tagen)
@@ -283,3 +285,21 @@ $\textcolor{red}{-}$ **Nachteile** einer hohen EK-Quote:
 
 # Zusammenfassung
 
+## Finanzplan
+
+Besteht aus Planung der Einnahmen, Ausgaben, Investitionen, Liquiditätsbedarf, Finanzierung, Rentabilität, Steuern, Risikomanagement. 
+
+Hat das Ziel, laufende Geschäftstätigkeit und Investitionen zu finanzieren, mit der Aufgabe der Berechnung der notwendigen Finanzmittel, und der Suche nach geeigneten Formen der Finanzierung bei Kapitalbedarf und Veranlagungsmöglichkeiten für Überschüsse
+
+
+## Zusammenhang Bilanz, GuV, Cash-Flow-Statement
+- Bilanz zeigt das Vermögen (AV/UV) und die Finanzierung (EK, Verbindlichkeiten, liquide Mittel) 
+- Die GuV ermittelt den Gewinn als Differenz zwischen Erträgen und Aufwendungen und zeigt die Veränderung des EKs
+- Das Cash-Flow-Statement stellt die Veränderung der liquiden Mittel durch Ein- und Auszahlungen dar
+
+## Wirkung von Geschäftsfällen auf Gewinn/Cashflow
+- Geschäftsfälle können unterschiedliche Auswirkungen auf liquide Mittel, EK und andere Bilanzpositionen haben
+- Es gibt Fälle, die nur den Cashflow (liquide Mittel), nur den Gewinn (EK) oder beides beeinflussen
+- Manche Geschäftsfälle wirken sich nur auf Bilanzpositionen aus, ohne Gewinn oder Cashflow zu beeinflussen (z.B. Umwandlung von FK in EK)
+
+[nicht fertig]
