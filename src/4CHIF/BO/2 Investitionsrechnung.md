@@ -1,0 +1,11 @@
+# Einführung
+- Methoden zur Entscheidung, ob und welche Investition getätigt werden soll
+- Statische oder Investitionsrechnung (Durchschnittswerte oder auf 1 Jahr):
+  - **Kostenvergleichsrechnung**: Welche kostet weniger?
+  - **Gewinnvergleichsrechnung**: Welche bringt mehr absoluten Gewinn?
+  - **Rentabilitätsrechnung**: Welche bringt mehr relativen Gewinn?
+  - **Amortisationsrechnung**: Wie schnell ist sie abbezahlt?
+- Dynamische Rentabilitätsrechnung (Zeitwert vom Geld wird berücksichtigt):
+  - **Kapitalwert**: Wie viel ist sie auf heute wert?
+  - **Dynamische Amortisationsdauer**: Wie schnell ist sie mit Berücksichtigung von Zinseszins abbezahlt?
+  - **Interner Zinsfuß**: "Welche Verzinsung des bringt die Investition?" (steht genau so in den Folien, ich habe absolut keinen Schimmer was damit gemeint ist)
