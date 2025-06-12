@@ -120,7 +120,7 @@ $\Rarr$ **Langfristiger Kredit** für größere Anschaffungen bzw. Projekte (z.B
 - Wird von **Banken** angeboten
 - Laufzeit typisch 5-20 Jahre
 - Rückzahlung in **Raten** mit **Zinsen** oder **endfälliges Modell**
-- Zinssätze hängen ab von Bonität, Laufzeit, SicherheitenS
+- Zinssätze hängen ab von Bonität, Laufzeit, Sicherheiten
 - Fixe oder variable Zinsen sind möglich
 
 $\textcolor{lime}{+}$ **Vorteile**: Langfristige Planungssicherheit; steuerliche Absetzbarkeit der Zinsen; Schonung der Liquidität
@@ -144,7 +144,7 @@ $\textcolor{red}{-}$ **Nachteile**: Hohe Zinskosten; Gefahr von Fremdkapitalabh�
 # Unternehmensfinanzierung über Anleihen
 Mit Bonds oder Obligationen
 
-- **Festferzinsliche Wertpapiere** mit dem Unternehmen Kapital am Kapitalmarkt aufnehmen
+- **Festverzinsliche Wertpapiere** mit dem Unternehmen Kapital am Kapitalmarkt aufnehmen
 - Anleger kaufen Anleihe und erhalten da **regelmäßige Zinszahlungen** (Kupon) sowie am Ende **Rückzahlungen des Nennbetrags**:
   - Meist feste Laufzeit (z.B. 5, 10, 30 Jahre) mit Regelmäßigen Zinsen (Kupon) an Investoren
   - Zinshöhe hängt von Bonität ab
@@ -159,7 +159,7 @@ $\textcolor{red}{-}$ **Nachteile**:
 
 
 # Lieferantenkredite
-$\Rarr$ Einkauf von Waren/Dienstleistungen auf **auf Rechnung** (Zahlungsziel von 30, 60 oder 90 Tagen)
+$\Rarr$ Einkauf von Waren/Dienstleistungen **auf Rechnung** (Zahlungsziel von 30, 60 oder 90 Tagen)
 
 - Wenn mit **Skonto** (billiger wenn schneller gezahlt): Wenn existent aber nicht genutzt, Lieferantenkredit meist teurer als Bankkredit
 - Oft keine Sicherheiten erforderlicht, Bonität wird trotzdem geprüft
@@ -201,7 +201,17 @@ $\Rarr$ Viele Menschen geben über eine Plattform kleine Geldbeträge um Projekt
 **Bekannte Plattformen:**
 - **International**: Kickstarter, Indiegogo, GoFundMe, Seedmatch
 - **Österreich**: StarteDeinProjekt, Greenrocket, Crowdfunding-Dienstleister (FMA Österreich)
-:
+
+$\textcolor{lime}{+}$ **Vorteile**:
+- **Keine Rückzahlungspflicht**
+- Direkter **Markettest** für neue Produkte
+- Potenzielle **virale Verbreitung** duch Social Media
+
+$\textcolor{red}{-}$ **Nachteile**:
+- Erfolg **nicht garantiert**
+- Hoher **Marketingaufwand**
+- **Plattformgebühren** und steuerliche Aspekte
+
 # Factoring
 $\Rarr$ **Verkauf** von offenen (Kunden-)**Forderungen an Factor**, um sofortige liquide Mittel zu erhalten
 
@@ -301,5 +311,27 @@ Hat das Ziel, laufende Geschäftstätigkeit und Investitionen zu finanzieren, mi
 - Geschäftsfälle können unterschiedliche Auswirkungen auf liquide Mittel, EK und andere Bilanzpositionen haben
 - Es gibt Fälle, die nur den Cashflow (liquide Mittel), nur den Gewinn (EK) oder beides beeinflussen
 - Manche Geschäftsfälle wirken sich nur auf Bilanzpositionen aus, ohne Gewinn oder Cashflow zu beeinflussen (z.B. Umwandlung von FK in EK)
+
+
+## Allgemeine Finanzierungsmöglichkeiten
+||**Innenfinanzierung**|**Außenfinanzierung**|
+|-|-|-|
+|**Woraus?**|Aus eigener Geschäftstätigkeit|Mit externe Geldgeber|
+|**Wie?**|Gewinne; Abschreibuns-/Rückstellungsfinanzierung; Verkauf AV/UV|EK-/FK-/Hybridsfinanzierung|
+|**Stärkt Liquidität und Unabhängigkeit**|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|
+|**Hohe Verfügbarkeit, geringe Dauer**|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|
+
+## Konkrete Finanzierungsmöglichkeiten
+||**Beschreibung**|**Info**|**Vorteile**|**Nachteile**|
+|-|-|-|-|-|
+|**Business Angels**|Reiche Leute, die Start-Ups unterstützen|Mit Kapital und Know-How; meist €25k bis €500k; erwarten hohe Rendite|Schnelle Finanzierung; Wissen; Flexibel|Unternehmensanteile; Erwartungsdruck; Schwierige Suche|
+|**Venture Capital**|Risikokapital von professionelen Investoren für Start-Ups|Investoren streben späteren Exit und erwarten hohe Rendite|Schnelles Wachstum; Netzwerke und Wissen; kein Zwang zur Rückzahlung|Unternehmensanteile; Investoreneinfluss; Erfolgsdruck; komplexe Vertragsbindungen|
+|**Investitionskredite**|Langfristiger Kredit für größere Anschaffungen|Nicht für laufende Kosten; Von Banken; typisch 5-20 Jahre|Langfristige Planungssicherheit; steuerliche Zinsabsetzbarkeit; Liquiditätsschonung|Hohe Zinsen; lange Bindung; Rückzahlung|
+|**Betriebsmittelkredite**|Kurzfristiger Kredit für laufende Geschäftsausgaben|typisch 1-3 Jahre; Sicherheiten erforderlich|Schnelle Liquiditätsbeschaffung; hohe Flexibilität; kurzfristig|Hohe Zinskosten; Gefahr von Fremdkapitalabhängigkeit|
+|**Finanzierung über Anleihen**|Festferzinsliche Wertpapiere; Anleger kaufen Anleihe und erhalten Zinszahlungen (Kupon)|Mit Bonds oder Obligationen; feste Laufzeit|Große Geldbeträge; günstig|Kreditwürdigkeit beeinflusst Zinskosten; hohe Emissionskosten|
+|**Lieferantenkredite**|Einkauf von Waren/Dienstleistungen auf Rechnung|Ohne Skontonutzung oft teurer als Bankkredit|einfache Finanzierung ohne Bank|schont Liquidität|Begrenzte Kreditlinie; zu viel unbezahltes verschlechtert Bonität|
+|**Leasing**|Nutzen von Wirtschaftsgut ohne es zu kaufen|Operatives Leasing (kurz), Finanzierungsleasing (lang), Save and Lease Back (verkaufen und leasen)|schont Liquidität; Bilanzneutral; steuerliche Vorteile|Gesamtkosten höher als Kauf|
+|**Crowdfunding**|Viele Menschen geben über eine Plattform jeweils kleine Geldbeträge|Reward-Based (Produkt/Prämie); Equity-Based (Unternehmensanteile); Lending-Based (Zinsen); Donation-Based (keine Gegenleistung)|
+
 
 [nicht fertig]
