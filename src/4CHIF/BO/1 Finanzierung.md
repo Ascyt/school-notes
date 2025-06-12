@@ -331,7 +331,7 @@ Hat das Ziel, laufende Geschäftstätigkeit und Investitionen zu finanzieren, mi
 |**Finanzierung über Anleihen**|Festferzinsliche Wertpapiere; Anleger kaufen Anleihe und erhalten Zinszahlungen (Kupon)|Mit Bonds oder Obligationen; feste Laufzeit|Große Geldbeträge; günstig|Kreditwürdigkeit beeinflusst Zinskosten; hohe Emissionskosten|
 |**Lieferantenkredite**|Einkauf von Waren/Dienstleistungen auf Rechnung|Ohne Skontonutzung oft teurer als Bankkredit|einfache Finanzierung ohne Bank|schont Liquidität|Begrenzte Kreditlinie; zu viel unbezahltes verschlechtert Bonität|
 |**Leasing**|Nutzen von Wirtschaftsgut ohne es zu kaufen|Operatives Leasing (kurz), Finanzierungsleasing (lang), Save and Lease Back (verkaufen und leasen)|schont Liquidität; Bilanzneutral; steuerliche Vorteile|Gesamtkosten höher als Kauf|
-|**Crowdfunding**|Viele Menschen geben über eine Plattform jeweils kleine Geldbeträge|Reward-Based (Produkt/Prämie); Equity-Based (Unternehmensanteile); Lending-Based (Zinsen); Donation-Based (keine Gegenleistung)|
-
+|**Crowdfunding**|Viele Menschen geben über eine Plattform jeweils kleine Geldbeträge|Reward-Based (Produkt/Prämie); Equity-Based (Unternehmensanteile); Lending-Based (Zinsen); Donation-Based (keine Gegenleistung)|Keine Rückzahlungspflicht; Markettest; potenzielle Viralität|Erfolg nicht garantiert; Marketingaufwand; Plattformgebühren|
+|**Factoring**|Verkauf von offenen (Kunden-)Forderungen an Factor|Um sofortige liquide Mittel zu erhalten; Factor finanziert vor; Gebühren und Zinsen|schnelle Liquiditätssteigerung; Reduziertes Risiko von Zahlungsausfällen; Entlastung der Buchhaltung|Hohe Kosten; Abhängigkeit vom Dienstleister; mögl. negative Reaktion von Kunden|
 
 [nicht fertig]
