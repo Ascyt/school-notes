@@ -45,10 +45,10 @@
 8. **Risikomanagement**: Identifikation finanzieller Risiken, Risikominimierung
 
 # Zusammenhang Bilanz, GuV, Cash-Flow-Statement
-[todo: insert image]
+![1_zusammenhang-bilanz-guv-cashflow](assets/1_zusammenhang-bilanz-guv-cashflow.png)
 
 # Wirkung von Geschäftsfällen auf Gewinn/Cashflow
-[insert image or explain]
+![1_auswirkung-geschaeftsfaelle-gewinn-cashflow](assets/1_auswirkung-geschaeftsfaelle-gewinn-cashflow.png)
 
 # Innenfinanzierung
 $\Rarr$ Finanzierungsmöglichkeit vom Unternehmen; aus eigener Geschäftstätigkeit
@@ -281,4 +281,5 @@ $\textcolor{red}{-}$ **Nachteile** einer hohen EK-Quote:
 - **Fördermittel und Subventionen**: Nutzung von Förderprogrammen (z.B. AWS oder FFG)
 - **Umwandlung FK in EK**: Verhandlungen mit Gläubigern, um bestehende Schulden in EK umzuwandeln.
 
-[nicht fertig]
+# Zusammenfassung
+
