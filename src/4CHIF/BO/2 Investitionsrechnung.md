@@ -66,7 +66,7 @@ $$
 \text{Kalkulatorische Abschreibung} = \frac{\text{Anschaffungswert} \textcolor{red}{-} \text{Restwert}}{\text{Nutzungsdauer}}
 $$
 $$
-\text{Kalkulatorische Zinsen} = \frac{\text{Anschaffungswert} \textcolor{lime}{+} \text{Restwert}}{\text{Nutzungsdauer}} \times \text{Zinssatz}
+\text{Kalkulatorische Zinsen} = \frac{\text{Anschaffungswert} \textcolor{lime}{+} \text{Restwert}}{2} \times \text{Zinssatz}
 $$
 
 - **Restwert**: Wert der Investition am Ende der Nutzungsdauer
