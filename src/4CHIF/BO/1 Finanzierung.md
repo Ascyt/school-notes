@@ -333,5 +333,20 @@ Hat das Ziel, laufende Geschäftstätigkeit und Investitionen zu finanzieren, mi
 |**Leasing**|Nutzen von Wirtschaftsgut ohne es zu kaufen|Operatives Leasing (kurz), Finanzierungsleasing (lang), Save and Lease Back (verkaufen und leasen)|schont Liquidität; Bilanzneutral; steuerliche Vorteile|Gesamtkosten höher als Kauf|
 |**Crowdfunding**|Viele Menschen geben über eine Plattform jeweils kleine Geldbeträge|Reward-Based (Produkt/Prämie); Equity-Based (Unternehmensanteile); Lending-Based (Zinsen); Donation-Based (keine Gegenleistung)|Keine Rückzahlungspflicht; Markettest; potenzielle Viralität|Erfolg nicht garantiert; Marketingaufwand; Plattformgebühren|
 |**Factoring**|Verkauf von offenen (Kunden-)Forderungen an Factor|Um sofortige liquide Mittel zu erhalten; Factor finanziert vor; Gebühren und Zinsen|schnelle Liquiditätssteigerung; Reduziertes Risiko von Zahlungsausfällen; Entlastung der Buchhaltung|Hohe Kosten; Abhängigkeit vom Dienstleister; mögl. negative Reaktion von Kunden|
+|**Mezzanine Kapital**|Mischung zwischen EK und FK|Stille Beteiligung (bleibt anonym); Wandelanleihen (FK; später EK); Nachrangdarlehen (nach FK); Genussscheine (Anleihe mit Gewinnbeteiligung)|Kapital aufnehmen ohne Verschuldung offiziell zu erhöhen|Hohe Kosten|
 
-[nicht fertig]
+## Eigenkapitalquote
+$$
+\text{Eigenkapitalquote (\%): } \frac{\text{Eigenkapital}}{\text{Gesamtkapital}} \cdot 100\%
+$$
+
+**Hohe EK-Quote:** Höhere Kreditwürdigkeit; niedriges Insolvenzrisiko; große Unabhängigkeit; aber geringere EK-Rentabilität
+
+||**Eigenkapital**|**Fremdkapital**|
+|-|-|-|
+|**Tilgung/Rückzahlung**|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|
+|**Fristigkeit**|langfristig|langfristig/kurzfristig|
+|**Kosten**|variabel (Dividende)|in der Regel fix (Zinsen)|
+|**wenn höher...**|...mehr Reserven|...rentabler|
+
+**Maßnahmen zur Steigerung**: Gewinne im Unternehmen lassen; Kapitalerhöhung; FK-Reduzierung; UV-Management; Fördermittel und Subventionen; Umwandlung FK in EK
