@@ -149,6 +149,16 @@ Hier wird nur $\vec{v}_y$ von $g$ beeinflusst.
 
 ## Rotation
 
-Ähnlich zu Translation aber mit anderen Variablennamen:
+Ähnlich zu Translation aber mit anderen Symbolen:
 
-|Translation|Rotation|
+|T Name|T Symbol|T Einheit||R Name|R Symbol|R Einheit|
+|-|-|-|-|-|-|-|
+|Weg|$\vec{s}$|$\text{m}$||Drehwinkel|$\varphi$|$\text{rad}$|
+|Geschwindigkeit|$\vec{v}$|$\frac{\text{m}}{\text{s}}$||Winkelgeschwindigkeit|$\omega$|$\frac{\text{rad}}{\text{s}}$|
+|Beschleunigung|$\vec{a}$|$\frac{\text{m}}{\text{s}^2}$||Winkelbeschleunigung|$\alpha$|$\frac{\text{rad}}{\text{s}^2}$|
+
+Zusätzlich kann aber der Drehwinkel aus Bogenlänge und Radius geformt werden:
+
+$$
+\varphi = \frac{b}{r}
+$$
