@@ -2,6 +2,7 @@
 ## Kinematik
 
 **Allgemein:**
+
 |Name|Symbol|Einheit|
 |-|-|-|
 |Weg|$\vec{s}$|$\text{m}$|
@@ -9,6 +10,7 @@
 |Beschleunigung|$\vec{a}$|$\frac{\text{m}}{\text{s}^2}$|
 
 **Konstanten:**
+
 |Name|Symbol|Typ|Wert|
 |-|-|-|-|
 |Erdbeschleunigung|$g$|Beschleunigung|$9.81 \frac{\text{m}}{\text{s}^2}$|
@@ -20,7 +22,7 @@ $$
 $$
 \vec{v}(t)=\vec{a}\cdot t \quad \ldots\text{falls }\vec{a}\text{ konstant}
 $$
----
+\
 $$
 \vec{s}(t)=\int_0^t \vec{v}(t) \ dt
 $$
@@ -30,7 +32,7 @@ $$
 $$
 \vec{a}\ (t) = \vec{v}\ '(t) = \vec{s}\ ''(t)
 $$
----
+\
 $$
 \vec{v}(t)\cdot\cos(\alpha)=\vec{v}_x(t)
 $$

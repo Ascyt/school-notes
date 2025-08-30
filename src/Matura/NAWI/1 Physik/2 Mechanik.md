@@ -147,3 +147,8 @@ $$
 
 Hier wird nur $\vec{v}_y$ von $g$ beeinflusst.
 
+## Rotation
+
+Ähnlich zu Translation aber mit anderen Variablennamen:
+
+|Translation|Rotation|
