@@ -8,12 +8,14 @@
 |Weg|$\vec{s}$|$\text{m}$||Drehwinkel|$\varphi$|$\text{rad}$|
 |Geschwindigkeit|$\vec{v}$|$\frac{\text{m}}{\text{s}}$||Winkelgeschwindigkeit|$\omega$|$\frac{\text{rad}}{\text{s}}$|
 |Beschleunigung|$\vec{a}$|$\frac{\text{m}}{\text{s}^2}$||Winkelbeschleunigung|$\alpha$|$\frac{\text{rad}}{\text{s}^2}$|
+|||||Frequenz|$f$|$\text{Hz}=\frac{1}{s}$|
+|||||Periodendauer|$T$|$\text{s}$|
 
 **Konstanten:**
 
-|Name|Symbol|Typ|Wert|
-|-|-|-|-|
-|Erdbeschleunigung|$g$|Beschleunigung|$9.81 \frac{\text{m}}{\text{s}^2}$|
+|Name|Symbol|Wert|
+|-|-|-|
+|Erdbeschleunigung|$g$|$9.81 \frac{\text{m}}{\text{s}^2}$|
 
 **Formeln:**
 $$
@@ -49,3 +51,23 @@ $$
 $$
 \frac{\Delta \omega}{\Delta t}=\alpha
 $$
+
+<br />
+
+$$
+T = \frac{1}{f}
+$$
+
+## Dynamik
+
+**Allgemein:**
+
+|Name|Symbol|Einheit
+|-|-|-|
+|Kraft|$\vec{F}$|$\text{N}=\frac{\text{kg}\cdot\text{m}}{\text{s}^2}$|
+
+**Konstanten:**
+
+|Name|Symbol|Wert|
+|-|-|-|
+|Gravitationskonstante|$G$|$6.67384 \cdot 10^{-11} \frac{m^3}{kg \cdot s^2}$|

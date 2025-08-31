@@ -34,13 +34,13 @@ $$
 Die Einheiten können wiefolgt hergeleitet werden:
 
 $$
-\vec{s} \quad \ldots[\text{m}]
+[\vec{s}] \quad \ldots \text{m}
 $$
 $$
-\vec{s}(t)=\vec{v}\cdot t\quad \ldots \left[\text{m}=\frac{\text{m}}{\text{s}} \cdot \text{s}\right]
+[\vec{s}(t)=\vec{v}\cdot t]\quad \ldots \text{m}=\frac{\text{m}}{\text{s}} \cdot \text{s}
 $$
 $$
-\vec{v}(t)=\vec{a}\cdot t\quad\ldots\left[\frac{\text{m}}{\text{s}}=\frac{m}{s^2}\cdot s\right]
+[\vec{v}(t)=\vec{a}\cdot t]\quad \ldots \frac{\text{m}}{\text{s}}=\frac{m}{s^2}\cdot s
 $$
 
 ### Übung: Herleitung zeitfreie Gleichung
@@ -62,6 +62,8 @@ Wichtig ist aber die **Erdbeschleunigung**:
 $$
 g \approx 9.81\frac{\text{m}}{\text{s}^2}
 $$
+
+Diese ist leicht abhängig vom Ort auf der Erde (Aufgrund der Zentrifugalkraft an den Polen höher als am Äquator).
 
 ### Übung: S38 B1.1.11: Zehnmeterturm
 
@@ -162,3 +164,78 @@ Zusätzlich kann aber der Drehwinkel aus Bogenlänge und Radius geformt werden:
 $$
 \varphi = \frac{b}{r}
 $$
+
+Folgendes trifft für Änderungen zu:
+
+$$
+\frac{\Delta \varphi}{\Delta t}=\omega
+$$
+$$
+\frac{\Delta \omega}{\Delta t}=\alpha
+$$
+
+Die Frequenz und Periodendauer:
+$$
+\text{Frequenz } f = \frac{\text{Anzahl der periodischen Vorgänge}}{\text{Dazu benötigte Zeit}}
+$$
+$$
+[f] = \text{Hz} \quad \text{(Hertz)}
+$$
+$$
+\text{Periodendauer } T = \frac{1}{f}
+$$
+$$
+[T] = s
+$$
+
+# Dynamik
+
+## Newtonische Gesetze bzw. Axiome
+
+1. **Gleichförmige Bewegung außer bei Kraftauswirkung**: Jeder Körper verharrt im Zustand der Ruhe oder der gleichförmigen geradlinigen Bewegung, solange keine Kraft auf ihn wirkt. Wird auch "**Trägheitssatz**" genannt.
+2. **Beschleunigung proportional zur Kraft**: Die Beschleunigung eines Körpers ist proportional zu der auf ihn wirkenden Kraft. Es gilt: $\vec{F}=m\cdot\vec{a}$
+3. **Gleich große entgegengesetze Kräfte bei Kollision**: Wirkt ein Körper mit einer Kraft $\vec{F}_{1\rarr2}$ auf einen zweiten, so wirkt dieser mit einer gleich großen entgegengesetzten Kraft auf den ersten Körper zurück. Es gilt: $\vec{F}_{1\rarr2}=-\vec{F}_{2\rarr1}$. Wird auch "**Wechselwirkungs-**" bzw. "**Reaktionsprinzip**"" genannt. 
+
+Diese gelten nur in einem ausgewählten Bezugssystem und nicht gleichzeitig in zwei zueinander beschleunigten. Bezugssysteme, wo diese Gesetze gelten, heißen **Inertialsysteme**.
+
+![Bezugssystem S. 53](image.png)
+
+## Grundgesetz der Dynamik (2. Newtonisches Gesetz)
+
+Kraft ist gleich Masse mal Beschleunigung:
+
+$$
+\vec{F} = m \cdot \vec{a}
+$$
+
+$$
+[F] = [m\cdot a]= \frac{\text{kg} \cdot \text{m}}{\text{s}^2} = \text{N} \quad \text{(Newton)}
+$$
+
+## Masse, Trägheit und Gewicht
+
+Wenn wir zwei Massen ($m_1$ und $m_2$) haben, über sie gegenseitig eine Gravitation (Schwerkraft) aus:
+
+$$
+F_G=G\cdot\frac{m_1\cdot m_2}{r^2}
+$$
+
+Hier ist $G$ die Gravitationskonstante:
+$$
+G \approx 6.67384 \cdot 10^{-11} \frac{m^3}{kg \cdot s^2}   
+$$
+
+diese Kraft ist auch gleich der Masse mal der Fallbeschleunigung:
+$$
+F_G=m\cdot g
+$$
+
+Die Masse kann man entweder mittels Schwere ("wie stark ist es von der Erde angezogen?") oder der Trägheit ("wie schwer ist es, es in Bewegung zu bringen?") gemessen werden, jedoch in der Praxis fast ausschließlich mit der Schwere.
+
+## Dichte
+
+Die Masse eines Körpers bleibt auch bei Änderung von:
+- Aggregatszustand
+- Form bzw. Volumen
+- äußeren Bedingungen wie Druck oder Temperatur
+konstant. 
