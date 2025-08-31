@@ -231,7 +231,7 @@ $$
 
 Eine Kraft von $1\text{N}$ beschleunigt einen Körper der Masse $1\text{kg}$ mit $1\frac{\text{m}}{\text{s}^2}$.
 
-**Impulserhaltungssatz**: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. 
+**Impulserhaltungssatz**: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Dies gilt auch für den Drehimpuls.
 
 - **Elastischer Stoß**: Die Summe der kinetischen Energie der Stoßpartner ist konstant. 
 - **Inelastischer Stoß**: Ein Teil der kinetischen Energie wird in **innere Energie** umgewandelt. 
@@ -450,17 +450,29 @@ $$
 [W] = [F] \cdot [s] = \text{N} \cdot \text{m}=\text{J}\text{ (Joule)}
 $$
 
-**Hubarbeit**: Die Arbeit um einen Körper mit einer konstanten Kraft um eine Höhe anheben. Die verrichtete Hubarbeit ist im Körper als **potenzielle Energie** ($E_\text{pot}$) gespeichert. 
+Die Arbeit ist auch gleich der jeweiligen Energie. 
 
-**Dehnungsarbeit**: Hier ist $D$ die Federkonstante. Diese Arbeit wird als **elastische Energie** ($E_\text{el}$) gespeichert. 
+**Arbeitsformen:**
+- **Hubarbeit $W_\text{Hub}$**: Die Arbeit um einen Körper mit einer konstanten Kraft um eine Höhe anheben. Die verrichtete Hubarbeit ist im Körper als **potenzielle Energie** ($E_\text{pot}$) gespeichert. 
+- **Dehnungsarbeit $W_\text{Dehn}$**: Hier ist $D$ die Federkonstante. Diese Arbeit wird als **elastische Energie** ($E_\text{el}$) gespeichert. 
+- **Beschleunigungsarbeit $W_\text{a}$**: Wird ein Körper körper aus dem Stillstand beschleunigt, ist dazu Beschleunigungsarbeit notwending. Diese wird in **kinetische Energie** ($E_\text{kin}$) gespeichert. 
+- **Reibungsarbeit $W_\text{R}$**: Die Kraft soll der Reibungskraft entsprechen ($F_N \cdot \mu$ wo $\mu$ dem Reibungskoeffizienten entspricht). Diese wird in **innere Energie** ($U$) gespeichert. 
+- **Rotationsarbeit $W_\text{Rot}$**: Wieder mal das selbe wie bei der Translation nur mit den Symbolen der Rotation ($M \cdot \varphi$). Wird in **Rotationsenergie** ($E_\text{Rot}$) gespeichert. 
+
+**Erhaltung der Energie:** Ein System heißt "abgeschlossen" wenn die Gesamtenergie ($E_\text{ges}$) immer gleichbleibend ist. Energieformen können jedoch umgewandelt werden. Die Erhaltung der Energie ist in irgendeiner Art und Weise immer gegeben (bis auf astrophysische Ausnahmen? Rotverschiebung wegen Ausdehnung vom Universum??). Falls das System nicht abgeschlossen ist die Änderung der Gesamtenergie gleich der Arbeit der äußeren Kräfte.
+
+**Mittlere Leistung:**
 $$
-W_\text{Dehn}=\frac{F_\text{Dehn}\cdot s_\text{Dehn}}{2}=\frac{D\cdot s^2}{2}
+\overline{P} = \frac{\Delta W}{\Delta t} \qquad [\overline{P}]=\frac{J}{s}=\text{W} \quad \text{(Watt)}
 $$
 
-**Beschleunigungsarbeit**: Wird ein Körper körper aus dem Stillstand beschleunigt, ist dazu Beschleunigungsarbeit notwending. Diese wird in **kinetische Energie** ($E_\text{kin}$). Die Formel ist noch immer $W_a = F_a \cdot s$.
+**Wirkungsgrad**: Verhältnis von genutzter zu zugeführter Arbeit:
+$$
+\eta = \frac{W_\text{Nutz}}{W_\text{zu}}=\frac{P_\text{Nutz}}{P_\text{zu}} 
+$$
+Beispiel: Eine alte Glühbirne hat einen Wirkungsgrad von $\approx 5\%$ (da der Großteil der Energie in Wärme verloren wird), während eine LED einen Wirkungsgrad von $\approx 50\%$ hat.
 
 ### Übung: S108 B1.4.03
-
 **Angabe**: Welche Beschleunigungsarbeit ist nötig, um einen Formel-1-Wagen mit $m=1t$ und auf $100\frac{m}{s}$ zu beschleunigen?
 
 **Lösung:**
@@ -485,6 +497,8 @@ $$
 $$
 s(t) = \int_0^t v\ dt = \frac{a\cdot t^2}{2}
 $$
+> 500. Zeile in der Datei "2 Mechanik.md". i wü nimma :(
+
 Zusammensetzen:
 $$
 W_a=m\cdot a\cdot s(t)= m\cdot a \cdot \frac{a\cdot t^2}{2}=m\cdot a^2 \cdot \frac{t^2}{2}=m\cdot \frac{v(t)^2}{t^2} \cdot \frac{t^2}{2}=m\cdot\frac{v(t)^2}{2}
@@ -493,3 +507,26 @@ Einsetzen:
 $$
 W_a=m\cdot \frac{v(t)^2}{2}=1000\text{kg}\cdot\frac{10000\text{m}^2\text{s}^{-2}}{2}=1000\cdot 5000\ \text{J}=5\text{MJ}
 $$
+
+# Gravitation
+
+**Geozentrisches Weltbild**: Bis 16. Jh. Gedanke: Die Erde steht im Mittelpunkt des Universum, und die Himmelskörper bewegen sich auf kreisförmigen Umlaufbahnen um die Erde. 
+
+**Heliozentrisches Weltbild**: Die Sonne ist das Mittelpunkt des Universums, es bewegen sich alle Planeten um die Sonne und die Erde dreht sich einmal am Tag um sich selbst. 
+
+**Keplersche Gesetze** (ehemalige Haus von ihm ist in der Nähe vom Linzer Hauptplatz c: ):
+1. Planeten bewegen sich auf Ellipsenbahnen, wobei der Brennpunkt die Sonne ist.
+2. Der von der Sonne zu einem Planeten gezogene Fahrstrahl überstreicht in der gleichen Zeit die gleiche Fläche, egal wo auf der Ellipse.
+3. Umlaufzeiten $T_1$ und $T_2$ verhalten sich wiefolgt zu den großen Halbachsen $a_1$ und $a_2$: $\frac{{T_1}^2}{{T_2}^2}=\frac{{a_1}^3}{{a_2}^3}$
+
+**Bemerkungen dazu:**
+- In Sonnenähe bewegt sich ein Planet schneller als in Sonnenferne (aufgrund des Flächensatzes).
+- Diese Gesetze gelten auch für andere Planetensysteme und für Monde und Satelliten.
+
+**AE**: "astronomische Einheit", bezeichnet die mittlere Entfernung zw. Erde und Sonne. 
+
+**Bezeichnungen:**
+- **Aphel**: Sonnenfernster Punkt einer Planetenbahn
+- **Perihel**: Sonnennächster Punkt einer Planetenbahn
+
+**Newtonsches Gravitationsgesetz**: Formel für die Gravitation, schon in Dynamik angesprochen.

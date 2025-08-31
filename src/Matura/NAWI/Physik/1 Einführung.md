@@ -143,11 +143,18 @@ $$
 q = w+xi+yj+zk \qquad q^*=w-xi-yj-zk
 $$
 $$
-\phi\text{}\text{ um die X-Achse: } \cos(\frac{\phi}{2})+i\sin(\frac{\phi}{2}) \\
-\phi\text{}\text{ um die Y-Achse: } \cos(\frac{\phi}{2})+j\sin(\frac{\phi}{2}) \\
-\phi\text{}\text{ um die Z-Achse: } \cos(\frac{\phi}{2})+k\sin(\frac{\phi}{2})
+\phi\text{ um die X-Achse: } \cos(\frac{\phi}{2})+i\sin(\frac{\phi}{2}) \\
+\phi\text{ um die Y-Achse: } \cos(\frac{\phi}{2})+j\sin(\frac{\phi}{2}) \\
+\phi\text{ um die Z-Achse: } \cos(\frac{\phi}{2})+k\sin(\frac{\phi}{2})
 $$
-
+$$
+\vec{v} = 
+\begin{pmatrix}
+    \vec{v}_x \\
+    \vec{v}_y \\
+    \vec{v}_z
+\end{pmatrix}=i\vec{v}_x+j\vec{v}_y+k\vec{v}_z
+$$
 $$
 \text{Quaternion }q_1\text{ um Quaternion }q_2\text{ rotieren: }q_1\cdot q_2 \\
 \text{Vektor }\vec{v}\text{ um Quaternion }q\text{ rotieren: } q\cdot \vec{v}\cdot q^*

@@ -10,7 +10,7 @@
 |Geschwindigkeit|$\vec{v}$|$\frac{\text{m}}{\text{s}}$||Winkelgeschwindigkeit|$\omega$|$\frac{\text{rad}}{\text{s}}$|
 |Beschleunigung|$\vec{a}$|$\frac{\text{m}}{\text{s}^2}$||Winkelbeschleunigung|$\alpha$|$\frac{\text{rad}}{\text{s}^2}$|
 |Masse|$m$|$\text{kg}$||Trägheitsmoment|$J$|$\text{kg}\cdot\text{m}^2$|
-|Kraft|$\vec{F}$|$\text{N}$||Drehmoment|$M$|$\text{N}\cdot\text{m}$|
+|Kraft|$\vec{F}$|$\frac{\text{kg}\cdot\text{m}}{\text{s}^2}=\text{N}$||Drehmoment|$M$|$\text{N}\cdot\text{m}$|
 |Impuls|$\vec{p}$|$\text{N}\cdot\text{s}$||Drehimpuls|$L$|$\text{N}\cdot\text{m}\cdot\text{s}$|
 
 **Allgemeine Formeln:**
@@ -162,13 +162,23 @@ $$
 |Name|Symbol|Einheit|
 |-|-|-|
 |Arbeit|$W$|$\text{N}\cdot\text{m}=J$|
+|Leistung|$\overline{P}$|$\frac{J}{s}=W$|
+|Wirkungsgrad|$\eta$|$1$|
+
+**Arbeitsformen:**
+|Arbeit Name|Arbeit Symbol|Energie Name|Energie Symbol|
+|-|-|-|-|
+|Hubarbeit|$W_\text{Hub}$|Potenzielle Energie|$E_\text{pot}$|
+|Dehnungsarbeit|$W_\text{Dehn}$|Elastische Energie|$E_\text{el}$|
+|Beschleunigungsarbeit|$W_\text{a}$|Kinetische Energie|$E_\text{kin}$|
+|Reibungsarbeit|$W_R$|Innere Energie|$U$|
+|Rotationsarbeit|$W_\text{Rot}$|Rotationsenergie|$E_\text{Rot}$|
 
 **Formeln:**
 
 $$
 W = \vec{F} \cdot \vec{s}
 $$
-
 $$
-W_\text{Dehn}=\frac{F_\text{Dehn}\cdot s_\text{Dehn}}{2}=\frac{D\cdot s^2}{2}
+\overline{P}=\frac{\Delta W}{\Delta t}
 $$
