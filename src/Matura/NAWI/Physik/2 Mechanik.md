@@ -200,9 +200,9 @@ Diese gelten nur in einem ausgewählten Bezugssystem und nicht gleichzeitig in z
 
 ![Bezugssystem S. 53](image.png)
 
-## Grundgesetz der Dynamik (2. Newtonisches Gesetz)
+## Grundgesetze der Dynamik
 
-Kraft ist gleich Masse mal Beschleunigung:
+Kraft $\vec{F}$ ist gleich Masse mal Beschleunigung:
 
 $$
 \vec{F} = m \cdot \vec{a}
@@ -212,9 +212,34 @@ $$
 [F] = [m]\cdot[a]= \frac{\text{kg} \cdot \text{m}}{\text{s}^2} = \text{N} \quad \text{(Newton)}
 $$
 
-Eine Kraft von $1\text{N}$ beschleunigt einen Körper der Masse $1\text{kg}$ mit $1\frac{\text{m}}{\text{s}^2}$.
+Ähnlich wie die Geschwindigkeit $\vec{v}$ das Integral der Beschleunigung $\vec{a}$ ist, ist der Impuls $\vec{p}$ das Integral der Kraft $\vec{F}$:
+$$
+\vec{p}(t)=\int_0^t \vec{F}(T)\ dt
+$$
+
+Impuls $\vec{p}$ ist gleich Masse mal Geschwindigkeit:
+
+$$
+\vec{p}=m\cdot\vec{v} 
+$$
+
+$$
+[p]=[m]\cdot[v]=\frac{\text{kg}\cdot\text{m}}{\text{s}}=\text{N}\cdot\text{s}
+$$
 
 **Superpositionsprinzip**: Wirken mehrere Kräfte auf einen einzigen Körper so haben sie die gleiche Wirkung wie eine einzelne Kraft, welche die **Vektorsumme** der Kräfte ist.
+
+Eine Kraft von $1\text{N}$ beschleunigt einen Körper der Masse $1\text{kg}$ mit $1\frac{\text{m}}{\text{s}^2}$.
+
+**Impulserhaltungssatz**: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. 
+
+- **Elastischer Stoß**: Die Summe der kinetischen Energie der Stoßpartner ist konstant. 
+- **Inelastischer Stoß**: Ein Teil der kinetischen Energie wird in **innere Energie** umgewandelt. 
+
+**Kraftstoß**: Die Impulsänderung $\Delta\vec{p}$ ist gleich den Kraftstoß $\vec{F}\cdot\Delta t$:
+$$
+\Delta\vec{p}=\vec{F}\cdot\Delta t
+$$
 
 ## Masse, Trägheit und Gewicht
 
@@ -253,7 +278,7 @@ $$
 
 **Federkraft** (Gesetz von Hooke): Die elastische Dehnung $\Delta x$ einer Schraubenfeder ist proportional der verformenden Kraft $F$.
 $$
-F = D \cdot \Delta x
+\vec{F} = D \cdot \Delta x
 $$
 
 Die Proportionalitätskonstante $D$ heißt **Federkonstante** oder **Richtgröße** (je größer, desto "härter" ist die Feder). Die Einheit:
@@ -286,3 +311,185 @@ $$
 \mu=\frac{F_\text{Reibung}}{F_N}
 $$
 
+## Trägheitskräfte
+
+In einem mit $\vec{a}$ beschleunigten System tritt eine Trägheitskraft $\vec{F}_T$ auf, welche entgegengerichtet zur Beschleunigung ist:
+
+$$
+\vec{F}_T = -m \cdot \vec{a}
+$$
+
+## Rotation
+
+**Zentripetalbeschleunigung** (Beschleunigung am Einheitskreis): 
+$$
+\vec{a}_\text{Zp}=\frac{\Delta v}{\Delta t}=\frac{v^2}{r}
+$$
+
+**Zentripetalkraft** ist einfach wieder $m\cdot\vec{a}$:
+$$
+\vec{F}_\text{Zp}=m\cdot \vec{a}
+$$
+
+**Zentrifugalkraft** bzw. Fliehkraft: 
+$$
+\vec{F}_\text{Zf}=m\cdot \omega^2 \cdot r=m\cdot\frac{v^2}{r}
+$$
+
+Zentrifugalkraft wird genutzt in:
+- Zentrifugen (zur Stofftrennung)
+- Kreiselpumpen 
+- Schwerkraftaufhebung der ISS
+
+**Corioliskraft** (wenn sich ein Körper mit Masse $m$ in einem mit $\omega$ rotierenden System bewegt, wirkt die Corioliskraft $F_\text{Cor}$, wobei $\vec{v}_r$ die Relativgeschwindigkeit des Körpers auf das rotierende System und $\beta$ der Winkel zwischen $\vec{\omega}$ und $\vec{v}_r$ ist):
+$$
+F_\text{Cor}=2\cdot m\cdot \omega\cdot v_r\cdot \sin\beta
+$$
+
+## Drehmoment, Trägheitsmoment und Drehimpuls
+
+
+|T Name|T Symbol|T Einheit||R Name|R Symbol|R Einheit|
+|-|-|-|-|-|-|-|
+|Masse|$m$|$\text{kg}$||Trägheitsmoment|$J$|$\text{kg}\cdot\text{m}^2$|
+|Kraft|$\vec{F}$|$\text{N}$||Drehmoment|$\vec{M}$|$\text{N}\cdot\text{m}$|
+|Impuls|$\vec{p}$|$\text{N}\cdot\text{s}$||Drehimpuls|$\vec{L}$|$\text{N}\cdot\text{m}\cdot\text{s}$|
+
+**Trägheitsmoment**: Gibt Widerstand gegen eine Winkelbeschleunigung $\alpha$ an.
+
+![Satz von Steiner](image-4.png)
+
+**Drehmoment**: Wirkt eine Kraft $\vec{F}$ im Abstand $r$ auf eine Drehaxe, so ist das Drehmoment:
+$$
+\vec{M} = \vec{r}\times\vec{F}
+$$
+Für den Betrag $M$ mit einem Winkels $\varphi$ gilt:
+$$
+M = F \cdot r \cdot \sin(\varphi)
+$$
+
+![Drehmoment Rechte-Hand-Regel S. 73](image-3.png)
+
+**Drehimpuls**: Ist zu Drehmoment wie Impuls ist zu Kraft. 
+
+Ähnlich wie beim Drehmoment:
+$$
+\vec{L} = \vec{r}\times \vec{p} \\
+L = p\cdot r \cdot \sin(\varphi)
+$$
+
+Ansonsten sind die Rechenregeln gleich wie bei der Translation, dazu einfach die obige Tabelle beachten. 
+
+# Statik
+
+**Hebelgesetz:**
+$$
+F_1 \cdot r_1 = F_2 \cdot r_2
+$$
+
+![Hebelgesetz S. 86](image-5.png)
+
+**Gleichgewichtsbedingung**: Die auf einem starren Körper wirkengenden Kräfte verschwinden wenn die Summe aller wirkenden Kräfte bzw. Drehmomente $0$ ergibt. 
+
+![Labil/Stabil/Indifferent S. 87](image-6.png)
+
+**Getriebe**: Übersetzt Drehmomente proportional und Drehzahlen indirekt proportional zur Anzahl der Zähne $Z$ (die Tangentialkräfte zwischen den Zahnrädern sind konstant):
+$$
+\frac{M_1}{M_2}=\frac{r_1}{r_2}=\frac{Z_1}{Z_2}=\frac{\omega_2}{\omega_1}=\frac{n_2}{n_1}
+$$
+
+![Lose vs Feste Rolle S. 89](image-7.png)
+
+## Hydrostatik & Aerostatik
+
+**Druck $p$:**
+$$
+p = \frac{F_N}{A}
+$$
+Einheit:
+$$
+[p] = \left[\frac{F}{A}\right]=\frac{\text{N}}{\text{m}^2}=\ \text{Pa} \quad \text{(Pascal)}
+$$
+
+**Schweredruck:** Bei Fluiden erhöht sich der Druck mit der Tiefe, Dichte und Gravitationsbeschleunigung ($p=\frac{m\cdot g}{A}$).
+
+## Elastostatik
+
+**Mechanische Spannung $\sigma$**: Druck, der auf einem Körper auswirkt. 
+$$
+\sigma = \frac{F}{A}
+$$
+$$
+[\sigma]= \text{Pa}
+$$
+
+**Dehnung $\varepsilon$**: Längenänderung $\Delta l$ im Verhältnis zur ursprünglichen Länge $l$
+$$
+\varepsilon = \frac{\Delta l}{l} \qquad [\varepsilon]=1
+$$
+
+**Elastitätsmodul**: Hookesches Gesetz für die Spannung (Dehnung ist direkt proportional zur Spannung):
+$$
+\sigma = E \cdot \varepsilon \qquad [E]= \frac{1\ \text{Pa}}{1}
+$$
+
+![Scherung Drillung Torsion S. 100](image-8.png)
+
+**Schubwinkel $\gamma$**, **Schubspannung $\tau$**, **Schub- oder Torsionsmodul $G$**: Hookesches Gesetz für die Scherung (Schubwinkel ist direkt proportional zur Schubspannung)
+$$
+\tau = G \cdot \gamma \qquad [G]=\left[\frac{\tau}{\gamma}\right]= \frac{1\ \text{Pa}}{1}
+$$
+
+# Energie, Leistung und Wirkungsgrad
+
+**Arbeit $W$** (Skalarprodukt beachten!):
+$$
+W = \vec{F} \cdot \vec{s}
+$$
+$$
+[W] = [F] \cdot [s] = \text{N} \cdot \text{m}=\text{J}\text{ (Joule)}
+$$
+
+**Hubarbeit**: Die Arbeit um einen Körper mit einer konstanten Kraft um eine Höhe anheben. Die verrichtete Hubarbeit ist im Körper als **potenzielle Energie** ($E_\text{pot}$) gespeichert. 
+
+**Dehnungsarbeit**: Hier ist $D$ die Federkonstante. Diese Arbeit wird als **elastische Energie** ($E_\text{el}$) gespeichert. 
+$$
+W_\text{Dehn}=\frac{F_\text{Dehn}\cdot s_\text{Dehn}}{2}=\frac{D\cdot s^2}{2}
+$$
+
+**Beschleunigungsarbeit**: Wird ein Körper körper aus dem Stillstand beschleunigt, ist dazu Beschleunigungsarbeit notwending. Diese wird in **kinetische Energie** ($E_\text{kin}$). Die Formel ist noch immer $W_a = F_a \cdot s$.
+
+### Übung: S108 B1.4.03
+
+**Angabe**: Welche Beschleunigungsarbeit ist nötig, um einen Formel-1-Wagen mit $m=1t$ und auf $100\frac{m}{s}$ zu beschleunigen?
+
+**Lösung:**
+
+Gegeben ist:
+$$
+m=1000\text{kg} \qquad v(t)=100\frac{m}{s}
+$$
+
+Gesucht ist:
+$$
+W_a =\ ?
+$$
+
+Aufstellen der Formeln:
+$$
+W_a = F_a \cdot s(t) \qquad F_a=m\cdot a
+$$
+$$
+v(t) = a\cdot t \qquad a=\frac{v(t)}{t}
+$$
+$$
+s(t) = \int_0^t v\ dt = \frac{a\cdot t^2}{2}
+$$
+Zusammensetzen:
+$$
+W_a=m\cdot a\cdot s(t)= m\cdot a \cdot \frac{a\cdot t^2}{2}=m\cdot a^2 \cdot \frac{t^2}{2}=m\cdot \frac{v(t)^2}{t^2} \cdot \frac{t^2}{2}=m\cdot\frac{v(t)^2}{2}
+$$
+Einsetzen:
+$$
+W_a=m\cdot \frac{v(t)^2}{2}=1000\text{kg}\cdot\frac{10000\text{m}^2\text{s}^{-2}}{2}=1000\cdot 5000\ \text{J}=5\text{MJ}
+$$
