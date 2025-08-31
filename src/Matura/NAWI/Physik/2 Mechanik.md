@@ -209,15 +209,19 @@ $$
 $$
 
 $$
-[F] = [m\cdot a]= \frac{\text{kg} \cdot \text{m}}{\text{s}^2} = \text{N} \quad \text{(Newton)}
+[F] = [m]\cdot[a]= \frac{\text{kg} \cdot \text{m}}{\text{s}^2} = \text{N} \quad \text{(Newton)}
 $$
+
+Eine Kraft von $1\text{N}$ beschleunigt einen Körper der Masse $1\text{kg}$ mit $1\frac{\text{m}}{\text{s}^2}$.
+
+**Superpositionsprinzip**: Wirken mehrere Kräfte auf einen einzigen Körper so haben sie die gleiche Wirkung wie eine einzelne Kraft, welche die **Vektorsumme** der Kräfte ist.
 
 ## Masse, Trägheit und Gewicht
 
 Wenn wir zwei Massen ($m_1$ und $m_2$) haben, über sie gegenseitig eine Gravitation (Schwerkraft) aus:
 
 $$
-F_G=G\cdot\frac{m_1\cdot m_2}{r^2}
+\vec{F}_G=G\cdot\frac{m_1\cdot m_2}{r^2}
 $$
 
 Hier ist $G$ die Gravitationskonstante:
@@ -227,7 +231,7 @@ $$
 
 diese Kraft ist auch gleich der Masse mal der Fallbeschleunigung:
 $$
-F_G=m\cdot g
+\vec{F}_G=m\cdot \vec{g}
 $$
 
 Die Masse kann man entweder mittels Schwere ("wie stark ist es von der Erde angezogen?") oder der Trägheit ("wie schwer ist es, es in Bewegung zu bringen?") gemessen werden, jedoch in der Praxis fast ausschließlich mit der Schwere.
@@ -239,3 +243,46 @@ Die Masse eines Körpers bleibt auch bei Änderung von:
 - Form bzw. Volumen
 - äußeren Bedingungen wie Druck oder Temperatur
 konstant. 
+
+Die Massendichte (auch als "spezifische Masse" bezeichnet) $\rho$ gleicht $\frac{\text{Masse}}{\text{Volumen}}$:
+$$
+\rho = \frac{m}{V} \qquad [\rho]=\left[\frac{\text{kg}}{\text{m}^3}\right]
+$$
+
+## Federkraft
+
+**Federkraft** (Gesetz von Hooke): Die elastische Dehnung $\Delta x$ einer Schraubenfeder ist proportional der verformenden Kraft $F$.
+$$
+F = D \cdot \Delta x
+$$
+
+Die Proportionalitätskonstante $D$ heißt **Federkonstante** oder **Richtgröße** (je größer, desto "härter" ist die Feder). Die Einheit:
+$$
+[D] = \frac{[F]}{[\Delta x]} = \frac{\text{N}}{\text{m} }
+$$
+
+![Dehnungsdiagramm S. 62](image-1.png)
+
+## Reibungskräfte
+
+- **Äußere Reibung**: An den Außenflächen von Festkörpern
+- **Innere Reibung**: Tritt zwischen Fluidteilchen (Flüssigkeiten, Gase, Dämpfe, etc.) auf
+  
+**Größenordnung**: $F_\text{Haftreibung} > F_\text{Gleitreibung} > F_\text{Rollreibung}$
+
+![Größenordrung Reibungskräfte S. 63](image-2.png)
+
+- **Haftreibung** (Ruhreibung): Gegensätzlich zur wirkenden Kraft, bis ein maximaler material- und oberflächenabhängiger Wert überschreitet wird. Dann setzt die Gleit- bzw. Rollreibung ein. 
+- **Gleit**- und **Rollreibung**: Versucht, die Bewegung zwischen Körpern zu verzögern, jedoch bewegen sich beide Körper trotzdem relativ zu einander. 
+
+**Reibungskraft** (Gesetz von Coulomb) ist der Verschieberichtung entgegengerichtet, und proportional der Normalkraft $\vec{F}_N$ auf die Berührungsfläche:
+
+$$
+\vec{F}_\text{Reibung}=\mu\cdot F_N
+$$
+
+wobei $\mu$ die dimensionslose **Reibungszahl** bzw. **Reibbeiwert** ist:
+$$
+\mu=\frac{F_\text{Reibung}}{F_N}
+$$
+

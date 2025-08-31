@@ -51,7 +51,6 @@ $$
 $$
 \frac{\Delta \omega}{\Delta t}=\alpha
 $$
-
 <br />
 
 $$
@@ -65,9 +64,31 @@ $$
 |Name|Symbol|Einheit
 |-|-|-|
 |Kraft|$\vec{F}$|$\text{N}=\frac{\text{kg}\cdot\text{m}}{\text{s}^2}$|
+|Dichte|$\rho$|$\frac{\text{kg}}{\text{m}^3}$|
+|Federkonstante/Richtgröße|$D$|$\frac{\text{N}}{\text{m}}$|
+|Reibungszahl/Reibbeiwert|$\mu$|$1$|
 
 **Konstanten:**
 
 |Name|Symbol|Wert|
 |-|-|-|
 |Gravitationskonstante|$G$|$6.67384 \cdot 10^{-11} \frac{m^3}{kg \cdot s^2}$|
+
+**Formeln:**
+
+$$
+\vec{F} = m\cdot\vec{a}
+$$
+<br />
+
+$$
+\vec{F}_G=G\cdot\frac{m_1\cdot m_2}{r^2}
+$$
+$$
+\vec{F}_G=m\cdot \vec{g}
+$$
+<br />
+
+$$
+\rho = \frac{m}{V}
+$$
