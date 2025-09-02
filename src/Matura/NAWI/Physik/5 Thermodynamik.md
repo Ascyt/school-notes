@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=4i1MUWJoI0U
+
 # Kinetische Gastheorie
 
 **Das ideale Gas**: Stark vereinfachtes Modell eines realen Gases, kann jedoch das thermodynamische Verhalten gut beschreiben. 
@@ -66,3 +68,99 @@ Besondere Fälle (konst = konstant):
 Infos dazu:
 - Die Gesetze, bei denen der Druck nicht konstant ist (Boyle-Mariotte & Amontons) versagen bei zu hohen Druck.
 - Gesetz der Gleichförmigkeit sagt aus, dass ein ideales Gas überall die selbe Dichte aufweist. 
+
+**Gesetz von Dalton**: Wenn Gase nicht chemisch reagieren kann man sie beliebig vermischen. Die Summe der Partialdrücke der einzelnen Gase gleicht den Gesamtdruck des Gemisches. 
+$$
+p=\sum_i{p_i}
+$$
+
+**Zustandsänderung**: Auch wenn sich nur die Zustandsgrößen $p,V,n,T$ ändern, auch wenn sich der Aggregatszustand nicht ändert. 
+
+- **isobar**: $p$ ist konst
+- **isochor**: $V$ ist konst
+- **isotherm**: $T$ ist konst
+
+**Maxwell-Boltzmann-Verteilung**: Temperatur beschreibt mittlere Geschwindigkeit der Teilchen in einem idealen Gas. Diese Teilchenbewegungen sind zufällig. Diese Geschwindigkeit ist normalverteilt wie man im Bild sieht:
+
+![Maxwell-Boltzmann-Verteilung B2 S288](image-42.png)
+
+Die Formel dazu lautet ($\exp(x)=e^x$):
+$$
+f(v)=4\pi\cdot\left(\frac{m}{2\pi k T}\right)^{1.5}\cdot v^2\cdot \exp\left(-\frac{mv^2}{2kT}\right)
+$$
+
+Hier wird das mit den zufälligen Teilchenbewegungen und wie daraus Druck wird gut erklärt: https://ciechanow.ski/airfoil/
+
+# Hauptsätze der Thermodynamik
+
+**Nullter Hauptsatz:** Wenn zwei System A und B mit einen dritten System C im thermodynamischen Gleichgewicht stehen, dann stehen sie auch zueinander im Gleichgewicht. Also: Wenn zwei Systeme im thermodynamischen Gleichgewicht stehen dann haben sie die selbe Temparatur.
+
+**Kelvinskala**: Anders wie Celsiusskala ist diese absolut, d.H. es gibt nichts kälteres als $0\text{K}$ (auch genant "absoluter Nullpunkt"). Die Kelvinskala ist die selbe wie die Celsiusskala, aber um exakt $273.15$ nach oben verschoben. 
+
+**Wie man Temparatur erhöhen kann:**
+- **Reibung**: Wenn Arbeit verrichtet wird, spielt im realen Fall Reibung immer eine Rolle. Reibung erhöht ungeordnete mikroskopische Bewegungen an den reibenden Grenzflächen, welches die innere Energie und damit die Temparatur erhöht. 
+- **Thermischer Kontakt**: Wenn man zwei Systeme mit unterschiedlichen Temparaturen in thermischen Kontakt bringt, haben sie oft nach langer Zeit die selbe Temparatur und sind dann im thermodynamischen Gleichgewicht. 
+
+Wärme ist auch eine Form der Energieübertragung, ist jedoch selbst keine Energieform. 
+
+## Erster Hauptsatz
+
+**Erster Hauptsatz:** Die Zufuhr von Wärme $Q$ oder mechanischer Arbeit $W$ vergrößert die innere Energie $U$ des Systems. 
+$$
+Q+W=\Delta U
+$$
+
+**Volumenänderungsarbeit $W$:**
+$$
+W=-p\cdot\Delta V
+$$
+
+**Innere Energie $U$:** Bei der Zufur oder Entnahme von Wärme keine Volumsänderung ($W=0$). Hier ist $c_V$ die spezifische Wärmekapazität bei konstantem Volumen. 
+$$
+U=c_V\cdot m\cdot T
+$$
+
+**Enthalpie $H$:** Wenn Vorgänge unter der Bedingung eines konstant bleibenden Umgebungsdruckes ablaufen.
+$$
+H=U+p\cdot V
+$$
+
+Hier ist $c_p$ die spezifische Wärmekapazität bei konstantem Druck
+$$
+H = c_p\cdot m\cdot T
+$$
+
+**Isochore Zustandsänderung**: Das Volumen verändert sich nicht ($\Delta V=0$)
+$$
+Q=\Delta U=c_V\cdot m\cdot \Delta T
+$$
+
+**Isobare Zustandsänderung**: Der Druck verändert sich nicht ($\Delta p=0$)
+$$
+Q=\Delta U=c_p\cdot m \cdot \Delta T
+$$
+
+**Isotherme Zustandsänderung**: Die Temparatur verändert sich nicht ($\Delta T=0$)
+$$
+W=-\int_{V_1}^{V_2}p\ dV=p\cdot V\cdot \ln\left(\frac{V_1}{V_2}\right)
+$$
+
+![Druck-Volumen-Diagramm Isothermen B2 S295](image-43.png)
+
+**Adiabate (isentrope) Zustandsänderung** (poissonische Gleichungen): Es gibt kein Austausch von Wärme ($\Delta Q=0$). Hier ist $\kappa=\frac{c_p}{c_V}$ der Isentropenexponent
+$$
+\frac{T_1}{T_2}=\left(\frac{V_2}{V_1}\right)^{\kappa-1}\qquad \text{oder}\qquad T\cdot V^{\kappa-1}=\text{konst.}
+$$
+$$
+\frac{T_1}{T_2}=\left(\frac{p_1}{p_2}\right)^{(\kappa-1)\div\kappa}\qquad \text{oder}\qquad T\cdot p^{1-\kappa}=\text{konst.}
+$$
+man erhält das **poissonische Gesetz** wenn man beide Gleichungen zusammenstellt:
+$$
+\frac{p_1}{p_2}=\left(\frac{V_2}{V_1}\right)^\kappa\qquad \text{oder}\qquad p\cdot V^\kappa=\text{konst.}
+$$
+
+**Kreisprozess**: Reihe von Zustandsänderungen, die wieder zurück zum ursprünglichen Ausgangszustand zurückführen. 
+
+![Kreisprozess B2 S298](image-44.png)
+
+[noch nicht fertig]

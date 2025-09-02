@@ -384,6 +384,11 @@ $$
 |-|-|-|
 |Anzahl der Teilchen|$N$|$1$|
 |Temperatur|$T$|$\text{K}$|
+|Wärme|$Q$|$\text{J}$|
+|Enthalpie|$H$|$\text{J}$|
+|Spez. Wärmekapazität bei konst. Vol.|$c_V$|$\frac{\text{kJ}}{\text{kg}\cdot\text{K}}$|
+|Spez. Wärmekapazität bei konst. Druck|$c_p$|$\frac{\text{kJ}}{\text{kg}\cdot\text{K}}$|
+|Isentropenexponent|$\kappa$|$1$|
 
 **Konstanten:**
 
@@ -420,4 +425,46 @@ $$
 |(erstes) Gesetz von Gay-Lussac|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$V\propto T$|$\frac{V}{T}$|$\frac{V_1}{V_2}=\frac{T_1}{T_2}$|
 |Gesetz von Amontons/zweites von Gay-Lussac|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$p\propto T$|$\frac{p}{T}$|$\frac{p_1}{p_2}=\frac{T_1}{T_2}$|
 |Gesetz der Gleichförmigkeit|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$V\propto N$|$\frac{N}{V}$|$\frac{V_1}{V_2}=\frac{N_1}{N_2}$|
+
+$$
+f(v)=4\pi\cdot\left(\frac{m}{2\pi k T}\right)^{1.5}\cdot v^2\cdot \exp\left(-\frac{mv^2}{2kT}\right)
+$$
+<br />
+
+$$
+Q+W=\Delta U
+$$
+$$
+W=-p\cdot\Delta V
+$$
+$$
+U=c_V\cdot m\cdot T
+$$
+$$
+H=U+p\cdot V
+$$
+$$
+H = c_p\cdot m\cdot T
+$$
+<br />
+
+$$
+Q=\Delta U=c_V\cdot m\cdot \Delta T\qquad\ldots \Delta V=0
+$$
+$$
+Q=\Delta U=c_p\cdot m\cdot \Delta T\qquad\ldots \Delta p=0
+$$
+$$
+W=p\cdot V\cdot \ln\left(\frac{V_1}{V_2}\right)\qquad\ldots \Delta T=0
+$$
+$$
+\frac{T_1}{T_2}=\left(\frac{V_2}{V_1}\right)^{\kappa-1}\qquad \text{oder}\qquad T\cdot V^{\kappa-1}=\text{konst.}\qquad\ldots \Delta Q=0
+$$
+$$
+\frac{T_1}{T_2}=\left(\frac{p_1}{p_2}\right)^{(\kappa-1)\div\kappa}\qquad \text{oder}\qquad T^\kappa\cdot p^{1-\kappa}=\text{konst.}\qquad\ldots \Delta Q=0
+$$
+$$
+\frac{p_1}{p_2}=\left(\frac{V_2}{V_1}\right)^\kappa\qquad \text{oder}\qquad p\cdot V^\kappa=\text{konst.}\qquad\ldots \Delta Q=0
+$$
+<br />
 
