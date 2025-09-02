@@ -198,7 +198,7 @@ $$
 
 Diese gelten nur in einem ausgewählten Bezugssystem und nicht gleichzeitig in zwei zueinander beschleunigten. Bezugssysteme, wo diese Gesetze gelten, heißen **Inertialsysteme**.
 
-![Bezugssystem S. 53](image.png)
+![Bezugssystem B1 S. 53](image.png)
 
 ## Grundgesetze der Dynamik
 
@@ -231,7 +231,7 @@ $$
 
 Eine Kraft von $1\text{N}$ beschleunigt einen Körper der Masse $1\text{kg}$ mit $1\frac{\text{m}}{\text{s}^2}$.
 
-**Impulserhaltungssatz**: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Dies gilt auch für den Drehimpuls.
+**Impulserhaltungssatz**: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Dies gilt auch für den DrehimpulB1 S.
 
 - **Elastischer Stoß**: Die Summe der kinetischen Energie der Stoßpartner ist konstant. 
 - **Inelastischer Stoß**: Ein Teil der kinetischen Energie wird in **innere Energie** umgewandelt. 
@@ -286,7 +286,7 @@ $$
 [D] = \frac{[F]}{[\Delta x]} = \frac{\text{N}}{\text{m} }
 $$
 
-![Dehnungsdiagramm S. 62](image-1.png)
+![Dehnungsdiagramm B1 S. 62](image-1.png)
 
 ## Reibungskräfte
 
@@ -295,7 +295,7 @@ $$
   
 **Größenordnung**: $F_\text{Haftreibung} > F_\text{Gleitreibung} > F_\text{Rollreibung}$
 
-![Größenordrung Reibungskräfte S. 63](image-2.png)
+![Größenordrung Reibungskräfte B1 S. 63](image-2.png)
 
 - **Haftreibung** (Ruhreibung): Gegensätzlich zur wirkenden Kraft, bis ein maximaler material- und oberflächenabhängiger Wert überschreitet wird. Dann setzt die Gleit- bzw. Rollreibung ein. 
 - **Gleit**- und **Rollreibung**: Versucht, die Bewegung zwischen Körpern zu verzögern, jedoch bewegen sich beide Körper trotzdem relativ zu einander. 
@@ -368,7 +368,7 @@ $$
 M = F \cdot r \cdot \sin(\varphi)
 $$
 
-![Drehmoment Rechte-Hand-Regel S. 73](image-3.png)
+![Drehmoment Rechte-Hand-Regel B1 S. 73](image-3.png)
 
 **Drehimpuls**: Ist zu Drehmoment wie Impuls ist zu Kraft. 
 
@@ -387,18 +387,18 @@ $$
 F_1 \cdot r_1 = F_2 \cdot r_2
 $$
 
-![Hebelgesetz S. 86](image-5.png)
+![Hebelgesetz B1 S. 86](image-5.png)
 
 **Gleichgewichtsbedingung**: Die auf einem starren Körper wirkengenden Kräfte verschwinden wenn die Summe aller wirkenden Kräfte bzw. Drehmomente $0$ ergibt. 
 
-![Labil/Stabil/Indifferent S. 87](image-6.png)
+![Labil/Stabil/Indifferent B1 S. 87](image-6.png)
 
 **Getriebe**: Übersetzt Drehmomente proportional und Drehzahlen indirekt proportional zur Anzahl der Zähne $Z$ (die Tangentialkräfte zwischen den Zahnrädern sind konstant):
 $$
 \frac{M_1}{M_2}=\frac{r_1}{r_2}=\frac{Z_1}{Z_2}=\frac{\omega_2}{\omega_1}=\frac{n_2}{n_1}
 $$
 
-![Lose vs Feste Rolle S. 89](image-7.png)
+![Lose vs Feste Rolle B1 S. 89](image-7.png)
 
 ## Hydrostatik & Aerostatik
 
@@ -433,7 +433,7 @@ $$
 \sigma = E \cdot \varepsilon \qquad [E]= \frac{1\ \text{Pa}}{1}
 $$
 
-![Scherung Drillung Torsion S. 100](image-8.png)
+![Scherung Drillung Torsion B1 S. 100](image-8.png)
 
 **Schubwinkel $\gamma$**, **Schubspannung $\tau$**, **Schub- oder Torsionsmodul $G$**: Hookesches Gesetz für die Scherung (Schubwinkel ist direkt proportional zur Schubspannung)
 $$

@@ -25,6 +25,12 @@
 
 Wichtig ist, dass dinge wie Beschleunigung ($\vec{a}$) oder Kraft ($\vec{F}$) immer vektorielle Größen sind. Falls diese Dinge hier nicht in die gleiche Richtung zeigen muss man aufpassen. 
 
+**Zahlenformen:**
+- $\mathbb{Z}$: Ganze Zahlen
+- $\mathbb{R}$: Reelle Zahlen (1-Dimensional)
+- $\mathbb{R}^n$: $n$-dimensionale Vektoren 
+- $\mathbb{C}$: Komplexe Zahlen
+
 # Vektorrechnung
 
 (kommt so evntl. nicht zur Matura, kann aber hilfreich sein)
@@ -160,6 +166,77 @@ $$
 \text{Vektor }\vec{v}\text{ um Quaternion }q\text{ rotieren: } q\cdot \vec{v}\cdot q^*
 $$
 
+# Trigonometrie
+
+![Dreieck](image-17.png)
+
+$$
+\sin(\alpha)=\frac{\text{Gegenkathete}}{\text{Hypothenuse}}
+$$
+$$
+\cos(\alpha)=\frac{\text{Ankathete}}{\text{Hypothenuse}}
+$$
+$$
+\tan(\alpha)=\frac{\text{Gegenkathete}}{\text{Ankathete}}
+$$
+
+Im folgenden ist $a$ die Gegenkathete des Winkels $\alpha$, $b$ die Gegenkathete von $\beta$, $c$ die Gegenkathete von $\gamma$ und die Winkeln sind gegen den Uhrzeigersinn eingezeichnet.
+
+Winkelsumme:
+$$
+\alpha+\beta+\gamma=180\degree
+$$
+
+Sinussatz:
+$$
+\frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}=\frac{abc}{2\cdot\text{Fläche}}
+$$
+
+Kosinussatz (anstatt $a$ und $\alpha$ kann $b$ und $\beta$ oder $c$ und $\gamma$ verwendet werden, wobei $b$ und $c$ die restlichen Seiten wären):
+$$
+a^2=b^2+c^2-2bc\cos\alpha 
+$$
+
+Periodität:
+$$
+\sin : 2\pi \\
+\cos : 2\pi \\
+\tan : \pi
+$$
+
+Gegenseitige Darstellungen:
+$$
+\tan x = \frac{\sin x}{\cos x}
+$$
+$$
+\sin^2 x+\cos^2 x=1
+$$
+Symmetrien:
+$$
+\sin(-x)=-\sin(x)
+$$
+$$
+\cos(-x)=\cos(x)
+$$
+$$
+\tan(-x)=-\tan(x)
+$$
+Phasenverschiebung:
+$$
+\sin\left(x+\frac{\pi}{2}\right)=\cos(x)
+$$
+$$
+\cos(x+\frac{\pi}{2})=-\sin(x)
+$$
+
+Additionstheoreme:
+$$
+\sin(x \pm y)=\sin x \cdot \cos y \pm \cos x \cdot \sin y
+$$
+$$
+\cos(x \pm y)=\cos x \cdot \cos y \mp \sin x \cdot \sin y
+$$
+
 # Messfehler
 
 Bei z.B.:
@@ -167,15 +244,15 @@ $$
 T = \frac{\Delta t}{n} \qquad \text{und damit}\qquad f=\frac{1}{T}=\frac{n}{\Delta t}
 $$
 $$
-\text{Messfehler von }n\text{:} \quad \plusmn1
+\text{Messfehler von }n\text{:} \quad \pm1
 $$
 Aus:
 $$
-f\plusmn\Delta f=\frac{n\plusmn1}{\Delta t}=\frac{n}{\Delta t}\plusmn\frac{1}{\Delta t}
+f\pm\Delta f=\frac{n\pm1}{\Delta t}=\frac{n}{\Delta t}\pm\frac{1}{\Delta t}
 $$
 ergibt sich:
 $$
-\text{Messfehler von }f\space(\Delta f)\text{:} \quad \plusmn \frac{1}{\Delta t}
+\text{Messfehler von }f\space(\Delta f)\text{:} \quad \pm \frac{1}{\Delta t}
 $$
 
 - **Systematische Fehler**: Sind nicht leicht zu identifizieren und ihre Auswirkungen sind nicht leicht bekannt. Können durch wiederholte Messungen oder erhöhten Rechenaufwand **nicht** verringert werden.

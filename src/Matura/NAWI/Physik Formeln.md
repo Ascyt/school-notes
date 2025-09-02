@@ -182,3 +182,181 @@ $$
 $$
 \overline{P}=\frac{\Delta W}{\Delta t}
 $$
+
+# Elektrizitätslehre
+
+**Symbolik:**
+
+|Name|Symbol|Einheit|
+|-|-|-|
+|Elektrische Ladung|$Q$|$\text{A}\cdot\text{s}=\text{C}$|
+|Elektrische Feldstärke|$E$|$\frac{\text{N}}{\text{C}}$|
+|Elektrischer Fluss|$\Phi$|$\frac{\text{N}\text{m}^2}{\text{C}}$|
+|Potenzial|$V$|$\frac{\text{J}}{\text{C}}=\text{V}$|
+|Spannung|$U$|$\text{V}$|
+|Kondensatorkapazität|$C$|$\frac{\text{A}\cdot\text{s}}{\text{V}}=\text{F}$
+
+**Konstanten:**
+
+|Name|Symbol|Wert|
+|-|-|-|
+|Elementarladung|$e$|$1.6022\cdot10^{-19}\text{C}$|
+|Dielektrizitätskonstante|$\varepsilon_0$|$8.854\cdot10^{-12} \frac{\text{A}^2\text{s}^2}{\text{N}\text{m}^2}$|
+|Elektronvolt|$eV$|$1.6022 \cdot 10^{-19}\text{J}$|
+
+**Formeln:**
+
+$$
+F=\frac{1}{4\pi\cdot\varepsilon_0}\cdot\frac{Q_1\cdot Q_2}{r^2}
+$$
+$$
+\vec{E}=\frac{\vec{F}}{q}
+$$
+$$
+\Phi_E=E\cdot A
+$$
+$$
+Q=\varepsilon_0\cdot\Phi_E
+$$
+$$
+W = q\cdot \vec{E}\cdot\vec{s}
+$$
+$$
+W = Q\cdot \frac{q}{4\pi\varepsilon_0}\cdot (\frac{1}{r_2}-\frac{1}{r_1})
+$$
+$$
+V=\frac{W}{Q}
+$$
+$$
+U=\Delta V
+$$
+$$
+C=\frac{Q}{U}=\frac{\varepsilon_0\cdot A}{d}=\frac{\varepsilon_0\cdot\varepsilon_r\cdot A}{d}
+$$
+
+> natürlich mehr als das, aber ich überspringe das Thema (vorerst zumindest)
+
+# Schwingungen & Wellen
+
+**Symbolik:**
+
+|Name|Symbol|Einheit|
+|-|-|-|
+|Auslenkung|$y$|$\text{m}$|
+|Dämpfungskonstante|$\delta$|$\text{s}^{-1}$|
+|Wellenvektor|$\vec{k}$|$\text{m}^{-1}$|
+|Wellenlänge|$\lambda$|$\text{m}$|
+|Brennweite|$f$|$\text{m}$|
+|Brechkraft|$D$|$\text{m}^{-1}=\text{dpt}$|
+
+**Konstanten:**
+|Name|Symbol|Wert|
+|-|-|-|
+|Schallgeschwindigkeit|$c_\text{Schall}$|$340\frac{\text{m}}{\text{s}}$|
+|Lichtgeschwindigkeit|$c_\text{Licht}$|$299\ 792\ 458\frac{\text{m}}{\text{s}}$
+
+**Formeln:**
+
+$$
+y(t)=r_0\cdot e^{-\delta\cdot t}\cdot\sin(\sqrt{{\omega_0}^2-\delta^2}\cdot t+\varphi_0)
+$$
+$$
+D = \left|\frac{\Delta F}{\Delta y}\right| = \omega^2\cdot m = -\frac{F}{y}
+$$
+<br />
+
+$$
+y_1(t)=2r\cdot\left(\sin\left((\omega_1+\omega_2)\cdot\frac{t}{2}\right)\cdot\cos\left((\omega_1-\omega_2)\cdot\frac{t}{2}\right)\right)
+$$
+$$
+\frac{\omega_1-\omega_2}{2\pi}=f_1-f_2
+$$
+<br />
+
+|Pendelart|Formel für die Periodendauer|
+|-|-|
+|Federpendel|$2\pi\sqrt{\frac{m}{D}}$|
+|Drehpendel|$2\pi\sqrt{\frac{J}{D^*}}$|
+|Fadenpendel|$2\pi\sqrt{\frac{l}{g}}$|
+|Physisches Pendel|$2\pi\sqrt{\frac{J}{m\cdot g\cdot s}}$|
+
+$$
+y(\vec{x}, t)=r\cdot \sin(\omega \cdot t - \vec{k}\cdot\vec{x}) 
+$$
+$$
+|\vec{k}|=k=\frac{\omega}{c}=\frac{2\pi}{\lambda}
+$$
+<br />
+
+$$
+c=\sqrt{\frac{\sigma}{\rho}}=\sqrt{\frac{F}{A\cdot\rho}}
+$$
+$$
+\frac{\sin\alpha}{\sin\beta}=\frac{c_1}{c_2}=\frac{\lambda_1}{\lambda_2}=\frac{n_2}{n_1}
+$$
+$$
+\alpha=\arctan\left(\frac{n_2}{n_1}\right)
+$$
+$$
+\alpha_\text{Grenz}=\arcsin\left(\frac{n_2}{n_1}\right)=\arcsin\left(\frac{c_1}{c_2}\right)=\arcsin\left(\frac{\lambda_1}{\lambda_2}\right)
+$$
+<br />
+
+$$
+D = \frac{1}{f}
+$$
+
+|Name|Symbol|
+|-|-|
+|Brennweite|f|
+|Gegenstandsgröße|G|
+|Gegenstandsweite|g|
+|Bildgröße|B|
+|Bildweite|b|
+|Vergrößerung|v|
+|Sehwinkel mit Instrument|$\alpha_V$|
+|Sehwinkel ohne Instrument|$\alpha$|
+
+$$
+v=\frac{B}{G}=\frac{b}{g}
+$$
+$$
+v=\frac{B}{G}=\frac{b}{g}
+$$
+$$
+v < 0;\ b>0?\qquad \text{reell; umgekehrtes Bild}\\
+v > 0;\ b<0?\qquad \text{virtuell; aufrechtes Bild}
+$$
+$$
+v=\frac{\tan\alpha_V}{\tan\alpha}
+$$
+$$
+v_\text{Fernrohr}=\frac{f_\text{Objektiv}}{f_\text{Okular}}
+$$
+<br />
+
+|Name|Symbol|Einheit|
+|-|-|-|
+|Schalldruck|$p$|$\frac{\text{N}}{\text{m}^2}=\text{Pa}$|
+|Schallintensität|$I$|$\frac{\text{J}}{\text{m}^2\cdot\text{s}}=\frac{\text{W}}{\text{m}^2}$|
+|Schallkennidempedanz|$Z$|$\frac{\text{kg}}{\text{s}\cdot\text{m}^2}$|
+|Schallintentsitätspegel|$L$|$\text{dB}$|
+
+$$
+p=\frac{F}{A}\qquad [p]=\frac{\text{N}}{\text{m}^2}=\text{Pa}
+$$
+$$
+I=\frac{E}{t\cdot A}
+$$
+$$
+Z=\frac{p^2}{I}
+$$
+$$
+I(r)=\frac{P}{4\pi r^2}
+$$
+$$
+I(x)=I_0\cdot e^{-a\cdot x}
+$$
+$$
+L=10\cdot\log_{10}\left(\frac{I}{I_0}\right)=20\log_{10}\left(\frac{p}{p_0}\right)
+$$
