@@ -162,10 +162,11 @@ $$
 |Name|Symbol|Einheit|
 |-|-|-|
 |Arbeit|$W$|$\text{N}\cdot\text{m}=J$|
-|Leistung|$\overline{P}$|$\frac{J}{s}=W$|
+|Leistung|$\overline{P}$|$\frac{\text{J}}{\text{s}}=\text{W}$|
 |Wirkungsgrad|$\eta$|$1$|
 
 **Arbeitsformen:**
+
 |Arbeit Name|Arbeit Symbol|Energie Name|Energie Symbol|
 |-|-|-|-|
 |Hubarbeit|$W_\text{Hub}$|Potenzielle Energie|$E_\text{pot}$|
@@ -182,6 +183,19 @@ $$
 $$
 \overline{P}=\frac{\Delta W}{\Delta t}
 $$
+
+## Zusammengefasst
+
+|Name|Symbol|Einheit|Formel|Integriert nach Zeit|
+|-|-|-|-|-|
+|Weg|$\vec{s}$|$\text{m}$|||
+|Geschwindigkeit|$\vec{v}$|$\frac{\text{m}}{\text{s}}$||Weg|
+|Beschleunigung|$\vec{a}$|$\frac{\text{m}}{\text{s}^2}$||Geschwindigkeit|
+|Masse|$m$|$\text{kg}$||
+|Impuls|$\vec{p}$|$\text{N}\text{s}$|$m\cdot \vec{v}$||
+|Kraft|$\vec{F}$|$\text{N}$||Impuls|
+|Arbeit|$W$|$\text{J}$|$\vec{F}\cdot s$|
+|Leistung|$P$|$\text{W}$||Arbeit|
 
 # Elektrizitätslehre
 
@@ -250,6 +264,7 @@ $$
 |Brechkraft|$D$|$\text{m}^{-1}=\text{dpt}$|
 
 **Konstanten:**
+
 |Name|Symbol|Wert|
 |-|-|-|
 |Schallgeschwindigkeit|$c_\text{Schall}$|$340\frac{\text{m}}{\text{s}}$|
@@ -360,3 +375,49 @@ $$
 $$
 L=10\cdot\log_{10}\left(\frac{I}{I_0}\right)=20\log_{10}\left(\frac{p}{p_0}\right)
 $$
+
+# Thermodynamik
+
+**Symbolik:**
+
+|Name|Symbol|Einheit|
+|-|-|-|
+|Anzahl der Teilchen|$N$|$1$|
+|Temperatur|$T$|$\text{K}$|
+
+**Konstanten:**
+
+|Name|Symbol|Wert|
+|-|-|-|
+|Boltzmannkonstante|$k$|$1.3806488\cdot10^{-23}\frac{\text{J}}{\text{K}}$|
+|Avogadrokonstante|$N_A$|$6.022\cdot 10^{23}\text{mol}^{-1}$|
+|Universielle Gaskonstante|$R$|$N_A\cdot k\approx8.314\frac{\text{J}}{\text{K}\cdot\text{mol}}$
+
+**Formeln:**
+
+$$
+|\Delta\vec{p}|=\frac{1}{6}\cdot\left(\frac{N}{V}\cdot A\cdot v\cdot\Delta t\right)\cdot 2mv
+$$
+$$
+p=\frac{1}{3}\cdot\frac{N}{V}\cdot m\cdot v^2 = \frac{2}{3}\cdot \frac{N}{V}\cdot\overline{E_\text{kin}}
+$$
+$$
+p\cdot V=N\cdot k\cdot T
+$$
+$$
+p\cdot V=n\cdot R\cdot T
+$$
+$$
+R_s=\frac{R}{M} \qquad M\ldots\text{Masse von 1 mol des speziellen Gases}
+$$
+$$
+p\cdot V = m\cdot R_s\cdot T
+$$
+
+|Name|$p$ konst?|$V$ konst?|$n$ konst?|$T$ konst?|Proportionalität|Was ist konst?|Formel|
+|-|-|-|-|-|-|-|-|
+|Gesetz von Boyle-Mariotte|$\textcolor{red}{\times}$|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$\textcolor{lime}{\checkmark}$|$p\propto \frac{1}{V}$|$p\cdot V$|$\frac{p_1}{p_2}=\frac{V_2}{V_1}$|
+|(erstes) Gesetz von Gay-Lussac|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$V\propto T$|$\frac{V}{T}$|$\frac{V_1}{V_2}=\frac{T_1}{T_2}$|
+|Gesetz von Amontons/zweites von Gay-Lussac|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$p\propto T$|$\frac{p}{T}$|$\frac{p_1}{p_2}=\frac{T_1}{T_2}$|
+|Gesetz der Gleichförmigkeit|$\textcolor{lime}{\checkmark}$|$\textcolor{red}{\times}$|$\textcolor{red}{\times}$|$\textcolor{lime}{\checkmark}$|$V\propto N$|$\frac{N}{V}$|$\frac{V_1}{V_2}=\frac{N_1}{N_2}$|
+

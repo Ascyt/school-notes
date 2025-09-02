@@ -385,4 +385,3 @@ $$
 $$
 [L]=\text{dB}\ \text{(Dezibel)}
 $$
-
