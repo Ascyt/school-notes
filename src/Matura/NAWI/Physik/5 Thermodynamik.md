@@ -159,8 +159,45 @@ $$
 \frac{p_1}{p_2}=\left(\frac{V_2}{V_1}\right)^\kappa\qquad \text{oder}\qquad p\cdot V^\kappa=\text{konst.}
 $$
 
+## Kreisprozesse und Carnotprozess
+
 **Kreisprozess**: Reihe von Zustandsänderungen, die wieder zurück zum ursprünglichen Ausgangszustand zurückführen. 
+
+**Reversible Prozesse**: Prozesse, die in einem geschlossenen System ablaufen und ohne Energiezufuhr rückgängig gemacht werden können.
 
 ![Kreisprozess B2 S298](image-44.png)
 
-[noch nicht fertig]
+**Carnotische Kreisprozess:** Höchster Wirkungsgrad, jedoch nur theoretisch und in der Praxis nur näherungsweise realisierbar. Zustandsänderungen:
+- $1\Rarr2$ **Isotherme Expansion** ($\Delta T=\Delta U=0$). Wärme muss bei der Ausdehnung aufgenommen werden um Abkühlung zu vermeiden. \
+  Es gilt: $W_\text{ab}=-Q_\text{zu}$ \
+  Formel: $Q_\text{zu}=m\cdot R\cdot T_1\cdot\ln\left(\frac{V_2}{V_1}\right)$ 
+- $2\Rarr3$ **Adiabatische Expansion** ($\Delta Q=0$). Es wird keine Wärme aufgenommen. \
+  Es gilt: $Q_\text{zu}=0$\
+  Formel: $\frac{m\cdot R}{\kappa-1}\cdot(T_2-T_1)$
+- $3\Rarr4$ **Isotherme Kompression**  ($\Delta T=\Delta U=0$). Analog zu Schritt $1\Rarr2$, aber es wird Wärme bei der Kompression abgegeben. \
+  Es gilt: $W_\text{zu}=-Q_\text{ab}\qquad\ldots \text{Wert ist positiv}$ \
+  Formel: $Q_\text{ab}=m\cdot R\cdot T_2\cdot\ln\left(\frac{V_4}{V_3}\right)\qquad \ldots \text{Wert ist negativ}$
+- $4\Rarr1$ **Adiabatische Kompression** ($\Delta Q=0$). Es erhöht sich die Temparatur aufgrund von Volumenänderungsarbeit. \
+  Es gilt: $Q_\text{ab}=0$\
+  Formel: $W_\text{zu}=\frac{m\cdot R}{\kappa-1}\cdot(T_1-T_2)$
+
+![Carnotprozess Diagramm B2 S300](image-45.png)
+
+Im gesamten Prozess gilt: 
+$$
+|Q_\text{zu}|>|Q_\text{ab}|
+$$
+
+Tabelle:
+
+|Zustandsänderung|Was ist $0$?|Was gilt?|Formel|
+|-|-|-|-|
+|$1\Rarr2$|$\Delta T,\Delta U$|$W_\text{ab}=-Q_\text{zu}$|$Q_\text{zu}=m\cdot R\cdot T_1\cdot\ln\left(\frac{V_2}{V_1}\right)$|
+|$2\Rarr3$|$\Delta Q$|$Q_\text{zu}=0$|$\frac{m\cdot R}{\kappa-1}\cdot(T_2-T_1)$|
+|$3\Rarr4$|$\Delta T,\Delta U$|$W_\text{zu}=-Q_\text{ab}$|$Q_\text{ab}=m\cdot R\cdot T_2\cdot\ln\left(\frac{V_4}{V_3}\right)$|
+|$4\Rarr1$|$\Delta Q$|$Q_\text{ab}=0$|$W_\text{zu}=\frac{m\cdot R}{\kappa-1}\cdot(T_1-T_2)$|
+
+Wirkungsgrad:
+$$
+\eta=\frac{T_1-T_2}{T_1}
+$$

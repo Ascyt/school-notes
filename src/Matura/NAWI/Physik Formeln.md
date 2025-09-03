@@ -468,3 +468,18 @@ $$
 $$
 <br />
 
+**Carnotprozess Tabelle:**
+
+|Zustandsänderung|Was ist $0$?|Was gilt?|Formel|
+|-|-|-|-|
+|$1\Rarr2$|$\Delta T,\Delta U$|$W_\text{ab}=-Q_\text{zu}$|$Q_\text{zu}=m\cdot R\cdot T_1\cdot\ln\left(\frac{V_2}{V_1}\right)$|
+|$2\Rarr3$|$\Delta Q$|$Q_\text{zu}=0$|$\frac{m\cdot R}{\kappa-1}\cdot(T_2-T_1)$|
+|$3\Rarr4$|$\Delta T,\Delta U$|$W_\text{zu}=-Q_\text{ab}$|$Q_\text{ab}=m\cdot R\cdot T_2\cdot\ln\left(\frac{V_4}{V_3}\right)$|
+|$4\Rarr1$|$\Delta Q$|$Q_\text{ab}=0$|$W_\text{zu}=\frac{m\cdot R}{\kappa-1}\cdot(T_1-T_2)$|
+
+$$
+|Q_\text{zu}|>|Q_\text{ab}|
+$$
+$$
+\eta=\frac{T_1-T_2}{T_1}
+$$
