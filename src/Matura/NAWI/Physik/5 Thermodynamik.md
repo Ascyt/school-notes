@@ -201,3 +201,30 @@ Wirkungsgrad:
 $$
 \eta=\frac{T_1-T_2}{T_1}
 $$
+
+## Zweiter Hauptsatz
+
+Laut **Lord Kelvin** bzw. **Clausius**: Bei einem Kreisprozess ist es nicht möglich, der Umgebung Wärme zu entziehen und diese vollständig in Arbeit umzuwandeln. 
+
+Alle in einem geschlossenen System ablaufenden Vorgänge lassen sich in 2 Klassenaufteilen:
+- **Reversible Prozesse**: Ohne Energiezufuhr umkehrbar. Der Carnotprozess ist reversibel. 
+- **Irreversible Prozesse**: Laufen von selbst nur in eine Richtung und sind nicht umkehrbar. 
+
+**Entropie $S$**: Sagt aus, dass grundsätzlich alles im Universum mit der Zeit von Ordnung mehr ins Chaos gelangt. 
+$$
+S=\int\frac{1}{T}\ dQ\qquad[S]=\frac{\text{J}}{\text{K}}
+$$
+
+Für geschlossene Systeme gilt dass die Entropie niemals abnehmen kann:
+$$
+\Delta s \ge 0
+$$
+
+**Bolzmanngleichung:** hier ist $k$ die Bolzmannkonstante
+$$
+S=k\cdot\ln(W)
+$$
+
+## Dritter Hauptsatz
+
+Auch genannt **Nernsttheorem**: Es ist nicht möglich, ein quantenmechanisches System bis zum absoluten Nullpunkt abzukühlen, bzw. der absolute Nullpunkt kann niemals erreicht werden und nur angenähert werden. 

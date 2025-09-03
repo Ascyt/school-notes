@@ -389,6 +389,7 @@ $$
 |Spez. Wärmekapazität bei konst. Vol.|$c_V$|$\frac{\text{kJ}}{\text{kg}\cdot\text{K}}$|
 |Spez. Wärmekapazität bei konst. Druck|$c_p$|$\frac{\text{kJ}}{\text{kg}\cdot\text{K}}$|
 |Isentropenexponent|$\kappa$|$1$|
+|Entropie|$S$|$\frac{\text{J}}{\text{K}}$|
 
 **Konstanten:**
 
@@ -482,4 +483,9 @@ $$
 $$
 $$
 \eta=\frac{T_1-T_2}{T_1}
+$$
+<br />
+
+$$
+S=k\cdot\ln(W)
 $$
