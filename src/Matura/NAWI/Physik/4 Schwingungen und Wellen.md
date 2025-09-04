@@ -385,3 +385,10 @@ $$
 $$
 [L]=\text{dB}\ \text{(Dezibel)}
 $$
+
+## Doppler Effekt
+
+**Wahrgenommene Frequenz $f$**: Hier ist $c$ die Mediumsgeschwindigkeit, $v_E$ die Geschwindigkeit des Empfängers und $v_S$ die Geschwindigkeit des Senders
+$$
+f=f_0\cdot\frac{c\pm v_E}{c\pm v_S}
+$$

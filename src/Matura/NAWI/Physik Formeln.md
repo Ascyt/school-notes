@@ -375,6 +375,15 @@ $$
 $$
 L=10\cdot\log_{10}\left(\frac{I}{I_0}\right)=20\log_{10}\left(\frac{p}{p_0}\right)
 $$
+<br />
+
+$$
+f=\frac{f_0}{1-\frac{v}{c}}\qquad\ldots\text{sich näherndem Sender}
+$$
+
+$$
+f=\frac{f_0}{1+\frac{v}{c}}\qquad\ldots\text{sich entfernendem Sender}
+$$
 
 # Thermodynamik
 
@@ -489,3 +498,25 @@ $$
 $$
 S=k\cdot\ln(W)
 $$
+
+# Moderne Physik
+
+
+**Konstanten:**
+
+|Name|Symbol|Wert|
+|-|-|-|
+|Lichtgeschwindigkeit|$c_0$|$299\ 792\ 458\frac{\text{m}}{\text{s}}$|
+
+**Formeln:**
+
+$$
+v_\text{ges}=\cfrac{v_1+v_2}{1+\cfrac{v_1\cdot v_2}{{c_0}^2}}
+$$
+$$
+t_b=t_r\cdot\sqrt{1-\left(\frac{v}{c_0}\right)^2}
+$$
+$$
+l_b=l_r\cdot\sqrt{1-\left(\frac{v}{c_0}\right)^2}
+$$
+
