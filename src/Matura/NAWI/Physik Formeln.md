@@ -516,8 +516,9 @@ $$
 <br />
 
 $$
-\gamma = \left(1-\left(\cfrac{v}{c_0}\right)^2\right)^{-0.5}
+\gamma = \left(1-\left(\cfrac{v}{c_0}\right)^2\right)^{-0.5} \qquad \ldots\gamma=1\quad\text{bei}\quad v=0
 $$
+<br />
 
 $$
 x_b = \gamma (x - v t)
@@ -532,5 +533,23 @@ $$
 <br />
 
 $$
-E_0=m_0\cdot {c_0}^2
+m_d=\gamma\cdot m_0
 $$
+$$
+E_\text{ges}=m_d\cdot{c_0}^2
+$$
+$$
+E_\text{kin}=(m_d-m_0)\cdot {c_0}^2
+$$
+$$
+p=m_0\cdot v\cdot\gamma
+$$
+$$
+f_B=f_Q\sqrt{\frac{c_0-v}{c_0+v}}
+$$
+<br />
+
+$$
+x_h=x_O\cdot\left(1-g\frac{\Delta h}{{c_0}^2}\right)\qquad \ldots\text{mit }x=[f|h|l]
+$$
+

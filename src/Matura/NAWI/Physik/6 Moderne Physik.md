@@ -12,6 +12,8 @@ Das Licht würde ca. 7.5 Umrundungen pro Sekunde um die Erde machen.
 - **Relativitätsprinzip**: Die Naturgesetze nehmen in allen Inertialsystemen die gleiche mathematische Form an, und alle Inertialsysteme sind gleichberechtigt.
 - **Prinzip der Konstanz der Lichtgeschwindigkeit**: Die Lichtgeschwindigkeit hat im Vakuum unabhängig vom Bewegungszustand der Quelle und des Beobachters in allen Inertialsystemen den Wert $c_0$.
 
+## Spezielle Relativitätstheorie (SRT)
+
 **Relativistische Geschwindigkeitsaddition:** Die Gesamtgeschwindigkeit (Relativgeschwindigkeit) für zwei Einzelgeschwindigkeiten $v_1$ und $v_2$
 $$
 v_\text{ges}=\cfrac{v_1+v_2}{1+\cfrac{v_1\cdot v_2}{{c_0}^2}}
@@ -107,7 +109,62 @@ Energie ist ja laut der Mechanik ein Produkt aus Masse mal Geschwindigkeit (Aufg
 
 **Ruheenergie $E_0$**: Ein ruhender Körper der Ruhemasse $m_0$ hat folgende Ruheenergie:
 $$
-E_0=m_0\cdot {c_0}^2 \quad \cancel{+\text{AI}}
+E_0=m_0\cdot {c_0}^2 \ \cancel{+\text{AI}}
 $$
 
 Diese Energie ist üblicherweise extrem hoch, ein Kilogram hat bspw. $90 \text{PJ}$, das Äquivalent der Verarbeitung von drei Millionen Tonnen Steinkohle eines Kohlekraftwerkes. 
+
+**Dynamische Masse $m_d$**: Ein gleichförmig mit konstantem $v$ bewegter Körper hat die dynamische Masse:
+$$
+m_d=\frac{m_0}{\sqrt{1-\left(\frac{v}{c_0}\right)^2}}=\gamma\cdot m_0
+$$
+
+**Relativistische Gesamtenergie $E_\text{ges}$:** Hier hat der Körper die Ruhemasse $m_0$ und bewegt sich gleichmaßig mit konstanten $v$
+$$
+E_\text{ges}=m_d\cdot{c_0}^2
+$$
+
+**Relativistische Bewegungsenergie $E_\text{kin}$:**
+$$
+E_\text{kin}=(m_d-m_0)\cdot {c_0}^2
+$$
+
+**Relativistischer Impuls $p$:**
+$$
+p=m_0\cdot v\cdot\gamma
+$$
+
+**Relativistischer Dopplereffekt des Lichts $f_B$**: Wenn sich eine Lichtquelle mit konstantem $v$ relativ zu einem Beobachter bewegt, nimmt dieser die Frequenz $f_B$ wahr, wenn $f_Q$ die Frequenz in Ruhelage ist. Bei Annäherung von Lichtquelle und Beobachter ist $v<0$.
+$$
+f_B=f_Q\sqrt{\frac{c_0-v}{c_0+v}}
+$$
+
+## Allgemeine Relativitätstheorie (ART)
+
+- **SRT**: Dominiert von der Vakuumlichtgeschwindigkeit
+- **ART**: Dominiert vom Verhältnis der Gravitationskonstante zum Quadrat der Vakuumlichtgeschwindigkeit
+
+**Äquivalenzprinzip:** Beschleunigte Systeme ohne Gravitationswirkung sind von nicht beschleunigten Systemen mit Gravitationswirkung nicht unterscheidbar. Schwere Masse ist deswegen äquivalent zu träger Masse.
+
+**Frequenzminderung** (Rotverschiebung) in der Nähe einer großen Masse: Hier ist $g$ die Gravitationsbeschleunigung der Masse, $f_O$ die Frequenz der EM-Welle an der Oberfläche der Masse und $f_h$ die Frequenz der Höhe $\Delta h$
+$$
+f_h=f_O\cdot\left(1-g\frac{\Delta h}{{c_0}^2}\right)
+$$
+
+Die Zeit an der Oberfläche einer großen Masse vergeht immer langsamer als in die in einer Entfernung. 
+
+**Zeitdilatation** in der Nähe einer großen Masse: Hier ist $t_O$ eine Zeitspanne auf der Oberfläche und $t_h$ eine auf der Höhe $\Delta h$ (eig gleiche Formel wie Frequenzminderung)
+$$
+t_O=t_h\cdot\left(1-g\frac{\Delta h}{{c_0}^2}\right)
+$$
+
+**Längenkontraktion** in der Nähe einer großen Masse: Wieder das selbe aber mit einem Maßstab $l_h$ bzw. $l_O$
+$$
+l_O=l_h\cdot\left(1-g\frac{\Delta h}{{c_0}^2}\right)
+$$
+
+Diese Zeit- und Längenänderung krümmt die vierdimensionale Raumzeit. 
+
+![Längenkontraktion B2 S326](image-47.png)
+
+![Raum-Zeit-Krümmung B2 S327](image-48.png)
