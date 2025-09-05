@@ -520,9 +520,17 @@ $$
 $$
 
 $$
-x_b = \gamma (x - v t) \\
-t_b = \gamma \left( t - \frac{v}{{c_0}^2} x \right) \\
+x_b = \gamma (x - v t)
+$$
+$$
+t_b = \gamma \left( t - \frac{v}{{c_0}^2} x \right)
+$$
+$$
 y_b = y \\
 z_b = z
 $$
+<br />
 
+$$
+E_0=m_0\cdot {c_0}^2
+$$

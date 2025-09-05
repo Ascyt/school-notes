@@ -101,4 +101,13 @@ $$
 
 Jetzt müsste man noch rekursiv Einsetzen ($\ldots_{a\rarr b}$ mit den Variablen von Schritt 2, und hier auch wieder statt $\ldots_{\rarr a}$ die Variablen von Schritt 1) und dann auf $v_\text{ges}$ umformen und lösen. Zugegebenermaßen schafft es das Buch wesentlich kürzer, bin mir aber auch nicht genau sicher wie es da vorgeht. 
 
+## Relativistische Masse
 
+Energie ist ja laut der Mechanik ein Produkt aus Masse mal Geschwindigkeit (Aufgrund Weg*Kraft) ($E_\text{kin}=m\cdot \frac{v^2}{2}$)
+
+**Ruheenergie $E_0$**: Ein ruhender Körper der Ruhemasse $m_0$ hat folgende Ruheenergie:
+$$
+E_0=m_0\cdot {c_0}^2 \quad \cancel{+\text{AI}}
+$$
+
+Diese Energie ist üblicherweise extrem hoch, ein Kilogram hat bspw. $90 \text{PJ}$, das Äquivalent der Verarbeitung von drei Millionen Tonnen Steinkohle eines Kohlekraftwerkes. 
