@@ -513,10 +513,16 @@ $$
 $$
 v_\text{ges}=\cfrac{v_1+v_2}{1+\cfrac{v_1\cdot v_2}{{c_0}^2}}
 $$
+<br />
+
 $$
-t_b=t_r\cdot\sqrt{1-\left(\frac{v}{c_0}\right)^2}
+\gamma = \left(1-\left(\cfrac{v}{c_0}\right)^2\right)^{-0.5}
 $$
+
 $$
-l_b=l_r\cdot\sqrt{1-\left(\frac{v}{c_0}\right)^2}
+x_b = \gamma (x - v t) \\
+t_b = \gamma \left( t - \frac{v}{{c_0}^2} x \right) \\
+y_b = y \\
+z_b = z
 $$
 
