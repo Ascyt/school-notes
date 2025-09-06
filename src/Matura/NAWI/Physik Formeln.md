@@ -261,7 +261,6 @@ $$
 |Wellenvektor|$\vec{k}$|$\text{m}^{-1}$|
 |Wellenlänge|$\lambda$|$\text{m}$|
 |Brennweite|$f$|$\text{m}$|
-|Brechkraft|$D$|$\text{m}^{-1}=\text{dpt}$|
 
 **Konstanten:**
 
@@ -317,20 +316,21 @@ $$
 $$
 <br />
 
+|Name|Symbol|
+|-|-|
+|Brechkraft|$D$|
+|Brennweite|$f$|
+|Gegenstandsgröße|$G$|
+|Gegenstandsweite|$g$|
+|Bildgröße|$B$|
+|Bildweite|$$|
+|Vergrößerung|$v$|
+|Sehwinkel mit Instrument|$\alpha_V$|
+|Sehwinkel ohne Instrument|$\alpha$|
+
 $$
 D = \frac{1}{f}
 $$
-
-|Name|Symbol|
-|-|-|
-|Brennweite|f|
-|Gegenstandsgröße|G|
-|Gegenstandsweite|g|
-|Bildgröße|B|
-|Bildweite|b|
-|Vergrößerung|v|
-|Sehwinkel mit Instrument|$\alpha_V$|
-|Sehwinkel ohne Instrument|$\alpha$|
 
 $$
 v=\frac{B}{G}=\frac{b}{g}
@@ -378,11 +378,7 @@ $$
 <br />
 
 $$
-f=\frac{f_0}{1-\frac{v}{c}}\qquad\ldots\text{sich näherndem Sender}
-$$
-
-$$
-f=\frac{f_0}{1+\frac{v}{c}}\qquad\ldots\text{sich entfernendem Sender}
+f=f_0\cdot\frac{c\pm v_E}{c\pm v_S}
 $$
 
 # Thermodynamik
@@ -507,6 +503,7 @@ $$
 |Name|Symbol|Wert|
 |-|-|-|
 |Lichtgeschwindigkeit|$c_0$|$299\ 792\ 458\frac{\text{m}}{\text{s}}$|
+|Planck-Konstante|$h$|$6.626\cdot10^{-34}\text{Js}$|
 
 **Formeln:**
 
@@ -552,4 +549,22 @@ $$
 $$
 x_h=x_O\cdot\left(1-g\frac{\Delta h}{{c_0}^2}\right)\qquad \ldots\text{mit }x=[f|h|l]
 $$
+<br />
 
+$$
+E=h\cdot f
+$$
+
+$$
+E_\text{kin}=h\cdot f-W_A
+$$
+
+$$
+\Delta\lambda=\frac{h}{m_e c}(1-\cos(\varphi))
+$$
+$$
+\lambda = \frac{h}{p}
+$$
+$$
+E=h\cdot f
+$$

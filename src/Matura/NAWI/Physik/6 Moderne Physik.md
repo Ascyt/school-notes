@@ -168,3 +168,50 @@ Diese Zeit- und Längenänderung krümmt die vierdimensionale Raumzeit.
 ![Längenkontraktion B2 S326](image-47.png)
 
 ![Raum-Zeit-Krümmung B2 S327](image-48.png)
+
+# Quantenphysik
+
+**Fotoelektrischer Effekt:** Gut erklärt in dem Video https://www.youtube.com/watch?v=MFPKwu5vugg. Wichtig: Wenn Photonen auf ein Metall treffen, gibt dieses Metall ab einer bestimmten Wellenlänge Elektronen ab. Die Geschwindigkeit dieser Elektronen und ob überhaupt Elektronen abgegeben werden hängt allein von der Wellenlänge und nicht der Amplitude der EM-Welle ab. 
+
+![Photoelektrischer Effekt Versuchsaufbau B2 S328](image-49.png)
+
+**Planck-Konstante $h$:**
+$$
+h\approx 6.626\cdot10^{-34}\text{Js}
+$$
+
+**Lichtquantenhypothese:** Licht der Frequenz $f$ besteht aus Photonen der Energie
+$$
+E=h\cdot f
+$$
+
+**Einsteinsche Gleichung:** Für die kinetische Energie der ausgelösten Elektronen gilt: Hier ist $W_A$ die Austrittsarbeit
+$$
+E_\text{kin}=h\cdot f-W_A
+$$
+
+**Comptoneffekt:** Bestätigte die Teilchennatur der EM-Strahlung.
+
+![Comptoneffekt B2 S330](image-50.png)  
+
+$$
+\Delta\lambda=\frac{h}{m_e c}(1-\cos(\varphi))
+$$
+
+**De-Broglie-Welle:** Jedes Teilchen hat eine Welle mit einer Wellenlänge. 
+$$
+\lambda = \frac{h}{p}
+$$
+$$
+E=h\cdot f
+$$
+
+**Doppelspaltexperiment:** https://www.youtube.com/watch?v=uva6gBEpfDY
+
+**Bornsche Wahrscheinlichkeitsdeutung:** Ein Quantenobjekt kann durch eine Wellenfunktion (Funktion in $\Complex$, oft als $\psi(\vec{x}, t)$ denotiert) beschrieben werden. $|\psi(\vec{x}, t)|^2$ gibt die Wahrscheinlichkeitsdichte. 
+
+Teile bewegen sich als diese Wellen, und nur wenn sie auf etwas treffen "entscheiden" sie sich für eine Position. Das ist das einzige was man messen kann. Wenn man ein Teilchen probiert zum messen, dann kollabiert bzw. zerfällt man diese Wellenfunktion (genannt "Dekohärenz"), und nur bei ausreichend vielen Teilchen kommt die Wellenfunktion statistisch zu stande. 
+
+**Schrödingers Katze** (das Katzenparadoxon von Schrödinger): ([Bild](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/1920px-Schrodingers_cat.svg.png)) Denke eine Katze in einer Schachtel, wo nichts von der Außenwelt rein kann. Man nehme ein radioaktives Material, dieses ist in einer Superposition von gleichzeitig verfallen und nicht verfallen, das verbindet man an einem Detektor welches ein Giftglas zerbricht was die Katze umbringt falls das Atom zerfallen ist, ansonsten lebt die Katze. Die Idee ist, dass diese Katze jetzt gleichzeitig "tot und lebendig" ist, weil das radioaktive Material ja gleichzeitig "zerfallen und nicht zerfallen" ist. [Macht aber trotzdem keinen wirklichen Sinn.](https://www.youtube.com/watch?v=7DtrY54F3AY)
+
+Man probiert, dass man die Effekte der Quantenphysik in der echten Welt mit größeren Objekten zeigt. Gelungen ist das Doppelspaltexperiment beispielsweise mit $C_{60}$-Molekülen, welche ähnlich wie kleine Fußbälle aussehen. 
