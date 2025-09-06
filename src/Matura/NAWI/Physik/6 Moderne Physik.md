@@ -317,7 +317,9 @@ U-238-Zerfallsreihe:
 
 Atomsperrgesetz von Österreich steht in der Verfassung und verbietet Atomkraft. 
 
-# Astrophysik & Gravitation
+# Astrophysik & Gravitation 
+
+Die folgenden Infos stehen nicht in der Formelsammlung. 
 
 - $F_\text{Gravitation}=G\cdot\frac{m_1\cdot m_2}{r^2}$
 - Vektorielles Gravitationsfeld
@@ -329,3 +331,34 @@ Längeneinheiten:
 - **Parsec $\text{pc}$**: Strecke mit Länge von $1\text{AE}$ unter einem Winkel von einer Bogensekunde. $1\text{pc}\approx3.26\text{Lj}$
 
 ![Parsec B2 S360](image-58.png)
+
+Die gesamte Masse des Universums setzt sich rund 73% as "dunkler Energie" und 23% "dunkler Materie" und nur 4% aus "normaler" bzw. sichtbarer Masse. Was diese "dunkle Energie" und "dunkle Materie" so wirklich sind ist nach heutigem Stand noch ein Mysterium. 
+
+**Stern:** Massereicher, selbst leuchtender, kugelförmiger Gaskörper. Strahlungsenergie wird durch Kernfusion im Inneren aufgebracht. 
+
+- **(scheinbare) Helligkeit $m$:** Von einem Himmelskörper je $m^2$ empfangene Strahlungsleistung an einem Beobachtungsort. Maßeinheit ist die Größenklasse $^\text{m}$. 
+- **absolute Helligkeit $M$:** Gleich scheinbarer Helligkeit aber in Entfernung von $10\text{pc}$
+
+Zwei Größenklassen $m_1,m_2$ sind mit den Intensitäten (Energie pro Zeit- und Flächeneinheit) $I_1,I_2$ gemäß:
+$$
+\log_{10}\left(\frac{I_1}{I_2}\right)=-0.4\cdot(m_1-m_2)
+$$
+
+- **Leuchtkraft $L$:** Gesamte von einem Himmelskörper abgegebene Strahlungsleistung. Wird in Watt oder Einheiten der Sonnenleuchtkraft ($L_\text{Sonne}\approx 3.847\cdot10^{26}\text{W}$) gemessen.
+- Leuchtkraft ergibt sich zu: $L=4\pi\cdot R^2\cdot\sigma\cdot {T_\text{eff}}^4$, wobei $R$ der Sternradius ist und $\sigma$ die universielle Strahlungskonstante ($\sigma\approx5.67\cdot10^{-8}\frac{\text{W}}{\text{m}^2\cdot\text{K}^4}$) und $T_\text{eff}$ die effektive Temparatur der Sonne ist. 
+- Effektive Temparatur: Temparatur eines schwarzen Körpers (welches nur Strahlung wegen seiner Temparatur abgibt) welche die selben Frequenzen wie ein untersuchter Stern aussendet. 
+
+**Spektralklassen**: Werden durch Buchstaben O, B, A, F, G, K, M gekennzeichnet (Merksatz: "**O**h **B**e **A** **F**ine **G**irl **K**iss **M**e"). Genauer wird dezimal unterschieden. Ist im folgenden **Hertzsprung-Russell-Diagramm** (HRD) ersichtlich.
+
+![Spektralklassen HRD B2 S364](image-59.png)
+
+**Hubblegesetz:** Hier ist $v_r$ die Geschwindigkeit einer Galaxie relativ zur Erde, $r$ die Entfernung zur Erde und $H_0$ die Hubblekonstante ($H_0\approx75\frac{\text{km}/\text{s}}{\text{Mpc}}$)
+$$
+v_r=H_0\cdot r
+$$
+
+Der Kosmos expandiert, und diese Expansion beschleunigt sich wegen der "dunklen Energie". Es ist unwahrscheinlich, dass sich diese Expansion einmal umkehren könnte. Das Universum ist im großen Sinne auch sehr gleichmäßig verteilt. 
+
+# Das Standardmodell der Elementarteilchen
+
+![Standard Model of Elementary Particles](https://upload.wikimedia.org/wikipedia/commons/0/00/Standard_Model_of_Elementary_Particles.svg)
