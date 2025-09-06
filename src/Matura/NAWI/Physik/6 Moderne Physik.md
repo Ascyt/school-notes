@@ -4,7 +4,7 @@ Wird in die **Relativitätstheorie** (RT), **spezielle Relativitätstheorie** (S
 
 **Lichtgeschwindigkeit:**
 $$
-c_0=\frac{\Delta s}{\Delta t} = 299\ 792\ 458 \frac{\text{m}}{\text{s}}
+c_0=\frac{\Delta s}{\Delta t} = 299\ 792\ 458 \frac{\text{m}}{\text{s}} 
 $$
 Das Licht würde ca. 7.5 Umrundungen pro Sekunde um die Erde machen. 
 
@@ -180,6 +180,11 @@ $$
 h\approx 6.626\cdot10^{-34}\text{Js}
 $$
 
+Oft sieht man auch:
+$$
+\hbar=\frac{h}{2\pi}
+$$
+
 **Lichtquantenhypothese:** Licht der Frequenz $f$ besteht aus Photonen der Energie
 $$
 E=h\cdot f
@@ -215,3 +220,112 @@ Teile bewegen sich als diese Wellen, und nur wenn sie auf etwas treffen "entsche
 **Schrödingers Katze** (das Katzenparadoxon von Schrödinger): ([Bild](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Schrodingers_cat.svg/1920px-Schrodingers_cat.svg.png)) Denke eine Katze in einer Schachtel, wo nichts von der Außenwelt rein kann. Man nehme ein radioaktives Material, dieses ist in einer Superposition von gleichzeitig verfallen und nicht verfallen, das verbindet man an einem Detektor welches ein Giftglas zerbricht was die Katze umbringt falls das Atom zerfallen ist, ansonsten lebt die Katze. Die Idee ist, dass diese Katze jetzt gleichzeitig "tot und lebendig" ist, weil das radioaktive Material ja gleichzeitig "zerfallen und nicht zerfallen" ist. [Macht aber trotzdem keinen wirklichen Sinn.](https://www.youtube.com/watch?v=7DtrY54F3AY)
 
 Man probiert, dass man die Effekte der Quantenphysik in der echten Welt mit größeren Objekten zeigt. Gelungen ist das Doppelspaltexperiment beispielsweise mit $C_{60}$-Molekülen, welche ähnlich wie kleine Fußbälle aussehen. 
+
+**Heisenbergsche Unschärferelation:** Der Ort und Impuls können nicht gleichzeitig mit beliebiger Genauigkeit gemessen werden
+$$
+\Delta x\cdot \Delta p_x \geq \hbar
+$$
+
+**Tunneleffekt:** Quantenmechanische Teilchen können aufgrund ihrer Wellennatur dünne Barrieren durchtreten. Genutzt wird das in:
+- Tunneldiode (elektronisches Bauteil)
+- Flash-Speicher (Speicherkarten für digitale Geräte)
+- [Rastertunnelmikroskop](https://en.wikipedia.org/wiki/Scanning_tunneling_microscope) (RTM, es lässt sich Karten von Oberflächen anfertigen, dessen Strukturen sich im atomaren Bereich befinden) 
+
+![RTM B2 S338](image-51.png)
+
+**Schrödingergleichung:** Hier sind $H$ und $E$ Operatoren, also Rechenvorschriften, die auf die ganze Funktion $\psi$ angewandt wird und diese zu einer anderen Funktion macht. 
+$$
+H\psi=E\psi
+$$
+Eindimensional und zeitunabhängig:
+$$
+-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V\psi(x)=E\psi(x)
+$$
+
+Lösungen dieser Gleichungen sind zwar schwierig zu errechnen, geben aber z.B. die Atomorbitale. 
+
+**Verschränkte Teilchen:** https://www.youtube.com/watch?v=rqmIVeheTVU
+
+Wichtig ist hier die **Bellsche Ungleichung** ([Wikipedia](https://de.wikipedia.org/wiki/Bellsche_Ungleichung))
+
+**Quantencomputer:** Benutzt Qubits (Quantenbits) anstatt Bits (0 oder 1), welche als Superposition von 0 und 1 existieren können. Es wird hier mit Statistik und der Wellenfunktion anstatt mit einfachen Zahlen gearbeitet. Die Wellenfunktion wird so verändert, dass die Qubits beim Kollaps am wahrscheinlichsten die richtige Lösung geben. Quantencomputer brauchen ungefähr die Wurzel der Anzahl der Rechenoperationen eines klassischen Computers, sind daher also um weiten effizienter. 
+
+Das theoretische Wissen und die Funktionsweise über Quantencomputer ist verstanden, jedoch gibt es noch viele Probleme, die noch gelöst werden müssen.
+
+**Quantenkryptographie:** Datenübertragung, bei der es nicht möglich ist, diese abzuhören ohne dass man wissen kann, dass sie abgehört wurden. Kurze Erklärung: https://www.youtube.com/watch?v=_5NQf8k3Jo0. Unter der Leitung eines Nobelpreisträgers in Physik 2022 der TU Wien entwickelt worden. 
+
+# Atom & Kernphysik
+
+**Atommodell von Bohn und Sommerfeld:** Elektronen werden durch vier Quantenzahlen, $n,l,m,s$ beschrieben. Alles außer $s$ sind ganze Zahlen. 
+- Haupt- oder Energiequantenzahl $n\isin\mathbb{Z};\quad[1;\infin[$
+- Neben- oder Drehimpluszahl $l\isin\mathbb{Z};\quad[0;n-1]$ 
+- Orientierungs- oder Magnetquantenzahl $m\isin\mathbb{Z};\quad[-l;l]$
+- Spinquantenzahl (zwei mögliche Werte) $s\isin\{-\frac{1}{2};+\frac{1}{2}\}$
+
+**Stehenden Elektronenwellen von de Broglie:** Die erlaubten Elektronenbahnen ergeben sich durch stehende Wellen, da sonst destruktive Interferenz zur Selbstauslöschung führt. 
+$$
+2\pi\cdot r_n=n\cdot\lambda
+$$
+
+![Orbitalmodell B2 S348](image-53.png)
+
+**Ausschließprinzip für Orbitale von Pauli** (Pauliprinzip): Jedes Orbital kann max. 2 Elektronen haben, und diese müssen sich im Spin unterscheiden.
+
+Der Atomkern eines chemischen Elements mit der Ordnungszahl $Z$ besteht aus $Z$ Protonen und $N$ Neutronen. 
+
+- **$\alpha$-Teilchen:** Heliumkerne mit 2 Protonen und 2 Neutronen mit hoher kinetischer Energie. Werden bereits von dünnen Materialien wie Papier oder der obersten Hautschicht absorbiert. Ordnungszahl nimmt um 2 und Massenzahl nimmt um 4 ab. 
+- **$\beta$-Teilchen:** Sehr schnelle Elektronen aus dem Atomkern. Naja und noch mehr sachen. Viel größere Reichweite als $\alpha$ und werden von dünnen Metallblechen absorbiert. Ordnungszahl nimmt um 1 ab, Massenzahl bleibt gleich. 
+- **$\gamma$-Teilchen:** EM-Wellen mit kleinen Wellenlängen (zw. $10^{-13}$ und $10^{-10}\text{m}$). Ist die durchdringendse Strahlenart, und nur mehrere Zentimeter dicke Metallplatten schwächen sie merklich ab. Begleiten auch stets einen $\alpha$ oder $\beta$ Zerfall. 
+
+![Most common types of radioactive decay reddit](https://i.redd.it/j6sae8nbulue1.png)
+
+**Zerfallgesetz:** Hier ist $N(t)$ die Anzahl der radioaktiven Atomkerne zur Zeit $t$. 
+$$
+N(t)=N_0\cdot e^{-\lambda t}
+$$
+
+**Radiologische Aktivität:**
+
+$$
+A(t)=-N(t)\frac{d}{dt}=\lambda\cdot N(t)
+$$
+
+
+$$
+[A]=\frac{1}{\text{s}}=\text{Bq}\quad \text{(Becquerel)}
+$$
+
+Atome mit $>90$ Atomen sind wegen der Coulombstrahlung nicht mehr stabil, bzw. wenn die Neutronenanzahl nicht richtig ist. 
+
+**Kernspaltung:** Typisch wird U-238 mit 3% bis 30% U-235 verwendet. Natururan (was nur ~0.7% U-235 enthält) muss angereichert werden. Als Moderator kann Wasser verwendet werden. Reines U-235 ist kaum steuerbar und wird deswegen in Atombomben verwendet. U-233 und Pu-239 gleichen dem U-235 im Spaltverfahren. 
+
+![Kernspaltung B2 S353](image-54.png)
+
+**Leichtwasserreaktor:**
+
+![Leichtwasserreaktor B2 S355](image-55.png)
+
+**Kernspaltungsbombe:** (Atombombe) Durch unkontrollierte Kettenreaktion in U-235 oder Pu-239 innerhalb kürzester Zeit. 
+
+**Kernfusion:** Bei Verschmelzung (Fusion) von zwei leichten Kernen zu einem mit einer Massenzahl <50 wird Energie freigesetzt. $E_B$ ist die Bindungsenergie pro Nukleon. Sehr experimentiell, wird aber meist Deuterium (H-2) und Tritium (H-3) zu Helium (He-4) fusioniert. 
+
+![Kernfusion B2 S355](image-56.png)
+
+U-238-Zerfallsreihe:
+
+![U-238-Zerfallsreihe B2 S356](image-57.png)
+
+Atomsperrgesetz von Österreich steht in der Verfassung und verbietet Atomkraft. 
+
+# Astrophysik & Gravitation
+
+- $F_\text{Gravitation}=G\cdot\frac{m_1\cdot m_2}{r^2}$
+- Vektorielles Gravitationsfeld
+- Punktmasse $m$ besitzt ein symmetrisches Gravitationsfeld ($g(r)=\frac{G\cdot m}{r^2}$)
+
+Längeneinheiten:
+- **Astronomische Einheit $\text{AE}$**: mittlere Entfernung zw. Sonne und Erde. $1\text{AE}\approx 1.496\cdot10^{11}$
+- **Lichtjahr $\text{Lj}$**: Strecke, die Licht bei geradliniger Ausbreitung in Vakuum in einem Jahr zurücklegt. $1\text{Lj}\approx63\ 240\text{AE}$
+- **Parsec $\text{pc}$**: Strecke mit Länge von $1\text{AE}$ unter einem Winkel von einer Bogensekunde. $1\text{pc}\approx3.26\text{Lj}$
+
+![Parsec B2 S360](image-58.png)

@@ -323,7 +323,7 @@ $$
 |Gegenstandsgröße|$G$|
 |Gegenstandsweite|$g$|
 |Bildgröße|$B$|
-|Bildweite|$$|
+|Bildweite|$b$|
 |Vergrößerung|$v$|
 |Sehwinkel mit Instrument|$\alpha_V$|
 |Sehwinkel ohne Instrument|$\alpha$|
@@ -552,6 +552,10 @@ $$
 <br />
 
 $$
+\hbar=\frac{h}{2\pi}
+$$
+
+$$
 E=h\cdot f
 $$
 
@@ -565,6 +569,26 @@ $$
 $$
 \lambda = \frac{h}{p}
 $$
+
 $$
-E=h\cdot f
+\Delta x\cdot \Delta p_x \geq \hbar
+$$
+<br />
+
+- Haupt- oder Energiequantenzahl $n\isin\mathbb{Z};\quad[1;\infin[$
+- Neben- oder Drehimpluszahl $l\isin\mathbb{Z};\quad[0;n-1]$ 
+- Orientierungs- oder Magnetquantenzahl $m\isin\mathbb{Z};\quad[-l;l]$
+- Spinquantenzahl (zwei mögliche Werte) $s\isin\{-\frac{1}{2};+\frac{1}{2}\}$
+
+$$
+2\pi\cdot r_n=n\cdot\lambda
+$$
+<br />
+
+$$
+N(t)=N_0\cdot e^{-\lambda t}
+$$
+
+$$
+A(t)=-N(t)\frac{d}{dt}=\lambda\cdot N(t)
 $$
