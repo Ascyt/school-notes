@@ -24,5 +24,13 @@ Teststoff: S. 98/99
 **Wichtigste Gesetzformen**:
 1. **Verordnung**: Jedes Land muss sich dran halten (z.B. DSGVO)
 2. **Richtlinie**: Die Basis muss da sein, aber das Land muss es nicht komplett ausbauen (z.B. Antidiskriminierungsrichtlinie, was Österreich im öffentlichen Recht nur schwammig umgesetzt hat)
-3. **Beschluss**: Gilt beschränkt auf 1 bis 3 betroffene Länder und nicht auf alle
+3. **Beschluss**: Gilt beschränkt auf 1 bis 3 betroffene Länder und nicht auf alle. 
 4. **Empfehlung**: "Bitte mach es" aber keine Konsequenz
+
+^ Muss vom Rat mehr als 65% und von der Bevölkerung zu 55% angenommen werden.
+
+**Grundfreiheiten** (Antidiskriminierung):
+1. Geschlecht (inkl. transgender)
+2. Ethnie
+3. Behinderung
+
