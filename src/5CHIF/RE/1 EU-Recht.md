@@ -18,7 +18,7 @@ Teststoff: S. 98/99
 
 **Drei wichtigsten Institutionen:** (um ein Gesetz herauszubringen)
 1. EU-Kommission (bringen Vorschläge ein)
-2. Rat der Europäischen Union (Ein Minister je Land stimmt)
+2. Rat der Europäischen Union (Ein Minister je Land stimmt. Doppelte Mehrheit: 55% aller Minister des Rates und müssen 65% der Bevölkerung dahinterstehen haben)
 3. EU-Parlament (Gewählt von uns, stimmen ab)
 
 **Wichtigste Gesetzformen**:
@@ -27,10 +27,7 @@ Teststoff: S. 98/99
 3. **Beschluss**: Gilt beschränkt auf 1 bis 3 betroffene Länder und nicht auf alle. 
 4. **Empfehlung**: "Bitte mach es" aber keine Konsequenz
 
-^ Muss vom Rat mehr als 65% und von der Bevölkerung zu 55% angenommen werden.
-
 **Grundfreiheiten** (Antidiskriminierung):
 1. Geschlecht (inkl. transgender)
 2. Ethnie
 3. Behinderung
-
