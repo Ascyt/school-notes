@@ -21,6 +21,8 @@ Teststoff: S. 98/99
 2. Rat der Europäischen Union (Ein Minister je Land stimmt)
 3. EU-Parlament (Gewählt von uns, stimmen ab)
 
-**Gesetzformen**:
-- **Verordnung**: Jedes Land muss sich dran halten
-- **Richtlinie**: Die Basis muss da sein, aber das Land muss es nicht komplett ausbauen (z.B. Antidiskriminierungsrichtlinie, was Österreich erst nur schwammig umgesetzt hat)
+**Wichtigste Gesetzformen**:
+1. **Verordnung**: Jedes Land muss sich dran halten (z.B. DSGVO)
+2. **Richtlinie**: Die Basis muss da sein, aber das Land muss es nicht komplett ausbauen (z.B. Antidiskriminierungsrichtlinie, was Österreich im öffentlichen Recht nur schwammig umgesetzt hat)
+3. **Beschluss**: Gilt beschränkt auf 1 bis 3 betroffene Länder und nicht auf alle
+4. **Empfehlung**: "Bitte mach es" aber keine Konsequenz
