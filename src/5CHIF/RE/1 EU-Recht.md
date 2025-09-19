@@ -23,7 +23,7 @@ Teststoff: S. 98/99
 
 **Wichtigste Gesetzformen**:
 1. **Verordnung**: Jedes Land muss sich dran halten (z.B. DSGVO)
-2. **Richtlinie**: Die Basis muss da sein, aber das Land muss es nicht komplett ausbauen (z.B. Antidiskriminierungsrichtlinie, was Österreich im öffentlichen Recht nur schwammig umgesetzt hat)
+2. **Richtlinie**: Die Basis muss da sein, aber das Land muss es nicht komplett ausbauen (z.B. Antidiskriminierungsrichtlinie, was Österreich im öffentlichen Recht nur schwammig umgesetzt hat). Braucht eine Übersetzungs ins nationale Recht.
 3. **Beschluss**: Gilt beschränkt auf 1 bis 3 betroffene Länder und nicht auf alle. 
 4. **Empfehlung**: "Bitte mach es" aber keine Konsequenz
 
@@ -31,3 +31,8 @@ Teststoff: S. 98/99
 1. Geschlecht (inkl. transgender)
 2. Ethnie
 3. Behinderung
+
+**Legislatives Viereck:** (neben den drei wichtigsten Institutionen)
+- Nationales Parliament
+
+**Verschiedene Institutionen:** S. 98-100
