@@ -15,3 +15,15 @@ Wichtig: Wir dürfen in der Bilanzierung niemals über dem Anschaffungswert gehe
 **Finanzanlagevermögen**: Man muss immer abwerten, egal ob's dauerhaft ist oder nicht. 
 
 Wenn man niedrigen Gewinn möchte und deswegen weniger Steuern zahlen muss, dann eher abwerten. 
+
+**Abwertung**: Gewinnminderung $\darr$
+
+**Aufwertung**: Gewinnerhöhend $\uarr$. Man darf niemals über den Anschaffungswert aufwerten.
+
+**Umlaufvermögen**: Es muss abgewertet werden, kann aber teilweise wider aufgewertet werden
+
+**Forderungen**: Müssen auch abgewertet werden
+
+**Fremdkapital**: Es muss aufgewertet werden, aber man kann teilweise wider abwerten
+
+![1_bewertungsvorschriften](assets/1_bewertungsvorschriften.png)
