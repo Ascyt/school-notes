@@ -1,4 +1,5 @@
 # Begriffe für die Einleitung
+
 - **Textart**: Gruppe von Texten mit ähnlichen Merkmalen, die sich nach Struktur, Inhalt und Funktion unterscheiden (z.B. Journalistisch)
 - **Textgattung**: Zuordnung von Texten nach inhaltlicher/formaler Eigenschaften zu einer bestimmten Gruppe (informativ, argumentativ, narrativ, ...) (Epik, Dramatik, Lyrik)
 - **Entstehungszeit und -ort**: Bezieht sich darauf, wann bzw. wo ein Text geschrieben wurde.
@@ -6,6 +7,7 @@
 - **Deutungshypothese**: Vermutung über die Hauptaussage am Anfang er Analyse (worum geht es, Hauptaussage vom Autor)
 
 # Begriffe der Inhaltsinterpretation
+
 - **Aufbau**: Gliederung und Struktur eines Textes nach Inhalt und Formal [?]
 - **Verlauf**: Abfloge der Ereignisse oder Gedanken im Text $\rarr$ Entwicklung im Text
 - **Klassischer Aufbau**: Umfasst in der Regel eine Einleitung, einen Hauptteil und einen Schluss
@@ -39,7 +41,7 @@
 - **Erzählebenen:**
   - **Narrative Ebene**: Die Ebene, auf der die Handlung stattfindet 
   - **intradiegetisch**: Eine Geschichte, die innerhalb der Haupthandlung vorgelesen/erzählt wird
-  - **extradiegetisch**: Erzähler steht außerhalb der Geschichte und erzählt alles von außen, kann auch z.B. mit Zuschauern reden
+  - **extradiegetisch**: Erzähler redet mit den Zuschauern bzw. der Kamera, z.B. in Deadpool
   - **Rahmenhandlung**: Zusätzliche, äußere Handlungsebene, welche die eigentliche Hauptgeschichte einbettet
 
 # Begriffe der Sprachinterpretation
