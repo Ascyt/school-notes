@@ -9,4 +9,6 @@
 9.  Für Passwort mich fragen
 10. Jetzt sollte dieses Computersymbol grün sein
 11. `SAP/SAPGUI8.0/PRES1/GUI/Windows/Win64/SapGui64Setup.exe` doppelklicken
-12. Folgende Hakerl ansetzen: ![2_sap-gui-installation-hakerl](assets/2_sap-gui-installation-hakerl.png)
+12. Folgende Hakerl ansetzen: 
+    ![2_sap-gui-installation-hakerl](assets/2_sap-gui-installation-hakerl.png)
+13. Durchklicken und installieren. Restart ist nicht nötig
