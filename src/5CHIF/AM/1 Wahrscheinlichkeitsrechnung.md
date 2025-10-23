@@ -15,3 +15,10 @@ $$
 $$
 
 Hier: **genau** $k$ Erfolge (nicht mind, nicht max, genau)
+
+# Hypergeometrische Verteilung
+$\Rarr$ Ziehen **ohne** Zurücklegen
+
+![1_hypergeometrische-verteilung](assets/1_hypergeometrische-verteilung.png)
+
+![1_hypergeometrische-verteilung-screenshot](assets/1_hypergeometrische-verteilung-screenshot.png)

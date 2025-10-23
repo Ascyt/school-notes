@@ -10,3 +10,4 @@ $$
   - Umbuchung USt, VSt gegen USt-Zahllast
   - **Inventur** 
   - Vorratsbewertung (Identitätspreisverfahren, FIFO, Gleitendes Durchschnittspreisverfahren)
+
