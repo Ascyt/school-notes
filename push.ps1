@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 Write-Host "Compiling source..."
 ./improved-markdown/publish/ImprovedMarkdown `
     -i "./src" `
