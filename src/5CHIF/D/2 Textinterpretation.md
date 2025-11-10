@@ -48,10 +48,10 @@ Eine Textinterpretation erfordert Fachwissen, z. B. Kenntnis gattungsspezifische
 ## Schluss:
 - **Als Endpunkt**: Eine ***begründete Bewertung*** des Textes oder eine Beschreibung der Wirkung des Textes.
 
-## Situativer Kontext:
+# Situativer Kontext
 - **Ist nicht vorgegeben.** Prüfungssituation → Kontext des Schreibens
 
-## Umfang:
+# Umfang
 - **540 bis 660 Wörter**; ein Unterschreiten des vorgegebenen Umfangs ist problematisch.
 
 # Bewertungskriterien
