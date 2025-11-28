@@ -30,3 +30,13 @@ Dienstgeber Pflichten:
 1. Zahlung
 2. Krankheit/Urlaub zahlen
 3. Fürsorgepflicht (muss für Schutz bei der Arbeit sorgen, dass sich AN wohl fühlt)
+
+Kündigung: Mind. 4 Wochen, und dann noch Ende des Monats. Zuerst Urlaub ausmachen, dann kündigen.
+
+Entlassung: Etwas schwerwiegendes muss vorgefallen sein. Muss sofort auf der Stelle passieren.
+
+Vorzeitiger Austritt: Umgekehrte Situation, wenn AG etwas schwerwiegendes macht oder man aus anderen Gründen nicht arbeiten kann.
+
+Zeitablauf: Wenn vorher ausgemacht (z.B. Praktikum)
+
+Probezeit: Innerhalb der Probezeit können beide Seiten ohne Begründung kündigung
