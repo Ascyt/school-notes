@@ -40,3 +40,15 @@ Vorzeitiger Austritt: Umgekehrte Situation, wenn AG etwas schwerwiegendes macht 
 Zeitablauf: Wenn vorher ausgemacht (z.B. Praktikum)
 
 Probezeit: Innerhalb der Probezeit können beide Seiten ohne Begründung kündigung
+
+S. 159
+
+---
+
+S. 147 - 167 Individualarbeitsrecht
+
+S. 67 Sozialpartnerschaft
+
+Kapitel 1: Nur die 4 Grundfreiheiten (S. 95)
+
+Kapitel 2: Alles (Institutionen, EU-Gesetze) aber nicht im Detail (z.B. S. 100 ist teils zu genau). Welche 4 Rechtsarten? EU Gerichtsbarkeiten?
