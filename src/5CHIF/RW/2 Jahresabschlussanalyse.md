@@ -11,3 +11,32 @@ $$
   - **Inventur** 
   - Vorratsbewertung (Identitätspreisverfahren, FIFO, Gleitendes Durchschnittspreisverfahren)
 
+---
+
+# Überblick
+
+**Analyseverfahren** im Rechnungswesen: 
+- **Betriebsstatistik**: Internes/externes Zahlenmaterial wird aufgearbeitet, um Unternehmensentscheidungen zu planen/kontrollieren. $\Rarr$ interne/externe Betriebsstatistik 
+  1. **Zieldefinition**: Was will ich mit Zahlen darstellen?
+  2. **Zahlenmaterial erfassen**: Welche Informationsquellen gibt es?
+  3. **Zahlenmaterial aufbereiten**: Wie kann ich das Zahlenmateriall anschaulich bzw. grafisch darstellen?
+- **Jahresabschlussanalyse**
+- **Betriebsanalyse**: Betriebsdurchleuchtung (zu einen bestimmten Zeitpunkt)
+- **Betriebsvergleich** intern/extern $\Rarr$ Benchmarking
+
+1. Jahresabschluss**analyse**: Lage des eigenen Unternehmens (zu einen bestimmten Zeitpunkt)
+2. Jahresabschluss**vergleich**: Geschäftsjahre vergleichen bzw. Vergleich mit anderen Unternehmen
+3. Jahresabschluss**kritik**: Urteil über Lage und Entwicklung des Unternehmens
+
+Ablauf:
+1. Zahlenmaterial aufbereiten
+2. Kennzahlen errechnen
+3. Cashflow-Rechnung
+4. Auswertung der Ergebnisse
+
+**Jahresabschlussanalyse:**
+- **Inhalt**: Bilanz, GuV, Anhang, Lagebericht
+- **Finanzierungskennzahlen**: Wie wurden die benötigten Mittel aufgebracht?
+- **Liquiditätskennzahlen**/**Cashflow**: Können die Zahlungsverpflichtungen erfüllt werden?
+- **Rentabilität**: Höhe der Ertragskraft des eingesetzten Kapitals
+
