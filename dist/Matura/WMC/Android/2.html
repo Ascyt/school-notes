@@ -1,0 +1,102 @@
+<!DOCTYPE html><meta charset=UTF-8><title>2</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>2</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_navigation-in-jetpack-compose href=#SECTION_navigation-in-jetpack-compose onclick='onSectionClick("navigation-in-jetpack-compose")'>Navigation in Jetpack Compose</a><a id=SECTION-BTN_viewmodel href=#SECTION_viewmodel onclick='onSectionClick("viewmodel")'>ViewModel</a><a id=SECTION-BTN_room-database href=#SECTION_room-database onclick='onSectionClick("room-database")'>Room Database</a><a id=SECTION-BTN_zusammenfassung href=#SECTION_zusammenfassung onclick='onSectionClick("zusammenfassung")'>Zusammenfassung</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/Matura/index.html">Matura</a> / <a href="/Matura/WMC/index.html">WMC</a> / <a href="/Matura/WMC/Android/index.html">Android</a> / <b>2</b></div><div class=section id=SECTION_navigation-in-jetpack-compose><h1>Navigation in Jetpack Compose</h1><h2>Grundkonzept</h2><p>Navigation ist ein System zum Wechseln zwischen verschiedenen Screens einer App.<p><strong>Zweck:</strong><ul><li>Benutzer zwischen verschiedenen Screens navigieren lassen (z.B. von Login zu Home)<li>Zurück-Navigation automatisch verwalten (Back-Stack)<li>Daten zwischen Screens übergeben<li>Deep Links ermöglichen (externe Links zu bestimmten Screens)</li></ul><p><strong>Was die Navigation Component bietet:</strong><ul><li>Back-Stack-Verwaltung (Zurück-Navigation)<li>Deep Linking (Links zu bestimmten Screens)<li>Typsicherheit<li>ViewModel-Unterstützung</li></ul><p><strong>Benötigte Library:</strong><pre><code>    androidx.navigation:navigation-compose
+</code></pre><hr><h2>Zentrale Komponenten</h2><h3>NavController</h3><ul><li>Steuert Navigation<li>Verwaltet Back Stack<li>Stateful</li></ul><pre><code class=language-kotlin>    val navController = rememberNavController()
+</code></pre><h3>NavHost</h3><ul><li>UI-Container für den aktuellen Screen<li>Verbindet NavController mit dem Navigation Graph</li></ul><pre><code class=language-kotlin>    NavHost(
+        navController = navController,
+        startDestination = "home"
+    ) {
+        composable("home") { HomeScreen() }
+        composable("details") { DetailsScreen() }
+    }
+</code></pre><h3>Navigation Graph</h3><ul><li>Struktur aller Screens<li>Definiert Navigations-Beziehungen<li>Kann verschachtelte Graphs enthalten</li></ul><h3>Routes</h3><ul><li>Eindeutige ID für einen Screen<li>Kann Argumente enthalten</li></ul><p>Beispiel:<pre><code>    "profile/{userId}"
+</code></pre><hr><h2>Navigation Operationen</h2><p><strong>Navigieren:</strong><pre><code class=language-kotlin>    navController.navigate("profile/user123")
+</code></pre><p>Type-safe (Kotlin Serialization):<pre><code class=language-kotlin>    navController.navigate(Profile(id = "user123"))
+</code></pre><p><strong>Zurück:</strong><pre><code class=language-kotlin>    navController.popBackStack()
+</code></pre><p><strong>Back Stack leeren:</strong><pre><code class=language-kotlin>    navController.navigate("main") {
+        popUpTo("login") { inclusive = true }
+    }
+</code></pre><hr><h2>Argumente übergeben</h2><pre><code class=language-kotlin>    composable(
+        route = "profile/{userId}",
+        arguments = listOf(
+            navArgument("userId") { type = NavType.StringType }
+        )
+    )
+</code></pre><p><strong>Wichtig:</strong><ul><li>Keine komplexen Objekte übergeben<li>Nur ID übergeben<li>Daten aus zentraler Quelle laden (Single Source of Truth)</li></ul><hr><h2>SavedStateHandle</h2><p>Argumente im ViewModel abrufen:<pre><code class=language-kotlin>    val userId = savedStateHandle["userId"]
+</code></pre><p>Ermöglicht:<ul><li>Zugriff auf Navigationsargumente<li>Rückgabe von Ergebnissen beim Zurücknavigieren</li></ul><hr><h2>Best Practices</h2><ul><li>Navigation von UI entkoppeln<li>NavController nicht direkt in Screens verwenden<li>Callbacks übergeben<li>startDestination muss feste Route sein<li>Argumente minimal halten<li>Typensicherheit nutzen</li></ul><hr></div><div class=section id=SECTION_viewmodel><h1>ViewModel</h1><h2>Grundkonzept</h2><p>ViewModel ist eine Klasse, die UI-Daten und Logik für einen Screen verwaltet.<p><strong>Zweck:</strong><ul><li><strong>Daten bleiben bei Rotation erhalten</strong>: Ohne ViewModel gehen alle Daten verloren, wenn das Handy gedreht wird<li><strong>Logik vom UI trennen</strong>: Business-Logik nicht in Activity/Composable -> bessere Testbarkeit<li><strong>Daten-Cache</strong>: API-Aufrufe müssen nicht bei jeder Rotation wiederholt werden<li><strong>Zentrale Datenverwaltung</strong>: Alle Screen-Daten an einem Ort</li></ul><p><strong>Eigenschaften:</strong><ul><li>Speichert den Status eines Screens<li>Liefert UI-Status<li>Kapselt Business-Logik<li><strong>Überlebt Änderungen der Konfiguration</strong> (z.B. Rotation)<li>Verhindert Datenverlust</li></ul><hr><h2>Lebenszyklus</h2><p>ViewModel ist an einen <strong>Owner</strong> (Besitzer) gebunden:<ul><li><strong>Activity</strong> -> ViewModel bleibt bis Activity beendet ist<li><strong>Fragment</strong> -> bis Fragment entfernt ist<li><strong>NavBackStackEntry</strong> -> bis der Screen aus dem Backstack entfernt ist</li></ul><p><strong>Wichtig:</strong> Rotation zerstört die Activity, aber nicht das ViewModel.<hr><h2>Speicherlecks vermeiden</h2><p><strong>ViewModel darf NICHT enthalten:</strong><ul><li>Verweise auf UI/Lifecycle-Objekte (z.B. <code>Context</code>, <code>Resources</code>, Views)<li>UI-Details<li>Weitergabe an andere Klassen</li></ul><hr><h2>ViewModel erstellen</h2><p><strong>Activity (Kotlin):</strong><pre><code class=language-kotlin>    import androidx.activity.viewModels
+
+    val viewModel: DiceRollViewModel by viewModels()
+</code></pre><p><strong>Compose:</strong><pre><code class=language-kotlin>    import androidx.lifecycle.viewmodel.compose.viewModel
+
+    @Composable
+    fun Screen(viewModel: DiceRollViewModel = viewModel()) { }
+</code></pre><hr><h2>UI-State Pattern</h2><pre><code class=language-kotlin>    data class DiceUiState(
+        val firstDieValue: Int? = null,
+        val secondDieValue: Int? = null,
+        val numberOfRolls: Int = 0,
+    )
+
+    class DiceRollViewModel : ViewModel() {
+        private val _uiState = MutableStateFlow(DiceUiState())
+        val uiState: StateFlow&lt;DiceUiState> = _uiState.asStateFlow()
+
+        fun rollDice() {
+            _uiState.update { s ->
+                s.copy(
+                    firstDieValue = Random.nextInt(1, 7),
+                    secondDieValue = Random.nextInt(1, 7),
+                    numberOfRolls = s.numberOfRolls + 1
+                )
+            }
+        }
+    }
+</code></pre><p><strong>Pattern:</strong><ul><li>Activity/Composable beobachtet nur <code>uiState</code><li>Ruft Funktionen auf (z.B. <code>rollDice()</code>)<li>Daten holen/speichern im ViewModel</li></ul><hr><h2>SavedStateHandle</h2><p>Ermöglicht Speicherung des Zustands auch bei <strong>Prozess-Neustart</strong>.<p><strong>Unterschied:</strong><ul><li>ViewModel: überlebt Rotation<li>SavedStateHandle: überlebt auch wenn Android den Prozess beendet</li></ul><hr><h2>Coroutines und viewModelScope</h2><p><code>viewModelScope</code> ist ein CoroutineScope, das automatisch endet, wenn ViewModel gelöscht wird.<p>Alternative für Tests:<pre><code class=language-kotlin>    override fun onCleared() {
+        coroutineScope.cancel()
+    }
+</code></pre><hr></div><div class=section id=SECTION_room-database><h1>Room Database</h1><h2>Grundkonzept</h2><p>Room ist eine Library für lokale Datenspeicherung auf dem Gerät. Es ist eine Vereinfachung von SQLite.<p><strong>Zweck:</strong><ul><li><strong>Daten lokal speichern</strong>: Daten bleiben auch nach App-Neustart erhalten<li><strong>Offline-Funktionalität</strong>: App funktioniert ohne Internet<li><strong>Cache für API-Daten</strong>: Schnellerer Zugriff, weniger Netzwerk-Anfragen<li><strong>Benutzerdaten speichern</strong>: Einstellungen, Favoriten, etc.<li><strong>Typsicherheit</strong>: Fehler werden beim Kompilieren erkannt, nicht beim Ausführen</li></ul><p><strong>Vorteile gegenüber SQLite direkt:</strong><ul><li>Typsichere Datenbankzugriffe<li>Fehlerprüfung beim Kompilieren<li>Weniger Wiederholcode<li>Einfache Migrationen (Datenbank-Updates)<li>Automatische UI-Updates mit Flow</li></ul><p><strong>Aufbau - 3 Hauptkomponenten:</strong><ul><li><strong>Entity</strong> (Tabelle) -> Die Datenstruktur<li><strong>DAO</strong> (Data Access Object) -> Die Zugriffsmethoden<li><strong>RoomDatabase</strong> -> Die Datenbank selbst</li></ul><hr><h2>Entity Definition</h2><pre><code class=language-kotlin>    @Entity
+    data class User(
+        @PrimaryKey val id: Int,
+        val name: String
+    )
+</code></pre><p><strong>Wichtig:</strong><ul><li>@PrimaryKey ist Pflicht<li>Jede Entity = eine Tabelle</li></ul><hr><h2>DAO (Data Access Object)</h2><pre><code class=language-kotlin>    @Dao
+    interface UserDao {
+
+        @Query("SELECT * FROM user")
+        fun getAll(): List&lt;User>
+
+        @Insert
+        suspend fun insert(user: User)
+    }
+</code></pre><p><strong>Annotationen:</strong><ul><li><code>@Query</code><li><code>@Insert</code><li><code>@Update</code><li><code>@Delete</code></li></ul><hr><h2>Database Klasse</h2><pre><code class=language-kotlin>    @Database(entities = [User::class], version = 1)
+    abstract class AppDatabase : RoomDatabase() {
+        abstract fun userDao(): UserDao
+    }
+</code></pre><ul><li>Annotiert mit <code>@Database</code><li>Erbt von <code>RoomDatabase</code><li>Enthält abstrakte DAO-Methoden</li></ul><hr><h2>Datenbank Instanz erstellen</h2><pre><code class=language-kotlin>    val db = Room.databaseBuilder(
+        context,
+        AppDatabase::class.java,
+        "app-db"
+    ).build()
+</code></pre><p><strong>Wichtig:</strong><ul><li>Nur eine Instanz verwenden (Singleton)<li>Erstellung ist teuer</li></ul><hr><h2>Coroutines Integration</h2><p><strong>Regel:</strong> Room verbietet Datenbank-Zugriffe am Main Thread (UI-Thread).<p><strong>Einmalige Abfragen (suspend):</strong><pre><code class=language-kotlin>    @Insert
+    suspend fun insert(user: User)
+
+    @Query("SELECT * FROM user WHERE id = :id")
+    suspend fun getById(id: Int): User
+</code></pre><hr><h2>Beobachtbare Abfragen mit Flow</h2><pre><code class=language-kotlin>    @Query("SELECT * FROM user")
+    fun getAll(): Flow&lt;List&lt;User>>
+</code></pre><p><strong>Eigenschaften:</strong><ul><li>Automatische Aktualisierung bei Tabellenänderung<li>Ideal für Compose</li></ul><hr><h2>Verwendung in Compose</h2><pre><code class=language-kotlin>    @Composable
+    fun UserScreen(vm: UserViewModel) {
+        val users by vm.users.collectAsState(initial = emptyList())
+    }
+</code></pre><p>Flow -> collectAsState -> UI reagiert automatisch.<hr><h2>Migrationen</h2><h3>Automatische Migration (bei einfachen Änderungen)</h3><pre><code class=language-kotlin>    @Database(
+        version = 2,
+        entities = [User::class],
+        autoMigrations = [AutoMigration(from = 1, to = 2)]
+    )
+</code></pre><h3>Manuelle Migration (bei komplexen Änderungen)</h3><pre><code class=language-kotlin>    val MIGRATION_1_2 = object : Migration(1, 2) {
+        override fun migrate(db: SupportSQLiteDatabase) {
+            db.execSQL("ALTER TABLE user ADD COLUMN age INTEGER")
+        }
+    }
+</code></pre><p>Registrierung:<pre><code class=language-kotlin>    Room.databaseBuilder(...)
+        .addMigrations(MIGRATION_1_2)
+        .build()
+</code></pre><h3>Fallback</h3><p><strong>VORSICHT</strong>: Gefährlich, löscht die komplette Datenbank und erstellt sie neu.<pre><code class=language-kotlin>    fallbackToDestructiveMigration()
+</code></pre><hr></div><div class=section id=SECTION_zusammenfassung><h1>Zusammenfassung</h1><p><strong>Navigation:</strong><ul><li>NavController + NavHost + Routes<li>Argumente minimal halten (nur IDs)<li>Navigation vom UI trennen</li></ul><p><strong>ViewModel:</strong><ul><li>Überlebt Rotation und Konfigurationsänderungen<li>Keine UI-Verweise (sonst Speicherlecks)<li>UI-State Pattern mit StateFlow verwenden</li></ul><p><strong>Room:</strong><ul><li>Entity -> Tabelle<li>DAO -> Zugriffsmethoden<li>Kein Main-Thread-Zugriff (immer suspend oder Flow)<li>Flow für automatische UI-Updates<li>Singleton-Muster verwenden (nur eine Instanz)</li></ul></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
