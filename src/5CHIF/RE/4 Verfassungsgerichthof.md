@@ -18,5 +18,20 @@ Testbeispiel kann sein, dass eine *individuelle* Geschichte dazu erzählt werden
 - Außerdem überprüft er, ob bei engen Wahlen korrekt gezählt wurde, und bei Bedarf bspw. nochmal nachzählen würde. 
 - Der Verfassungsgerichtshof ist unabhänging von allen anderen, es gibt also keine Instanzen o.Ä. 
 - Verfassungsgerichtshof gilt nur als "Kontrollorgan", und hat nur einen Sinn, wenn der auch korrekt etwas macht. Ist wichtig, um so Dinge wie Diktatur zu vermeiden. 
+- "Welcher Bundesminister muss was machen?" - Streitigkeiten lösen
 
 S. 55/56 (ist aber noch nicht alles)
+
+---
+
+13.03.2026
+
+Video zum Verfassungsgerichthof
+
+Wer ist im vfgh vertreten?
+- Richter
+- Rechtsanwälte
+- Universitätsprofessoren
+- Verwaltungsbeamtes
+
+Verfassungsgerichtshof ist "Hüter der Verfassung"
