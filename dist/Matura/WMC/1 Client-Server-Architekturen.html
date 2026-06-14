@@ -1,0 +1,349 @@
+<!DOCTYPE html><meta charset=UTF-8><title>1 Client-Server-Architekturen</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>1 Client-Server-Architekturen</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_authentication-keycloak href=#SECTION_authentication-keycloak onclick='onSectionClick("authentication-keycloak")'>Authentication (Keycloak)</a><a id=SECTION-BTN_quakusserver-sent-events href=#SECTION_quakusserver-sent-events onclick='onSectionClick("quakusserver-sent-events")'>Quakus/Server-Sent Events</a><a id=SECTION-BTN_quarkuswebsockets href=#SECTION_quarkuswebsockets onclick='onSectionClick("quarkuswebsockets")'>Quarkus/WebSockets</a><a id=SECTION-BTN_graphql href=#SECTION_graphql onclick='onSectionClick("graphql")'>GraphQL</a><a id=SECTION-BTN_reactive-programmierung href=#SECTION_reactive-programmierung onclick='onSectionClick("reactive-programmierung")'>Reactive Programmierung</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/Matura/index.html">Matura</a> / <a href="/Matura/WMC/index.html">WMC</a> / <b>1 Client-Server-Architekturen</b></div><div class=section id=SECTION_authentication-keycloak><h1>Authentication (Keycloak)</h1><p>Programmierer will nicht immer Rollen und Berechtigungen von 0 auf Programmieren. <strong>Keycloak</strong> ist daher ein Framework zum Verwalten von Authentifizierung und Authorisierung.<h2>Hauptsäulen von Security</h2><ol><li><strong>Transport-Layer</strong> (TLS)<li><strong>Authentifizierung</strong> (ist der Nutzer wirklich derjenige, für die er sich ausgibt?)<li><strong>Authorisierung</strong> (darf der Nutzer die Aktion mit seiner Rolle machen?)</li></ol><h2>Keycloak Konzepte</h2><ul><li><strong>Realm</strong>: Isoliert Nutzer, Anmeldungen, Clients, Konfiguration<li><strong>Client</strong>: Applikation oder Dienst, der von Keycloak zur Authentifizierung genutzt wird.<ul><li>Typen:<ul><li><em>Confidential</em>: das wichtigste. z.B. Quarkus-Backend, welches Keycloak fragt ob der Nutzer mit dem Token die jeweilige Berechtigung hat.<li><em>Public</em>: wenn Anwendung direkt mit Keycloak kommuniziert, z.B. Web-App ohne Backend oder Mobile-App. Hat kein geheimes Passwort da der Code einsichtlich ist<li><em>Bearer-only</em>: Nur für Ressourcen. Bietet keine Login-seite an, prüft nur Access-Tokens. Leitet Benutzer nicht zu Keycloak weiter da Anmeldung mit Nutzername+Passwort wegen Token nicht möglich ist</li></ul></li></ul><li><strong>Roles</strong>: Können zu Nutzern oder Nutzergruppen zugewiesen werden, wird zur Authorisierung genutzt (welche Rolle wird für Aktion X benötigt?)<ul><li>Typen:<ul><li><em>Realm Roles</em>: Globale Rollen, die im ganzen Realm verfügbar sind<li><em>Client Roles</em>: Spezifisch zu einem Client</li></ul></li></ul></li></ul><p><strong>Beispiel-Usage mit Docker</strong>: <code>docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:25.0.2 start-dev</code>. Auf <code>localhost:8080</code> können dann mithilfe KeyCloak's eigener UI Rollen und Nutzer verwaltet werden.<h2>Beispielcode</h2><p><code>pom.xml</code><pre><code class=language-xml>    &lt;dependencies>
+    &lt;dependency>
+        &lt;groupId>io.quarkus&lt;/groupId>
+        &lt;artifactId>quarkus-resteasy-reactive&lt;/artifactId>
+    &lt;/dependency>
+    &lt;dependency>
+        &lt;groupId>io.quarkus&lt;/groupId>
+        &lt;artifactId>quarkus-oidc&lt;/artifactId>
+    &lt;/dependency>
+    &lt;/dependencies>
+</code></pre><p><code>src/main/resources/application.properties</code><pre><code class=language-xml>    quarkus.http.port=8080
+
+    # OIDC (Keycloak) settings
+    quarkus.oidc.auth-server-url=https://keycloak.example.com/auth/realms/myrealm
+    quarkus.oidc.client-id=quarkus-app
+    quarkus.oidc.credentials.secret=your-client-secret
+    quarkus.oidc.tls.verification=required
+</code></pre><p><code>src/main/java/org/example/SecureResource.java</code><pre><code class=language-java>    package org.example;
+
+    import javax.annotation.security.RolesAllowed;
+    import javax.ws.rs.GET;
+    import javax.ws.rs.Path;
+    import javax.ws.rs.Produces;
+    import javax.ws.rs.core.MediaType;
+
+    @Path("/api")
+    public class SecureResource {
+
+        @GET
+        @Path("/hello")
+        @Produces(MediaType.TEXT_PLAIN)
+        @RolesAllowed("user") // Only KeyCloak "user" role is allowed
+        public String hello() {
+            return "Hello, authenticated user!";
+        }
+    }
+</code></pre></div><div class=section id=SECTION_quakusserver-sent-events><h1>Quakus/Server-Sent Events</h1><p><img src=https://miro.medium.com/v2/resize:fit:720/format:webp/1*_y_9SbfC1hFniWc1wrebfA.png alt=SSE><p><strong>Server-sent events (SSE)</strong>: Technologie zur Echtzeitübertragung von Daten von Server auf einen Web-Client.<h2>Beispielcode</h2><pre><code class=language-java>    package org.acme.vertx;
+
+    import io.smallrye.mutiny.Uni;
+    import io.vertx.mutiny.core.eventbus.EventBus;
+    import io.vertx.mutiny.core.eventbus.Message;
+
+    import jakarta.inject.Inject;
+    import jakarta.ws.rs.GET;
+    import jakarta.ws.rs.Path;
+    import jakarta.ws.rs.Produces;
+    import jakarta.ws.rs.core.MediaType;
+
+    @Path("/async")
+    public class EventResource {
+
+        @Inject
+        EventBus bus; // Inject the event bus
+
+        @GET
+        @Produces(MediaType.TEXT_PLAIN)
+        @Path("{name}")
+        public Uni&lt;String> greeting(String name) {
+            return bus.&lt;String>request("greeting", name) // Send a message to the address greeting. Message payload is name        
+                    .onItem().transform(Message::body);
+        }
+    }
+</code></pre></div><div class=section id=SECTION_quarkuswebsockets><h1>Quarkus/WebSockets</h1><h2>WebSocket API</h2><p>Eingebaut in Webbrowsern. Ermöglicht bidirektionale interaktive Kommunikation zwischen Browser und Server.<p>Möglich mit zwei Interfaces:<ul><li><code>WebSocket</code>: Stabil und guter Support, aber unterstützt keine Backpressure (wenn Nachrichten zu schnell kommen wird der Puffer überfüllt)<li><code>WebSocketStream</code>: <code>Promise</code>-basierte Alternative mittels Streams API zur Nachrichtenverwaltung. Profitiert automatisch von Backpressure, in dem Lese- &amp; Schreibgeschwindigkeit automatisch gegelt wird. Ist aber nicht standatisiert</li></ul><p><strong>WebTransport API</strong>: Moderne Alternative zu WebSockets. Ist komplexer und nicht so standatisiert wie WebSockets, ermöglicht aber auch komplexere Lösungen.<h2>Beispielcode</h2><p><code>pom.xml</code><pre><code class=language-xml>&lt;dependency>
+    &lt;groupId>io.quarkus&lt;/groupId>
+    &lt;artifactId>quarkus-websockets&lt;/artifactId>
+&lt;/dependency>
+</code></pre><pre><code class=language-java>    package org.acme.websockets;
+
+    import java.util.Map;
+    import java.util.concurrent.ConcurrentHashMap;
+
+    import jakarta.enterprise.context.ApplicationScoped;
+    import jakarta.websocket.OnClose;
+    import jakarta.websocket.OnError;
+    import jakarta.websocket.OnMessage;
+    import jakarta.websocket.OnOpen;
+    import jakarta.websocket.server.PathParam;
+    import jakarta.websocket.server.ServerEndpoint;
+    import jakarta.websocket.Session;
+
+    // WebSocket endpoint at /chat/{username} path
+    @ServerEndpoint("/chat/{username}") // Configures the web socket URL
+    @ApplicationScoped
+    public class ChatSocket {
+
+        // Thread-safe map to store active WebSocket sessions by username
+        Map&lt;String, Session> sessions = new ConcurrentHashMap&lt;>(); // Stores the currently opened web sockets
+
+        // Called when a client connects to the WebSocket
+        @OnOpen
+        public void onOpen(Session session, @PathParam("username") String username) {
+            // Notify all connected clients that a new user joined
+            broadcast("User " + username + " joined");
+            // Store the new session
+            sessions.put(username, session);
+        }
+
+        // Called when a client disconnects from the WebSocket
+        @OnClose
+        public void onClose(Session session, @PathParam("username") String username) {
+            // Remove the disconnected session
+            sessions.remove(username);
+            // Notify all remaining clients about the disconnection
+            broadcast("User " + username + " left");
+        }
+
+        // Called when an error occurs during WebSocket communication
+        @OnError
+        public void onError(Session session, @PathParam("username") String username, Throwable throwable) {
+            // Remove the errored session
+            sessions.remove(username);
+            // Notify all clients about the error
+            broadcast("User " + username + " left on error: " + throwable);
+        }
+
+        // Called when a message is received from a client
+        @OnMessage
+        public void onMessage(String message, @PathParam("username") String username) {
+            // Broadcast the message to all connected clients
+            broadcast(">> " + username + ": " + message);
+        }
+
+        // Send a message to all connected clients asynchronously
+        private void broadcast(String message) {
+            // Iterate through all active sessions and send the message
+            sessions.values().forEach(s -> {
+                // Send message asynchronously with a callback to handle errors
+                s.getAsyncRemote().sendObject(message, result ->  {
+                    // Log any errors that occur during sending
+                    if (result.getException() != null) {
+                        System.out.println("Unable to send message: " + result.getException());
+                    }
+                });
+            });
+        }
+    }
+</code></pre></div><div class=section id=SECTION_graphql><h1>GraphQL</h1><blockquote><p>⚠️ Nicht im Unterricht besprochen und auch nicht in Moodle drinnen (daher eigene Recherche)</p></blockquote><p>Abfragesprache für eine API und serverseitige Runtime mit starker Typisierung.<h2>Beispiel</h2><p>Zuerst wird der <strong>Service</strong> definiert. In diesem Beispiel ist es ein Service der was den Namen eines eingeloggten Nutzers sagt.<p>Definierung der Typen:<pre><code class=language-graphql>    type Query {
+    me: User
+    }
+    
+    type User {
+    name: String
+    }
+</code></pre><p>Funktionen für jedes Feld aller Typen:<pre><code class=language-js>    // Resolver for the `me` field on the `Query` type
+    function resolveQueryMe(_parent, _args, context, _info) {
+    return context.request.auth.user;
+    }
+    
+    // Resolver for the `name` field on the `User` type
+    function resolveUserName(user, _args, context, _info) {
+    return context.db.getUserFullName(user.id);
+    }
+</code></pre><p>Wenn jetzt ein GraphQL Service läuft, kann dieser <strong>GraphQL-Queries</strong> empfangen. Eine Beispielabfrage:<pre><code>    {
+    me {
+        name
+    }
+    }
+</code></pre><p>kann die folgende JSON-Ausgabe geben:<pre><code class=language-json>    {
+    "data": {
+        "me": {
+        "name": "Luke Skywalker"
+        }
+    }
+    }
+</code></pre><p>Wenn etwas mal veraltet ist, kann es mit <code>@deprecated</code> markiert werden. Hier ist z.B. ein <code>User</code>-Typ definiert, bei dem zuerst nur ein <code>name</code> gegeben war, jetzt aber ein <code>fullName</code> und <code>nickname</code> benötigt wird:<pre><code class=language-graphql>    type User {
+    fullName: String
+    nickname: String
+    name: String @deprecated(reason: "Use `fullName`.")
+    }
+</code></pre><h2>Quarkus Beispiel</h2><p><a href=https://quarkus.io/guides/smallrye-graphql>https://quarkus.io/guides/smallrye-graphql</a><p><code>pom.xml</code><pre><code class=language-xml>    &lt;dependency>
+        &lt;groupId>io.quarkus&lt;/groupId>
+        &lt;artifactId>quarkus-smallrye-graphql&lt;/artifactId>
+    &lt;/dependency>
+</code></pre><p>Entities:<pre><code class=language-java>    package org.acme.microprofile.graphql;
+
+    public class Film {
+        public String title;
+        public Integer episodeID;
+        public String director;
+        public LocalDate releaseDate;
+    }
+
+    public class Hero {
+        public String name;
+        public String surname;
+        public Double height;
+        public Integer mass;
+        public Boolean darkSide;
+        public LightSaber lightSaber;
+        public List&lt;Integer> episodeIds = new ArrayList&lt;>();
+    }
+
+    enum LightSaber {
+        RED, BLUE, GREEN
+    }
+</code></pre><p>Service mit Beispieldaten:<pre><code class=language-java>    @ApplicationScoped
+    public class GalaxyService {
+
+        private List&lt;Hero> heroes = new ArrayList&lt;>();
+
+        private List&lt;Film> films = new ArrayList&lt;>();
+
+        public GalaxyService() {
+
+            Film aNewHope = new Film();
+            aNewHope.title = "A New Hope";
+            aNewHope.releaseDate = LocalDate.of(1977, Month.MAY, 25);
+            aNewHope.episodeID = 4;
+            aNewHope.director = "George Lucas";
+
+            Film theEmpireStrikesBack = new Film();
+            theEmpireStrikesBack.title = "The Empire Strikes Back";
+            theEmpireStrikesBack.releaseDate = LocalDate.of(1980, Month.MAY, 21);
+            theEmpireStrikesBack.episodeID = 5;
+            theEmpireStrikesBack.director = "George Lucas";
+
+            Film returnOfTheJedi = new Film();
+            returnOfTheJedi.title = "Return Of The Jedi";
+            returnOfTheJedi.releaseDate = LocalDate.of(1983, Month.MAY, 25);
+            returnOfTheJedi.episodeID = 6;
+            returnOfTheJedi.director = "George Lucas";
+
+            films.add(aNewHope);
+            films.add(theEmpireStrikesBack);
+            films.add(returnOfTheJedi);
+
+            Hero luke = new Hero();
+            luke.name = "Luke";
+            luke.surname = "Skywalker";
+            luke.height = 1.7;
+            luke.mass = 73;
+            luke.lightSaber = LightSaber.GREEN;
+            luke.darkSide = false;
+            luke.episodeIds.addAll(Arrays.asList(4, 5, 6));
+
+            Hero leia = new Hero();
+            leia.name = "Leia";
+            leia.surname = "Organa";
+            leia.height = 1.5;
+            leia.mass = 51;
+            leia.darkSide = false;
+            leia.episodeIds.addAll(Arrays.asList(4, 5, 6));
+
+
+            Hero vader = new Hero();
+            vader.name = "Darth";
+            vader.surname = "Vader";
+            vader.height = 1.9;
+            vader.mass = 89;
+            vader.darkSide = true;
+            vader.lightSaber = LightSaber.RED;
+            vader.episodeIds.addAll(Arrays.asList(4, 5, 6));
+
+            heroes.add(luke);
+            heroes.add(leia);
+            heroes.add(vader);
+
+        }
+
+        public List&lt;Film> getAllFilms() {
+            return films;
+        }
+
+        public Film getFilm(int id) {
+            return films.get(id);
+        }
+
+        public List&lt;Hero> getHeroesByFilm(Film film) {
+            return heroes.stream()
+                    .filter(hero -> hero.episodeIds.contains(film.episodeID))
+                    .collect(Collectors.toList());
+        }
+
+        public void addHero(Hero hero) {
+            heroes.add(hero);
+        }
+
+        public Hero deleteHero(int id) {
+            return heroes.remove(id);
+        }
+
+        public List&lt;Hero> getHeroesBySurname(String surname) {
+            return heroes.stream()
+                    .filter(hero -> hero.surname.equals(surname))
+                    .collect(Collectors.toList());
+        }
+    }
+</code></pre><p><strong>GraphQL API</strong> Resource:<pre><code class=language-java>    @GraphQLApi // This annotation indicates that the CDI bean will be a GraphQL endpoint
+    public class FilmResource {
+        @Inject
+        GalaxyService service;
+
+        @Query("allFilms") // This annotation defines that this method will be queryable with the name allFilms. The value of this annotation is optional (defaults to the method name)
+        @Description("Get all Films from a galaxy far far away") // Documentation of the queryable method
+        public List&lt;Film> getAllFilms() {
+            return service.getAllFilms();
+        }
+    }
+</code></pre></div><div class=section id=SECTION_reactive-programmierung><h1>Reactive Programmierung</h1><p><a href=https://quarkus.io/guides/getting-started-reactive>https://quarkus.io/guides/getting-started-reactive</a><ul><li><strong>Imperative</strong>: Wenn eine Request kommt, gibt es einen Worker Thread, der diesen handelt. Das skaliert nicht gut, da man, um mehrere Requests gleichzeitig abarbeiten zu können, mehrere Threads braucht, die Applikation also in der Anzahl von Threads limitiert ist. <img src=https://quarkus.io/guides/images/blocking-threads.png alt=imperative><li><strong>Concurrent</strong>: Mithilfe von <em>non-blocking I/Os</em> und einen anderen Ablaufmodell, muss nur eine minimale Anzahl an Threads ("I/O Threads") genutzt werden, um viele verschiedene Requests gleichzeitig abarbeiten zu können. Spart RAM und CPU da es nicht nötig ist, Worker Threads zu erstellen, und ist auch gut für Concurrency und Geschwindigkeit. <img src=https://quarkus.io/guides/images/reactive-thread.png alt=concurrent></li></ul><p><a href=https://quarkus.io/guides/quarkus-reactive-architecture>https://quarkus.io/guides/quarkus-reactive-architecture</a><p><em>Reactive</em> bedeutet folgende Prinzipien:<ul><li><em>Responsive</em> - they must respond in a timely fashion<li><em>Elastic</em> - they adapt themselves to the fluctuating load<li><em>Resilient</em> - they handle failures gracefully<li><em>Asynchronous message passing</em> - the components of a reactive system interact using messages</li></ul><p><img src=https://quarkus.io/guides/images/reactive-systems.png alt=reactive><p>Wie Reactive in Quarkus funktioniert: Mittels einer internen <em>reactive engine</em> von Quarkus, der von Extensions und dem Applikationscode für I/O- und Datenbankinteraktionen verwendet werden kann. <img src=https://quarkus.io/guides/images/quarkus-reactive-core.png alt="quarkus reactive"><p>Reactive kann mittels folgenden Tools realisiert werden:<ul><li><strong>Mutiny</strong>: Intuitive, event-driven Library<li><strong>Kotlin Coroutines</strong>: Weg, asynchronen Code sequenziell zu schreiben.</li></ul><h2>Beispiel (Mutiny)</h2><p><a href=https://quarkus.io/guides/getting-started-reactive>https://quarkus.io/guides/getting-started-reactive</a><p><code>Fruit</code>-Entity<pre><code class=language-java>    package org.acme.hibernate.orm.panache;
+
+    import jakarta.persistence.Cacheable;
+    import jakarta.persistence.Column;
+    import jakarta.persistence.Entity;
+
+    import io.quarkus.hibernate.reactive.panache.PanacheEntity; // Reactive variant of PanacheEntity
+
+    @Entity
+    @Cacheable
+    public class Fruit extends PanacheEntity {
+
+        @Column(length = 40, unique = true)
+        public String name;
+
+    }
+</code></pre><p>Beispieldaten in PostgreSQL-Datenbank geben:<pre><code class=language-pgsql>INSERT INTO fruit(id, name) VALUES (1, 'Cherry');
+INSERT INTO fruit(id, name) VALUES (2, 'Apple');
+INSERT INTO fruit(id, name) VALUES (3, 'Banana');
+ALTER SEQUENCE fruit_seq RESTART WITH 4;
+</code></pre><p>Reactive Resource:<pre><code class=language-java>    package org.acme.hibernate.orm.panache;
+
+    import java.util.List;
+
+    import io.quarkus.panache.common.Sort;
+    import io.smallrye.mutiny.Uni;
+    import jakarta.enterprise.context.ApplicationScoped;
+    import jakarta.ws.rs.Path;
+
+    @Path("/fruits")
+    @ApplicationScoped
+    public class FruitResource {
+        @GET
+        public Uni&lt;List&lt;Fruit>> get() { // Return type (Uni&lt;...>) is an asynchronous type. It works a bit like a future, it is a placeholder that will get its value later. You can attach some behaviour for when it receives the item. 
+            return Fruit.listAll(Sort.by("name"));
+        }
+        
+        @GET
+        @Path("/{id}")
+        public Uni&lt;Fruit> getSingle(Long id) {
+            return Fruit.findById(id);
+        }
+
+        @POST
+        public Uni&lt;RestResponse&lt;Fruit>> create(Fruit fruit) {
+            // To write to a database, we need a transaction, so we use Panache.withTransaction.
+            return Panache.withTransaction(fruit::persist) // `persist` method returns a Uni that emits the result of the insertion of the fruit in the database
+                .replaceWith(RestResponse.status(CREATED, fruit)); // Once insertion completes we return 201 CREATED http response
+        }
+    }
+</code></pre></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
