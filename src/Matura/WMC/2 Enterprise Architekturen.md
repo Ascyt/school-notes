@@ -32,22 +32,22 @@ Enthält Commands, welches Docker nutzt um ein Image zu erstellen. So kann diese
 
 Beispiel einer Flask-App. Anfangen mit dem Base-Image (hier Python), dann alle Dateien kopieren, Dependencies installieren, Port exposen, und Container sagen welchen Command er zum starten nutzen soll:
 ```dockerfile
-FROM python:3.8
+    FROM python:3.8
 
-# set a directory for the app
-WORKDIR /usr/src/app
+    # set a directory for the app
+    WORKDIR /usr/src/app
 
-# copy all the files to the container
-COPY . .
+    # copy all the files to the container
+    COPY . .
 
-# install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+    # install dependencies
+    RUN pip install --no-cache-dir -r requirements.txt
 
-# define the port number the container should expose
-EXPOSE 5000
+    # define the port number the container should expose
+    EXPOSE 5000
 
-# run the command
-CMD ["python", "./app.py"]
+    # run the command
+    CMD ["python", "./app.py"]
 ```
 
 ## Mit einem Container verbinden
