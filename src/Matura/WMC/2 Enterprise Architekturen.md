@@ -61,3 +61,51 @@ Dann können wir mittels `docker exec -it [id] sh` in das CLI vom Container mit 
 Basiert auf Client-Server-Modell. *Docker Client* redet mit dem *Docker Daemon*, welcher die Container managet. 
 
 ![architektur](https://media.geeksforgeeks.org/wp-content/uploads/20251218122638607429/docker_host.webp)
+
+## Docker Compose
+
+Mit einer `docker-compose.yaml`-Datei kann eine ganze App mit Docker dargestellt werden. Dann braucht man einfach nur `docker compose up` (bzw. mit `--build` und/oder `-d` damit der Terminal nicht blockiert) ausführen um die gesamte App zu starten. Man kann auch nur ein spezifisches Service starten mit `docker compose up [service]`. 
+
+**Beispiel `docker-compose.yaml`:**
+```yaml
+    services: # top-level key defining the different services (containers) in this app
+        frontend: # web frontend service
+            image: example/webapp # image to use for the frontend
+            ports:
+                - "443:8043" # map host port 443 to container port 8043
+            networks:
+                - front-tier # network for frontend
+                - back-tier # network connected to backend as well
+            configs:
+                - httpd-config # reference to a config object
+            secrets:
+                - server-certificate # reference to a secret (e.g., TLS cert)
+
+        backend: # database or API backend service
+            image: example/database # image to use for the backend
+            volumes:
+                - db-data:/etc/data # named volume mounted into the container
+            networks:
+                - back-tier # backend network
+
+    volumes: # named volumes for persistent storage
+        db-data:
+            driver: flocker # volume driver
+            driver_opts:
+                size: "10GiB" # example driver option: reserve 10 GiB
+
+    configs: # external or inline config data
+        httpd-config:
+            external: true # the config is managed outside this compose file
+
+    secrets: # external or inline secrets (sensitive data)
+        server-certificate:
+            external: true # secret is managed externally (e.g., Docker Swarm)
+
+    networks: # define networks used by services
+        # The presence of these objects is sufficient to define them
+        front-tier: {} # network for frontend tier
+        back-tier: {} # network for backend tier
+```
+
+# Kubernetes
