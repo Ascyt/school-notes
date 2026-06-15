@@ -109,3 +109,55 @@ Mit einer `docker-compose.yaml`-Datei kann eine ganze App mit Docker dargestellt
 ```
 
 # Kubernetes
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/
+
+Was macht Kubernetes? Mehrere Computer können verbunden werden um als einzigen "**Cluster**" zu arbeiten. Dieser wird vom **Control Pane** koordiniert. 
+
+Ein "**Node**" ist hier eine VM oder ein physischer Computer. Jeder Node hat ein **Kubelet**, was ein Agent ist der die Node managed und mittels **Kubernetes API** mit dem Control Pane kommuniziert. 
+
+Zum Deployment fragst du den Control Pane, dass er dir die Applikations Container startet, welche das Control Pane dann auf die Nodes vom Cluster laufen. 
+
+**Minikube**: Zum Testen & Lernen. Damit kann man einen lokalen Kubernetes Cluster auf seinem Rechner laufen lassen. 
+
+**kubectl**: CLI zum interagieren mit der Kubernetes API. Der Format von kubectl commands ist `kubectl action resource`. Actions sind z.B. `create`/`describe`/`delete`, und das Resource kann z.B. ein `node` oder `deployment` sein. 
+
+**Pods**: Kleinste Deploybare Einheit. Ist eine Gruppe aus einen oder mehrerer Containers.
+
+## Beispiel
+
+Deployen einer app:
+```
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+```
+mit `kubectl get deployments` kann man sehen welche Deployments es schon gibt. 
+
+Mit `kubectl proxy` kann man eine Proxy zur Kommunikation mit dem Cluster erstellen. Mit dieser Proxy kann man dann mit `curl http://localhost:8001/version` zur API verbinden. 
+
+Mit `curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/`, wobei `$POD_NAME` den Namen vom Pod enthält, kann man sich mit diesen verbinden. 
+
+Beispiel von Deployment einer `nginx`-App:
+`controllers/nginx-deployment.yaml`
+```yaml
+apiVersion: apps/v1  # API version for Deployments (stable apps/v1)
+kind: Deployment     # Resource type: Deployment manages ReplicaSets and Pods
+metadata:
+    name: nginx-deployment  # Name of this Deployment object
+    labels:
+        app: nginx            # Top-level label for selecting/organizing resources
+spec:
+    replicas: 3            # Desired number of Pod replicas to run
+    selector:
+        matchLabels:
+            app: nginx         # Selector to match Pods managed by this Deployment
+    template:              # Pod template used to create the Pods
+        metadata:
+            labels:
+                app: nginx       # Labels applied to Pods created from this template
+        spec:
+            containers:
+            - name: nginx      # Container name inside the Pod
+                image: nginx:1.14.2  # Container image (repository:tag)
+                ports:
+                - containerPort: 80  # Port exposed by the container (inside the Pod)
+```
