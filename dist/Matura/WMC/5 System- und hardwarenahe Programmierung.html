@@ -1,4 +1,4 @@
-<!DOCTYPE html><meta charset=UTF-8><title>5 System- und hardwarenahe Programmierung</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>5 System- und hardwarenahe Programmierung</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_iot-architektur href=#SECTION_iot-architektur onclick='onSectionClick("iot-architektur")'>IoT-Architektur</a><a id=SECTION-BTN_iot-protokolle-mqtt href=#SECTION_iot-protokolle-mqtt onclick='onSectionClick("iot-protokolle-mqtt")'>IoT-Protokolle (MQTT)</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/Matura/index.html">Matura</a> / <a href="/Matura/WMC/index.html">WMC</a> / <b>5 System- und hardwarenahe Programmierung</b></div><div class=section id=SECTION_iot-architektur><h1>IoT-Architektur</h1><p><a href=https://www.itransition.com/iot/architecture>https://www.itransition.com/iot/architecture</a><p><img src=image.png alt=architektur><p><img src=image-1.png alt=architektur><p>Arten von IoT:<ul><li><strong>Consumer IoT</strong>: Persönliche Geräte und Smart Home Gadgets für individuellen Nutzen<li><strong>Commercial IoT</strong>: Geräte in Buisness-Kontexten, zB Handel, Medizin, Finanzen, um Effizienz zu erhöhen<li><strong>Industrial IoT</strong> (IIoT): Verbundene Maschinen, Sensoren, und andere System in der Fertigung, Energiebranche und Logistikbranche<li><strong>Infrastructure IoT</strong>: Großflächige System um Städte, Transport und Energieversorgung zu unterstützen</li></ul></div><div class=section id=SECTION_iot-protokolle-mqtt><h1>IoT-Protokolle (MQTT)</h1><p>Verschiedene Protokolle:<ul><li><strong>MQTT</strong>: Leichtgewichtig. Über TCP/IP für Datensammlung von hardwarenahen Geräten<li><strong>CoAP</strong>: Alternative zu MQTT<li><strong>HTTP(S)</strong>: Für Web-basierte IoTs, ist aber schwergewichtiger als MQTT<li><strong>AMQP</strong>: Wird in industriellen IoT genutzt<li><strong>DDS</strong>: Gute Performance und gut für Echtzeit Datenaustausch wenn Risiko hoch ist</li></ul><p><a href=https://www.elektronik-kompendium.de/sites/net/2204051.htm>https://www.elektronik-kompendium.de/sites/net/2204051.htm</a><p>MQTT Besonderheiten:<ul><li>Verbindung bleibt auch bestehen, wenn keine Daten übertragen werden ("zustandhaltenes Protokoll")<li>Leichtgewichtig, kaum Overhead<li>Abgebrochene Verbindungen können wieder aufgenommen/fortgesetzt werden<li>Unterschiedliche Quality of Service (QoS) Level mit verschiedenen Zuverlässigkeitsstufen</li></ul><p><img src=image-2.png alt="mqtt architektur"><ul><li><strong>MQTT-Server</strong> (Message Broker): Zentraler Server, der die Nachrichten von ein oder mehreren Publishern entgegennimmt und an Subscriber weiterleitet<li><strong>MQTT-Clients</strong> (Publisher und Subscriber): Publisher ist oft ein Sensor, muss aber nicht sein. Subscriber macht irgendwas mit mit der Nachricht vom Publisher, zB je nach Werten irgendwas schalten</li></ul><p><img src=image-3.png alt="mqtt topics"><p><strong>Topics</strong>: Wie finden Publisher und Subscriber zu einander? Die Subscriber abonnieren "Topics" vom Broker, welche aussagen, welche Nachricht die Subscriber erhalten sollen. Der Publisher muss Inhalt und Topic beim Versand der Nachricht festlegen.<p><strong>Quality of Service</strong> (QoS): 3 Stufen für die Zuverlässigkeit der Zustellung<ul><li><strong>Level 0</strong>: <em>at most once, unreliable</em> / <em>fire and forget</em>: Null Zuverlässigkeit, die Zustellung wird nicht garantiert<li><strong>Level 1</strong>: <em>at least once</em>: Die Nachricht kommt mindestens einmal (oder auch mehrmals) beim Broker an<li><strong>Level 2</strong>: <em>exactly once</em>: Die Nachricht kommt garantiert nur einmal beim Broker an. Ist die verlässlichste Variant, aber für Performance und Netzlast aufwendig, langsam und teuer</li></ul><p><img src=image-4.png alt="qos level 0"> <img src=image-5.png alt="qos level 1"> <img src=image-6.png alt="qos level 2"><h2>HiveMQ</h2><p>MQTT-Client Software.<pre><code class=language-xml>    &lt;dependencies>
+<!DOCTYPE html><meta charset=UTF-8><title>5 System- und hardwarenahe Programmierung</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script><style>body,html{height:100%;font-family:Arial,sans-serif;margin:0}#header{display:flex;align-items:center;background-color:#f0f0f0;padding:10px}#title{flex:1;font-size:24px}#navbar{display:flex}#navbar .tab-button{margin-left:10px;padding:6px 12px;background-color:#e0e0e0;border:0;cursor:pointer;font-size:16px}#navbar .tab-button.active{background-color:#ccc;font-weight:bold}#content{display:flex;height:calc(100% - 50px)}#sidebar{width:200px;min-width:50px;max-width:1000px;background-color:#e0e0e0;overflow-y:auto;position:relative}#sidebar-content a{display:block;padding:8px 12px;text-decoration:none;color:#000}#sidebar-content a:hover{background-color:#ccc}#sidebar-resizer{width:5px;cursor:ew-resize;position:absolute;top:0;right:0;bottom:0;background-color:#d0d0d0;user-select:none}#main{flex:1;padding:20px;overflow-y:auto}#main h2{margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px}#main p{margin-bottom:20px;line-height:1.6}@media(max-width:600px){#header{flex-direction:column;align-items:flex-start}#tabs{margin-top:10px}#content{flex-direction:column}#sidebar{width:100%;max-width:none;min-width:0;height:200px}#sidebar-resizer{display:none}}#parents{margin-bottom:20px}table{border-collapse:collapse;margin:20px 0;font-size:18px;min-width:400px}th,td{padding:12px 15px;border:1px solid #e0e0e0;text-align:left}th{background-color:#c0c0c0;font-weight:bold}tr:nth-child(even){background-color:#d0d0d0}tr:hover{background-color:#c0c0c0}img{width:500px;height:auto}.katex-display .katex{text-align:left;margin-left:20px}</style><div id=header><div id=title>5 System- und hardwarenahe Programmierung</div><div id=navbar></div></div><div id=content><div id=sidebar><div id=sidebar-content><a id=SECTION-BTN_iot-architektur href=#SECTION_iot-architektur onclick='onSectionClick("iot-architektur")'>IoT-Architektur</a><a id=SECTION-BTN_iot-protokolle-mqtt href=#SECTION_iot-protokolle-mqtt onclick='onSectionClick("iot-protokolle-mqtt")'>IoT-Protokolle (MQTT)</a><a id=SECTION-BTN_multithreading---atomics-mutex-semaphore-locks href=#SECTION_multithreading---atomics-mutex-semaphore-locks onclick='onSectionClick("multithreading---atomics-mutex-semaphore-locks")'>Multithreading - Atomics, Mutex, Semaphore, Locks</a><a id=SECTION-BTN_producer-consumer href=#SECTION_producer-consumer onclick='onSectionClick("producer-consumer")'>Producer-Consumer</a><a id=SECTION-BTN_parallel-computing---virtual-threads href=#SECTION_parallel-computing---virtual-threads onclick='onSectionClick("parallel-computing---virtual-threads")'>Parallel Computing - Virtual Threads</a><a id=SECTION-BTN_parallel-computing---completeable-futures href=#SECTION_parallel-computing---completeable-futures onclick='onSectionClick("parallel-computing---completeable-futures")'>Parallel Computing - Completeable Futures</a></div><div id=sidebar-resizer></div></div><div id=main><div id=parents><a href="/index.html">root</a> / <a href="/Matura/index.html">Matura</a> / <a href="/Matura/WMC/index.html">WMC</a> / <b>5 System- und hardwarenahe Programmierung</b></div><div class=section id=SECTION_iot-architektur><h1>IoT-Architektur</h1><p><a href=https://www.itransition.com/iot/architecture>https://www.itransition.com/iot/architecture</a><p><img src=image.png alt=architektur><p><img src=image-1.png alt=architektur><p>Arten von IoT:<ul><li><strong>Consumer IoT</strong>: Persönliche Geräte und Smart Home Gadgets für individuellen Nutzen<li><strong>Commercial IoT</strong>: Geräte in Buisness-Kontexten, zB Handel, Medizin, Finanzen, um Effizienz zu erhöhen<li><strong>Industrial IoT</strong> (IIoT): Verbundene Maschinen, Sensoren, und andere System in der Fertigung, Energiebranche und Logistikbranche<li><strong>Infrastructure IoT</strong>: Großflächige System um Städte, Transport und Energieversorgung zu unterstützen</li></ul></div><div class=section id=SECTION_iot-protokolle-mqtt><h1>IoT-Protokolle (MQTT)</h1><p>Verschiedene Protokolle:<ul><li><strong>MQTT</strong>: Leichtgewichtig. Über TCP/IP für Datensammlung von hardwarenahen Geräten<li><strong>CoAP</strong>: Alternative zu MQTT<li><strong>HTTP(S)</strong>: Für Web-basierte IoTs, ist aber schwergewichtiger als MQTT<li><strong>AMQP</strong>: Wird in industriellen IoT genutzt<li><strong>DDS</strong>: Gute Performance und gut für Echtzeit Datenaustausch wenn Risiko hoch ist</li></ul><p><a href=https://www.elektronik-kompendium.de/sites/net/2204051.htm>https://www.elektronik-kompendium.de/sites/net/2204051.htm</a><p>MQTT Besonderheiten:<ul><li>Verbindung bleibt auch bestehen, wenn keine Daten übertragen werden ("zustandhaltenes Protokoll")<li>Leichtgewichtig, kaum Overhead<li>Abgebrochene Verbindungen können wieder aufgenommen/fortgesetzt werden<li>Unterschiedliche Quality of Service (QoS) Level mit verschiedenen Zuverlässigkeitsstufen</li></ul><p><img src=image-2.png alt="mqtt architektur"><ul><li><strong>MQTT-Server</strong> (Message Broker): Zentraler Server, der die Nachrichten von ein oder mehreren Publishern entgegennimmt und an Subscriber weiterleitet<li><strong>MQTT-Clients</strong> (Publisher und Subscriber): Publisher ist oft ein Sensor, muss aber nicht sein. Subscriber macht irgendwas mit mit der Nachricht vom Publisher, zB je nach Werten irgendwas schalten</li></ul><p><img src=image-3.png alt="mqtt topics"><p><strong>Topics</strong>: Wie finden Publisher und Subscriber zu einander? Die Subscriber abonnieren "Topics" vom Broker, welche aussagen, welche Nachricht die Subscriber erhalten sollen. Der Publisher muss Inhalt und Topic beim Versand der Nachricht festlegen.<p><strong>Quality of Service</strong> (QoS): 3 Stufen für die Zuverlässigkeit der Zustellung<ul><li><strong>Level 0</strong>: <em>at most once, unreliable</em> / <em>fire and forget</em>: Null Zuverlässigkeit, die Zustellung wird nicht garantiert<li><strong>Level 1</strong>: <em>at least once</em>: Die Nachricht kommt mindestens einmal (oder auch mehrmals) beim Broker an<li><strong>Level 2</strong>: <em>exactly once</em>: Die Nachricht kommt garantiert nur einmal beim Broker an. Ist die verlässlichste Variant, aber für Performance und Netzlast aufwendig, langsam und teuer</li></ul><p><img src=image-4.png alt="qos level 0"> <img src=image-5.png alt="qos level 1"> <img src=image-6.png alt="qos level 2"><h2>HiveMQ</h2><p>MQTT-Client Software.<pre><code class=language-xml>    &lt;dependencies>
         &lt;dependency>
             &lt;groupId>com.hivemq&lt;/groupId>
             &lt;artifactId>hivemq-mqtt-client&lt;/artifactId>
@@ -49,4 +49,299 @@
                 // handle successful publish, e.g. logging or incrementing a metric
             }
         });
-</code></pre><h2>Weitere Tools</h2><p><strong>MQTT-Explorer</strong>: MQTT-Client, mit dem man Übersicht über ein Topic bekommen kann<p><img src=image-7.png alt="mqtt explorer"><p><strong>Arduino</strong>, <strong>PlatformIO</strong>, etc.</p></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
+</code></pre><h2>Weitere Tools</h2><p><strong>MQTT-Explorer</strong>: MQTT-Client, mit dem man Übersicht über ein Topic bekommen kann<p><img src=image-7.png alt="mqtt explorer"><p><strong>Arduino</strong>, <strong>PlatformIO</strong>, etc.</p></div><div class=section id=SECTION_multithreading---atomics-mutex-semaphore-locks><h1>Multithreading - Atomics, Mutex, Semaphore, Locks</h1><p>Threads: Um mehrere Tasks gleichzeitig ausführen zu können. Ist nötig wenn man zB nicht will dass die UI blockiert.<p><strong>Probleme, die auftreten können:</strong><ul><li><strong>Race Conditions</strong>: Wenn mehrere Threads gleichzeitig die selben Daten lesen/schreiben kann es zu inkonsistentheiten kommen<li><strong>Deadlocks</strong>: Thread A hält Lock1 und wartet auf Lock2, Thread B hält Lock2 und wartet auf Lock1, beide warten aufeinander, nichts geht weiter<li><strong>Starvation</strong>: Threads bekommen nie CPU oder Locks</li></ul><p><a href=https://www.simplilearn.com/tutorials/java-tutorial/thread-in-java>https://www.simplilearn.com/tutorials/java-tutorial/thread-in-java</a><p>Threads mit <code>java.lang.Thread</code>:<pre><code class=language-java>    package test;
+
+    public class MyThread extends Thread {
+        public void run() {
+            System.out.println("thread is running...");
+        }
+
+        public static void main(String[] args) {
+            MyThread obj = new MyThread();
+            obj.start();
+        }
+    }
+</code></pre><p>Mit <code>runnable</code>-Interface:<pre><code class=language-java>    package test;
+
+    public class MyThread implements Runnable {
+        public void run() {
+            System.out.println("thread is running...");
+        }
+
+        public static void main(String[] args) {
+            Thread t = new Thread(new MyThread());
+            t.start();
+        }
+    }
+</code></pre><p><img src=image-8.png alt="thread lifecycle"><p><strong>Atomics</strong>: Atomare Operationen auf primitiven Werten ohne Lock, mit <code>AtomicInteger</code>, <code>AtomicLong</code>, <code>AtomicReference</code>, etc. Benötigt kein Lock, und ist oft schneller &amp; skalierbar<pre><code class=language-java>    import java.util.concurrent.atomic.AtomicInteger;
+
+    public class AtomicCounter {
+        private final AtomicInteger count = new AtomicInteger(0);
+
+        public void increment() {
+            count.incrementAndGet(); // atomar
+        }
+
+        public int get() {
+            return count.get();
+        }
+
+        public static void main(String[] args) throws InterruptedException {
+            AtomicCounter c = new AtomicCounter();
+            Thread t1 = new Thread(() -> { for (int i=0;i&lt;10000;i++) c.increment(); });
+            Thread t2 = new Thread(() -> { for (int i=0;i&lt;10000;i++) c.increment(); });
+            t1.start(); t2.start();
+            t1.join(); t2.join();
+            System.out.println(c.get()); // erwartet 20000
+        }
+    }
+</code></pre><p><strong>Mutex</strong> (Mutual Exclusion): Exklusiver Zugriff, nur ein Thread zur Zeit<pre><code class=language-java>    public class SynchronizedCounter {
+        private int count = 0;
+        private final Object lock = new Object();
+
+        public void increment() {
+            synchronized (lock) {
+                count++;
+            }
+        }
+
+        public int get() {
+            synchronized (lock) {
+                return count;
+            }
+        }
+
+        public static void main(String[] args) throws InterruptedException {
+            SynchronizedCounter c = new SynchronizedCounter();
+            Thread t1 = new Thread(() -> { for (int i=0;i&lt;10000;i++) c.increment(); });
+            Thread t2 = new Thread(() -> { for (int i=0;i&lt;10000;i++) c.increment(); });
+            t1.start(); t2.start();
+            t1.join(); t2.join();
+            System.out.println(c.get()); // erwartet 20000
+        }
+    }
+</code></pre><p><strong>Semaphore</strong>: Steuert Zugriff durch einen Zähler (<code>permit > 1</code> erlaubt k gleichzeitige Zugriffe, <code>permit == 1</code> ist ähnlich zu mutex)<pre><code class=language-java>    import java.util.concurrent.Semaphore;
+
+    public class SemaphoreExample {
+        private final Semaphore sem = new Semaphore(3); // 3 gleichzeitige Zugriffe
+
+        public void useResource(int id) {
+            try {
+                sem.acquire();
+                System.out.println("Thread " + id + " using resource");
+                Thread.sleep(500); // Arbeit simulieren
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            } finally {
+                System.out.println("Thread " + id + " releasing resource");
+                sem.release();
+            }
+        }
+
+        public static void main(String[] args) {
+            SemaphoreExample ex = new SemaphoreExample();
+            for (int i = 0; i &lt; 10; i++) {
+                final int id = i;
+                new Thread(() -> ex.useResource(id)).start();
+            }
+        }
+    }
+</code></pre><p><strong>Locks</strong>: <code>ReentrantLock</code> bietet zusätzliche Kontrolle<pre><code class=language-java>    import java.util.concurrent.locks.Condition;
+    import java.util.concurrent.locks.Lock;
+    import java.util.concurrent.locks.ReentrantLock;
+
+    public class BoundedBuffer&lt;T> {
+        private final Object[] items;
+        private int putIdx = 0, takeIdx = 0, count = 0;
+        private final Lock lock = new ReentrantLock();
+        private final Condition notEmpty = lock.newCondition();
+        private final Condition notFull = lock.newCondition();
+
+        public BoundedBuffer(int capacity) {
+            items = new Object[capacity];
+        }
+
+        public void put(T x) throws InterruptedException {
+            lock.lock();
+            try {
+                while (count == items.length) {
+                    notFull.await();
+                }
+                items[putIdx] = x;
+                putIdx = (putIdx + 1) % items.length;
+                count++;
+                notEmpty.signal(); // signal consumer
+            } finally {
+                lock.unlock();
+            }
+        }
+
+        @SuppressWarnings("unchecked")
+        public T take() throws InterruptedException {
+            lock.lock();
+            try {
+                while (count == 0) {
+                    notEmpty.await();
+                }
+                T x = (T) items[takeIdx];
+                items[takeIdx] = null;
+                takeIdx = (takeIdx + 1) % items.length;
+                count--;
+                notFull.signal(); // signal producer
+                return x;
+            } finally {
+                lock.unlock();
+            }
+        }
+
+        // Test
+        public static void main(String[] args) {
+            BoundedBuffer&lt;Integer> buf = new BoundedBuffer&lt;>(5);
+            // Producer
+            new Thread(() -> {
+                try {
+                    for (int i = 0; i &lt; 20; i++) {
+                        buf.put(i);
+                        System.out.println("Produced " + i);
+                    }
+                } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+            }).start();
+
+            // Consumer
+            new Thread(() -> {
+                try {
+                    for (int i = 0; i &lt; 20; i++) {
+                        int v = buf.take();
+                        System.out.println("Consumed " + v);
+                    }
+                } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+            }).start();
+        }
+    }
+</code></pre></div><div class=section id=SECTION_producer-consumer><h1>Producer-Consumer</h1><p><a href=https://removepaywalls.com/https://anmolsehgal.medium.com/multi-threading-producer-consumer-pattern-using-wait-notify-3dde8fd49f65>https://removepaywalls.com/https://anmolsehgal.medium.com/multi-threading-producer-consumer-pattern-using-wait-notify-3dde8fd49f65</a><ul><li><strong>Producer</strong>: Erstellt die Werte in einen Puffer (zB Array)<li><strong>Consumer</strong>: Konsumiert den Wert von dem Puffer</li></ul><p>Beispiel:<pre><code class=language-java>    public class ProducerConsumer {
+        static Object key = new Object();
+        private static boolean[] buffer;
+        private static int currentSize;
+
+        public static void main(String[] args) throws InterruptedException {
+            buffer = new boolean[10];
+            currentSize = 0;
+
+            final Producer producer = new Producer();
+            final Consumer consumer = new Consumer();
+
+            Runnable prodRunn = new Runnable() {
+                @Override
+                public void run() {
+                    for (int x = 0; x &lt; 100; x++) {
+                        producer.produce();
+                    }
+                    System.out.println("Produced...");
+                }
+            };
+
+            Runnable consRunn = new Runnable() {
+                @Override
+                public void run() {
+                    for (int x = 0; x &lt; 100; x++) {
+                        consumer.consume();
+                    }
+                    System.out.println("Consumer...");
+                }
+            };
+
+            Thread prodThread = new Thread(prodRunn);
+            Thread consThread = new Thread(consRunn);
+
+            prodThread.start();
+            consThread.start();
+
+            prodThread.join();
+            consThread.join();
+
+            System.out.println("Buffer size : " + currentSize);
+        }
+
+        static class Producer {
+            void produce() {
+                synchronized (key) {
+                    if (currentSize == buffer.length) {
+                        try {
+                            key.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    buffer[currentSize] = true;
+                    currentSize++;
+                    key.notifyAll();
+                }
+            }
+        }
+
+        static class Consumer {
+            void consume() {
+                synchronized (key) {
+                    if (currentSize == 0) {
+                        try {
+                            key.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    currentSize--;
+                    buffer[currentSize] = false;
+                    key.notifyAll();
+                }
+            }
+        }
+    }
+</code></pre><p>Warum? Enkoppelt Erzeugung (Production) und Verarbeitung (Consumption) von Daten über einen gemeinsamen Puffer, sodass beide unabhängig, skalierbar und ohne Busy‑waiting arbeiten können.</p></div><div class=section id=SECTION_parallel-computing---virtual-threads><h1>Parallel Computing - Virtual Threads</h1><p><strong>Virtual Threads</strong>: Seit Java 19. Viel leichtgewichtiger im RAM-Sinne als echte Threads. Man kann viel mehr virtuelle Threads haben als Plattformthreads.<p>Beispiel:<pre><code class=language-java>    Thread.startVirtualThread(() -> {
+                System.out.println("Running virtual thread: " + Thread.currentThread().getName());
+    });
+
+    // or
+    Thread.ofVirtual().start(() -> System.out.println("Running virtual thread: " + Thread.currentThread().getName());
+    thread.join(); // for allowing you to see the message as it waits for the thread to terminate, before the main thread terminates
+</code></pre><p>oder auch mit dem <code>ExecutorService</code>:<pre><code class=language-java>    ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
+            executor.submit(() -> {
+                System.out.println("Running virtual thread with ExecutorService: " + Thread.currentThread().getName());
+            });
+</code></pre><p>Wie funktioniert das ganze? Wenn man zB ein Szenario hat, bei dem man eine DB-Anfrage macht, möchte man nicht, dass da die UI blockiert. Um die Blockierung eines Plattform-Threads zu verhinder, erkennt der virtuelle Thread dan die blockierende I/O-Operation (die DB-Abfrage) und trennt sich vom Plattform-Thread, indem sein Kontext/Stack auf dem Heap-Speicher verschiebt.</p></div><div class=section id=SECTION_parallel-computing---completeable-futures><h1>Parallel Computing - Completeable Futures</h1><p>Asynchrone Programmierung. Seit Java 5 gibt es das <code>Future</code>-Interface in Java (wie <code>Task</code> in C#), und seit Java 8 die <code>CompleteableFuture</code>-Klasse.<p>Beispiel <code>CompleteableFuture</code>:<pre><code class=language-java>    public Future&lt;String> calculateAsync() throws InterruptedException {
+        CompletableFuture&lt;String> completableFuture = new CompletableFuture&lt;>();
+
+        Executors.newCachedThreadPool().submit(() -> {
+            Thread.sleep(500);
+            completableFuture.complete("Hello");
+            return null;
+        });
+
+        return completableFuture;
+    }
+
+    // -- Usage --
+
+    Future&lt;String> completableFuture = calculateAsync();
+
+    // ... 
+
+    String result = completableFuture.get();
+    assertEquals("Hello", result);
+</code></pre><p>Man kann auch zB mehrere Futures auf einmal ausführen:<pre><code class=language-java>    CompletableFuture&lt;String> future1  
+    = CompletableFuture.supplyAsync(() -> "Hello");
+    CompletableFuture&lt;String> future2  
+    = CompletableFuture.supplyAsync(() -> "Beautiful");
+    CompletableFuture&lt;String> future3  
+    = CompletableFuture.supplyAsync(() -> "World");
+
+    CompletableFuture&lt;Void> combinedFuture 
+    = CompletableFuture.allOf(future1, future2, future3);
+
+    // ...
+
+    combinedFuture.get();
+
+    assertTrue(future1.isDone());
+    assertTrue(future2.isDone());
+    assertTrue(future3.isDone());
+</code></pre></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
