@@ -52,4 +52,26 @@
         # The presence of these objects is sufficient to define them
         front-tier: {} # network for frontend tier
         back-tier: {} # network for backend tier
-</code></pre></div><div class=section id=SECTION_kubernetes><h1>Kubernetes</h1></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>
+</code></pre></div><div class=section id=SECTION_kubernetes><h1>Kubernetes</h1><p><a href=https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/>https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/</a><p>Was macht Kubernetes? Mehrere Computer können verbunden werden um als einzigen "<strong>Cluster</strong>" zu arbeiten. Dieser wird vom <strong>Control Pane</strong> koordiniert.<p>Ein "<strong>Node</strong>" ist hier eine VM oder ein physischer Computer. Jeder Node hat ein <strong>Kubelet</strong>, was ein Agent ist der die Node managed und mittels <strong>Kubernetes API</strong> mit dem Control Pane kommuniziert.<p>Zum Deployment fragst du den Control Pane, dass er dir die Applikations Container startet, welche das Control Pane dann auf die Nodes vom Cluster laufen.<p><strong>Minikube</strong>: Zum Testen &amp; Lernen. Damit kann man einen lokalen Kubernetes Cluster auf seinem Rechner laufen lassen.<p><strong>kubectl</strong>: CLI zum interagieren mit der Kubernetes API. Der Format von kubectl commands ist <code>kubectl action resource</code>. Actions sind z.B. <code>create</code>/<code>describe</code>/<code>delete</code>, und das Resource kann z.B. ein <code>node</code> oder <code>deployment</code> sein.<p><strong>Pods</strong>: Kleinste Deploybare Einheit. Ist eine Gruppe aus einen oder mehrerer Containers.<h2>Beispiel</h2><p>Deployen einer app:<pre><code>kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+</code></pre><p>mit <code>kubectl get deployments</code> kann man sehen welche Deployments es schon gibt.<p>Mit <code>kubectl proxy</code> kann man eine Proxy zur Kommunikation mit dem Cluster erstellen. Mit dieser Proxy kann man dann mit <code>curl http://localhost:8001/version</code> zur API verbinden.<p>Mit <code>curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/</code>, wobei <code>$POD_NAME</code> den Namen vom Pod enthält, kann man sich mit diesen verbinden.<p>Beispiel von Deployment einer <code>nginx</code>-App: <code>controllers/nginx-deployment.yaml</code><pre><code class=language-yaml>apiVersion: apps/v1  # API version for Deployments (stable apps/v1)
+kind: Deployment     # Resource type: Deployment manages ReplicaSets and Pods
+metadata:
+    name: nginx-deployment  # Name of this Deployment object
+    labels:
+        app: nginx            # Top-level label for selecting/organizing resources
+spec:
+    replicas: 3            # Desired number of Pod replicas to run
+    selector:
+        matchLabels:
+            app: nginx         # Selector to match Pods managed by this Deployment
+    template:              # Pod template used to create the Pods
+        metadata:
+            labels:
+                app: nginx       # Labels applied to Pods created from this template
+        spec:
+            containers:
+            - name: nginx      # Container name inside the Pod
+                image: nginx:1.14.2  # Container image (repository:tag)
+                ports:
+                - containerPort: 80  # Port exposed by the container (inside the Pod)
+</code></pre></div></div></div><script>function onTabClick(n){currentTab=n;tabButtons.forEach(t=>{t.id==="TAB-BTN_"+n?t.classList.add("active"):t.classList.remove("active")});tabContents.forEach(t=>{t.style.display=t.id==="TAB_"+n?"block":"none"});tabSidebars.forEach(t=>{t.style.display=t.id==="TAB-SIDEBAR_"+n?"block":"none"})}let currentTab="";const tabButtons=document.querySelectorAll(".tab-button"),tabContents=document.querySelectorAll(".tab"),tabSidebars=document.querySelectorAll(".tab-sidebar");tabButtons.length>0&&tabButtons[0].click();const sidebar=document.getElementById("sidebar"),resizer=document.getElementById("sidebar-resizer");let isResizing=!1;resizer.addEventListener("mousedown",function(){isResizing=!0});document.addEventListener("mousemove",function(n){if(isResizing){let t=n.clientX-sidebar.getBoundingClientRect().left;t<50&&(t=50);t>1e3&&(t=1e3);sidebar.style.width=t+"px"}});document.addEventListener("mouseup",function(){isResizing=!1})</script>

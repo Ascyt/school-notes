@@ -723,31 +723,31 @@ Patterns (check ich ned so ganz also chatgpt):
 
 Beispiel mit `extends PanacheEntity`:
 ```java
-package org.acme;
+    package org.acme;
 
-import java.time.LocalDate;
-import java.util.List;
-import jakarta.persistence.Entity;
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
+    import java.time.LocalDate;
+    import java.util.List;
+    import jakarta.persistence.Entity;
+    import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
-@Entity
-public class Person extends PanacheEntity {
-    public String name;
-    public LocalDate birth;
-    public Status status; // Status is an enum defined with two states
+    @Entity
+    public class Person extends PanacheEntity {
+        public String name;
+        public LocalDate birth;
+        public Status status; // Status is an enum defined with two states
 
-    public static Person findByName(String name){
-        return find("name", name).firstResult();
+        public static Person findByName(String name){
+            return find("name", name).firstResult();
+        }
+
+        public static List<Person> findAlive(){
+            return list("status", Status.Alive);
+        }
+
+        public static void deleteStefs(){
+            delete("name", "Stef");
+        }
     }
-
-    public static List<Person> findAlive(){
-        return list("status", Status.Alive);
-    }
-
-    public static void deleteStefs(){
-        delete("name", "Stef");
-    }
-}
 ```
 
 Was macht das? Die Entity-Klasse bekommt CRUD-Methoden direkt (zB `Person.findById(id)` oder `myPerson.persist()`)
